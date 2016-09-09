@@ -1,0 +1,240 @@
+extends layouts/_default
+
+block hero
+    +hero(heros.whatWeDo)
+block breadcrumbs
+    +breadcrumbs(breadcrumbs.whatWeDo)
+block content
+    main(class="body-content")
+        // Start Content section - 3 column
+        section(class="module module--outer-bg bdb-linen-10")
+            .container.module__content.bg-white
+                h2(class="module__title") Leading healthcare innovation
+                .row
+                    .col-sm-12.col-md-4
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis a dui et tempus. Donec finibus ex ac arcu fermentum lobortis. Aenean elementum sapien in quam venenatis, nec sollicitudin urna congue. Nulla facilisi. Suspendisse sit amet diam pellentesque justo blandit pulvinar et nec enim. Fusce pulvinar sapien non nunc pellentesque sollicitudin.
+                    .col-sm-6.col-md-4
+                        +pullquote({classes: "styled", text:"We have a vision for the future where efficiency and empathy go hand-in-hand.", imgURL:"images/sample/bio-head-two@3x.png", name: "Chris Hatwig", title: "President at Apexus", showSpotlightLink: true})
+                    .col-sm-6.col-md-4
+                        +sectionNav(sectionNavs.whatWeDo)
+        // End Content section - 3 column
+        // Start Content section - 4 column
+        section(class="module bdb-brand-24", id="our-new-portfolio")
+            .container.module__content
+                h2(class="module__title") Our new portfolio
+                .row
+                    .col-sm-9
+                        p We have a vision for the future where efficiency and empathy go hand-in-hand. Our solutions pave the way toward this future by addressing health care organizations’ most pressing needs – balancing cost and quality of care.
+                .row.equal-heights-sm
+                    .col-sm-6
+                        .well.bg-orangelighter
+                            .well__title.bg-orange.white Insights
+                            .well__body.equal-height-item
+                                .row
+                                    .col-xs-8
+                                        p We have expanded our analytics offering to deliver the broadest access to data and actionable insights.
+                                    .col-xs-4
+                                        i(class="icon icon-insights")
+                    .col-sm-6
+                        .well.bg-greenlighter
+                            .well__title.bg-green.white Efficiency
+                            .well__body.equal-height-item
+                                .row
+                                    .col-xs-8
+                                        p We elevate members’ supply chain and operational performance through the scale of our networks, innovative workflow automation and expertise.
+                                    .col-xs-4
+                                        i(class="icon icon-insights icon-efficiency--v2")
+                .row.equal-heights-sm
+                    .col-sm-6
+                        .well.bg-turquoiselighter
+                            .well__title.bg-turquoise.white Patient Impact
+                            .well__body.equal-height-item
+                                .row
+                                    .col-xs-8
+                                        p Members adopt our innovative clinical solutions so patients can receive the highest quality care as cost effectively as possible.
+                                    .col-xs-4
+                                        i(class="icon icon-insights icon-patient-impact--v2")
+                    .col-sm-6
+                        .well.bg-purplelighter
+                            .well__title.bg-purple.white Collaboration
+                            .well__body.equal-height-item
+                                .row
+                                    .col-xs-8
+                                        p As health care organizations’ needs are complex and diverse, Vizient is expanding the ways members connect and achieve greater success.
+                                    .col-xs-4
+                                        i(class="icon icon-insights icon-collaboration--v2")
+        // End Content section - 4 column
+        // Start Content section - 3 column
+        section(class="module module--outer-bg bdb-linen-10", id="insights")
+            .container.module__content.bg-white
+                h2(class="module__title")
+                    i(class="icon icon-insights-small mr-25")
+                    span Insights
+                .row
+                    .col-sm-12.col-md-4
+                        p Building on our expertise in clinical and supply analytics, we have expanded our analytics offering to deliver the broadest access to data and actionable insights. This data-driven intelligence helps members remain competitive and adapt to the changing health care environment. In tandem with analytics, our consulting helps members achieve specific goals.
+                    .col-sm-6.col-md-4.bdl-dotted
+                        h4 Services and resources:
+                        ul
+                            li Advisory services to support performance and pharmacy and medical/surgical price performance analytics
+                            li Post-collaboration causation analysis and analytics monitoring
+                            li Spend and price performance analytics
+                    .col-sm-6.col-md-4
+                        +pullquote({classes: "styled", text:"Vizient represents a true milestone where we have come together with the most respected names in the industry to form the largest member-owned health care copmany in the country.", imgURL:"images/sample/bio-head-two@3x.png", name: "Chris Hatwig", title: "President at Apexus", spotlightLink: true})
+                button(class="btn btn-default") Learn more
+        // End Content section - 3 column
+        // Start Feature box
+        section(class="module module--outer-bg bdb-brand-24")
+            .container.module__content.bg-white
+                .feature-box
+                    .feature-box__content.pb-100
+                        strong Insights
+                        h3(class="feature-box__title") The Research Institute
+                        .row
+                            .col-sm-6.col-md-4
+                                p All members have access to the work of The Research Institute, which uses quantitative analysis to identify solutions for pressing industry issues. Vizient partners with members to create tailored, actionable plans and accelerate their adoption of innovative best practices as new research is published.
+                                p Most recently, The Research Institute completed a report on the new Comprehensive Care for Joint Replacement (CCJR) Model being implemented by the Centers for Medicare & Medicaid Services in January 2016. Other recent research initiatives include population management and effective care management strategies.
+                            .col-sm-6.col-md-4
+                                h4 Our research charter:
+                                ul
+                                    li Provide strategic thought leadership and applied health services experimentation to help members create more effective, sustainable health delivery systems
+                                    li Produce structured economic research to influence members’ strategic thinking and highlight potential environmental changes that may affect their clinical business
+                                    li Develop applied health services research to facilitate members’ experimentation with rapid cycle care and process redesign
+                            .col-sm-6.col-md-4
+                                ul.block-list.list-unstyled
+                                    li.block-list__list-item
+                                        a(href="#") Other related
+                                            #[i.icon.icon-arrow-right]
+                                    li.block-list__list-item
+                                        a(href="#") Could be related
+                                            #[i.icon.icon-arrow-right]
+                                    li.block-list__list-item
+                                        a(href="#") Pharmacy Network
+                                            #[i.icon.icon-new-window]
+                                    li.block-list__list-item
+                                        a(href="#") More stuff
+                                            #[i.icon.icon-new-window]
+                                    li.block-list__list-item
+                                        a(href="#") More stuff
+                                            #[i.icon.icon-new-window]
+                        a(href="#")
+                            span.text-regular Contact us about clinical performance
+                            i(class="icon icon-arrow-right ml-10")
+                    img(src="images/rubber-band-ball.png", class="feature-box__ball")
+        // End Feature box
+        // Start Content section - 3 column
+        section(class="module module--outer-bg bdb-brand-24", id="efficiency")
+            .container.module__content.bg-white
+                h2(class="module__title")
+                    i(class="icon icon-efficiency-small mr-25")
+                    span Efficiency
+                .row
+                    .col-sm-12.col-md-4
+                        .row
+                            .col-sm-6.col-md-12
+                                p Vizient’s expertise in driving operational and supply chain efficiency helps members identify critical improvement areas, see the extent of performance gaps and develop initiatives to improve. We offer the most competitive contract portfolio for medications, supplies, equipment and services, along with advanced analytics and expert advisory services, to deliver a minimum 3:1 return on investment.
+                            .col-sm-6.col-md-12
+                                +bigStat('3:1', 'Minimum return on investment')
+                                button(class="btn btn-default") Learn more
+                    .col-sm-12.col-md-8
+                        h4 Services and resources:
+                        .row
+                            .col-sm-6.bdl-dotted
+                                ul
+                                    li Superior comparative operational data derived from a rigorous data quality process representing relevant peer groups for performance benchmarking
+                                    li Advisory services for one-on-one training, operational reviews and quarterly executive reports to identify performance gaps and help with change management and performance improvement initiatives
+                                    li A license to use Action OI from Truven Health Analytics
+                                    li Three collaboratives that help members improve operational and financial performance
+                            .col-sm-6
+                                ul
+                                    li A large library of department-specific case studies focusing on organizations that have made significant operational improvements
+                                    li Best practices sharing through user groups, peer calls, affinity groups, BluePrints™ and improvement toolkits
+                                    li Access to supply and pharmacy contract portfolios and programs, including associated fee returns
+                                    li Three performance improvement collaboratives that leverage peer support and allow supply chain to operate as a strategic asset
+                                    li Supply chain advisory services to drive strategic performance improvement and accountability
+        // End Content section - 3 column
+        // Start Content section - 3 column
+        section(class="module module--outer-bg bdb-brand-24", id="patient-impact")
+            .container.module__content.bg-white
+                h2(class="module__title")
+                    i(class="icon icon-patient-impact-small mr-25")
+                    span Patient Impact
+                .row
+                    .col-sm-12.col-md-4
+                        p Our products focused on enhancing clinical performance help members deliver the highest quality of care as cost-effectively as possible. Through powerful analytics and expert guidance, member organizations can achieve faster, sustainable results.
+                        button(class="btn btn-default") Learn more
+                    .col-sm-12.col-md-8
+                        h4 Services and resources:
+                        .row
+                            .col-sm-6.bdl-dotted
+                                ul
+                                    li Multiple improvement collaboratives to accelerate performance by working, learning and improving with peers on targeted projects
+                                    li Experienced professional advisors working one-on-one on members’ performance improvement leads to:
+                                    ul.circle
+                                        li Translate, adapt and internalize improvement approaches defined in the collaboratives
+                                        li Connect relevant teams to Vizient toolkits and resources to accelerate implementation and adoption of improvements
+
+                            .col-sm-6
+                                ul
+                                    li Use of our industry-leading data and benchmarking platform, Clinical Data Base &amp; Resource Manager, which allows members and their physicians to identify relative performance against both predefined and self-defined peer groups
+                                    li In-depth data, updated on a monthly basis, covering hundreds of academic medical centers and community hospitals.
+        // End Content section - 3 column
+        // Start Content section - 3 column
+        section(class="module module--outer-bg bdb-linen-10", id="collaboration")
+            .container.module__content.bg-white
+                h2(class="module__title")
+                    i(class="icon icon-collaboration-small mr-25")
+                    span Collaboration
+                .row
+                    .col-sm-12.col-md-4
+                        p Vizient is expanding its network-driven connections by providing more robust forums and tools for members to join together—both locally and nationally—to share knowledge and insights and improve performance faster than ever before.
+                        +pullquote({classes: "styled", text:"Lorem ipsum dolor sit amet, contetur adipiscing elit. Lorem ipsum.", imgURL:"images/sample/bio-head-two@3x.png", name: "Chris Hatwig", title: "President at Apexus", showSpotlightLink: true})
+                    .col-sm-12.col-md-8
+                        h4 Services and resources:
+                        .row
+                            .col-sm-6
+                                ul
+                                    li Access to strategic research and data/analytics insights
+                                    li Topic-specific networks across disciplines and/or member segments, from patient experience to population health
+                                    li Organization of focused problem-solving discussions and action plans with members following online or in-person network meetings
+                                    li Annual calendar of networking and engagement opportunities to connect with other members by segment, peer and interest groups
+                                    a(href="#")
+                                        strong Learn more
+                                        i(class="icon icon-arrow-right ml-10")
+                            .col-sm-6
+                                ul
+                                    li Facilitate connections with executives and other peers through exclusive, discipline-specific and topic-based networks
+                                    li Focus on strategic topics of shared interest through highly engaging and collaborative roundtables, events and programs
+                                    li Provide quick access to collective knowledge of peers leveraging their experiences, insights and lessons learned
+                                    li Access to library of innovative ideas and expert resources
+                                    li Organize events with continuing education credit
+        // End Content section - 3 column
+        // Start Feature box
+        section(class="module module--outer-bg bdb-brand-24")
+            .container.module__content.bg-white
+                .feature-box
+                    .feature-box__content.pb-100
+                        strong Collaboration
+                        h3(class="feature-box__title") Education and networking
+                        .row
+                            .col-sm-6.col-md-4
+                                p Vizient connects senior leaders with their peers through a unique, safe platform to share key learnings, improve performance, build industry-leading solutions and exponentially increase impact.
+                                p Network meetings can take place online or in person. Members choose what topics to discuss and we facilitate the meetings and invite industry and subject matter experts. There are no fees to participate in our networks. Members simply pay any costs associated with traveling to any face-to-face meetings.
+                            .col-sm-6.col-md-8
+                                h4 Networking activities:
+                                .row
+                                    .col-sm-12.col-md-6
+                                        ul
+                                            li Exchange knowledge with trusted colleagues through executive, topical and peer-based networks
+                                            li Share data, analytics and insights to support shared initiatives and education
+                                            li Collaborate on improvement initiatives that address specific needs
+                                    .col-sm-12.col-md-6
+                                        ul
+                                            li Access outcome-oriented analytics and advisory services to sustain progress
+                                            li Build innovative new processes for more cost-effective delivery of exceptional care
+                        a(href="#")
+                            span.text-regular Learn more about our networks
+                            i(class="icon icon-arrow-right ml-10")
+                    img(src="images/rubber-band-ball.png", class="feature-box__ball")
+        // End Feature box
+        +relatedlinks(relatedlinks.whatWeDo)

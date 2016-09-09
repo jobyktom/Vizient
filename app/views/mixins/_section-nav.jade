@@ -1,0 +1,10 @@
+mixin sectionNav(sectionNavPage)
+    <!-- Start Section Nav Bar -->
+    .section-nav.hidden-xs
+        ul.block-list.list-unstyled
+            each item, index in sectionNavPage.navListItems
+                li.block-list__list-item
+                    a(href="#{item.listItemTarget}", class="block-list__list-link") #{item.listItemText}
+                        i(class="icon icon-arrow-down")
+                        i(class="icon-arrow-left-white")
+    <!-- End Section Nav Bar -->

@@ -1,0 +1,141 @@
+/// Mobile Menu ///
+
+#mobileMenu {
+    user-select: none;
+    background-color: $white;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0;
+            padding: 0;
+
+            a {
+                font-family: $soleto-regular;
+                text-decoration: none;
+                padding: 15px;
+                display: block;
+                line-height: 1.15em;
+                outline: none;
+
+                @media (min-width: $screen-sm-min) {
+
+                }
+
+            }
+        }
+    }
+
+    .panel {
+        background-color: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+    }
+
+    .panel-secondary {
+        margin-left: 15px;
+    }
+
+    .menu {
+
+        & > li { 
+        }
+    }
+
+
+    .mobile-nav__sub-nav { 
+        padding-left: 15px;
+        display: none;
+    }
+
+    .mobile-nav__nav-link {
+
+        &.is-active {
+
+            // Show the submenu of the active menu link
+
+            + .mobile-nav__sub-nav {
+                display: block;
+            }
+        }
+
+    }
+
+    .submenu-2 { 
+        padding-left: 30px;
+        margin-left: -15px;
+        border-bottom: 1px dotted lighten($orange, 20%);
+        margin-bottom: -1px;
+    }
+
+    .mobile-nav__sub-nav, .submenu-2 {
+        border-top: 1px dotted lighten($orange, 20%);
+
+        & > li {
+            border-bottom: 1px dotted lighten($orange, 20%);
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    .submenu-secondary {
+        margin-left: -15px;
+    }
+
+    .item-menu {
+        color: $black;
+        font-size: $font-size-large;
+    }
+
+
+    .item-submenu, .item-submenu-2 {
+        font-size: $font-size-base;
+        padding: 16px 15px 16px 0;
+
+        &.is-active {
+            font-weight: bold;
+        }
+    }
+
+
+    .menu-item-home {
+
+        .icon {
+            float: right;
+        }
+    }
+
+    .menu-item-login {
+        color: $white;
+        margin: 20px 10px;
+        border-radius: 27px;
+    }
+
+    .item-menu-secondary {
+        position: relative;
+        color: $gray;
+        font-size: $font-size-base;
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        &:before {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 8px;
+            height: 7px;
+            background: url(../images/icons/icon-arrow-right-small.png);
+            background: none, url(../images/icons/svg/icon-arrow-right.svg);
+            background-repeat: no-repeat;
+            background-size: 8px 7px;
+            top: 50%;
+            margin-top: -4px;
+            left: 0;
+        }
+    }
+}

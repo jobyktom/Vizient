@@ -1,0 +1,124 @@
+{
+    "relatedlinks": {
+        "whatWeDo": {
+            "relatedLinksBlocks": [
+                {
+                    "linkTitle": "Our Networks",
+                    "linkUrl": "our-networks.html",
+                    "linkExcerpt": "See how our members learn, improve and build together"
+                },
+                {
+                    "linkTitle": "Member Spotlight",
+                    "linkUrl": "#",
+                    "linkExcerpt": "Hear what our members are doing at the forefront of health care"
+                },
+                {
+                    "linkTitle": "Blog",
+                    "linkUrl": "blog.html",
+                    "linkExcerpt": "Read the latest insights from our experts"
+                },
+                {
+                    "linkTitle": "News & Events",
+                    "linkUrl": "#",
+                    "linkExcerpt": "Keep up to date on our latest news"
+                }
+            ]
+        },
+        "whoWeAre": {
+            "relatedLinksBlocks": [
+                {
+                    "linkTitle": "News & Events",
+                    "linkUrl": "#",
+                    "linkExcerpt": "See what’s happening at Vizient. Explore this area to find the latest news, recent and archived press releases, and hot topics facing the health care industry."
+                },
+                {
+                    "linkTitle": "Become a Supplier",
+                    "linkUrl": "become-a-supplier.html",
+                    "linkExcerpt": "Our vision is to offer a unique supplier experience through increased supply chain efficiency, visibility and credibility. Our suppliers play a valuable role in helping our members meet the unique needs of their patients and communities. Find out how your organization can become a supplier."
+                },
+                {
+                    "linkTitle": "Become a Member",
+                    "linkUrl": "become-a-member.html",
+                    "linkExcerpt": "Our dedication to member success is why we’re here. We equip members through a variety of affiliation options that can help organizations drive down costs and deliver better care. Become a member for access to more leading practices, an expanded network and better knowledge sharing."
+                },
+                {
+                    "linkTitle": "Careers at Vizient",
+                    "linkUrl": "#",
+                    "linkExcerpt": "Join our committed health care team and be part of the next chapter in the Vizient success story."
+                }
+            ]
+        },
+        "becomeAMember": {
+            "relatedLinksBlocks": [
+                {
+                    "linkTitle": "Member Spotlight",
+                    "linkUrl": "#",
+                    "linkExcerpt": "Discover how our members are driving new business models and groundbreaking approaches"
+                },
+                {
+                    "linkTitle": "Awards and Rankings",
+                    "linkUrl": "#",
+                    "linkExcerpt": "Learn about our members’ bold initiatives to advance care for their patients and communities"
+                },
+                {
+                    "linkTitle": "Blog",
+                    "linkUrl": "blog.html",
+                    "linkExcerpt": "Read the latest insights from our experts"
+                },
+                {
+                    "linkTitle": "Our Networks",
+                    "linkUrl": "our-networks.html",
+                    "linkExcerpt": "Learn how our members learn, improve and build together"
+                }
+            ]
+        },
+        "ourNetworks": {
+            "relatedLinksBlocks": [
+                {
+                    "linkTitle": "Member Spotlight",
+                    "linkUrl": "#",
+                    "linkExcerpt": "Hear what our members are doing at the forefront of health care"
+                },
+                {
+                    "linkTitle": "Become a Member",
+                    "linkUrl": "become-a-member.html",
+                    "linkExcerpt": "Join the largest membership of health care institutions enabling a better quality of life"
+                },
+                {
+                    "linkTitle": "Blog",
+                    "linkUrl": "blog.html",
+                    "linkExcerpt": "Read the latest insights from our experts"
+                },
+                {
+                    "linkTitle": "Become a Supplier",
+                    "linkUrl": "become-a-supplier.html",
+                    "linkExcerpt": "Grow your business by helping our members meet their patients' needs"
+                }
+            ]
+        },
+        "becomeASupplier": {
+            "relatedLinksBlocks": [
+                {
+                    "linkTitle": "Careers at Vizient",
+                    "linkUrl": "#",
+                    "linkExcerpt": "Join our committed health care team and be part of the next chapter in the Vizient success story."
+                },
+                {
+                    "linkTitle": "Become a Member",
+                    "linkUrl": "become-a-member.html",
+                    "linkExcerpt": "Join the largest membership of health care institutions enabling a better quality of life"
+                },
+                {
+                    "linkTitle": "News & Events",
+                    "linkUrl": "#",
+                    "linkExcerpt": "Keep up to date on our latest news"
+                },
+                {
+                    "linkTitle": "Become a Supplier",
+                    "linkUrl": "become-a-supplier.html",
+                    "linkExcerpt": "Grow your business by helping our members meet their patients' needs"
+                }
+            ]
+        }
+    }
+}

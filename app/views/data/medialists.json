@@ -1,0 +1,84 @@
+{
+    "medialists": {
+        "bidCalendar": {
+            "mediaListClasses": "event-list",
+            "mediaBlocks": [
+                {
+                    "imgURL": "images/bid-event.png",
+                    "mediaTitle": "Week commencing 12th October",
+                    "mediaExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "linkText": "",
+                    "linkUrl": "#"
+                },
+                {
+                    "imgURL": "images/bid-event.png",
+                    "mediaTitle": "Week commencing 12th October",
+                    "mediaExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "linkText": "",
+                    "linkUrl": "#"
+                }
+            ]
+        },
+        "appealProcess": {
+            "mediaBlocks": [
+                {
+                    "imgURL": "images/icons/icon-phone.png",
+                    "mediaTitle": "Call our hotline",
+                    "mediaDate": "",
+                    "mediaExcerpt": "",
+                    "linkText": "(877) 220-1615",
+                    "linkUrl": "tel:(877) 220-1615"
+                },
+                {
+                    "imgURL": "images/icons/icon-email.png",
+                    "mediaTitle": "Submit a grievance online",
+                    "mediaDate": "",
+                    "mediaExcerpt": "",
+                    "linkText": "EthicsPoint",
+                    "linkUrl": "#"
+                }
+            ]
+        },
+        "nextSteps": {
+            "mediaBlocks": [
+                {
+                    "imgURL": "images/icons/icon-phone.png",
+                    "mediaTitle": "Talk to us",
+                    "mediaDate": "",
+                    "mediaExcerpt": "",
+                    "linkText": "(800) 327-811",
+                    "linkUrl": "tel:(800) 327-811"
+                },
+                {
+                    "imgURL": "images/icons/icon-email.png",
+                    "mediaTitle": "Email us your question",
+                    "mediaDate": "",
+                    "mediaExcerpt": "",
+                    "linkText": "technicalsupport@Vizient.com",
+                    "linkUrl": "mailto:technicalsupport@Vizient.com"
+                }
+            ]
+        },
+        "contactVizient": {
+            "mediaBlocks": [
+                {
+                    "imgURL": "images/icons/icon-phone.png",
+                    "mediaTitle": "Call our switchboard",
+                    "mediaDate": "",
+                    "mediaExcerpt": "",
+                    "linkText": "800.842.5146",
+                    "linkUrl": "tel:800 842 5146"
+                },
+                {
+                    "imgURL": "images/icons/icon-email.png",
+                    "mediaTitle": "Contact us online",
+                    "mediaDate": "",
+                    "mediaExcerpt": "",
+                    "linkText": "customerservices@vha.com",
+                    "linkUrl": "mailto:customerservices@vha.com"
+                }
+            ]
+        }
+    }
+
+}

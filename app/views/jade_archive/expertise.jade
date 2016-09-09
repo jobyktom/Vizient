@@ -1,0 +1,185 @@
+extends layouts/_default
+
+block breadcrumbs
+    .content-divider.content-divider--thick-brand
+    +breadcrumbs(breadcrumbs.whatWeDoExpertise)
+
+block content
+    main(class="body-content")
+        section(class="module module--outer-bg bdb-linen-10")
+            .container.module__content.bg-white
+                h2(class="module__title") 
+                    i(class="icon icon-patientimpact mr-20") 
+                    span Expertise name
+                .row
+                    .col-sm-8
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                        p Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        
+                        // Start Expertise services Bullet
+                        ul.mb-5
+                            li.text-medium Collaboratives
+                        p.mb-25 Collaboratives deliver focused intelligence on the issues that are vital to the nation’s health care reform agenda, delivering expert research and insights to reveal additional performance opportunities in quality, safety and cost-effectiveness.
+                        // End Expertise services Bullet
+                        // Start Expertise services Bullet
+                        ul.mb-5
+                            li.text-medium Performance networks
+                        p.mb-25 Performance networks harness comparative data to deliver expert guidance to help members achieve higher standards of quality, safety and cost-effective care.
+                        // End Expertise services Bullet
+                        // Start Expertise services Bullet
+                        ul.mb-5
+                            li.text-medium Supply networks
+                        p.mb-25 Supply networks tap proven, reliable techniques to form, manage and sustain supply chain savings and operational efficiencies without compromising patient care. 
+                        // End Expertise services Bullet
+
+                        a.btn-block.mt-30.mb-30(href="#")
+                            strong Learn more about our networks
+                            i(class="icon icon-arrow-right ml-10")
+
+                        h3.font-large.text-medium.mt-40 Products, services and resources:
+
+                        // Start Expertise services point
+                        .text-medium.mb-15.pt-30.bdt-dotted Patient care
+                        p We combine the breadth and depth of our members with our relevant benchmarks, time-tested analytics and best practices to achieve greater excellence in quality patient care. For  example,  the Clinical Data Base/Resource Manager™ (CDB/RM) highlights improvement opportunities improvement by combining risk-adjusted encounter information and line-item transactional detail to influence patient outcomes and resource utilization.
+                        a.btn-block.mt-30.mb-30(href="#")
+                            strong Learn more
+                            i(class="icon icon-arrow-right ml-10")
+                        // End Expertise services point
+                        // Start Expertise services point
+                        .text-medium.mb-15.pt-30.bdt-dotted Patient care
+                        p We combine the breadth and depth of our members with our relevant benchmarks, time-tested analytics and best practices to achieve greater excellence in quality patient care. For  example,  the Clinical Data Base/Resource Manager™ (CDB/RM) highlights improvement opportunities improvement by combining risk-adjusted encounter information and line-item transactional detail to influence patient outcomes and resource utilization.
+                        a.btn-block.mt-30.mb-30(href="#")
+                            strong Learn more
+                            i(class="icon icon-arrow-right ml-10")
+                        // End Expertise services point
+
+                        h3.font-large.text-medium.mt-40 Products, services and resources:
+                        // Start Expertise services accordian
+                        #accordion.panel-group.events-list.expertise-services(role='tablist', aria-multiselectable='true')
+                            // Start Expertise service panel with image
+                            .panel
+                                #headingOne.panel-head.mb-20(role='tab')
+                                    .clearfix
+                                        .panel-title
+                                            a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                                                .text-light.font-larger.lh-one-four.mb-5
+                                                    span Skateboard dolor brunch.
+                                #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+                                    .panel-body.bg-graylighter
+                                        .row
+                                            .col-sm-6
+                                                .post__featured-image
+                                                    img(class="post__featured-image", src="http://placehold.it/265x265")
+                                            .col-sm-6
+                                                div(class="text-medium mb-5") 02-04 December 2015
+                                                div(class="text-medium") Drury Plaza Hotel, St Louis, MO
+                                                p.text-light.mt-20 The VHA Mid-America and Oklahoma/Arkansas Annual Accreditation Update Meeting is designed to prepare your health care organization leaders for your upcoming 2016 TJC survey or assist with maintaining continuous readiness for future surveys.
+                                                a(href="#")
+                                                    strong More information
+                                                    i(class="icon icon-arrow-right ml-10")
+                            // End Expertise service panel
+                            // Start Expertise service panel
+                            .panel
+                                #headingTwo.panel-head.mb-20(role='tab')
+                                    .clearfix
+                                        .panel-title
+                                            a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='true', aria-controls='collapseTwo')
+                                                .text-light.font-larger.lh-one-four.mb-5
+                                                    span Skateboard dolor brunch.
+                                #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+                                    .panel-body.bg-graylighter
+                                        .row
+                                            .col-sm-12
+                                                div(class="text-medium mb-5") 02-04 December 2015
+                                                div(class="text-medium") Drury Plaza Hotel, St Louis, MO
+                                                p.text-light.mt-20 The VHA Mid-America and Oklahoma/Arkansas Annual Accreditation Update Meeting is designed to prepare your health care organization leaders for your upcoming 2016 TJC survey or assist with maintaining continuous readiness for future surveys.
+                                                a(href="#")
+                                                    strong More information
+                                                    i(class="icon icon-arrow-right ml-10")
+                            // End Expertise service panel
+                            // Start Expertise service panel
+                            .panel
+                                #headingThree.panel-head.mb-20(role='tab')
+                                    .clearfix
+                                        .panel-title
+                                            a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='true', aria-controls='collapseThree')
+                                                .text-light.font-larger.lh-one-four.mb-5
+                                                    span Skateboard dolor brunch.
+                                #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+                                    .panel-body.bg-graylighter
+                                        .row
+                                            .col-sm-12
+                                                div(class="text-medium mb-5") 02-04 December 2015
+                                                div(class="text-medium") Drury Plaza Hotel, St Louis, MO
+                                                p.text-light.mt-20 The VHA Mid-America and Oklahoma/Arkansas Annual Accreditation Update Meeting is designed to prepare your health care organization leaders for your upcoming 2016 TJC survey or assist with maintaining continuous readiness for future surveys.
+                                                a(href="#")
+                                                    strong More information
+                                                    i(class="icon icon-arrow-right ml-10")
+                            // End Expertise service panel
+                        // End Expertise services accordian
+                    .col-sm-4
+                        .well.bg-linen.p-20
+                            .font-large.text-medium.mt-5.pb-15.bdb-dotted Already a member?
+                            p.font-small.mt-20.mb-20 Are you already a member and need to access your products and dashboards?
+                            a.btn.btn-primary.text-medium(href="contact-us.html") Member login
+                        +eventWell('Association for healthcare foodservice')
+        // Start featured box
+        section(class="module module--outer-bg bdb-linen-10")
+            .container.module__content.bg-white
+                h2(class="module__title") Collaboration feature
+                .feature-box
+                    .feature-box__content
+                        .row
+                            .col-sm-12.col-md-8
+                                h3(class="feature-box__title") Education and networking
+                        .row
+                            .col-sm-7
+                                .col-sep-right
+                                    p Reducing patients’ hospital-acquired conditions and readmissions is more important now than ever. Our Hospital Engagement Networks (HENs), part of the Centers for Medicare & Medicaid Services’ (CMS) Partnership for Patients initiative, improves patient safety through our consulting services and learning collaboratives. Partnership for Patients and the Hospital Engagement Networks nestled under this initiative are one part of an overall framework established by the Affordable Care Act to spend dollars more wisely and improve care.
+                                    p Most recently, Vizient was chosen as one of 17 health care organizations for CMS’s HEN 2.0 program. In this second round with CMS, Vizient is continuing to develop learning collaboratives for hospitals and pioneer a wide array of initiatives to improve patient safety.
+                                    a.btn-block.mt-20.mb-20.lh-one-four(href="#")
+                                        strong Contact us about Hospital Engagement Networks
+                                        i(class="icon icon-arrow-right ml-10")
+
+                            .col-sm-5
+                                p.text-medium.font-large From 2010-2013, Partnership for Patients achieved the following results:
+
+                                ul
+                                    li 50,000 fewer patients died in hospitals 
+                                    li Approximately $12 billion in health care costs were saved as a result of a reduction in hospital-acquired condition
+                                    li 1.3 million adverse events and infections avoided in hospitals 
+                                    li 17 percent decline in hospital-acquired conditions
+        // End featured box
+        // Start featured box
+        section(class="module module--outer-bg")
+            .container.module__content.bg-white
+                h2(class="module__title") Performance intelligence 
+                .feature-box
+                    .feature-box__content
+                        .row
+                            .col-sm-12.col-md-8
+                                h3(class="feature-box__title") Elevating performance excellence
+                        .row
+                            .col-sm-4
+                                p Powered by our expert knowledge and resources, the Imperatives for Quality (IQ) Program unleashes your performance potential by helping pinpoint improvement opportunities by integrating quality, safety and cost-effectiveness data into unparalleled insights.
+                                a.btn-block.mt-20.mb-20.lh-one-four(href="#")
+                                    strong Contact us about Hospital Engagement Networks
+                                    i(class="icon icon-arrow-right ml-10")
+
+                            .col-sm-8
+                                .col-sep-left
+                                    .row
+                                        .col-sm-12
+                                            p.text-medium.font-large Focus points for Imperatives for Quality 
+                                        .col-sm-6
+                                            ul
+                                                li Coordinated care and patient flow to understand inpatient transactions, admissions data and ambulatory care. 
+                                                li Improving the patient experience by examining HCAHPS, CG-CAHPS, and palliative and hospice care data.
+                                                li Improving patient survival through greater intelligence about sepsis mortality, mortality review, and patient population survival data. 
+
+                                        .col-sm-6
+                                            ul
+                                                li Managing cost and utilization by analyzing labor practices, supply utilization and medical utilization. 
+                                                li Preventing patient harm through analysis of data points including hospital-acquired infections, falls, and adverse drug events
+                                                li Reducing variation in care through  a greater understanding of issues such as total joint replacements, cardiac procedures and other core measures.
+        // End featured box

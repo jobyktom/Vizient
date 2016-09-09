@@ -1,0 +1,217 @@
+// Header bars
+
+#header-bar {
+    background-color: $white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15); 
+    user-select: none;
+    transition: top .2s;
+    transition-timing-function: ease-out;
+    position: fixed;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    height: 110px;
+
+    // Move the header bar up on scroll
+    @media only screen and (min-width: $screen-md-min) {
+        .content-scrolled &{
+          top: -110px;
+        }
+    }
+
+    .container-header {
+        padding: 0 40px;
+    }
+
+
+    .master-logo {
+        float: left;
+        width: auto;
+        display: inline-block;
+        position: relative; 
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 37px;
+        height: 110px;
+
+        .content-scrolled &{
+            //padding-top: 52px;
+        }
+
+        // Reduce the logo icon size when page has scrolled
+        .icon {
+            display: block;
+            transition: all .3s;
+
+            .content-scrolled &{
+                // width: 130px;
+                // height: 32px;
+                // background-size: 130px 32px;
+            }
+        }
+    }
+
+    .master-nav {
+        float: left;
+        width: calc(100% - 243px);
+        display: inline-block;
+        height: 110px;
+        border-left: 1px solid $mist-light;
+        overflow: hidden;
+
+        nav.top-nav {
+            height: 40px;
+            width: 100%;
+            border-bottom: 1px solid $mist-light;
+            padding-top: 11px;
+            display: inline-block;
+
+            ul {
+                float: right;
+                padding-right: 40px;
+            }
+
+            li {
+                margin: 0;
+                padding: 0 7px;
+                float: left;
+                line-height: 1em;
+                float: left;
+
+                @media only screen and (max-width: $screen-sm-max) {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                }
+
+                a {
+                    line-height: 16px;
+                    color: $slate;
+                    font-size: $font-size-smaller;
+                    position: relative;
+                    padding-left: 8px;
+                    font-family: $soleto-regular;
+                    vertical-align: middle;
+
+                }
+            }
+        }
+
+
+        nav.primary-nav {
+            display: inline-block;
+            padding-top: 20px;
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    height: 25px;
+                    line-height: inherit;
+                    display: inline-block;
+                    padding: 0 10px;
+                    padding: 0 1vw;
+                    border-left: 1px solid $grey;  
+                    &:first-child {
+                        border-left: 0;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            
+
+            a {
+                color: $black;
+                text-decoration: none;
+                vertical-align: middle;
+                position: relative;
+                border-bottom: 4px solid transparent; 
+
+                &:hover,
+                &.is-active {
+                    color: $brand;
+
+                    &:after {
+                        background-color: $brand;
+                    }
+                }
+            }
+
+            .menu-item-home {
+                text-indent: -9999px;
+                width: 23px;
+                height: 24px;
+                display: block;
+                background: url(../images/icons/icon-home.png);
+                background: none, url(../images/icons/svg/icon-home.svg);
+                background-size: 23px 24px;
+                background-repeat: no-repeat;
+                top: 0;
+            }
+
+        }
+
+        nav.additional-nav {
+            padding-right: 40px;
+            padding-top: 10px;
+            float: right;
+            display: inline-block;
+            li {
+                display: inline-block; 
+                padding-left: 10px;
+                padding-left: 1vw;           
+            }
+
+            .icon-login-circle {
+                display: inline-block;
+                width: 36px;
+                height: 36px;
+                border-radius: 72px;
+                border: solid 2px $brand;
+                .icon-login {
+                    top: -4px;
+                    position: relative;
+                    left: 8px;
+                }
+            }
+        }
+    }
+}
+
+
+nav.subnav {
+    width: 100%;
+    top: 110px;
+    transition: top .2s;
+    transition-timing-function: ease-out;
+    position: fixed;
+    padding: 0;
+    z-index: 99;
+    height: 60px;
+    background-color: $mist;
+    
+    // Move the header bar up on scroll
+    @media only screen and (min-width: $screen-md-min) {
+        .content-scrolled &{
+          top: 0;
+        }
+    }
+
+    ul {
+        @extend .clearfix;
+        li {
+            display: inline-block;
+            float: left;
+        }
+    }
+}

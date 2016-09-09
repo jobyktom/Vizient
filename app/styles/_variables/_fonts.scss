@@ -1,0 +1,36 @@
+/// Font families ///
+
+$soleto-dark: "Soleto Dark", Arial, sans-serif;
+$soleto-light: "Soleto Light", Arial, sans-serif;
+$soleto-medium: "Soleto Medium", Arial, sans-serif;
+$soleto-bold: "Soleto Bold", Arial, sans-serif;
+$soleto-regular: "Soleto Regular", Arial, sans-serif;
+
+$font-family-sans-serif: $soleto-light;
+$font-family-base: $font-family-sans-serif;
+
+$headings-font-family: $soleto-light;
+$headings-font-weight: normal;
+
+/// Font sizes
+
+// Body
+
+$line-height-base: 24/16; 
+
+$font-size-larger: 24px;
+$font-size-large: 18px;
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-smaller: 13px;
+
+// Headings
+$font-size-h1: 68/60 + em; 
+$font-size-h2: 48/56 + em;
+$font-size-h3: 36/44 + em;
+$font-size-h4: 18/16 + em;
+$font-size-h5: 16/16 + em;
+$font-size-h6: 14/16 + em;
+
+$font-mega-size: 110/16 + em;
+

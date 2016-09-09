@@ -1,0 +1,23 @@
+// Main partial import file
+
+
+// Core variables
+@import "_base/_base",
+        "_variables/_base";
+
+
+// Vendor
+@import "_vendor/_base";
+
+
+// Lightingfly
+@import "../../bower_components/lightingfly/_lighting_fly.scss";
+
+
+// Custom styles
+@import "_helpers/_base",
+        "_layouts/_base",
+        "_svgs/_base",
+        "_elements/_base",
+        "_components/_base",
+        "_modules/_base";

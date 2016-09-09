@@ -1,0 +1,20 @@
+{
+    "pullQuotes": {
+        "normal": {
+            "classes": "",
+            "text": "Lorem ipsum dolor sit amet, contetur adipiscing elit. Lorem ipsum.",
+            "imgURL": "images/sample/bio-head-two@3x.png",
+            "name": "Curt Nonomaque",
+            "title": "President & chief Executive",
+            "linkText": "See spotlight profile"
+        },
+        "styled": {
+            "classes": "pull-quote--styled",
+            "text": "We have a vision for the future where efficiency and empathy go hand-in-hand.",
+            "imgURL": "images/sample/bio-head-two@3x.png",
+            "name": "Chris Hatwig",
+            "title": "President at Apexus",
+            "linkText": "See spotlight profile"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+/// Paddings ///
+
+
+@each $space in $paddings {
+
+    .p-#{$space} {
+        padding: #{$space}px !important ;
+    }
+
+    .pt-#{$space} {
+        padding-top: #{$space}px !important ;
+    }
+
+    .pb-#{$space} {
+        padding-bottom: #{$space}px !important ;
+    }
+
+    .ptb-#{$space} {
+        padding-top: #{$space}px !important ;
+        padding-bottom: #{$space}px !important ;
+    }
+
+    .pl-#{$space} {
+        padding-left: #{$space}px !important ;
+    }
+
+    .pr-#{$space} {
+        padding-right: #{$space}px !important ;
+    }
+
+    .plr-#{$space} {
+        padding-left: #{$space}px !important ;
+        padding-right: #{$space}px !important ;
+    }
+}

@@ -1,0 +1,117 @@
+extends layouts/_default
+
+block breadcrumbs
+    .content-divider.content-divider--thick-brand
+    +breadcrumbs(breadcrumbs.whatsChangedForYou)
+
+block content
+    main(class="body-content")
+        section(class="module module--outer-bg bdb-brand-24")
+            .container.module__content.bg-white
+                h2(class="module__title") What’s changed for you?
+                .row
+                    .col-md-8
+                        p.text-light.font-large.mb-40 We understand that merging three companies will raise questions about your existing solutions. Here at Vizient™, we want you to know that your accounts and services are still available. Our team is here to help you do more than ever before – without losing access to information you need.
+                .row.equal-heights-sm
+                    .col-sm-6
+                        // Start well
+                        .well.bg-turquoiselighter
+                            .well__title.bg-turquoise.white Existing members
+                            .well__body.equal-height-item
+                                .row
+                                    .col-xs-8
+                                        .font-large
+                                            p The easiest way for members to stay up-to-date on Vizient services is by accessing your online account.  
+                                            p #[a(href="#") Login] to receive notifications, view membership services and customize account preferences.  
+                                    .col-xs-4
+                                        img(src="images/icons/svg/icon-patient-impact-large.svg", alt="")
+                                        img(class="backupIE" src="images/icons/icon-patient-impact-large.png", alt="")
+                        // End well
+                    .col-sm-6
+                        // Start well
+                        .well.bg-purplelighter
+                            .well__title.bg-green.white Existing suppliers
+                            .well__body.equal-height-item
+                                .row
+                                    .col-xs-8
+                                        .font-large
+                                            p As an existing supplier, you can access your information and data services through your online account.  
+                                            p #[a(href="#") Login] to view your account.   
+                                    .col-xs-4
+                                        img(src="images/icons/svg/icon-collaboration-large.svg", alt="")
+                                        img(class="backupIE" src="images/icons/icon-collaboration-v2.png", alt="")
+                        // End well
+        // Start Quicklinks section - 3 column
+        section(class="module module--outer-bg")
+            .container.module__content.bg-white.equal-heights
+                .row
+                    .col-sm-4
+                        // Start Quicklinks well
+                        .well.p-0.oh
+                            .bg-scampi.p-20
+                                img(src="images/logos/logo-vha-white.png", alt="VHA")
+                            .bg-whisper.quicklinks.p-20
+                                .text-medium.font-large.mt-10.mb-20 VHA quicklinks
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small More about what we do
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small Become a member
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small How the company was formed
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small Another list link 
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mt-40.mb-10(href="#")
+                                    span.text-medium Visit legacy VHA website
+                                    i(class="icon icon-arrow-right ml-10")
+                        // End Quicklinks well
+                    .col-sm-4
+                        // Start Quicklinks well
+                        .well.p-0.oh
+                            .bg-scampi.p-20
+                                img(src="images/logos/logo-uhc-white.png", alt="UHC")
+                            .bg-whisper.quicklinks.p-20
+                                .text-medium.font-large.mt-10.mb-20 UHC quicklinks
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small More about what we do
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small Become a member
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small How the company was formed
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small Another list link 
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mt-40.mb-10(href="#")
+                                    span.text-medium Visit legacy UHC website
+                                    i(class="icon icon-arrow-right ml-10")
+                        // End Quicklinks well
+                    .col-sm-4
+                        // Start Quicklinks well
+                        .well.p-0.oh
+                            .bg-scampi.p-20
+                                img(src="images/logos/logo-novation-white.png", alt="UHC")
+                            .bg-whisper.quicklinks.p-20
+                                .text-medium.font-large.mt-10.mb-20 Novation quicklinks
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small More about what we do
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small Become a member
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small How the company was formed
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small Another list link 
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mt-40.mb-10(href="#")
+                                    span.text-medium Visit legacy Novation website
+                                    i(class="icon icon-arrow-right ml-10")
+                        // End Quicklinks well
+        // End Quicklinks section - 3 column

@@ -1,0 +1,94 @@
+// Mobile Header
+
+#mobile-header {
+    position: relative;
+    display: block; 
+    .container {
+
+        @media only screen and (max-width: $screen-sm-max) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+    }
+
+    .logo {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        @media only screen and (min-width: $screen-xs-min) {
+            padding-bottom: 10px;
+            // padding-top: 21px;
+            // padding-bottom: 21px;
+            position: static;
+        }
+
+        @media only screen and (min-width: $screen-md-min) {
+            position: relative;
+            padding-top: 42px;
+
+            .content-scrolled &{
+                padding-top: 52px;
+            }
+
+        }
+
+    }
+
+    .mobile-menu__logo {
+        display: inline-block;
+        background: url(../images/icons/vizient-logo-small.png);
+        background: none, url(../images/icons/svg/vizient-logo.svg);
+        background-size: 90px 22px;
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 22px;
+        @media only screen and (max-width: 479px) {
+            position: relative;
+            top: 7px;
+        }
+    }
+
+    .mobile-menu__icon {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        width: 20px;
+        height: 17px;
+        display: block;
+        margin-top: -9px;
+        text-indent: -56px;
+        text-transform: uppercase;
+        line-height: 20px;
+        background: url(../images/icons/icon-menu.png);
+        background: none, url(../images/icons/svg/icon-menu.svg);
+        background-size: 20px 17px;
+        background-repeat: no-repeat;
+        text-decoration: none;
+    
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+
+    &.is-open {
+        background-color: $orange;
+
+        .mobile-menu__logo {
+            background: url(../images/icons/vizient-logo-white-small.png);
+            background: none, url(../images/icons/svg/vizient-logo-white.svg);
+            background-size: 90px 23px;
+            width: 90px;
+            height: 23px;
+        }
+
+        .mobile-menu__icon {
+            background: url(../images/icons/icon-close-white.png);
+            background: none, url(../images/icons/svg/icon-close-white.svg);
+            background-size: 16px;
+            width: 16px;
+            height: 16px;
+        }
+
+    }
+}

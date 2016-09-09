@@ -1,0 +1,16 @@
+mixin eventWell(title, imageW, imageH)
+    // Start Event well module
+    .well.well--empty
+        .well__body
+            article.post__entry
+                header.post__header
+                    a(class="post__title", href="#")
+                        span #{title}
+                        i(class="icon icon-arrow-right ml-10")
+                if imageW
+                    .post__featured-image.mb-25
+                        img(class="post__featured-image", src="http://placehold.it/#{imageW}x#{imageH}")
+                div(class="text-medium mb-5") 02-04 December 2015
+                div(class="text-medium") Drury Plaza Hotel, St Louis, MO
+                p(class="post__content mt-15") The inaugural Members’ Conference opens its doors on XX XX XX.
+    // End Event well module

@@ -1,0 +1,126 @@
+
+// Headings
+
+html {
+	font-size: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+	color: $grey-dark;
+}
+ 
+
+h1 {
+	@include font-size(72px);
+  	font-family: $soleto-light;
+	line-height: 1.13em;
+	letter-spacing: -0.6px;
+	@media only screen and (max-width: $screen-sm-max) {
+        @include font-size(36px);
+    }
+}
+
+h2 {
+	@include font-size(48px);
+	font-family: $soleto-light;
+  	line-height: 1.17em;
+  	letter-spacing: -0.1px;
+  	@media only screen and (max-width: $screen-sm-max) {
+        @include font-size(28px);
+    }	
+}
+
+h3 {
+	@include font-size(36px);
+	font-family: $soleto-light;
+  	line-height: 1.22em;
+  	letter-spacing: -0.6px;
+  	@media only screen and (max-width: $screen-sm-max) {
+        @include font-size(24px);
+    }
+}
+
+h4 {
+	@include font-size(28px);
+	font-family: $soleto-light;
+  	line-height: 1.29em;
+  	letter-spacing: -0.4px;
+  	@media only screen and (max-width: $screen-sm-max) {
+        @include font-size(20px);
+    }
+}
+
+h5 {
+	@include font-size(20px);
+	font-family: $soleto-light;
+  	line-height: 1.35em;
+  	letter-spacing: -0.2px;
+  	@media only screen and (max-width: $screen-sm-max) {
+        @include font-size(16px);
+    }
+}
+
+
+.metadata-bold {
+	@include font-size(18px);
+  	font-family: $soleto-bold;
+	line-height: 1.33em;
+	letter-spacing: -0.2px;
+}
+
+.metadata-regular {
+	@include font-size(18px);
+	font-family: $soleto-regular;
+  	line-height: 1.33em;
+  	letter-spacing: -0.2px;
+}
+
+.metadata-italic {
+	@include font-size(16px);
+	font-family: $soleto-light;
+	font-style: italic;
+  	line-height: 1.5em;
+  	letter-spacing: 0.2px;
+  	@media only screen and (max-width: $screen-sm-max) {
+        @include font-size(14px);
+    }
+}
+
+.metadata-eyebrow {
+	@include font-size(14px);
+	font-family: $soleto-regular;
+	color: $slate-light;
+  	line-height: 1.29em;
+  	letter-spacing: 3px;
+}
+
+.metadata-byline {
+	@include font-size(14px);
+	font-family: $soleto-light;
+	color: $grey-mid;
+  	line-height: 1.29em;
+  	letter-spacing: 0.2px;
+} 
+
+// editorial 
+
+.e28 {
+	@include font-size(28px);
+	font-family: $soleto-bold;
+  	line-height: 1.29em;
+  	letter-spacing: -0.5px;
+}
+
+.e24 {
+	@include font-size(24px);
+	font-family: $soleto-bold;
+  	line-height: 1.33em;
+  	letter-spacing: -0.4px;
+}
+
+.e18 {
+	@include font-size(18px);
+	font-family: $soleto-bold;
+  	line-height: 1.44em;
+  	letter-spacing: -0.3px;
+}

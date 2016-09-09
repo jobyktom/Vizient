@@ -1,0 +1,29 @@
+// Anchor Links
+
+a:link {
+    color: $brand;
+}
+
+.link--black {
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+        color: $black;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.link--white {
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+        color: $white;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}

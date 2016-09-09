@@ -1,0 +1,45 @@
+extends layouts/_template-blog-content
+
+block breadcrumbs
+    .content-divider.content-divider--thick-brand
+    +breadcrumbs(breadcrumbs.blogcontent)
+block postHeader
+    nav.post-header__nav
+        a(href="#")
+            i(class="icon icon-arrow-left--medium mr-10")
+            #[strong Back]
+
+    h2(class="post__title") Content page with no featured image
+
+block postContent
+    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, neque, nostrum. Adipisci omnis recusandae qui quos fuga pariatur blanditiis voluptatibus voluptate. Fugit ut, rerum placeat cumque non ratione provident est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, provident, vero natus et sint perspiciatis corrupti veniam tempora ea est quis iusto, iure ut voluptatibus. Quo quis commodi quos!
+    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, neque, nostrum. Adipisci omnis recusandae qui quos fuga pariatur blanditiis voluptatibus voluptate. Fugit ut, rerum placeat cumque non ratione provident est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, provident, vero natus et sint perspiciatis corrupti veniam tempora ea est quis iusto, iure ut voluptatibus. Quo quis commodi quos!
+    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, neque, nostrum. Adipisci omnis recusandae qui quos fuga pariatur blanditiis voluptatibus voluptate. Fugit ut, rerum placeat cumque non ratione provident est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, provident, vero natus et sint perspiciatis corrupti veniam tempora ea est quis iusto, iure ut voluptatibus. Quo quis commodi quos!
+
+block postFooter
+        nav(class="pagination-nav")
+            .row
+                .col-xs-6
+                    a(href="#")
+                        i(class="icon icon-arrow-left--medium mr-10")
+                        #[strong Previous]
+                .col-xs-6
+                    a(href="#", class="pull-right")
+                        #[strong Next]
+                        i(class="icon icon-arrow-right ml-10")
+
+block sidebar-content
+    .sidebar-widget
+        p #[strong Related content]
+        ul.block-list.list-unstyled
+            li.block-list__list-item
+                a(href="#")
+                    span Content 1
+                    i.icon.icon-arrow-right
+            li.block-list__list-item
+                a(href="#")
+                    span Content 2
+                    i.icon.icon-arrow-right
+    .sidebar-widget
+        p #[strong Share this article]
+        +socialIcons(socialMediaLinks)

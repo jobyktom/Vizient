@@ -1,0 +1,395 @@
+{
+    "global": {
+        "title": "VHA"
+    },
+    "header": {
+        "menu1": [
+            {
+                "title": "About us",
+                "url": "about-us.html",
+                "classes": ""
+            },
+            {
+                "title": "News & Insight",
+                "url": "news-and-insight.html",
+                "classes": ""
+            },
+            {
+                "title": "Events",
+                "url": "events.html",
+                "classes": ""
+            },
+            {
+                "title": "Careers",
+                "url": "careers.html",
+                "classes": ""
+            },
+            {
+                "title": "Contact us",
+                "url": "contact-us.html",
+                "classes": ""
+            }
+        ],
+        "menu2": [
+            {
+                "title": "Home",
+                "url": "/",
+                "classes": "menu-item-home",
+                "iconClasses": "icon-home"
+            },
+            {
+                "title": "What we do",
+                "url": "what-we-do.html",
+                "classes": "",
+                "subnav": [
+                    {
+                        "title": "Operational",
+                        "url": "what-we-do.html/operational",
+                        "classes": ""
+                    },
+                    {
+                        "title": "Supply",
+                        "url": "what-we-do.html/supply",
+                        "classes": ""
+                    },
+                    {
+                        "title": "Clinical",
+                        "url": "what-we-do.html/clinical",
+                        "classes": ""
+                    },
+                    {
+                        "title": "Consultancy",
+                        "url": "what-we-do.html/consultancy",
+                        "classes": ""
+                    },
+                    {
+                        "title": "Tiered Membership Benefits",
+                        "url": "what-we-do.html/tiered-membership-benefits",
+                        "classes": ""
+                    }
+                ]
+            },
+            {
+                "title": "Our solutions",
+                "url": "our-solutions.html",
+                "classes": "",
+                "subnav": [
+                    {
+                        "title": "Operational",
+                        "url": "who-we-are/operational",
+                        "classes": ""
+                    },
+                    {
+                        "title": "Supply",
+                        "url": "who-we-are/supply",
+                        "classes": ""
+                    },
+                    {
+                        "title": "Clinical",
+                        "url": "who-we-are/clinical",
+                        "classes": ""
+                    },
+                    {
+                        "title": "Consultancy",
+                        "url": "who-we-are/consultancy",
+                        "classes": ""
+                    },
+                    {
+                        "title": "Tiered Membership Benefits",
+                        "url": "who-we-are/tiered-membership-benefits",
+                        "classes": ""
+                    }
+                ]
+            },
+            {
+                "title": "Our networks",
+                "url": "our-networks.html",
+                "classes": "",
+                "subnav": [
+                    {
+                        "title": "Operational",
+                        "url": "become-a-member/operational",
+                        "classes": ""
+                    },
+                    {
+                        "title": "Supply",
+                        "url": "become-a-member/supply",
+                        "classes": ""
+                    },
+                    {
+                        "title": "Clinical",
+                        "url": "become-a-member/clinical",
+                        "classes": ""
+                    },
+                    {
+                        "title": "Consultancy",
+                        "url": "become-a-member/consultancy",
+                        "classes": ""
+                    },
+                    {
+                        "title": "Tiered Membership Benefits",
+                        "url": "become-a-member/tiered-membership-benefits",
+                        "classes": ""
+                    }
+                ]
+            },
+            {
+                "title": "Become a member",
+                "url": "become-a-member.html",
+                "classes": ""
+            },
+            {
+                "title": "Suppliers",
+                "url": "become-a-supplier.html",
+                "classes": "",
+                "subnav": [
+                    {
+                        "title": "Operational",
+                        "url": "become-a-supplier/operational",
+                        "classes": ""
+                    },
+                    {
+                        "title": "Supply",
+                        "url": "become-a-supplier/supply",
+                        "classes": ""
+                    },
+                    {
+                        "title": "Clinical",
+                        "url": "become-a-supplier/clinical.html",
+                        "classes": ""
+                    },
+                    {
+                        "title": "Consultancy",
+                        "url": "become-a-supplier/consultancy",
+                        "classes": ""
+                    },
+                    {
+                        "title": "Tiered Membership Benefits",
+                        "url": "become-a-supplier/tiered-membership-benefits",
+                        "classes": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "footer": {
+        "menu1": [
+            {
+                "title": "About Us",
+                "url": "about-us.html",
+                "classes": ""
+            },
+            {
+                "title": "Contact Us",
+                "url": "contact-us.html",
+                "classes": ""
+            },
+            {
+                "title": "Careers",
+                "url": "careers.html",
+                "classes": ""
+            },
+            {
+                "title": "Legal",
+                "url": "legal.html",
+                "classes": ""
+            }
+        ],
+        "menu2": [
+            {
+                "title": "Privacy",
+                "url": "privacy.html",
+                "classes": ""
+            },
+            {
+                "title": "Terms of use",
+                "url": "terms-of-use.html",
+                "classes": ""
+            },
+            {
+                "title": "Sitemap",
+                "url": "sitemap.html",
+                "classes": ""
+            }
+        ],
+        "menu3": [
+            {
+                "title": "Connect with us",
+                "url": "#",
+                "classes": ""
+            },
+            {
+                "title": "Subscription manager",
+                "url": "#",
+                "classes": ""
+            },
+            {
+                "title": "Privacy policy & legal notice",
+                "url": "#",
+                "classes": ""
+            },
+            {
+                "title": "Cookie policy",
+                "url": "#",
+                "classes": ""
+            },
+            {
+                "title": "Terms of use",
+                "url": "#",
+                "classes": ""
+            },
+            {
+                "title": "FAQs",
+                "url": "#",
+                "classes": ""
+            },
+            {
+                "title": "Site map",
+                "url": "#",
+                "classes": ""
+            }
+        ]
+    },
+    "desktopMegaNav": [
+        {
+            "id": "1",
+            "title": "What we do",
+            "url": "what-we-do.html",
+            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+            "subnav1": [
+                {
+                    "title": "Operational",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "what-we-do/operational"
+                },
+                {
+                    "title": "Supply",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "what-we-do/supply"
+                },
+                {
+                    "title": "Clinical",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "what-we-do/clinical"
+                }
+            ],
+            "subnav2": [
+                {
+                    "title": "Consultancy",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "what-we-do/consultancy"
+                },
+                {
+                    "title": "Tiered Membership Benefits",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "what-we-do/tiered-membership-benefits"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Who we are",
+            "url": "who-we-are.html",
+            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+            "subnav1": [
+                {
+                    "title": "Operational",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "who-we-are/operational"
+                },
+                {
+                    "title": "Supply",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "who-we-are/supply"
+                },
+                {
+                    "title": "Clinical",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "who-we-are/clinical"
+                }
+            ],
+            "subnav2": [
+                {
+                    "title": "Consultancy",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "who-we-are/consultancy"
+                },
+                {
+                    "title": "Tiered Membership Benefits",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "who-we-are/tiered-membership-benefits"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Become a member",
+            "url": "become-a-member.html",
+            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+            "subnav1": [
+                {
+                    "title": "Operational",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "become-a-member/o"
+                },
+                {
+                    "title": "Supply",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "become-a-member/supply"
+                },
+                {
+                    "title": "Clinical",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "become-a-member/clinical"
+                }
+            ],
+            "subnav2": [
+                {
+                    "title": "Consultancy",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "become-a-member/consultancy"
+                },
+                {
+                    "title": "Tiered Membership Benefits",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "become-a-member/tiered-membership-benefits"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Suppliers",
+            "url": "become-a-supplier.html",
+            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+            "subnav1": [
+                {
+                    "title": "Operational",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "become-a-supplier/o"
+                },
+                {
+                    "title": "Supply",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "become-a-supplier/supply"
+                },
+                {
+                    "title": "Clinical",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "become-a-supplier/clinical"
+                }
+            ],
+            "subnav2": [
+                {
+                    "title": "Consultancy",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "become-a-supplier/consultancy"
+                },
+                {
+                    "title": "Tiered Membership Benefits",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices felis.",
+                    "url": "become-a-supplier/tiered-membership-benefits"
+                }
+            ]
+        }
+    ]
+}

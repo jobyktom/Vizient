@@ -1,0 +1,44 @@
+extends layouts/_default
+
+block breadcrumbs
+    .content-divider.content-divider--thick-brand
+    +breadcrumbs(breadcrumbs.existingMembers)
+
+block content
+    main(class="body-content")
+        section(class="module module--outer-bg")
+            .container.module__content.bg-white
+                h2(class="module__title") Existing members
+                // Start Feature box
+                .feature-box
+                    .feature-box__content.equal-heights-sm.existing-members
+                        h3(class="feature-box__title") What’s changed for you?
+                        .row
+                            .col-sm-12.col-md-4
+                                .mb-30
+                                    p As a valued customer, know that the content and services you previously had access to will continue to be available. You can still use your previous login information to access your membership page at VHA, UHC and Novation. Our team is here to connect you with the knowledge, solutions and expertise you experienced from our legacy brands.
+                                    p Your existing membership is active and ready to use as normal. If you are a supplier, you can login to your supplier dashboard below.
+                                a.btn-block.mb-20(href="#")
+                                    span.text-medium Login to supplier dashboard
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block(href="contact-us.html")
+                                    span.text-medium Contact us
+                                    i(class="icon icon-arrow-right ml-10")
+                            .col-sm-6.col-md-4
+                                .equal-height-item.mb-30
+                                    img(src="images/logos/logo-vha.png", alt="VHA")
+                                p.mb-20 If you are an existing VHA member, you can access your account by clicking below.
+                                a.btn.btn-primary.mb-20 Login to your account
+                                a.btn-block(href="#")
+                                    span.text-medium Request a login
+                                    i(class="icon icon-arrow-right ml-10")
+                            .col-sm-6.col-md-4
+                                .equal-height-item.mb-30
+                                    img(src="images/logos/logo-uhc.png", alt="UHC")
+                                p.mb-20 If you are an existing UHC member, you can access your account on our legacy website by clicking below.
+                                a.btn.btn-primary.mb-20 Login to your account
+                                a.btn-block(href="#")
+                                    span.text-medium Request a login
+                                    i(class="icon icon-arrow-right ml-10")
+                    img(src="images/pills-cross.png", class="feature-box__pillsCross")
+                // End Feature box

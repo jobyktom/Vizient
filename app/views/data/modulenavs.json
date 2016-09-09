@@ -1,0 +1,52 @@
+{
+    "moduleNavs": {
+        "setA": {
+            "navListItems": [
+                {
+                    "listItemText": "Our new portfolio",
+                    "listItemTarget": "#our-new-portfolio"
+                },
+                {
+                    "listItemText": "Insights",
+                    "listItemTarget": "#insights"
+                },
+                {
+                    "listItemText": "Efficiency",
+                    "listItemTarget": "#efficiency"
+                },
+                {
+                    "listItemText": "Patient Impact",
+                    "listItemTarget": "#patient-impact"
+                },
+                {
+                    "listItemText": "Collaboration",
+                    "listItemTarget": "#collaboration"
+                }
+            ]
+        },
+        "setB": {
+            "navListItems": [
+                {
+                    "listItemText": "The mission",
+                    "listItemTarget": "#the-mission"
+                },
+                {
+                    "listItemText": "Our leadership",
+                    "listItemTarget": "#our-leadership"
+                },
+                {
+                    "listItemText": "Our approach",
+                    "listItemTarget": "#our-approach"
+                },
+                {
+                    "listItemText": "Our history",
+                    "listItemTarget": "#our-history"
+                },
+                {
+                    "listItemText": "A brighter future",
+                    "listItemTarget": "#help-us-create-a-brighter-future"
+                }
+            ]
+        }
+    }
+}

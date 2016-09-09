@@ -1,0 +1,14 @@
+mixin relatedlinks(relatedLinksObject)
+    <!-- Start Related Links Component -->
+    section(class="module module--outer-bg")
+        .container.module__content.bg-white
+            h2(class="module__title") You may also be interested in
+            .row.equal-heights-sm
+                each item, index in relatedLinksObject.relatedLinksBlocks
+                    .col-sm-6.mb-30
+                        .equal-height-item
+                            h3
+                                a(href="#{item.linkUrl}") #{item.linkTitle}
+                                i(class="icon icon-arrow-right ml-10")
+                            p #{item.linkExcerpt}
+    <!-- End Related Links Component -->

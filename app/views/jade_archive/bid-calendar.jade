@@ -1,0 +1,177 @@
+extends layouts/_default
+
+block breadcrumbs
+    .content-divider.content-divider--thick-brand
+    +breadcrumbs(breadcrumbs.bidCalendar)
+
+block content
+    main(class="body-content")
+        section(class="module module--outer-bg")
+            .container.module__content.bg-white
+                a.btn-block.mb-20(href="#")
+                    i(class="icon icon-arrow-left mr-10")
+                    strong Back to Suppliers
+                h2(class="module__title") 2015 Bid / Proposal Calendar
+                .row
+                    .col-sm-12
+                        .row
+                            .col-sm-8
+                                p.text-light.font-large.lh-one-seven.mb-10 To bid on a product category, select the “Register” link next to the bid you want to receive and complete the bid registration form. After you register, you’ll get a confirmation number. Please contact the designated portfolio executive for questions related to the invitation to bid categories and requirements.
+
+                                h4.mt-20 Current calendars
+                                .row
+                                    .col-sm-4
+                                        a(href="#")
+                                            .well.bg-linen
+                                                .well__body
+                                                    strong 2018
+                                                    i(class="icon icon-arrow-right ml-10")
+                                    .col-sm-4
+                                        a(href="#")
+                                            .well.bg-linen
+                                                .well__body
+                                                    strong 2017
+                                                    i(class="icon icon-arrow-right ml-10")
+                                    .col-sm-4
+                                        a(href="#")
+                                            .well.bg-linen
+                                                .well__body
+                                                    strong 2016
+                                                    i(class="icon icon-arrow-right ml-10")
+                                .row
+                                    .col-sm-4
+                                        a(href="#")
+                                            .well.bg-linen
+                                                .well__body
+                                                    strong 2015
+                                                    i(class="icon icon-arrow-right ml-10")
+                                    .col-sm-4
+                                        a(href="#")
+                                            .well.bg-linen
+                                                .well__body
+                                                    strong 2014
+                                                    i(class="icon icon-arrow-right ml-10")
+                                    .col-sm-4
+                                        a(href="#")
+                                            .well.bg-linen
+                                                .well__body
+                                                    strong 2013
+                                                    i(class="icon icon-arrow-right ml-10")
+
+
+                                p.bg-linen.p-20.font-smaller #[strong NOTE:] Because of the ever-changing nature of the health care world, Vizient Supply, LLC. (“Vizient”) reserves the right to modify the bid/proposal calendar as needed. We encourage suppliers to visit the bid/proposal calendar often for any changes. 
+                        .row
+                            .col-sm-12
+                                // Start Events calendar list
+                                h4.mt-40.mb-20 Quarter 1
+                                #accordion.panel-group.events-list.bid-calendar(role='tablist', aria-multiselectable='true')
+                                    // Start Event calendar panel
+                                    .panel
+                                        #headingOne.panel-head.mb-20(role='tab')
+                                            .clearfix
+                                                .post__calendar-date.post__calendar-date--month.pull-left
+                                                    div(class="text-medium font-larger mb-5") Feb
+                                                .panel-title.ml-80
+                                                    a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                                                        .text-light.font-larger.lh-one-four.mb-5
+                                                            span Disinfection Caps
+                                        #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+                                            .panel-body.bg-graylighter
+                                                .row
+                                                    .col-sm-10.col-sm-offset-1.bdb-dotted.main-row
+                                                        .row
+                                                            .col-sm-4
+                                                                strong Bid Requirements:
+                                                            .col-sm-7
+                                                                span Disinfection Caps 
+                                                .row
+                                                    .col-sm-10.col-sm-offset-1.bdb-dotted.main-row
+                                                        .row
+                                                            .col-sm-4
+                                                                strong Projected RFI Mail Month:
+                                                            .col-sm-7
+                                                                span February 
+                                                .row
+                                                    .col-sm-10.col-sm-offset-1.bdb-dotted.main-row.pb-10
+                                                        .row
+                                                            .col-sm-6.secondary-row
+                                                                .row
+                                                                    .col-sm-8
+                                                                        strong RFI Release Date:
+                                                                    .col-sm-4
+                                                                        span February 
+                                                            .col-sm-6.secondary-row
+                                                                .row
+                                                                    .col-sm-8
+                                                                        strong RFI Release Date:
+                                                                    .col-sm-4
+                                                                        span February 
+                                                        .row
+                                                            .col-sm-6.secondary-row
+                                                                .row
+                                                                    .col-sm-8
+                                                                        strong RFI Close Date:
+                                                                    .col-sm-4
+                                                                        span February 
+                                                            .col-sm-6.secondary-row
+                                                                .row
+                                                                    .col-sm-8
+                                                                        strong RFI Close Date:
+                                                                    .col-sm-4
+                                                                        span February 
+                                                .row
+                                                    .col-sm-10.col-sm-offset-1.bdb-dotted.main-row
+                                                        .row
+                                                            .col-sm-4.mb-10
+                                                                strong Bid Status:
+                                                            .col-sm-7
+                                                                a.btn-block(href="#")
+                                                                    strong Bid Development & Analysis
+                                                .row
+                                                    .col-sm-10.col-sm-offset-1.main-row
+                                                        .row
+                                                            .col-sm-4.mb-10
+                                                                strong Bid Contact:
+                                                            .col-sm-7
+                                                                a.btn-block.mb-20(href="#")
+                                                                    i.icon.icon-email.mr-20
+                                                                    strong Lauren Stange
+                                                        .row
+                                                            .col-sm-4
+                                                            .col-sm-7
+                                                                a.btn-block(href="#")
+                                                                    i.icon.icon-phone.mr-20
+                                                                    strong 972.581.5237
+                                                        a.btn.btn-default.register-link(href="#") Register
+                                    // End Event calendar panel
+                                    // Start Event calendar panel
+                                    .panel
+                                        #headingTwo.panel-head.mb-20(role='tab')
+                                            .clearfix
+                                                .post__calendar-date.post__calendar-date--month.pull-left
+                                                    div(class="text-medium font-larger mb-5") Aug
+                                                .panel-title.ml-80
+                                                    a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='true', aria-controls='collapseTwo')
+                                                        .text-light.font-larger.lh-one-four.mb-5
+                                                            span Skateboard dolor brunch.
+                                        #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+                                            .panel-body
+                                                .row
+
+                                    // End Event calendar panel
+                                    // Start Event calendar panel
+                                    .panel
+                                        #headingThree.panel-head.mb-20(role='tab')
+                                            .clearfix
+                                                .post__calendar-date.post__calendar-date--month.pull-left
+                                                    div(class="text-medium font-larger mb-5") May
+                                                .panel-title.ml-80
+                                                    a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='true', aria-controls='collapseThree')
+                                                        .text-light.font-larger.lh-one-four.mb-5
+                                                            span Skateboard dolor brunch.
+                                        #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+                                            .panel-body
+                                                .row
+
+                                    // End Event calendar panel
+                                // End Events calendar list

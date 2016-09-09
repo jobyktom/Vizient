@@ -1,0 +1,17 @@
+mixin pullquote(pullquoteObject)
+    - var pullquoteClasses = pullquoteObject.classes || ''
+
+    <!-- Start Pull Quote Component -->
+    div(class='pull-quote' class='#{pullquoteClasses}')
+        .pull-quote__text #{pullquoteObject.text}
+        .media
+            .media__img
+                img(class="avatar pull-quote__author-avatar", src='#{pullquoteObject.imgURL}')
+
+            .media__body
+                .h4(class="pull-quote__author-name") #{pullquoteObject.name}
+                .h5(class="pull-quote__author-title") #{pullquoteObject.title}
+                if pullquoteObject.showSpotlightLink
+                    a(href="leader-bio-page.html", class="pull-quote__link") See spotlight profile
+                        i(class="icon icon-arrow-right ml-10")
+    <!-- End Pull Quote Component -->

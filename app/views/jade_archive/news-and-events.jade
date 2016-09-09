@@ -1,0 +1,65 @@
+extends layouts/_default
+
+block breadcrumbs
+    .content-divider.content-divider--thick-brand
+    +breadcrumbs(breadcrumbs.newsAndEvents)
+
+block content
+    main(class="body-content")
+        section(class="module module--outer-bg bdb-linen-10")
+            .container.module__content.bg-white
+                h2(class="module__title") News
+                .row
+                    .news-posts.js-rss-feed
+                        .col-sm-4.col-one
+                        .col-sm-4.col-two
+                        .col-sm-4
+                            +eventWell('Inaugural 2015 Conference', '265', '170')
+                .row
+                    .col-sm-4
+                        a(href="#")
+                            strong See all news
+                            i(class="icon icon-arrow-right ml-10")
+        section(class="module module--outer-bg")
+            .container.module__content.bg-white.pb-20
+                .row
+                    .col-sm-4.mb-30
+                        h3(class="text-light mb-30") Events
+                        +eventCalendarDate('12', 'Nov', 'Association for healthcare foodservice')
+                        +eventCalendarDate('2', 'Dec', 'HFMA National Institute')
+                        +eventCalendarDate('10', 'Dec', 'American Society of Healthcare Engineering')
+                        a(href="events-calendar.html")
+                            strong See all events
+                            i(class="icon icon-arrow-right ml-10")
+                    .col-sm-4.mb-30
+                        h3(class="text-light mb-30") Recent press releases
+                        each item, key in blogEntries
+                            if key != 'ID-1'
+                                article.post__entry
+                                    header.post__header
+                                        p(class="post__date") #{item.postDate}
+                                        a(class="post__title", href="#{item.postURL}")
+                                            span #{item.postTitle}
+                                            i(class="icon icon-arrow-right ml-10")
+                                    p(class="post__content") #{item.postExcerpt}
+                        a(href="#")
+                            strong See all press releases
+                            i(class="icon icon-arrow-right ml-10")
+                    .col-sm-4.mb-30
+                        h3(class="text-light mb-30") Media Kit
+                        ul.block-list.list-unstyled.mb-30
+                            li.block-list__list-item
+                                a(href="#") Logo
+                                    #[i.icon.icon-download]
+                            li.block-list__list-item
+                                a(href="#") FAQs
+                                    #[i.icon.icon-download]
+                            li.block-list__list-item
+                                a(href="#") Corporate Brochure
+                                    #[i.icon.icon-download]
+                            li.block-list__list-item
+                                a(href="#") Infographics
+                                    #[i.icon.icon-download]
+                        a(href="#")
+                            strong Access all media assets
+                            i(class="icon icon-arrow-right ml-10")

@@ -1,0 +1,118 @@
+extends layouts/_default
+
+block hero
+    +hero(heros.whatWeDo)
+block breadcrumbs
+    +breadcrumbs(breadcrumbs.whatWeDo)
+block content
+    main(class="body-content")
+        // Start Content section - 3 column
+        section(class="module bdb-brand-24")
+            .container.module__content.bg-white
+                h2(class="module__title") New company, new capabilities
+                .row
+                    .col-sm-12.col-md-6
+                        p The new Vizient™ combines the strengths of three established companies seasoned in solving health care’s most pressing challenges. Our new portfolio is designed to accelerate innovation in the areas that matter most to our members. We deliver solutions to gain insight and efficiency, to manage patient impact, and to connect the best minds in health care – all to accelerate innovation in this dynamic industry.
+                    .col-sm-6.col-md-6
+                        +pullquote({classes: "styled", text:"Our purpose is to ensure members deliver exceptional, cost-effective care. We accomplish this by connecting them with the knowledge, solutions and expertise to achieve healthier outcomes.", imgURL:"images/sample/bio-head-two@3x.png", name: "Curt Nonomaque", title: "President and Chief Executive Officer", showSpotlightLink: true})
+        // End Content section - 3 column
+        // Start Feature box
+        section(class="module module--outer-bg bdb-brand-24")
+            .container.module__content.bg-white
+                .feature-box
+                    .feature-box__content.pb-100
+                        .row
+                            .col-md-4
+                                h3(class="feature-box__title") Vizient solves members’ most pressing needs
+                        .row
+                            .col-sm-6.col-md-4
+                                p When developing our solutions, we prioritized the diverse competencies members need to adapt to the market’s changes–and predict where it’s headed.
+                                p By implementing our innovative solutions, leveraging our analytics and engaging our consultants, members can confidently achieve greater business performance and deliver better care in their communities.
+                            .col-sm-8
+                                h4 Member needs
+                                .row
+                                    .col-sm-6
+                                        ul
+                                            li Quality outcomes and patient safety
+                                            li Care redesign
+                                            li Scale and cost efficiencies
+                                            li Patient experience
+                                            li Elimination of practice variation
+                                    .col-sm-6
+                                        ul
+                                            li Physician alignment and engagement
+                                            li Service line optimization
+                                            li Training and Research
+                    img(src="images/rubber-band-ball.png", class="feature-box__ball")
+        // End Feature box
+        // Start Content section - 4 column
+        section(class="module bdb-brand-24", id="our-new-portfolio")
+            .container.module__content
+                h2(class="module__title") Experience and expertise in a#[br]broad portfolio
+                .row
+                    .col-sm-9
+                        p We help members focus on what they do best – deliver extraordinary care. Our industry-leading comparative database, analytics expertise and knowledgeable network help members achieve better results faster. The innovations and untapped efficiencies we spearhead across clinical practice, supply chain and operations help organizations of all sizes do more than ever before. And our extensive networks connect members with opportunities to learn, improve and build together. We invite you to learn more about our new, combined portfolio.
+                .row.equal-heights-sm
+                    .col-sm-6
+                        .well.bg-orangelighter
+                            .well__title.bg-orange.white Insights
+                            .well__body.equal-height-item
+                                .row
+                                    .col-xs-8.col-sm-8
+                                        p Our analytics and consulting services plus education and research from the Research Institute help members remain competitive, adapt to the changing health care environment and achieve their goals.
+                                    .col-xs-4.col-sm-4
+                                        img(src="images/icons/svg/icon-insights-large.svg", alt="")
+                                        img(class="backupIE" src="images/icons/icon-insights-large.png", alt="")
+
+                                a(href="#") 
+                                    strong Our Insights solutions and services
+                                        i(class="icon icon-arrow-right ml-10")
+
+                    .col-sm-6
+                        .well.bg-greenlighter
+                            .well__title.bg-green.white Efficiency
+                            .well__body.equal-height-item
+                                .row
+                                    .col-xs-8.col-sm-8
+                                        p We accelerate members’ supply chain and operational performance through the scale of our purchasing power and our ability to reduce unnecessary variation, improve utilization and streamline processes.
+                                    .col-xs-4.col-sm-4
+                                        img(src="images/icons/svg/icon-efficiency-large.svg", alt="")
+                                        img(class="backupIE" src="images/icons/icon-efficiency-v2.png", alt="")
+
+                                a(href="#") 
+                                    strong Our Efficiency solutions and services
+                                        i(class="icon icon-arrow-right ml-10")
+
+                .row.equal-heights-sm
+                    .col-sm-6
+                        .well.bg-turquoiselighter
+                            .well__title.bg-turquoise.white Patient Impact
+                            .well__body.equal-height-item
+                                .row
+                                    .col-xs-8.col-sm-8
+                                        p Members adopt our innovative clinical solutions so patients can receive the highest quality care as cost effectively as possible.
+                                    .col-xs-4.col-sm-4
+                                        img(src="images/icons/svg/icon-patient-impact-large.svg", alt="")
+                                        img(class="backupIE" src="images/icons/icon-patient-impact-large.png", alt="")
+
+                                a(href="#") 
+                                    strong Our Patient Impact solutions and services
+                                        i(class="icon icon-arrow-right ml-10")
+
+                    .col-sm-6
+                        .well.bg-purplelighter
+                            .well__title.bg-purple.white Collaboration
+                            .well__body.equal-height-item
+                                .row
+                                    .col-xs-8.col-sm-8
+                                        p As health care organizations’ needs are complex and diverse, Vizient is expanding the ways members connect and achieve greater success.
+                                    .col-xs-4.col-sm-4
+                                        img(src="images/icons/svg/icon-collaboration-large.svg", alt="")
+                                        img(class="backupIE" src="images/icons/icon-collaboration-v2.png", alt="")
+
+                                a(href="#") 
+                                    strong Our Collaboration solutions and services
+                                        i(class="icon icon-arrow-right ml-10")
+
+        // End Content section - 4 column
+        +relatedlinks(relatedlinks.whatWeDo)

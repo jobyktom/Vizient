@@ -1,0 +1,101 @@
+/// Modules ///
+
+.module {
+    position: relative;
+}
+
+.module--large {
+
+    @media (min-width: $screen-sm-min) {
+        min-height: 530px;
+    }
+}
+
+.module--outer-bg {
+    background: url(../images/outer-bg.png) repeat-y 0 0;
+}
+
+
+.module__title {
+    font-family: $soleto-light;
+    font-size: $font-size-h2;
+    margin: 0 0 50px;
+
+    @media (max-width: $screen-sm-min) {
+        font-size: $font-size-h3;
+        margin: 0 0 25px;
+    }
+}
+
+.module__link {
+    display: block;
+    .icon {
+        margin-left: 10px;
+    }
+    @media (min-width: $screen-xs-min) {
+        margin-bottom: 20px;
+    }
+}
+
+
+.module__sub-title {
+
+}
+
+.module__content {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    @media (min-width: $screen-sm-min) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @media (min-width: $screen-md-min) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    @media (min-width: 1000px) {
+
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+}
+
+.module__content--small {
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+
+.module__content--large {
+    padding-top: 95px;
+    padding-bottom: 105px;
+}
+
+.module__content--margin {
+    margin: 20px 0;
+}
+
+// Section
+.section-border {
+    border-bottom: 24px solid $orange;
+}
+
+// Well
+
+.well {
+
+    h1, h2, h3, .h1, .h2, .h3 {
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+extends layouts/_transition
+
+block content
+    // Start transition header
+    .header
+        .container
+            .row
+                .col-sm-3
+                    a.logo(href="/")
+                        img(src="images/icons/vizient-logo-white.png")
+                .col-sm-9
+                    .row
+                        .col-sm-7
+                            .more.mt-20
+                                .font-larger.text-medium.mb-10.lh-one-four Three leaders become one
+                                p.font-smaller We are transitioning to ... Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem.  #[strong Find out more]
+                        .col-sm-5
+                            .links.clearfix
+                                a.font-small.text-bold.pull-left(href="") Visit new Vizient website
+                                    i.icon.icon-arrow-right.ml-5
+                                a.font-small.text-bold.pull-left(href="") Find out what's changed
+                                    i.icon.icon-arrow-right.ml-5
+    // End transition header

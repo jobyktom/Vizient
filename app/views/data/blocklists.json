@@ -1,0 +1,42 @@
+{
+    "blocklists": {
+        "relatedContent": {
+            "listItems": [
+                {
+                    "itemText": "Related supplier content"
+                },
+                {
+                    "itemText": "More supplier content"
+                },
+                {
+                    "itemText": "Better supplier content"
+                },
+                {
+                    "itemText": "Best supplier content"
+                },
+                {
+                    "itemText": "No this is the best related content"
+                },
+                {
+                    "itemText": "Pharmacy Network"
+                }
+            ]
+        },
+        "blogCategoryWidget": {
+            "listItems": [
+                {
+                    "itemText": "Expert views (22)"
+                },
+                {
+                    "itemText": "White papers (40)"
+                },
+                {
+                    "itemText": "Research (25)"
+                },
+                {
+                    "itemText": "Another category (7)"
+                }
+            ]
+        }
+    }
+}

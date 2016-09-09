@@ -1,0 +1,15 @@
+{
+  "generator-lb": {
+    "name": "vha",
+    "features": [
+      "includeFEFramework",
+      "includeModernizr",
+      "includejQuery",
+      "includeLightingFly"
+    ],
+    "jQuery": "includejQuery2",
+    "feFramework": "includeBootstrap",
+    "sassCompilator": "libSass",
+    "multiLanguage": false
+  }
+}

@@ -1,0 +1,39 @@
+// Accordion
+
+.accordion--block {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            border-top: 2px dotted $gray-lighter; 
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .item__hdr {
+        padding-top: 15px;
+        position: relative;
+        h3 {
+            display: inline-block;
+        }
+        a {
+            float: right;
+            @include transition(all 0.3s ease);
+            &:hover {
+                opacity: 0.5;
+            } 
+        }
+    }
+
+    .item__content {
+        display: none;
+        background: $gray-lighter; 
+        padding: 15px;
+        a {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    }
+}

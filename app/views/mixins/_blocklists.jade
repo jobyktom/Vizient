@@ -1,0 +1,7 @@
+mixin blockList(blocklistObject)
+    <!-- Start Block List Component -->
+    ul.block-list.list-unstyled
+        each item, index in blocklistObject.listItems
+            li(class="block-list__list-item")
+                a(href="#") #{item.itemText}
+    <!-- End Block List Component -->

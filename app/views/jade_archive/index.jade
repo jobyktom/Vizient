@@ -1,0 +1,119 @@
+extends layouts/_default
+
+block hero
+    +hero(heros.home)
+
+block content
+    main(class="body-content")
+        // Start Content section - 2 column
+        section(class="module module--outer-bg bdb-brand-24")
+            .module__content.bg-white
+                .container
+                    .row
+                        .col-sm-6
+                            h2(class="module__title") Three become one
+                            p.text-light.font-larger.mb-30 We deliver network-powered insights that drive clinical, operational and supply chain performance.
+                            a.btn-block.mb-20(href="#")
+                                span.text-medium More about what we do
+                                i(class="icon icon-arrow-right ml-10")
+                            a.btn-block.mb-20(href="become-a-member.html")
+                                span.text-medium Become a member
+                                i(class="icon icon-arrow-right ml-10")
+                            a.btn-block.mb-20(href="#")
+                                span.text-medium How the company was formed
+                                i(class="icon icon-arrow-right ml-10")
+                        .col-sm-6
+                            +pullquote({classes: "styled", text:"Better care leads to a better quality of life for everyone. We’re delivering a better way forward by connecting our members to the expertise, solutions and insights that improve their business.", imgURL:"images/sample/bio-head-two@3x.png", name: "Chris Hatwig", title: "President at Apexus", showSpotlightLink: true})
+        // End Content section - 2 column
+        // Start Recent News and Events section - 3 column
+        section(class="module module--outer-bg bdb-brand-24")
+            .container.module__content.bg-white
+                .row
+                    .col-sm-12
+                        h3(class="text-light mb-30") Recent News and Events
+                .row
+                    .col-sm-4
+                        +eventCalendarDate('12', 'Nov', 'Association for healthcare foodservice')
+                        +eventCalendarDate('2', 'Dec', 'HFMA National Institute')
+                        +eventCalendarDate('10', 'Dec', 'American Society of Healthcare Engineering')
+                        a(href="events-calendar.html")
+                            strong View all News and Events
+                            i(class="icon icon-arrow-right ml-10")
+                    .col-sm-4
+                        each item, key in blogEntries
+                            if key != 'ID-1'
+                                article.post__entry
+                                    header.post__header
+                                        p(class="post__date") #{item.postDate}
+                                        a(class="post__title", href="#{item.postURL}")
+                                            span #{item.postTitle}
+                                            i(class="icon icon-arrow-right ml-20")
+                                    p(class="post__content") #{item.postExcerpt}
+                    .col-sm-4
+                        +eventWell('Inaugural 2015 Conference', '265', '265')
+        // End Recent News and Events section - 3 column
+        // Start Quicklinks section - 3 column
+        section(class="module module--outer-bg")
+            .container.module__content.bg-white.equal-heights
+                .row
+                    .col-sm-4
+                        // Start Quicklinks well
+                        .well.p-0.oh
+                            .bg-scampi.p-20
+                                img(src="images/logos/logo-vha-white.png", alt="VHA")
+                            .bg-whisper.quicklinks.p-20
+                                .text-medium.font-large.mt-10.mb-20 VHA quicklinks
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small More about what we do
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small Become a member
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small How the company was formed
+                                    i(class="icon icon-arrow-right ml-10")
+                                a(href="#")
+                                    strong View all VHA quicklinks
+                                    i(class="icon icon-arrow-right ml-10")
+                        // End Quicklinks well
+                    .col-sm-4
+                        // Start Quicklinks well
+                        .well.p-0.oh
+                            .bg-scampi.p-20
+                                img(src="images/logos/logo-uhc-white.png", alt="UHC")
+                            .bg-whisper.quicklinks.p-20
+                                .text-medium.font-large.mt-10.mb-20 UHC quicklinks
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small More about what we do
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small Become a member
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small How the company was formed
+                                    i(class="icon icon-arrow-right ml-10")
+                                a(href="#")
+                                    strong View all UHC quicklinks
+                                    i(class="icon icon-arrow-right ml-10")
+                        // End Quicklinks well
+                    .col-sm-4
+                        // Start Quicklinks well
+                        .well.p-0.oh
+                            .bg-scampi.p-20
+                                img(src="images/logos/logo-novation-white.png", alt="UHC")
+                            .bg-whisper.quicklinks.p-20
+                                .text-medium.font-large.mt-10.mb-20 Novation quicklinks
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small More about what we do
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small Become a member
+                                    i(class="icon icon-arrow-right ml-10")
+                                a.btn-block.mb-20.link--black(href="#")
+                                    span.text-medium.font-small How the company was formed
+                                    i(class="icon icon-arrow-right ml-10")
+                                a(href="#")
+                                    strong View all Novation quicklinks
+                                    i(class="icon icon-arrow-right ml-10")
+                        // End Quicklinks well
+        // End Quicklinks section - 3 column

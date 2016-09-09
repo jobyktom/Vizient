@@ -1,0 +1,9 @@
+mixin moduleNav(moduleNavPage)
+    <!-- Start Module Nav -->
+    .module-nav
+        ul.block-list.list-unstyled
+            each item, index in moduleNavPage.navListItems
+                li.block-list__list-item
+                    a(href="#{item.listItemTarget}", class="block-list__list-link") #{item.listItemText}
+                        i(class="icon icon-arrow-right")
+    <!-- End Module Nav -->

@@ -1,0 +1,8 @@
+mixin bigStat(statNumber, statText, classes)
+    - var bigstatClasses = classes || ''
+
+    <!-- Start Big Stat Component -->
+    div(class="big-stat #{bigstatClasses}")
+        .big-stat__number #{statNumber}
+        p.big-stat__text #{statText}
+    <!-- End Big Stat Component -->

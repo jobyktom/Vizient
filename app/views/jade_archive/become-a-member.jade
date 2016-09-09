@@ -1,0 +1,158 @@
+extends layouts/_default
+
+block hero
+    +hero(heros.becomeAMember)
+block breadcrumbs
+    +breadcrumbs(breadcrumbs.becomeAMember)
+block content
+    main(class="body-content")
+        section(class="module module--outer-bg bdb-linen-10")
+            .container.module__content.bg-white
+                h2(class="module__title") Leading healthcare innovation
+                .row
+                    .col-sm-12.col-md-4
+                        p We measure our success by members’ success. We fuel powerful connections - between networks, expert consultants, and resources across clinical, operational and supply chain performance - that help members focus on what they do best: delivering exceptional, cost-effective care.
+                    .col-sm-6.col-md-4
+                        img(src="images/sample/image-meeting.png")
+                    .col-sm-6.col-md-4
+                        +sectionNav(sectionNavs.becomeAMember)
+        // End Content section - 3 column
+        // Start Content section - 2 column
+        section(class="module", id="about-membership")
+            .container.module__content
+                h2(class="module__title") About membership
+                .row
+                    .col-sm-6
+                        p Our members are not-for-profit health care organizations of all types and sizes - from academic medical centers to acute and non-acute community providers - that are interested in learning from our trusted experts, accelerating performance and improving care. Membership grants these organizations access to the many ways we optimize each interaction along the continuum of care.
+                        p Members can join our learning networks and benefit from our strategic research and advocacy on important public policy issues impacting health care. In addition, members can choose from our core offerings in clinical, operational and supply chain that connect them to powerful data and analytics, advisory services and network collaboration . Members can choose to participate in a variety of offerings and also select fee-for-service options for targeted improvement needs. An organization’s cost of membership is based upon the number of offerings requested and network participation.
+                        button(class="btn btn-default") See member spotlight
+
+                    .col-sm-6
+                        +pullquote({text:"Over the last three years, we've had remarkable progress on a number of metrics. Patient satisfaction has gone through the roof. Length of stay has declined by almost a full day. We’ve taken nearly $2,000 in cost per case out. Physician satisfaction has gone up. The way we did that was to try to standardize our processes and use Vizient data to measure our progress. It has been a stunning success.", imgURL:"images/sample/bio-head@3x.png", name:"Timothy Babineau, MD", title:"President and CEO, Lifespan President, Rhode Island Hospital Vizient Board Member"})
+        // End Content section - 2 column
+        // Start Carousel
+        section(class="bg-scampi module", id="benefits-of-membership")
+            .container.module__content
+                h2(class="module__title white") The 7 benefits of membership
+                div(id="carousel-membership-benefits" class="carousel benefit-carousel slide" data-ride="carousel")
+                    ol(class="carousel-indicators")
+                        li(data-target="#carousel-membership-benefits" data-slide-to="0" class="active")
+                        li(data-target="#carousel-membership-benefits" data-slide-to="1")
+                        li(data-target="#carousel-membership-benefits" data-slide-to="2")
+                        li(data-target="#carousel-membership-benefits" data-slide-to="3")
+                        li(data-target="#carousel-membership-benefits" data-slide-to="4")
+                        li(data-target="#carousel-membership-benefits" data-slide-to="5")
+                        li(data-target="#carousel-membership-benefits" data-slide-to="6")
+                    div(class="carousel-inner" role="listbox")
+                        div(class="item active")
+                            .row
+                                .col-sm-3
+                                    .benefit-number
+                                        img(src="images/icon-number-1.png")
+                                .col-sm-6
+                                    h3.benefit-title Make innovative connections.
+                                    p.benefit-text Learn, improve and build with Vizient and like-minded members through an impressive network of health care executives and organizations in the United States.
+                                .col-sm-3
+                                    .benefit-image
+                                        img(src="images/icons/icon-collaboration-v2.png")
+                        .item
+                            .row
+                                .col-sm-3
+                                    .benefit-number
+                                        img(src="images/icon-number-2.png")
+                                .col-sm-6
+                                    h3.benefit-title Accelerate performance.
+                                    p.benefit-text Vizient brings members together to learn from the collective knowledge and insights of peers, helping them improve faster than they could on their own.
+                                .col-sm-3
+                                    .benefit-image
+                                        img(src="images/icons/icon-performance.png")
+                        .item
+                            .row
+                                .col-sm-3
+                                    .benefit-number
+                                        img(src="images/icon-number-3.png")
+                                .col-sm-6
+                                    h3.benefit-title Harness powerful insights.
+                                    p.benefit-text Comparative data, analytics and network-powered insights are at members’ fingertips, driving better business and better care.
+                                .col-sm-3
+                                    .benefit-image
+                                        img(src="images/icons/icon-insights-large.png")
+                        .item
+                            .row
+                                .col-sm-3
+                                    .benefit-number
+                                        img(src="images/icon-number-4.png")
+                                .col-sm-6
+                                    h3.benefit-title Achieve scale and efficiency.
+                                    p.benefit-text Our long-standing supplier, distributor and contracting relationships help members dramatically reduce the cost of care while amplifying results.
+                                .col-sm-3
+                                    .benefit-image
+                                        img(src="images/icons/icon-efficiency-v2.png")
+                        .item
+                            .row
+                                .col-sm-3
+                                    .benefit-number
+                                        img(src="images/icon-number-5.png")
+                                .col-sm-6
+                                    h3.benefit-title Be more agile.
+                                    p.benefit-text In our rapidly evolving health care environment, innovation that improves outcomes while lowering costs has never been more valued and necessary. Vizient’s networks, data and tools help members address challenges more quickly with the right insights and expert advice.
+                                .col-sm-3
+                                    .benefit-image
+                                        img(src="images/icons/icon-agile.png")
+                        .item
+                            .row
+                                .col-sm-3
+                                    .benefit-number
+                                        img(src="images/icon-number-6.png")
+                                .col-sm-6
+                                    h3.benefit-title Build knowledge.
+                                    p.benefit-text Our strategic research helps members anticipate environmental changes and chart strategies to reduce costs and improve quality of care.
+                                .col-sm-3
+                                    .benefit-image
+                                        img(src="images/icons/icon-learning.png")
+                        .item
+                            .row
+                                .col-sm-3
+                                    .benefit-number
+                                        img(src="images/icon-number-7.png")
+                                .col-sm-6
+                                    h3.benefit-title Gain advocates on important policy issues.
+                                    p.benefit-text Our advocacy efforts ensure members’ voices are heard on the most pressing policy issues and topics.
+                                .col-sm-3
+                                    .benefit-image
+                                        img(src="images/icons/icon-advocacy.png")
+        // End Carousel
+        // Start Content section - 3 column
+        section(class="module module--outer-bg bdb-linen-10", id="membership-tiers")
+            .container.module__content.bg-white
+                h2(class="module__title") Membership tiers
+                .row.equal-heights-sm
+                    .col-sm-4
+                        .well.bg-linen.equal-height-item
+                            .well__body
+                                h4 Base membership
+                                ul
+                                    li Developing invaluable relationships with a network of trusted peers and advisors to collaborate, share knowledge and achieve broader impact.
+                                    li Consulting with Vizient’s experts to ensure ongoing success.
+                                    li Accessing Vizient’s advanced analytics and receive actionable, research-driven insights to improve results.
+                                    li Taking advantage of Vizient’s accreditation and regulatory compliance programs.
+                                    li Benefitting from access to Vizient’s strategic research.
+                                    li Building distinctive expertise through Vizient’s relationships and insights.
+                    .col-sm-4
+                        .well.bg-linen.equal-height-item
+                            .well__body
+                                h4 Base membership + core offerings
+                                p Members can achieve more results faster by adding Vizient’s core offerings in the critical areas of clinical, operational and supply chain performance to their core membership status. Benefits include:
+                                    ul
+                                        li Accessing the industry’s deepest data, benchmarking and analytics that drive desired outcomes.
+                                        li Joining improvement collaboratives that address specific needs.
+                                        li Achieving targeted improvement metrics through customized, outcome-oriented solutions.
+                                        li Consulting with experienced advisors to accelerate performance.
+                    .col-sm-4
+                        +pullquote({text:"We’ve always believed that Vizient knows more about us than we know about ourselves. So we’re anxious to partner with Vizient as we move into this new era of Vizient taking all of the respective databases, looking at institutional performance and sharing their insights with us so that we can continue our performance improvement.", imgURL:"images/sample/bio-head@3x.png", name:"Bob Page", title:"President and CEO The University of Kansas Hospital"})
+                .button-list.mt-20
+                    button(class="btn btn-primary") Learn more about our offerings
+                    button(class="btn btn-default") Need more help?
+        // End Content section - 3 column
+        section(id="is-membership-right-for-my-organisation")
+            +relatedlinks(relatedlinks.becomeAMember)

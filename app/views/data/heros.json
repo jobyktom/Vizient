@@ -1,0 +1,129 @@
+{
+    "heros": {
+        "home": {
+            "heroClasses": "bg-hero scampi",
+            "heroImageURL": "images/heros/hub-banner-homepage.jpg",
+            "heroTitle": "Advancing health care for the greater good",
+            "heroSubtitle": "The best of three companies and their members are now united around infinite opportunity.",
+            "ctas": [
+                {
+                    "ctaText": "See our story",
+                    "ctaClass": "btn-primary"
+                }
+            ]
+        },
+        "whatWeDo": {
+            "heroClasses": "bg-hero scampi",
+            "heroImageURL": "images/heros/Hub_Banner_WhatWeDo.jpg",
+            "heroTitle": "What we do",
+            "heroSubtitle": "We connect members with the knowledge, solutions and expertise to amplify their performance and deliver better care.",
+            "ctas": [
+                {
+                    "ctaText": "Become a member",
+                    "ctaClass": "btn-primary"
+                },
+                {
+                    "ctaText": "I'm already a member",
+                    "ctaClass": "btn-white"
+                }
+            ]
+        },
+        "whoWeAre": {
+            "heroClasses": "bg-hero persiangreen",
+            "heroImageURL": "images/heros/Hub_Banner_WhoWeAre.jpg",
+            "heroTitle": "Who we are",
+            "heroSubtitle": "We have a vision for a world where efficiency and empathy work hand-in-hand",
+            "ctas": [
+                {
+                    "ctaText": "Make an application",
+                    "ctaClass": "btn-primary"
+                },
+                {
+                    "ctaText": "Already a member",
+                    "ctaClass": "btn-white"
+                }
+            ]
+        },
+        "becomeAMember": {
+            "heroClasses": "bg-hero persiangreen",
+            "heroImageURL": "images/heros/Hub_Banner_BecomeAMember.png",
+            "heroTitle": "Member-owned, member-minded",
+            "heroSubtitle": "Engage with leading not-for-profit health care organizations across the nation.",
+            "ctas": [
+                {
+                    "ctaText": "Become a member",
+                    "ctaClass": "btn-primary"
+                },
+                {
+                    "ctaText": "I’m already a member",
+                    "ctaClass": "btn-white"
+                }
+            ]
+        },
+        "ourNetworks": {
+            "heroClasses": "white",
+            "heroImageURL": "images/heros/Hub_Banner_OurNetworks.png",
+            "heroTitle": "Our Networks",
+            "heroSubtitle": "We help members proactively tackle health care’s toughest challenges better and faster through collaboration.",
+            "ctas": [
+                {
+                    "ctaText": "Join a network",
+                    "ctaClass": "btn-primary"
+                },
+                {
+                    "ctaText": "Access my networks",
+                    "ctaClass": "btn-default"
+                }
+            ]
+        },
+        "becomeASupplier": {
+            "heroClasses": "",
+            "heroImageURL": "images/heros/Hub_Banner_BecomeASupplier.jpg",
+            "heroTitle": "Suppliers",
+            "heroSubtitle": "Deliver critical tools and technology for exceptional, cost-effective care. ",
+            "ctas": [
+                {
+                    "ctaText": "Become a supplier",
+                    "ctaClass": "btn-primary"
+                },
+                {
+                    "ctaText": "Legacy supplier log-in",
+                    "ctaClass": "btn-default"
+                }
+            ]
+        },
+        "supplyChain": {
+            "heroClasses": "hero-mini",
+            "heroImageURL": "images/icons/icon-collaboration-v2.png",
+            "heroTitle": "Supply chain programs",
+            "heroSubtitle": "Innovative programs designed to deliver value to member",
+             "ctas": [
+                {
+                    "ctaText": "",
+                    "ctaClass": ""
+                },
+                {
+                    "ctaText": "",
+                    "ctaClass": ""
+                }
+            ]
+        },
+        "moduleList": {
+            "heroClasses": "hero-mini",
+            "heroImageURL": "images/icons/icon-collaboration-v2.png",
+            "heroTitle": "Module list",
+            "heroSubtitle": "New modules designed to deliver value to member",
+             "ctas": [
+                {
+                    "ctaText": "",
+                    "ctaClass": ""
+                },
+                {
+                    "ctaText": "",
+                    "ctaClass": ""
+                }
+            ]
+        }
+    }
+
+}

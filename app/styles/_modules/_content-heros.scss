@@ -1,0 +1,72 @@
+/// Content Hero banners ///
+
+$HeroHeight: 274px;
+
+
+.content-hero {
+    position: relative;
+    display: table;
+    width: 100%;    
+    min-height: $HeroHeight;
+    overflow: hidden; 
+}
+
+.content-hero.governance {
+    padding-top: 20px; 
+}
+.content-hero.governance,
+.content-hero.governance .content-hero-bg-container {
+    min-height: 170px; 
+}
+.content-hero.governance .content-hero__image {
+    height: 170px;
+    width: 200px; 
+}
+
+.content-hero-bg-container {
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 274px; 
+}
+
+.content-hero__image {
+    position: absolute;
+    top: -45px;
+    bottom: 0px;
+    right: 0;
+    width: 400px;
+    height: 260px;
+    background-repeat: no-repeat; 
+}
+
+.content-hero__content {
+    position: relative;
+    display: table-cell;
+    padding: 0;
+    vertical-align: middle;
+
+    @media (min-width: $screen-xs-min) {
+        padding: 20px 0;
+    }
+
+    .content-hero__title {
+       color: $white;
+    }
+    .content-hero__sub-title {
+        color: $white;
+    }
+}
+
+.content-hero__title {
+    font-family: $soleto-light;
+
+    @media (min-width: $screen-md-min) {
+        margin: 0;
+    }
+}
+
+.content-hero__sub-title {
+    font-size: $font-size-h3;
+    margin: 14px 0 0;
+    line-height: 1.25em;
+}

@@ -1,0 +1,24 @@
+// Grid system
+
+
+// Containers
+
+.container {
+    position: relative;
+}
+
+
+@media (max-width: $screen-mbls) {
+
+  [class*="col-"]{
+      margin-bottom: 15px;
+  }
+}
+
+// spacing needed for modules on smaller devices
+
+.col-sm-4 {
+	@media (max-width: $screen-sm-min) {
+    	margin-bottom: 40px;
+	}
+}

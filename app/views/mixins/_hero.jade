@@ -1,0 +1,33 @@
+mixin hero(heroObject)
+    - var heroClasses = heroObject.heroClasses || ''
+
+    <!-- Start Hub Hero Module -->
+    section(class="hero #{heroClasses}")
+        if heroClasses == "hero-mini"
+            div(class="hero__content")
+                .container
+                    .row
+                        .col-xs-12.col-sm-8
+                            .hero__content--table
+                                .hero__content--tablecell
+                                    h2.hero__title #{heroObject.heroTitle}
+                                    p.hero__sub-title #{heroObject.heroSubtitle}
+                        .hidden-xs.col-sm-4
+                            .hero__content--table
+                                .hero__content--tablecell
+                                    .hero-mini__icon
+        else
+            div(class='hero__image', style="background-image: url(#{heroObject.heroImageURL})")
+            div(class="hero__content")
+                .container
+                    .col-sm-8.col-md-6
+                        .row
+                            .hero__content--table
+                                .hero__content--tablecell
+                                    .container
+                                        h1.hero__title #{heroObject.heroTitle}
+                                        p.hero__sub-title #{heroObject.heroSubtitle}
+                                        .button-list
+                                            each item, index in heroObject.ctas
+                                                button(class='btn #{item.ctaClass}') #{item.ctaText}
+    <!-- End Hub Hero Module -->

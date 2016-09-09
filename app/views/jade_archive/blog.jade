@@ -1,0 +1,97 @@
+extends layouts/_default
+
+block breadcrumbs
+    .content-divider.content-divider--thick-brand
+    +breadcrumbs(breadcrumbs.blog)
+
+block content
+    main(class="body-content")
+        section(class="module module--outer-bg blog")
+            .container.module__content.bg-white
+                .row
+                    //- Start left content block
+                    .col-sm-8
+                        h2(class="module__title") Blog
+                        .post-entries
+                            each item, index in blogEntries
+                                <!-- Start blog article -->
+                                article.post__entry.bdb-dotted
+                                    header.post__header
+                                        p(class="post__date") #{item.postDate}
+                                        a(class="post__title", href="#{item.postURL}")
+                                            span #{item.postTitle}
+                                            i(class="icon icon-arrow-right ml-20")
+                                    .row.post__content
+                                        .col-xs-12
+                                            if item.postFeaturedImageUrl
+                                                img(src="#{item.postFeaturedImageUrl}", class="img-left")
+                                            p(class="post__content") #{item.postExcerpt}
+                                    footer.post__footer
+                                        ul(class="post-metadata-list list-unstyled")
+                                            each category, index in item.postCategories
+                                                li(class="post-metadata-list__list_item post-metadata-list__category_tag")
+                                                    a(href="#", class="") #{category.categoryName}
+                                            li(class="post-metadata-list__list_item")
+                                                span(class="post__comment-count text-medium") #[i(class="icon icon-comment mr-10")]#{item.postCommentCount} Comments
+                                <!-- End blog article -->
+                            each item, index in blogEntries
+                                <!-- Start blog article -->
+                                article.post__entry.bdb-dotted
+                                    header.post__header
+                                        p(class="post__date") #{item.postDate}
+                                        a(class="post__title", href="#{item.postURL}")
+                                            span #{item.postTitle}
+                                            i(class="icon icon-arrow-right ml-20")
+                                    .row.post__content
+                                        .col-xs-12
+                                            if item.postFeaturedImageUrl
+                                                img(src="#{item.postFeaturedImageUrl}", class="img-left")
+                                            p(class="post__content") #{item.postExcerpt}
+                                    footer.post__footer
+                                        ul(class="post-metadata-list list-unstyled")
+                                            each category, index in item.postCategories
+                                                li(class="post-metadata-list__list_item post-metadata-list__category_tag")
+                                                    a(href="#", class="") #{category.categoryName}
+                                            li(class="post-metadata-list__list_item")
+                                                span(class="post__comment-count text-medium") #[i(class="icon icon-comment mr-10")]#{item.postCommentCount} Comments
+                                <!-- End blog article -->
+                            each item, index in blogEntries
+                                <!-- Start blog article -->
+                                article.post__entry.bdb-dotted
+                                    header.post__header
+                                        p(class="post__date") #{item.postDate}
+                                        a(class="post__title", href="#{item.postURL}")
+                                            span #{item.postTitle}
+                                            i(class="icon icon-arrow-right ml-20")
+                                    .row.post__content
+                                        .col-xs-12
+                                            if item.postFeaturedImageUrl
+                                                img(src="#{item.postFeaturedImageUrl}", class="img-left")
+                                            p(class="post__content") #{item.postExcerpt}
+                                    footer.post__footer
+                                        ul(class="post-metadata-list list-unstyled")
+                                            each category, index in item.postCategories
+                                                li(class="post-metadata-list__list_item post-metadata-list__category_tag")
+                                                    a(href="#", class="") #{category.categoryName}
+                                            li(class="post-metadata-list__list_item")
+                                                span(class="post__comment-count text-medium") #[i(class="icon icon-comment mr-10")]#{item.postCommentCount} Comments
+                                <!-- End blog article -->
+                        .post__load-more
+                            a(href="#", class="js-load-more")
+                                span Load more
+                                i(class="icon icon-arrow-down ml-10")
+                    //- End left content block
+                    //- Start right sidebar column
+                    .col-sm-4
+                        //- Start sidebar widget
+                        .sidebar-widget
+                            p #[strong Categories]
+                            +blockList(blocklists.blogCategoryWidget)
+                        //- End sidebar widget
+                        //- Start sidebar widget
+                        .sidebar-widget
+                            p #[strong Connect with us]
+                            +socialIcons(socialMediaLinks)
+                        //- End sidebar widget
+                        //- End right sidebar column
+

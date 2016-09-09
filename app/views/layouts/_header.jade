@@ -1,0 +1,45 @@
+<!-- Start Desktop Header -->
+header(id="header-bar", class="hidden-xs hidden-sm")
+    //- Start Desktop Header Bar
+    .master-logo
+        a(href='/')
+            i(class="icon icon-logo")
+    .master-nav
+        //- Start Top Nav
+        nav.top-nav
+            ul.list-unstyled
+                each item, index in header.menu1
+                    li(class="header-nav__nav-item")
+                        a(href='#{item.url}', class='header-nav__nav-link #{item.classes}') #{item.title}
+        //- End Top Nav
+        //- Start Primary Nav
+        nav.primary-nav
+            ul(class="list-unstyled", role="tablist")
+                each item, index in header.menu2
+                    li
+                        if index > 0 && index < 6
+                            a(role='tab', data-toggle='tab', href='#{item.url}', data-href='#{item.url}', data-target='#mega-nav-#{index}', aria-controls='mega-nav-#{index}', class='#{item.classes}') #{item.title}
+                        else
+                            a(href='#{item.url}', class='#{item.classes}') #{item.title}
+        nav.additional-nav
+            ul(class="list-unstyled", role="tablist")
+                li 
+                    a(role='tab', href="#", class="search")
+                        i(class='icon icon-search')
+                li
+                    a(role='tab', href="#", class="icon-login-circle")
+                        i(class='icon icon-login')      
+//- End Desktop Header Bar
+<!-- End Desktop Header -->
+
+<!-- Desktop subnav -->
+nav.subnav
+    ul
+        li
+            a subnav
+        li
+            a subnav
+        li
+            a subnav
+        li
+            a subnav

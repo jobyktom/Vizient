@@ -1,0 +1,108 @@
+extends layouts/_default
+
+block content
+    main(class="body-content")
+        // Start Content section
+        section(class="module module--outer-bg bdb-linen-10")
+            // START - SEARCH PANEL
+            .container.bg-gray
+                .row
+                    .col-sm-12.col-md-8.search-panel
+                        .search-panel-inner
+                            label.bold Search for: 
+                            input(placeholder="Search term replayed here")
+                            input(type="submit", class="btn btn-primary btn-half")
+            // END - SEARCH PANEL
+            // START - SEARCH RESULTS HEADER
+            .container.bg-white
+                .row
+                    .col-sm-12.col-md-8.search-results-hdr
+                        h2 38 results found
+                        p.left Showing <span class="bold">1-10</span> of 356 results
+                        p.right Sort by: <a href="#" title="Sort by relevance" class="search-results-active">Relevance</a> | <a href="#" title="Sort by Date" class="">Date</a>
+            // END - SEARCH RESULTS HEADER        
+            // START - SEARCH RESULTS 
+            .container.bg-white.search-results
+                .row
+                    .col-sm-12.col-md-8.search-results-content
+                        ul
+                            li
+                                a(href="#", title="Decision Support System", class="bold") 
+                                    i(class="icon-filetype icon-acrobat")
+                                    span Decision Support System
+                                p.bold.url tateandlyle.com/path/to/pagetateandlyle.com/path/to/pagetateandlyle.com/path/to/pagetateandlyle.com/path/to/page/tateandlyle.com/path/to/page/tateandlyle.com/path/to/pagetateandlyle.com/path/to/pagetateandlyle.com/path/to/page
+                                p.search-desc Snippet from page with <span class="matching-terms">matching terms highlighted</span> lorem ipsum dolor sit amet, PDF consectetur adipiscing elit. Nulla PDF ut nisl pharetra, mattis augue in, rhoncus odio. In cursus elementum nulla eget sagittis. Cum sociis natoque penati
+                                p.date 03/01/2016
+                            li
+                                a(href="#", title="[XLS] Item master management", class="bold") 
+                                    i(class="icon-filetype icon-excel")
+                                    span Item master management analytics
+                                p.bold.url tateandlyle.com/path/to/page
+                                p.search-desc Snippet from page with <span class="matching-terms">matching terms highlighted</span> lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut nisl pharetra, mattis augue in, rhoncus odio. In cursus elementum nulla eget sagittis. Cum sociis natoque penati
+                                p.date 03/01/2016
+                            li
+                                a(href="#", title="Decision Support System", class="bold") 
+                                    i(class="icon-filetype icon-keynote")
+                                    span Item master management analytics
+                                p.bold.url tateandlyle.com/path/to/pagetateandlyle.com/path/to/pagetateandlyle.com/path/to/pagetateandlyle.com/path/to/pagetateandlyle.com/path/to/pagetateandlyle.com/path/to/pagetateandlyle.com/path/to/pagetateandlyle.com/path/to/pagetateandlyle.com/path/to/pagetateandlyle.com/path/to/pagetateandlyle.com/path/to/pagetateandlyle.com/path/to/page
+                                p.search-desc Snippet from page with <span class="matching-terms">matching terms highlighted</span> lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut nisl pharetra, mattis augue in, rhoncus odio. In cursus elementum nulla eget sagittis. Cum sociis natoque penati
+                                p.date 03/01/2016
+                            li
+                                a(href="#", title="[XLS] Item master management", class="bold") 
+                                    i(class="icon-filetype icon-powerpoint")
+                                    span Item master management analytics
+                                p.bold.url tateandlyle.com/path/to/page
+                                p.search-desc Snippet from page with <span class="matching-terms">matching terms highlighted</span> lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut nisl pharetra, mattis augue in, rhoncus odio. In cursus elementum nulla eget sagittis. Cum sociis natoque penati
+                                p.date 03/01/2016
+                            li
+                                a(href="#", title="Decision Support System", class="bold") 
+                                    i(class="icon-filetype icon-rar")
+                                    span Decision Support System
+                                p.bold.url tateandlyle.com/path/to/page
+                                p.search-desc Snippet from page with <span class="matching-terms">matching terms highlighted</span> lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut nisl pharetra, mattis augue in, rhoncus odio. In cursus elementum nulla eget sagittis. Cum sociis natoque penati
+                                p.date 03/01/2016
+                            li
+                                a(href="#", title="[XLS] Item master management", class="bold") 
+                                    i(class="icon-filetype icon-richtext")
+                                    span Item master management analytics
+                                p.bold.url tateandlyle.com/path/to/page
+                                p.search-desc Snippet from page with <span class="matching-terms">matching terms highlighted</span> lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut nisl pharetra, mattis augue in, rhoncus odio. In cursus elementum nulla eget sagittis. Cum sociis natoque penati
+                                p.date 03/01/2016
+                            li
+                                a(href="#", title="Decision Support System", class="bold") 
+                                    i(class="icon-filetype icon-text")
+                                    span Decision Support System
+                                p.bold.url tateandlyle.com/path/to/page
+                                p.search-desc Snippet from page with <span class="matching-terms">matching terms highlighted</span> lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut nisl pharetra, mattis augue in, rhoncus odio. In cursus elementum nulla eget sagittis. Cum sociis natoque penati
+                                p.date 03/01/2016
+                            li
+                                a(href="#", title="[XLS] Item master management", class="bold") 
+                                    i(class="icon-filetype icon-zip")
+                                    span Item master management analytics
+                                p.bold.url tateandlyle.com/path/to/page
+                                p.search-desc Snippet from page with <span class="matching-terms">matching terms highlighted</span> lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut nisl pharetra, mattis augue in, rhoncus odio. In cursus elementum nulla eget sagittis. Cum sociis natoque penati
+                                p.date 03/01/2016
+            // END - SEARCH RESULTS    
+            .container._module__content.bg-white.pagination
+                .row
+                    .col-sm-12.col-md-8
+                        ul
+                            li
+                                //- Apply class "hidden" for first page
+                                a(href="#", title="Search results - Previous", class="pag-prev")
+                                    i(class="icon icon-chevron-left")
+                                    span Previous
+                                a(href="#", title="Search results - Page 1", class="bold current") 1
+                                a(href="#", title="Search results - Page 2", class="bold") 2
+                                a(href="#", title="Search results - Page 3", class="bold") 3
+                                a(href="#", title="Search results - Page 4", class="bold") 4
+                                a(href="#", title="Search results - Page 5", class="bold") 5
+                                a(href="#", title="Search results - Page 6", class="bold") 6
+                                a(href="#", title="Search results - Page 7", class="bold") 7
+                                a(href="#", title="Search results - Page 8", class="bold") 8
+                                a(href="#", title="Search results - Page 9", class="bold") 9
+                                a(href="#", title="Search results - Page 10", class="bold") 10
+                                a(href="#", title="Search results - Next", class="pag-next")
+                                    i(class="icon icon-chevron-right")
+                                    span Next
+        // End Content section  - Component

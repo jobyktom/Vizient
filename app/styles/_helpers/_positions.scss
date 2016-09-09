@@ -1,0 +1,45 @@
+// Absolute positioning helpers
+.pos--relative
+{
+	position: relative;
+}
+
+.pos--absolute
+{
+	position: absolute;
+}
+
+//top
+.t {
+    position: absolute;
+    top: 0;
+}
+
+
+//bottom
+.b {
+    position: absolute;
+    bottom: 0;
+}
+
+.tro-b {
+   position: relative;
+   top: 100%;
+   transform: translateY(-100%);
+}
+
+
+
+//left
+.l {
+    position: absolute;
+    left: 0;
+}
+
+
+//right
+.r
+{
+   position: absolute;
+   right: 0;
+}

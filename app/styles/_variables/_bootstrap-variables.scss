@@ -1,0 +1,76 @@
+// Bootstrap variables
+
+/// Buttons ///
+
+// Default
+$btn-default-color: $orange;
+$btn-default-bg: $white;
+$btn-default-border: $orange;
+
+// Primary
+$btn-primary-color: $white;
+$btn-primary-bg: $orange;
+$btn-primary-border: $orange;
+
+$btn-border-radius-base: 23px;
+$btn-border-radius-large: 25px;
+$btn-border-radius-small: 18px;
+
+
+
+/// Spacings ///
+
+$padding-base-vertical: 20px;
+$padding-base-horizontal: 20px;
+
+$padding-large-vertical: 30px;
+$padding-large-horizontal: 30px;
+
+$padding-small-vertical: 15px;
+$padding-small-horizontal: 15px;
+
+$padding-xs-vertical: 10px;
+$padding-xs-horizontal: 10px;
+
+
+// Text
+$text-color: $black;
+$headings-color: $black;
+
+// Links
+$link-color: $orange;
+$link-hover-color: $orange;
+
+ 
+
+/// Grid ///
+
+// Gutter
+$grid-gutter-width: 20px;
+
+// Container
+$container-tablet: (708px + $grid-gutter-width);
+$container-desktop: (940px + $grid-gutter-width);
+$container-large-desktop: (940px + $grid-gutter-width);
+
+// Breakpoints
+$screen-xs: 320px;
+$screen-mbls: 480px; // mobile landscape
+$screen-sm: 768px;
+$screen-md: 1075px;
+$screen-lg: 1366px;
+
+// Breakpoints (as integers)
+$int-xs: 320px;
+$int-mbls: 480px; // mobile landscape
+$int-sm: 768px;
+$int-md: 1024px;
+$int-lg: 1140px;
+
+
+// Forms
+
+$input-border: $grey;
+$input-border-radius: 2px;
+$form-group-margin-bottom: 27px;
+$input-height-base: 45px;

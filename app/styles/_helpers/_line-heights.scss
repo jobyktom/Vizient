@@ -1,0 +1,21 @@
+// @each $space in $line-heights {
+//     .lh-#{$space} {
+//         line-height: #{$space}em !important ;
+//     }
+// }
+
+.lh-one-two {
+    line-height: 1.2em !important ;
+}
+
+.lh-one-four {
+    line-height: 1.4em !important ;
+}
+
+.lh-one-five {
+    line-height: 1.5em !important ;
+}
+
+.lh-one-seven {
+    line-height: 1.7em !important ;
+}

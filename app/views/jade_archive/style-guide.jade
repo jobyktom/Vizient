@@ -1,0 +1,353 @@
+extends layouts/_default
+
+block hero
+    +hero(heros.moduleList)
+block breadcrumbs
+    +breadcrumbs(breadcrumbs.moduleList)
+block content
+    main(class="body-content")
+        // Start Content section [INTRO] - 2 column
+        section(class="module module--outer-bg")
+            .container.module__content.bg-white
+                h2(class="module__title") Creating a brighter future
+                .row
+                    .col-sm-12.col-md-8
+                        p Working together, you can achieve greater results than by working alone. Our networks give members collaborative power that drives their performance, fosters innovation and improves care in faster, better ways. We connect you to networks, research, data and insights that elevate your ability to solve problems, share knowledge and scale results.
+                    .col-sm-6.col-md-4
+                        +sectionNav(sectionNavs.ourNetworks)
+        // End Content section - 2 column
+        // Start Content section - 3 column box
+        section(class="module module--outer-bg")
+            .container.bg-white
+                .feature-box
+                    .feature-box__content
+                        .row
+                            .col-md-12
+                                h3(class="feature-box__title") Vizient solves members’ most pressing needs
+                        .row
+                            .col-xs-12.col-sm-4
+                                p When developing our solutions, we prioritized the diverse competencies members need to adapt to the market’s changes–and predict where it’s headed.
+                                p By implementing our innovative solutions, leveraging our analytics and engaging our consultants, members can confidently achieve greater business performance and deliver better care in their communities.
+                            .col-xs-12.col-sm-4
+                                +sectionNav(sectionNavs.whoWeAre)
+                            .col-xs-12.col-sm-4
+                                img(class="post__featured-image", src="images/sample/Blog_Patient_Doctor_02.png")
+        // End Content section - 3 column box
+        // Start Content section - 2 outer column box [module without image]
+        section(class="module module--outer-bg")
+            .container.bg-white
+                .row.equal-heights-sm
+                    .col-xs-12.col-sm-6
+                        .feature-box
+                            .feature-box__content.equal-height-item
+                                .row
+                                    .col-md-12
+                                        h3(class="feature-box__title") Module without image
+                                .row
+                                    .col-xs-12.col-md-6
+                                        p When developing our solutions, we prioritized the diverse competencies members need to adapt to the market’s changes–and predict where it’s headed.
+                                        p By implementing our innovative solutions, leveraging our analytics and engaging our consultants, members can confidently achieve greater business performance and deliver better care in their communities.
+                                        a(href="#", title="Find out more", class="module__link") Find out more
+                                            i(class="icon icon-arrow-right")
+                                    .col-xs-12.col-md-6
+                                        +moduleNav(moduleNavs.setA)
+                    .col-xs-12.col-sm-6
+                        .feature-box
+                            .feature-box__content.equal-height-item
+                                .row
+                                    .col-md-12
+                                        h3(class="feature-box__title") Module without image
+                                .row
+                                    .col-xs-12.col-md-6
+                                        p When developing our solutions, we prioritized the diverse competencies members need to adapt to the market’s changes–and predict where it’s headed.
+                                        p By implementing our innovative solutions, leveraging our analytics and engaging our consultants, members can confidently achieve greater business performance and deliver better care in their communities.
+                                        a(href="#", title="Find out more", class="module__link") Find out more
+                                            i(class="icon icon-arrow-right")
+                                    .col-xs-12.col-md-6
+                                        +moduleNav(moduleNavs.setB)                             
+        // End Content section - 2 outer column box [module without image]
+        // Start Content section - 2 outer column box [module with image/quote]
+        section(class="module module--outer-bg")
+            .container.bg-white
+                .row.equal-heights-sm
+                    .col-xs-12.col-sm-6
+                        .feature-box
+                            .feature-box__content.equal-height-item
+                                .row
+                                    .col-md-12
+                                        h3(class="feature-box__title") Module with image
+                                .row
+                                    .col-xs-12.col-md-6
+                                        p When developing our solutions, we prioritized the diverse competencies members need to adapt to the market’s changes–and predict where it’s headed.
+                                        p By implementing our innovative solutions, leveraging our analytics and engaging our consultants, members can confidently achieve greater business performance and deliver better care in their communities.
+                                        a(href="#", title="Find out more", class="module__link") Find out more
+                                            i(class="icon icon-arrow-right")
+                                    .col-xs-12.col-md-6
+                                        img(class="post__featured-image", src="images/sample/Blog_Patient_Doctor_02.png")
+                    .col-xs-12.col-sm-6
+                        .feature-box
+                            .feature-box__content.equal-height-item
+                                .row
+                                    .col-md-12
+                                        h3(class="feature-box__title") Module with quote
+                                .row
+                                    .col-xs-12.col-md-6
+                                        p When developing our solutions, we prioritized the diverse competencies members need to adapt to the market’s changes–and predict where it’s headed.
+                                        p By implementing our innovative solutions, leveraging our analytics and engaging our consultants, members can confidently achieve greater business performance and deliver better care in their communities.
+                                        a(href="#", title="Find out more", class="module__link") Find out more
+                                            i(class="icon icon-arrow-right")
+                                    .col-xs-12.col-md-6
+                                        .stat-block 
+                                            span $270m
+                                            p In 2013, Vizient SupplyNetworks delivered a combined savings of more than £270 million on $7 billion in network contract spending                             
+        // End Content section - 2 outer column box [module with image/quote]
+        // Start Content section - 4 column box [4 module row w/ links]
+        section(class="module module--outer-bg")
+            .container.bg-white
+                .row.equal-heights-sm
+                    .col-xs-12.col-sm-6.col-md-3
+                        .feature-box
+                            .feature-box__content.equal-height-item
+                                h3(class="feature-box__title") title
+                                p When developing our solutions, we prioritized the diverse competencies members need to adapt to the market’s changes–and predict where it’s headed.
+                                +moduleNav(moduleNavs.setB)
+                    .col-xs-12.col-sm-6.col-md-3
+                        .feature-box
+                            .feature-box__content.equal-height-item
+                                h3(class="feature-box__title") title
+                                p When developing our solutions, we prioritized the diverse competencies members need to adapt to the market’s changes–and predict where it’s headed.
+                                +moduleNav(moduleNavs.setA)   
+                    .col-xs-12.col-sm-6.col-md-3
+                        .feature-box
+                            .feature-box__content.equal-height-item
+                                h3(class="feature-box__title") Module title
+                                p When developing our solutions, we prioritized the diverse competencies members need to adapt to the market’s changes–and predict where it’s headed.
+                                +moduleNav(moduleNavs.setB)   
+                    .col-xs-12.col-sm-6.col-md-3
+                        .feature-box
+                            .feature-box__content.equal-height-item
+                                h3(class="feature-box__title") Module title
+                                p When developing our solutions, we prioritized the diverse competencies members need to adapt to the market’s changes–and predict where it’s headed.                            
+                                +moduleNav(moduleNavs.setB)                       
+        // End Content section - 4 column box [4 module row w/ links]
+        // Start Content section - 4 column box [4 module row]
+        section(class="module module--outer-bg")
+            .container.bg-white
+                .row.equal-heights-sm
+                    .col-xs-12.col-sm-6.col-md-3
+                        .feature-box
+                            .feature-box__content.equal-height-item
+                                h3(class="feature-box__title") Module title
+                                p When developing our solutions, we prioritized the diverse competencies members need to adapt to the market’s changes–and predict where it’s headed.
+                                a(href="#", title="Find out more", class="module__link") Find out more
+                                    i(class="icon icon-arrow-right")
+                    .col-xs-12.col-sm-6.col-md-3
+                        .feature-box
+                            .feature-box__content.equal-height-item
+                                h3(class="feature-box__title") Module title
+                                p When developing our solutions, we prioritized the diverse competencies members need to adapt to the market’s changes–and predict where it’s headed.
+                                a(href="#", title="Find out more", class="module__link") Find out more
+                                    i(class="icon icon-arrow-right")  
+                    .col-xs-12.col-sm-6.col-md-3
+                        .feature-box
+                            .feature-box__content.equal-height-item
+                                h3(class="feature-box__title") Module title
+                                p When developing our solutions, we prioritized the diverse competencies members need to adapt to the market’s changes–and predict where it’s headed.
+                                a(href="#", title="Find out more", class="module__link") Find out more
+                                    i(class="icon icon-arrow-right")
+                    .col-xs-12.col-sm-6.col-md-3
+                        .feature-box
+                            .feature-box__content.equal-height-item
+                                h3(class="feature-box__title") Module title
+                                p When developing our solutions, we prioritized the diverse competencies members need to adapt to the market’s changes–and predict where it’s headed.
+                                a(href="#", title="Find out more", class="module__link") Find out more
+                                    i(class="icon icon-arrow-right")
+        // End Content section - 4 column box [4 module row]
+        // Start Content section - 2 module row [expandable]
+        section(class="module module--outer-bg")
+            .container.bg-white
+                .row.equal-heights-sm
+                    .col-xs-12.col-sm-6
+                        .well.bg-stone
+                            h3(class="well__hdr") Title of module goes here, as always can be long
+                            .well__body.expandable
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                    .col-xs-12.col-sm-6
+                        .well.bg-stone
+                            h3(class="well__hdr") Title of module goes here, as always can be long
+                            .well__body.expandable
+                                p This module contains an an image - press the expand button to view. This module contains an an image - press the expand button to view. This module contains an an image - press the expand button to view.
+                                p 
+                                    img(src="images/sample/image-4392.png")
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        // End Content section - 2 module row [expandable]
+        // Start Content section - 2 module row [expandable - REPEAT]
+        section(class="module module--outer-bg")
+            .container.bg-white
+                .row.equal-heights-sm
+                    .col-xs-12.col-sm-6
+                        .well.bg-stone
+                            h3(class="well__hdr") Title of module goes here, as always can be long
+                            .well__body.expandable
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                    .col-xs-12.col-sm-6
+                        .well.bg-stone
+                            h3(class="well__hdr") Title of module goes here, as always can be long
+                            .well__body.expandable
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip                            
+        // End Content section - 2 module row [expandable - REPEAT]
+        // Start Content section - mutiple 4 item per row blocks 
+        section(class="module module--outer-bg")
+            .container.module__content.bg-white
+                .feature-box
+                    .feature-box__content
+                        .row
+                            .col-xs-12 
+                                h2.brand Analytics solutions
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        .row.equal-heights-sm
+                            .col-xs-12.col-sm-3
+                                .slab
+                                    p Vizient Supply Chain Intelligence
+                                    a(href="#", title="Find out more", class="module__link") Find out more
+                                        i(class="icon icon-arrow-right")
+                            .col-xs-12.col-sm-3
+                                .slab 
+                                    p DataLYNX
+                                    a(href="#", title="Find out more", class="module__link") Find out more
+                                        i(class="icon icon-arrow-right")
+                            .col-xs-12.col-sm-3
+                                .slab 
+                                    p ValueLYNX
+                                    a(href="#", title="Find out more", class="module__link") Find out more
+                                        i(class="icon icon-arrow-right")
+                            .col-xs-12.col-sm-3
+                                .slab 
+                                    p Resourcing analytics
+                                    a(href="#", title="Find out more", class="module__link") Find out more
+                                        i(class="icon icon-arrow-right")
+                        .row.equal-heights-sm
+                            .col-xs-12.col-sm-3
+                                .slab 
+                                    p Operational analytics
+                                    a(href="#", title="Find out more", class="module__link") Find out more
+                                        i(class="icon icon-arrow-right")
+                            .col-xs-12.col-sm-3
+                                .slab 
+                                    p Contract managements analytics
+                                    a(href="#", title="Find out more", class="module__link") Find out more
+                                        i(class="icon icon-arrow-right")
+                            .col-xs-12.col-sm-3
+                                .slab 
+                                    p Supply contract analytics
+                                    a(href="#", title="Find out more", class="module__link") Find out more
+                                        i(class="icon icon-arrow-right")
+                            .col-xs-12.col-sm-3                                           
+        // End Content section - mutiple 4 item per row blocks
+        // Start Content section - accordion with sidebar
+        section(class="module module--outer-bg")
+            .container.bg-white
+                .row 
+                    .col-sm-12
+                        h2 Efficiency member spotlights
+                .row
+                    .col-xs-12.col-sm-8
+                        .accordion--block 
+                            ul
+                                li 
+                                    .item__hdr
+                                        h3 Allina Health 
+                                        a(href="#", title="Expand", class="accordion-control")
+                                            i(class="icon icon-chevron-down")
+                                    .item__content
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        a(href="#", title="Learn more", class="module__link") Learn more
+                                            i(class="icon icon-arrow-right")
+                                li 
+                                    .item__hdr
+                                        h3 Hamilton Medical Center
+                                        a(href="#", title="Expand", class="accordion-control")
+                                            i(class="icon icon-chevron-down")
+                                    .item__content
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        a(href="#", title="Learn more", class="module__link") Learn more
+                                            i(class="icon icon-arrow-right")
+                                li 
+                                    .item__hdr
+                                        h3 INTEGRIS
+                                        a(href="#", title="Expand", class="accordion-control")
+                                            i(class="icon icon-chevron-down")
+                                    .item__content
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        a(href="#", title="Learn more", class="module__link") Learn more
+                                            i(class="icon icon-arrow-right")
+                                li 
+                                    .item__hdr
+                                        h3 Allina Health 
+                                        a(href="#", title="Expand", class="accordion-control")
+                                            i(class="icon icon-chevron-down")
+                                    .item__content
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        a(href="#", title="Learn more", class="module__link") Learn more
+                                            i(class="icon icon-arrow-right")
+
+                    .col-xs-12.col-sm-4
+                        .sidebar--feat
+                            h4.brand Featured content
+                            img(src="images/sample/rectangle-72.png")
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            a(href="#", title="Find out more", class="module__link") Find out more
+                                i(class="icon icon-arrow-right")
+        // End Content section - accordion with sidebar
+        // Start Content section - 3 column list
+        section(class="module module--outer-bg")
+            .container.module__content.bg-white
+                .row 
+                    .col-xs-12.col-sm-8
+                        h3 All Efficiency products
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    .col-xs-hidden.col-sm-4
+                .row
+                    .col-xs-12.col-sm-4.col-list
+                        +moduleNav(moduleNavs.setB)
+                    .col-xs-12.col-sm-4.col-list
+                        +moduleNav(moduleNavs.setA)
+                    .col-xs-12.col-sm-4.col-list
+                        +moduleNav(moduleNavs.setB)
+        // End Content section - 3 column col-list
+        // Start Content section - 4 columns
+        section(class="module module--outer-bg")
+            .container.module__content.bg-white
+                .row 
+                    .col-xs-12
+                        h3 Learn more
+                .row 
+                    .col-xs-12.col-sm-6.col-md-3
+                        .well__body.well__channels.well__1
+                            .well__hdr
+                                h4 Insights
+                                span
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            a(href="#", title="", class="module__link") Learn more about Insights solutions
+                    .col-xs-12.col-sm-6.col-md-3
+                        .well__body.well__channels.well__2
+                            .well__hdr
+                                h4 Efficiency
+                                span 
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            a(href="#", title="", class="module__link") Learn more about Efficiency solutions
+                    .col-xs-12.col-sm-6.col-md-3
+                        .well__body.well__channels.well__3
+                           .well__hdr
+                                h4 Patient impact
+                                span 
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            a(href="#", title="", class="module__link") Learn more about Patient impact solutions
+                    .col-xs-12.col-sm-6.col-md-3
+                        .well__body.well__channels.well__4
+                            .well__hdr
+                                h4 Collaboration
+                                span
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            a(href="#", title="", class="module__link") Learn more about collaboration solutions
+        // End Content section - 4 columns

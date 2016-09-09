@@ -1,0 +1,25 @@
+// Containers
+
+.container {
+
+	@media (min-width: $screen-xs) {
+
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	@media (min-width: $screen-sm) {
+
+		width: 100%;
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+
+	@media (min-width: $screen-lg) {
+
+		max-width: $screen-lg;
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+
+}

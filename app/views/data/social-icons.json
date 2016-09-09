@@ -1,0 +1,24 @@
+{
+    "socialMediaLinks": [
+        {
+            "linkURL": "#",
+            "linkIconClass": "icon-linkedin"
+        },
+        {
+            "linkURL": "#",
+            "linkIconClass": "icon-facebook"
+        },
+        {
+            "linkURL": "#",
+            "linkIconClass": "icon-twitter"
+        },
+        {
+            "linkURL": "#",
+            "linkIconClass": "icon-pinterest"
+        },
+        {
+            "linkURL": "#",
+            "linkIconClass": "icon-youtube"
+        }
+    ]
+}
