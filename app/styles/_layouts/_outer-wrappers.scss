@@ -1,0 +1,10 @@
+// Outer wrapper
+
+.outer-wrapper {
+    width: 100%;
+    height: 100%;
+
+    @media (min-width: $screen-md-min) {
+        padding-top: 111px;
+    }
+}

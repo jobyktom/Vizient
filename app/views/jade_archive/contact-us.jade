@@ -1,0 +1,66 @@
+extends layouts/_default
+
+block breadcrumbs
+    .content-divider.content-divider--thick-brand
+    +breadcrumbs(breadcrumbs.contactus)
+block content
+    main(class="body-content")
+        section(class="module module--outer-bg bdb-linen-10")
+            .container.module__content.bg-white
+                h2(class="module__title") Contact us
+                .row
+                    .col-md-8
+                        h3 Our team is ready and waiting to answer your questions. We also welcome any feedback.
+                        p Please send all media and events questions to our media relations department: #[br] #[a(href="tel:(972) 830-0254") #[strong (972) 830-0254.] ]
+                        p To report non-compliance with the law and Vizient's corporate policies, contact Vizient's Compliance Officer. For anonymous reporting, call our compliance line at #[br] #[a(href="tel:800-750-4972") #[strong 800-750-4972.]]
+                    .col-md-4
+                        .well.bg-linen
+                            .well__body
+                                p.text-medium Contact Vizient Customer Service at:
+                                +medialist(medialists.contactVizient)
+        section(class="module module--outer-bg bdb-brand-24")
+            .container.module__content.bg-white
+                .row
+                    .col-sm-6
+                        h2 Corporate headquarters
+                        a(href="https://www.google.co.uk/maps/place/290+E+John+Carpenter+Fwy,+Irving,+TX+75062,+USA/@32.8632232,-96.9436176,17z/data=!3m1!4b1!4m2!3m1!1s0x864e82c0132f5abf:0x210dd5f499733c0d", target="_blank")
+                            img(src="images/contact-map-1.png", class="mb-25")
+                        p(class="h4") #[strong Address:]
+                        p(class="h4") 290 E. John Carpenter#[br]Freeway#[br]Irving#[br]Texas 75062#[br]#[br]
+                        p(class="h4") #[strong Mailing address:]
+                        p(class="h4") P.O. Box 140909#[br]Irving, TX 75014-0909
+
+                    .col-sm-6
+                        h2 Illinois Office
+                        a(href="https://www.google.co.uk/maps/place/155+N+Upper+Wacker+Dr,+Chicago,+IL+60606,+USA/@41.8846319,-87.6386861,17z/data=!3m1!4b1!4m2!3m1!1s0x880e2cbf3e231f45:0x41bd846d61b815da", target="_blank")
+                            img(src="images/contact-map-2.png", class="mb-25")
+                        p(class="h4") #[strong Address:]
+                        p(class="h4") 155 North Wacker Drive#[br]Chicago#[br]Illinois, 60606#[br]#[br]
+                        p(class="h4") #[strong Office:]
+                        p #[a(href="tel:(312) 775-4100") #[strong (312) 775-4100]]
+        section(class="module module--outer-bg")
+            .container.module__content.bg-white
+                h2 Connect with us
+                form
+                    .row
+                        .col-sm-6
+                            .form-group
+                                label(for="cf-name") Name:
+                                input(class="form-control", name="cf-name", id="cf-name", tabindex=1)
+                            .form-group
+                                label(for="cf-title") Title:
+                                input(class="form-control", name="cf-title", id="cf-title", tabindex=3)
+                            .form-group
+                                label(for="cf-organization") Organization:
+                                input(class="form-control", name="cf-organization", id="cf-organization", tabindex=4)
+                            .form-group
+                                label(for="cf-phone") Phone:
+                                input(class="form-control", name="cf-phone", id="cf-phone", tabindex=5)
+                        .col-sm-6
+                            .form-group
+                                label(for="cf-phone") Email:
+                                input(class="form-control", name="cf-email", id="cf-email", tabindex=2)
+                            .form-group
+                                label(for="cf-topic") Topic:
+                                textarea(class="form-control", rows="5", name="cf-topic", id="cf-topic", tabindex=6)
+                                button(class="btn btn-primary pull-right mt-30") Send

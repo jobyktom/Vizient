@@ -1,0 +1,41 @@
+/// Aligns ///
+
+.va {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.va-t,
+.va-m,
+.va-b,
+.va-tb,
+.va-tt {
+    display: table-cell;
+}
+
+.va-t {
+    vertical-align: top;
+}
+
+.va-m {
+    vertical-align: middle;
+}
+
+.va-b {
+    vertical-align: bottom;
+}
+
+.va-s {
+    vertical-align: super;
+}
+
+.va-tb {
+    vertical-align: text-bottom;
+}
+
+.va-tt {
+    vertical-align: text-top;
+}

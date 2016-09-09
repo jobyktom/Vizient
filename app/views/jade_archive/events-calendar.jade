@@ -1,0 +1,109 @@
+extends layouts/_default
+
+block breadcrumbs
+    .content-divider.content-divider--thick-brand
+    +breadcrumbs(breadcrumbs.eventsCalendar)
+
+block content
+    main(class="body-content")
+        section(class="module module--outer-bg")
+            .container.module__content.bg-white
+                h2(class="module__title") Events Calendar
+                .row
+                    .col-sm-12
+                        .row
+                            .col-sm-8
+                                p.text-light.font-large.lh There are many opportunities throughout the year and across the country to meet with our experts and your peers to enhance your expertise and help you master the changing health care environment.
+                .row
+                    .col-sm-8
+                        // Start Events calendar list
+                        #accordion.panel-group.events-list(role='tablist', aria-multiselectable='true')
+                            // Start Event calendar panel
+                            .panel
+                                #headingOne.panel-head.mb-20(role='tab')
+                                    .clearfix
+                                        .post__calendar-date.pull-left
+                                            div(class="text-medium font-larger mb-5") 12
+                                            div(class="text-light") Nov
+                                        .panel-title.ml-80
+                                            a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                                                .text-light.font-larger.lh-one-four.mb-5
+                                                    span Skateboard dolor brunch.
+                                                .text-regular.font-large Irving, Texas
+                                #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+                                    .panel-body.bg-graylighter
+                                        .row
+                                            .col-sm-6
+                                                .post__featured-image
+                                                    img(class="post__featured-image", src="http://placehold.it/265x265")
+                                            .col-sm-6
+                                                div(class="text-medium mb-5") 02-04 December 2015
+                                                div(class="text-medium") Drury Plaza Hotel, St Louis, MO
+                                                p.text-light.mt-20 The VHA Mid-America and Oklahoma/Arkansas Annual Accreditation Update Meeting is designed to prepare your health care organization leaders for your upcoming 2016 TJC survey or assist with maintaining continuous readiness for future surveys.
+                                                a(href="#")
+                                                    strong More information
+                                                    i(class="icon icon-arrow-right ml-10")
+                            // End Event calendar panel
+                            // Start Event calendar panel
+                            .panel
+                                #headingTwo.panel-head.mb-20(role='tab')
+                                    .clearfix
+                                        .post__calendar-date.pull-left
+                                            div(class="text-medium font-larger mb-5") 12
+                                            div(class="text-light") Nov
+                                        .panel-title.ml-80
+                                            a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='true', aria-controls='collapseTwo')
+                                                .text-light.font-larger.lh-one-four.mb-5
+                                                    span Skateboard dolor brunch.
+                                                .text-regular.font-large Irving, Texas
+                                #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+                                    .panel-body
+                                        .row
+                                            .col-sm-6
+                                                .post__featured-image
+                                                    img(class="post__featured-image", src="http://placehold.it/265x265")
+                                            .col-sm-6
+                                                div(class="text-medium mb-5") 02-04 December 2015
+                                                div(class="text-medium") Drury Plaza Hotel, St Louis, MO
+                                                p.text-light.mt-20 The VHA Mid-America and Oklahoma/Arkansas Annual Accreditation Update Meeting is designed to prepare your health care organization leaders for your upcoming 2016 TJC survey or assist with maintaining continuous readiness for future surveys.
+                                                a(href="#")
+                                                    strong More information
+                                                    i(class="icon icon-arrow-right ml-10")
+                            // End Event calendar panel
+                            // Start Event calendar panel
+                            .panel
+                                #headingThree.panel-head.mb-20(role='tab')
+                                    .clearfix
+                                        .post__calendar-date.pull-left
+                                            div(class="text-medium font-larger mb-5") 12
+                                            div(class="text-light") Nov
+                                        .panel-title.ml-80
+                                            a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='true', aria-controls='collapseThree')
+                                                .text-light.font-larger.lh-one-four.mb-5
+                                                    span Skateboard dolor brunch.
+                                                .text-regular.font-large Irving, Texas
+                                #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+                                    .panel-body
+                                        .row
+                                            .col-sm-6
+                                                .post__featured-image
+                                                    img(class="post__featured-image", src="http://placehold.it/265x265")
+                                            .col-sm-6
+                                                div(class="text-medium mb-5") 02-04 December 2015
+                                                div(class="text-medium") Drury Plaza Hotel, St Louis, MO
+                                                p.text-light.mt-20 The VHA Mid-America and Oklahoma/Arkansas Annual Accreditation Update Meeting is designed to prepare your health care organization leaders for your upcoming 2016 TJC survey or assist with maintaining continuous readiness for future surveys.
+                                                a(href="#")
+                                                    strong More information
+                                                    i(class="icon icon-arrow-right ml-10")
+                            // End Event calendar panel
+                        // End Events calendar list
+
+                    .col-sm-4
+                        +eventWell('Inaugural 2015 Conference', '265', '265')
+                        +eventWell('Association for healthcare foodservice')
+                        .well.bg-linen
+                            .well__body
+                                p(class="text-medium mb-15 lh-one-four") Can’t find the event you are looking for?
+                                a(href="contact-us.html")
+                                    strong Contact us
+                                    i(class="icon icon-arrow-right ml-10")

@@ -1,0 +1,65 @@
+/// Types ///
+
+// Headings
+
+h1, h2 {
+    margin: 0 0 $padding-large-vertical;
+}
+
+h3, h4 {
+    margin: 0 0 $padding-small-vertical;
+}
+
+h4 {
+    font-family: $soleto-medium;
+}
+
+h5, h6 {
+    margin: 0 0 $padding-xs-vertical;
+}
+
+// Body
+
+a {
+    @include transition(color 0.2s ease);
+    &:focus {
+        outline: none;
+    }
+}
+
+p {
+    margin: 0 0 $padding-small-vertical;
+}
+
+p {
+    line-height: $line-height-base;
+}
+
+blockquote {
+    line-height: 1.25em;
+}
+
+strong,{
+    font-family: $soleto-bold;
+}
+
+// List
+
+ul, ol {
+    margin: 0 0 $padding-base-vertical;
+    padding-left: 40px;
+
+    li {
+        margin: 0 0 $padding-small-vertical;
+        line-height: $line-height-base;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+ul {
+    list-style: square;
+    padding-left: 18px;
+}

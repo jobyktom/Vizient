@@ -1,0 +1,50 @@
+extends layouts/_default
+
+block hero
+    +hero(heros.supplyChain)
+block breadcrumbs
+    +breadcrumbs(breadcrumbs.supplyChain)
+block content
+    main(class="body-content")
+        // Start Content section masthead
+        section(class="module module--outer-bg")
+            .container.module__content.bg-white 
+                .row
+                    .col-sm-12.col-md-8
+                        p Elevating supply chain operations into an enterprise-wide cost reduction strategy requires implementing proven best practices. MedAssets offers the capabilities of 450 supply chain experts to help you achieve and sustain operational efficiencies that result in lower supply costs, better controls, clinician alignment and optimized operations. 
+                        img(src="images/sample/image-964@2x.png", class="img-full img-spacing30")
+                        h3 Lower supply costs and align clinician accountability with tailored solutions
+                        p MedAssets Supply Chain Solutions provide comprehensive consulting and management services. We currently manage more than $4 billion in spend for more than 150 health systems across the country. Clients gain the benefit of national benchmark data, proven technology and expert process design for a proven path to establish clear executive accountability, defined purchasing controls for higher contract compliance, more informed utilization decisions and improved logistic efficiency. 
+                        ul
+                            li Obtain a tailored approach designed for an engagement based on your unique needs and priorities to reach cost reduction goals.
+                            li Obtain a tailored approach designed for an engagement based on your unique needs and priorities to reach cost reduction goals.
+                        h4 Other stuff
+                        // Start Module - Accordion
+                        .accordion--block 
+                            ul
+                                li 
+                                    .item__hdr
+                                        h3 Allina Health 
+                                        a(href="#", title="Expand", class="accordion-control")
+                                            i(class="icon icon-chevron-down")
+                                    .item__content
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                li 
+                                    .item__hdr
+                                        h3 Hamilton Medical Center
+                                        a(href="#", title="Expand", class="accordion-control")
+                                            i(class="icon icon-chevron-down")
+                                    .item__content
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                li 
+                                    .item__hdr
+                                        h3 INTEGRIS
+                                        a(href="#", title="Expand", class="accordion-control")
+                                            i(class="icon icon-chevron-down")
+                                    .item__content
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        // End Module - Accordion
+                    .col-sm-12.col-md-4
+                        .nav-special2
+                            +sectionNav(sectionNavs.ourNetworks)
+        // End Content section  

@@ -1,0 +1,41 @@
+// Images
+
+// Set responsive by default
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-full {
+	width: 100%;
+}
+
+.img-left {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.img-right {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.img-spacing15 {
+    margin: 15px 0px;
+}
+
+.img-spacing30 {
+    margin: 30px 0px;
+}
+
+.img-p {
+	overflow: hidden;
+	a {
+		display: block;
+		margin: 10px 0;
+		font-weight: bold;
+		font-size: $font-size-smaller;
+	}
+}

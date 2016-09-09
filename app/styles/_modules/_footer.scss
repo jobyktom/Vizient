@@ -1,0 +1,99 @@
+// Footer
+
+#main-footer { 
+    
+    user-select: none; 
+    background: $grey-dark;
+    color: $white;
+ 
+
+    .logo {
+        display: inline-block;
+        @media only screen and (max-width: $screen-xs-max) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .row-top {
+        padding: 40px 0;
+    }
+    .row-mid {
+        
+        border-top: 1px solid $slate;
+        border-bottom: 1px solid $slate;
+    }
+    .row-bot {
+
+    }
+    .border {
+        border-left: 1px solid $slate;
+        @media only screen and (max-width: $screen-sm-max) {
+            border-top: 1px solid $slate;
+            border-left: 0;
+        }
+        
+    }
+    .pl40 {
+        padding-left: 40px;
+        @media only screen and (max-width: $screen-sm-max) {
+            padding-left: 0;
+        }
+        
+    } 
+}
+
+
+
+ 
+
+nav {
+    font-family: $soleto-regular;
+    
+
+    li {
+        margin-bottom: 0;    
+        line-height: 2.25;
+    }
+
+    &.primary {
+        padding: 40px 0;
+        -moz-column-count: 2;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 20px;
+        column-count: 2;
+        column-gap: 20px;
+
+        a {
+            color: $white;
+            @include font-size(16px);
+        }
+    }
+
+    
+    &.secondary {
+        padding: 40px 0;
+        a {
+            color: $grey-mid;
+            @include font-size(14px);
+        }
+    }
+}
+
+
+
+.footer-copy {
+
+    @media only screen and (max-width: $screen-sm-max) {
+        margin-bottom: 20px;
+    }
+    p { 
+        color: $grey-mid;
+        font-family: $soleto-regular;
+        float: right;
+        padding: 24px 0;
+        margin-bottom: 0;
+        @include font-size(14px);
+
+    }
+}

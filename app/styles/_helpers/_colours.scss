@@ -1,0 +1,19 @@
+/// Colours helpers ///
+
+// Create colour helpers using the colour map
+
+@each $colour, $value in $colourMap {
+
+    // Font colours
+
+    .#{$colour} {
+        color: $value;
+    }
+
+    // Background colours
+
+    .bg-#{$colour} {
+        background-color: $value;
+    }
+
+}

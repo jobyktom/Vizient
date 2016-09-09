@@ -1,0 +1,15 @@
+{
+  "name": "vha",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.4",
+    "jfeed": "*",
+    "jquery": "1.11.3",
+    "lightingfly": "~0.2.1",
+    "jQuery-ajaxTransport-XDomainRequest": "*",
+    "moment": "~2.10.6",
+    "jquery-timeline": "*",
+    "jquery.expander": "*"
+  },
+  "devDependencies": {}
+}

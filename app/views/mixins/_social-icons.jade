@@ -1,0 +1,10 @@
+mixin socialIcons(socialIconObject)
+    <!-- Start Social Icons Component -->
+    ul.list-unstyled.social-icons
+        each item, index in socialIconObject
+            - var linkIconClass = item.linkIconClass || ''
+
+            li.social-icons__icon
+                a(href='#{item.linkURL}')
+                    i(class="icon #{item.linkIconClass}")
+    <!-- End Social Icons Component -->

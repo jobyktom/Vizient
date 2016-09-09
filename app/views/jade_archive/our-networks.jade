@@ -1,0 +1,242 @@
+extends layouts/_default
+
+block hero
+    +hero(heros.ourNetworks)
+block breadcrumbs
+    +breadcrumbs(breadcrumbs.ourNetworks)
+block content
+    main(class="body-content")
+        // Start Content section - 3 column
+        section(class="module module--outer-bg bdb-linen-10")
+            .container.module__content.bg-white
+                h2(class="module__title") Creating a brighter future
+                .row
+                    .col-sm-12.col-md-4
+                        p Working together, you can achieve greater results than by working alone. Our networks give members collaborative power that drives their performance, fosters innovation and improves care in faster, better ways. We connect you to networks, research, data and insights that elevate your ability to solve problems, share knowledge and scale results.
+                    .col-sm-6.col-md-4
+                        img(src="images/sample/image-meeting.png")
+                    .col-sm-6.col-md-4
+                        +sectionNav(sectionNavs.ourNetworks)
+        // End Content section - 3 column
+        // Start Content section - 2 column
+        section(class="module module--outer-bg bdb-linen-10", id="learn-together")
+            .container.module__content.bg-white
+                p.text-regular.brand Learn together
+                h2(class="module__title") Learn networks
+                .row
+                    .col-sm-12.col-md-4
+                        p Our learn networks help you collaborate with trusted colleagues. You can build relationships and learn from peers and experts regionally or nationally through role-based networks ranging from executive network boards for CEOs to peer-to-peer networks. You can drive knowledge sharing around common challenges through topic-specific networks, such as improving patient experience or solving population health.
+                        button.btn.btn-default Connect with regional network
+                    .col-sm-12.col-md-4
+                        h4 Benefits of learn networks
+                        ul
+                            li Connect with key learnings from members across the nation
+                            li Explore topics and issues of shared strategic interest through roundtables, events and programs
+                            li Access ideas, content and approaches driven by strategic research, data, insights and advisors
+                            li Engage in problem-solving and develop action plans together
+                            li Provide continuing education for your employees
+                    .col-sm-12.col-md-4
+                       +bigStat('10+', 'More than 10 national affinity groups for senior leaders, numerous performance improvement peer-to-peer networks and a Hospital Engagement Network provide opportunities to solve common challenges with fellow members.')
+        // End Content section - 2 column
+        // Start Content section - 3 column
+        section(class="module module--outer-bg bdb-brand-24")
+            .container.module__content.bg-white
+                h2(class="module__title") Learn network examples
+                .row.equal-heights-sm
+                    .col-sm-4
+                        .well.bg-linen.equal-height-item
+                            .well__body
+                                p.text-medium Affinity networks
+                                p We have dozens of affinity networks connecting everyone from C-level executives and supply chain experts to nursing officers and critical care professionals.
+                    .col-sm-4
+                        .well.bg-linen.equal-height-item
+                            .well__body
+                                p.text-medium Academic medical center network
+                                p We offer solutions, programs, education and networking opportunities with executives from the nation’s top academic medical centers.
+                    .col-sm-4
+                        .well.bg-linen.equal-height-item
+                            .well__body
+                                p.text-medium Regional networks
+                                p We connect you with peers in your area through face-to-face interaction opportunities.
+                .well.bg-linen
+                    .well__body
+                        p.text-medium Vizient regional network offices
+                        .row
+                            .col-xs-12.col-sm-4
+                                ul.list-unstyled
+                                    li
+                                        a(href="#") Visit Central
+                                            i(class="icon icon-arrow-right ml-10")
+                                    li
+                                        a(href="#") Visit Central America
+                                            i(class="icon icon-arrow-right ml-10")
+                                    li
+                                        a(href="#") Visit Georgia
+                                            i(class="icon icon-arrow-right ml-10")
+                                    li
+                                        a(href="#") Visit Gulf States
+                                            i(class="icon icon-arrow-right ml-10")
+                                    li
+                                        a(href="#") Visit Mid-America
+                                            i(class="icon icon-arrow-right ml-10")
+                                    li
+                                        a(href="#") Visit Mid-Atlantic
+                                            i(class="icon icon-arrow-right ml-10")
+                                    li
+                                        a(href="#") Visit New England
+                                            i(class="icon icon-arrow-right ml-10")
+                                    li
+                                        a(href="#") Visit Oklahoma/Arkansas
+                                            i(class="icon icon-arrow-right ml-10")
+                                    li
+                                        a(href="#") Visit Pacific Northwest
+                                            i(class="icon icon-arrow-right ml-10")
+                                    li
+                                        a(href="#") Visit Upper Midwest
+                                            i(class="icon icon-arrow-right ml-10")
+                                    li
+                                        a(href="#") Visit West Coast
+                                            i(class="icon icon-arrow-right ml-10")
+                            .col-xs-12.col-sm-8
+                                img(src="images/regional-offices-map.png")
+
+        // End Content section - 3 column
+        // Start Content section - 2 column
+        section(class="module module--outer-bg bdb-linen-10", id="improve-together")
+            .container.module__content.bg-white
+                p.text-regular.brand Improve together
+                h2(class="module__title") Improve networks
+                .row
+                    .col-sm-12.col-md-4
+                        p Our improve networks connect you with other members, analytics and advisory services to solve a specific, common challenge over a defined time. These networks drive outcomes-oriented collaboration to fuel performance improvement and quality results based on best practices.
+                    .col-sm-12.col-md-8
+                        .row
+                            .col-sm-6
+                                h4 Benefits of improve networks
+                                ul
+                                    li Share and learn best practices with members regionally and nationally across critical areas such as supply chain, clinical and operational performance
+                                    li Elevate performance in quality, safety, cost-effectiveness and patient care
+                                    li Benchmark your organization to determine areas for improvement
+                            .col-sm-6
+                                img(src="images/sample/image-ipad.png")
+        // End Content section - 2 column
+        // Start Content section - 2 column
+        section(class="module module--outer-bg bdb-brand-24")
+            .container.module__content.bg-white
+                h2(class="module__title") Improve network examples
+                .row.equal-heights-sm
+                    .col-sm-6
+                        .well.bg-linen
+                            .well__body.equal-height-item
+                                p.text-medium Performance Improvement Collaboratives
+                                p Engage with fellow leaders to prioritize and drive performance improvement and measure progress–driven by data and insights. Our members join forces to improve patient care, hospital outcomes and cost savings. Our collaboratives include:
+                                ul
+                                    li Adverse Drug Events Improvement Collaborative
+                                    li Disinfection of Needleless Intravenous Access Ports Collaborative
+                                    li Frequently Admitted Patient Improvement Collaborative
+                                    li Obstetrical Adverse Events Improvement Collaborative
+                                    li Sepsis Management Improvement Collaborative
+                                    li Specialty Pharmacy Collaborative: Medication Utilization
+                                    li Utilizing SpendLINK® Improvement Collaborative
+                                    li Partnership for Patients Hospital Engagement Network
+                    .col-sm-6
+                        .well.bg-linen
+                            .well__body.equal-height-item
+                                p.text-medium Imperatives for Quality (IQ) Program
+                                p Expert-led research and insights help you realize top-tier performance in quality, safety, and cost-effectiveness.. Gain access to resources that help improve the accuracy of clinical documentation and code; obtain reliable performance data and appropriate reimbursement; and secure regulatory compliance. The IQ Program addresses six essential imperatives:
+                                ul
+                                    li Coordinating Care/Patient Flow
+                                    li Improving the Patient Experience
+                                    li Improving Patient Survival
+                                    li Managing Cost and Utilization
+                                    li Preventing Patient Harm
+                                    li Reducing Variation in Care
+        // End Content section - 2 column
+        // Start Content section - 3 column
+        section(class="module module--outer-bg bdb-linen-10", id="build-together")
+            .container.module__content.bg-white
+                p.text-regular.brand Build together
+                h2(class="module__title") Build networks
+                .row
+                    .col-sm-12.col-md-4
+                        p Our build networks enable members to drive value together through shared ownership models that move health care forward. Together, you can learn and apply proven methods to form, manage and sustain supply networks to maximize benefits and avoid common pitfalls.
+                    .col-sm-12.col-md-8
+                        .row
+                            .col-sm-6
+                                h4 Benefits of build networks
+                                ul
+                                    li Tap into the collective power to move the industry forward through a unique supply network concept
+                                    li Increase savings in your supply chain and improve operational efficiencies beyond what you could achieve alone
+                                    li Approach opportunities and meet challenges that span the entire supply chain process
+                            .col-sm-6
+                                +bigStat('$270', 'In 2013, Vizient SupplyNetworks™ delivered a combined savings of more than $270 million on $7 billion in network contract spending.')
+        section(class="module module--outer-bg bdb-brand-24", id="")
+            .container.module__content.bg-white
+                h2(class="module__title") Build network example
+                .row
+                    .col-sm-8
+                        .well.bg-linen
+                            .well__body
+                                p.text-medium SupplyNetworks™
+                                p We help members increase savings and operational efficiencies by quickly lowering prices, improvement inventory management and minimizing transportation costs over the entire supply chain. We also improve product standardization and optimize product utilization through unique contract strategies.
+        // End Content section - 3 column
+
+        section(class="module module--outer-bg bdb-linen-10", id="councils")
+            .container.module__content.bg-white
+                .feature-box
+                    .feature-box__content
+                        .row
+                            .col-sm-12.col-md-8
+                                strong Councils
+                                h3(class="feature-box__title") Councils and membership groups
+                        .row
+                            .col-sm-4
+                                p Specialty councils meet regularly to share ideas on efficiency improvement, arrange preferred purchasing agreements for products and services, and develop innovative strategies to handle market changes.
+                            .col-sm-4
+                                p.text-medium Our councils meet regularly to:
+                                ul
+                                    li Exchange information and knowledge
+                                    li Develop and apply ideas to improve quality and efficiency in their organizations
+                                    li Focus on contracts
+                                    li Plan for dynamic market changes
+                            .col-sm-4
+                                +pullquote({classes: "styled", text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in tristique eros.", imgURL:"images/sample/bio-head-two@3x.png", name: "Chris Hatwig", title: "President at Apexus"})
+        // Start Content section - 2 column
+        section(class="module module--outer-bg bdb-brand-24")
+            .container.module__content.bg-white
+                h2(class="module__title") Examples of councils
+                .row.equal-heights-sm
+                    .col-sm-6
+                        .well.bg-linen.equal-height-item
+                            .well__body
+                                p.text-medium Senior leadership councilsul.list-unstyled
+                                ul
+                                    li Chief Financial Officers Council
+                                    li Chief Human Resources Officers Council
+                                    li Chief Information Officers Council
+                                    li Chief Marketing Officers Council
+                                    li Chief Nursing Officers Council
+                                    li Chief Quality Officers Council
+                                    li Legal and Compliance Council
+                                    li Medical Leadership Council
+                                    li Member Board of Directors
+                                    li Payer Relations &amp; Business Development Council
+                                    li Senior Operations Officers Council
+
+                    .col-sm-6
+                        .well.bg-linen.equal-height-item
+                            .well__body
+                                p.text-medium Other council and member groups
+                                ul
+                                    li Ambulatory Care and Physician Practice Council
+                                    li Cardiovascular Council
+                                    li Global Executive Services Council
+                                    li Imaging Council
+                                    li Laboratory Council
+                                    li Perioperative Services Council
+                                    li Pharmacy Council
+                                    li Respiratory Care Council
+                                    li Risk Council
+                                    li Supply Chain Council
+        // End Content section - 2 column
+        +relatedlinks(relatedlinks.ourNetworks)

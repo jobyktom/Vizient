@@ -1,0 +1,24 @@
+// Social icons
+
+.social-icons {
+    margin: 0;
+    padding: 15px 0 0; 
+
+    @media only screen and (max-width: $screen-xs-max) {
+        text-align: center;
+    }
+}
+
+.social-icons__icon {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: $padding-base-vertical;
+
+    @media only screen and (max-width: $screen-sm-max) {
+        margin-right: $padding-xs-vertical;
+    }
+
+    @media only screen and (max-width: $screen-xs-max) {
+        margin-left: $padding-xs-vertical;
+    }
+}

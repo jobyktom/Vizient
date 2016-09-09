@@ -1,0 +1,10 @@
+{
+    "contentHeros": {
+        "leadershipBio": {
+            "heroClasses": "bg-purple",
+            "heroImageURL": "images/maze-white.png",
+            "heroTitle": "Vizient leadership",
+            "heroSubtitle": "Meet the Vizient leaders collaborating with members to deliver exceptional care."
+        }
+    }
+}

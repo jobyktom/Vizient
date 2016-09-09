@@ -1,0 +1,60 @@
+extends layouts/_template-blog-content
+
+block hero
+    +contentHero(contentHeros.leadershipBio)
+
+block breadcrumbs
+    //- .content-divider.content-divider--thick-brand
+    +breadcrumbs(breadcrumbs.becomeAMember)
+block postHeader
+        nav.post-header__nav
+            a(href="#")
+                i(class="icon icon-arrow-left--medium mr-10")
+                #[strong Go back to Leadership]
+
+        h2(class="post__title") Curt Nonomaque
+        h3(class="post__sub-title") President and Chief Executive Officer
+
+block postContent
+        img(class="post__featured-image img-right", src="images/sample/leadership-featured-image.jpg")
+        p Curt Nonomaque leads Vizient in driving new models of business and approaches of care. Nonomaque served as president and CEO of the former VHA Inc. from 2003 to 2015. Prior to that, he was VHA’s executive vice president, chief financial officer and treasurer.
+        p Responsible for business operations, he was instrumental in the development of numerous company initiatives that have led to increased value for the membership, including the creation of Novation and its e-commerce capabilities, and the ongoing development of VHA's consulting and purchased services units. He also assisted in the formation of HEALTHvision, a health care Internet company that VHA formed with outside partners in the late 1990s.
+        p Nonomaque received a bachelor's degree in biology from Baylor University in Waco, Texas. He also holds a master's degree in business administration from Baylor's Hankamer School.
+
+block postFooter
+        nav(class="pagination-nav")
+            .row
+                .col-xs-6
+                    a(href="#")
+                        i(class="icon icon-arrow-left--medium mr-10")
+                        #[strong Previous]
+                .col-xs-6
+                    a(href="#", class="pull-right")
+                        #[strong Next]
+                        i(class="icon icon-arrow-right ml-10")
+
+block sidebar-content
+    .sidebar-widget
+        .well.bg-linen.p-20
+            .font-large.text-medium.mt-5.mb-20 Get up to speed with Vizient company facts
+            ul(class="media-list")
+                li(class="media pt-20")
+                    .media__img
+                        i(class="icon icon-pdf")
+                    .media__body
+                        p.media-excerpt Cras molestie libero vel libero pharetra pretium.
+                        a(href="#", class="media-link") PDF 312KB
+    .sidebar-widget
+        p #[strong Related content]
+        ul.block-list.list-unstyled
+            li.block-list__list-item
+                a(href="#")
+                    span White papers by Curt
+                    i.icon.icon-arrow-right
+            li.block-list__list-item
+                a(href="#")
+                    span Blog articles by Curt
+                    i.icon.icon-arrow-right
+    .sidebar-widget
+        p #[strong Share this article]
+        +socialIcons(socialMediaLinks)

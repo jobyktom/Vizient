@@ -1,0 +1,159 @@
+extends layouts/_default
+
+block hero
+    +hero(heros.supplyChain)
+block breadcrumbs
+    +breadcrumbs(breadcrumbs.supplyChain)
+block content
+    main(class="body-content")
+        // Start Content section - Component
+        section(class="module module--outer-bg bdb-linen-10")
+            .container.module__content.bg-white
+                .row
+                    .col-sm-12.col-md-8
+                        h2(class="module__title") Supply chain programs
+                        p With the industry’s most comprehensive programs, Vizient delivers unmatched savings through our supply chain programs. With more than 2200 supplier and distributor agreements, our sourcing and contracting portfolio represents nearly 90 percent of the products and services our members purchase.
+                    .col-sm-6.col-md-4
+                        p 
+                            b In this section:
+                        +sectionNav(sectionNavs.supplyChainPrograms)
+        // End Content section  - Component
+        // Start Content section - Component
+        section(id="group-buys", class="module module--outer-bg bdb-linen-10")
+            .container.module__content.bg-white
+                h2(class="module__title") Group buys
+                .row
+                    .col-sm-12.col-md-8
+                        p Capital purchases represent approximately 25 percent of a hospital’s budget. This makes make capital planning and purchasing one of the most complex procurement challenges for health care organizations. 
+                        p To date, Vizient’s capital equipment group buys have saved members more than $421 million on major equipment purchases. Group buys are available in more than 45 major categories, including:
+                        ul.col-split-2
+                            li Biomedical engineering
+                            li Cardiology
+                            li Central supply
+                            li Emergency room
+                            li Environmental services
+                            li Extended care services
+                            li Facilities/construction
+                            li Imaging
+                            li Laboratory
+                            li Medical records
+                            li Nursing
+                            li Patient room
+                            li Pharmacy
+                            li Surgery
+                        .well.bg-linen
+                            .well__body
+                                h3.text-medium Value-added offerings
+                                p Through limited offers, members can receive additional benefits on their purchases, including: 
+                                ul.col-split-2
+                                    li Free upgrades and software
+                                    li Extended service agreements
+                                    li Extended warranties
+                                    li Free parts/accessories
+                                    li Guaranteed trade in value
+                                    li Free biomedical training
+                                p For more information on group guys, #[a(href="#", title="Contact our team") contact our team ]
+                    .col-sm-6.col-md-4
+                        .sidebar--feat
+                            h4.brand Related content
+                            img(src="images/sample/rectangle-72.png")
+                            p St. Joseph Health reduces cost while improving quality with clinical supply chain achievements
+                            a(href="#", title="Watch now", class="module__link") Watch now
+                                i(class="icon icon-arrow-right")
+        // End Content section - component
+        // Start Content section - Component
+        section(class="module module--outer-bg bdb-linen-10")
+            .container.module__content.bg-white
+                h2(class="module__title") Committed programs
+                .feature-box
+                    .feature-box__content
+                        .row
+                            .col-sm-12.col-md-8
+                                h3.feature-box__title IMPACT Standardization Programs and Committed portfolios
+                                p Vizient helps members reduce costs through commitment-based programs such as IMPACT Standardization Programs, committed portfolios, group buys and pre-commitment. We continually advance these programs and build new ones using member input. As a result, we have successfully delivered market-leading pricing, rebates and more.
+                                p IMPACT Standardization Programs improve procurement processes on commonly purchased products and financially reward standardization efforts. Our programs have paid members more than $1.25 billion since their inception in 1996.  Longevity and high participation rates speak to the programs’ success.  
+                                p Committed Portfolios deliver upfront pricing improvement to standardize members’ purchases in a variety of high-spend product categories.
+                                p For more information, visit #[a(href="#", title="Marketplace Procure") Marketplace Procure ] or #[a(href="#", title="contact our team") contact our team ].
+                            .col-sm-6.col-md-4.col-sep-left
+                                h4.brand Benefits of IMPACT programs:
+                                ul
+                                    li Diverse portfolio of products and suppliers
+                                    li Significant, ongoing cash rebates, paid quarterly
+                                    li Optimal category pricing through tier maximization and price leveling
+                                    li Reduction of product variation
+                                    li Reduction of product variation
+        // End Content section  - Component
+        // Start Content section - Component
+        section(class="module module--outer-bg bdb-linen-10")
+            .container.module__content.bg-white
+                h2(class="module__title")  NOVAKIDS
+                .row
+                    .col-sm-12.col-md-8
+                        .well
+                            .well.bg-linen
+                                .well__body
+                                    h3.feature-box__title Vizient pediatric products, services and analytics program 
+                                    p NOVAKIDS™ supports pediatric caregivers with high-quality products, services, analytics and value-add offerings. It helps you reduce supply spend, advance supply chain efficiencies and improve organizational effectiveness. The program also integrates communication and educational offerings to enrich clinical staff. 
+                                    p NOVAKIDS empowers you to run better—and ultimately, deliver exceptional, cost-effective care for your youngest patients.    
+                        .well
+                            .well.bg-linen
+                                .well__body
+                                    h3.feature-box__title Delivering variety, quality and value for pediatric caregivers
+                                    p In addition to price savings, members may also receive improved financial returns through innovative programs such as IMPACT Standardization, NOVAPLUS® and National Group Buys.
+                    .col-sm-6.col-md-4
+                        .feature-box
+                            .feature-box__content
+                                h3.feature-box__title.brand Contact us about our NOVAKIDS products
+                                button(class='btn btn-primary') Contact us
+        // End Content section  - Component
+         // Start Content section - accordion with sidebar
+        section(class="module module--outer-bg bdb-linen-10") 
+            .container.module__content.bg-white
+                .row
+                    .col-xs-12.col-sm-8
+                        h2 Signature NOVAKIDS products
+                        P In addition to the GPO industry's largest national pediatric contract portfolio, NOVAKIDS includes NOVAKIDS signature products, such as:
+                        p 
+                            b Solutions, services and resources:
+
+                        .accordion--block 
+                            ul
+                                li 
+                                    .item__hdr
+                                        h3 Allina Health 
+                                        a(href="#", title="Expand", class="accordion-control")
+                                            i(class="icon icon-chevron-down")
+                                    .item__content
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        a(href="#", title="Learn more", class="module__link") Learn more
+                                            i(class="icon icon-arrow-right")
+                                li 
+                                    .item__hdr
+                                        h3 Hamilton Medical Center
+                                        a(href="#", title="Expand", class="accordion-control")
+                                            i(class="icon icon-chevron-down")
+                                    .item__content
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        a(href="#", title="Learn more", class="module__link") Learn more
+                                            i(class="icon icon-arrow-right")
+                                li 
+                                    .item__hdr
+                                        h3 INTEGRIS
+                                        a(href="#", title="Expand", class="accordion-control")
+                                            i(class="icon icon-chevron-down")
+                                    .item__content
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        a(href="#", title="Learn more", class="module__link") Learn more
+                                            i(class="icon icon-arrow-right")
+                                li 
+                                    .item__hdr
+                                        h3 Allina Health 
+                                        a(href="#", title="Expand", class="accordion-control")
+                                            i(class="icon icon-chevron-down")
+                                    .item__content
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        a(href="#", title="Learn more", class="module__link") Learn more
+                                            i(class="icon icon-arrow-right")
+
+                   
+        // End Content section - accordion with sidebar

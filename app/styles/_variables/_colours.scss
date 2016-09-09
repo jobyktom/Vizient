@@ -1,0 +1,66 @@
+/// Colours ///
+
+// Colour names have been derived using http://chir.ag/projects/name-that-color
+
+$orange: #ff4e00;
+$peach: #ffdccc;
+$peach-light: #ffeee6;
+$peach-pale: #fff6f2;
+$grey-dark: #28292b;
+$slate: #46474b;
+$slate-light: #64666b;
+$grey-mid: #939498;
+$mist: #e8e8e9;
+$mist-light: #f1f1f1;
+$mist-lightest: #f8f8f8;
+$white: #ffffff;
+$turquoise: #01adab;
+$turquoise-dark: #019b9a;
+$turquoise-darkest: #018a89;
+$turquoise-pale: #e6f7f7;
+$purple: #565eaa;
+$purple-dark: #495091;
+$green: #93c840;
+$green-pale: #e9f4d9;
+$yellow: #ffc02e;
+$yellow-pale: #fff2d5;
+$orange-dark: #cc3e00;
+$grey: #d4d4d4;
+$black: #000;
+
+
+$brand: $orange;
+
+// Colour map used to create color and background color helper classes
+// E.g. .white and .bgc-white
+
+$colourMap: (
+
+    brand: $brand,
+    orange: $orange,
+    peach: $peach,
+    peach-light: $peach-light,
+    peach-pale: $peach-pale,
+    grey-dark: $grey-dark,
+    slate: $slate,
+    slate-light: $slate-light,
+    grey-mid: $grey-mid,
+    mist: $mist,
+    mist-light: $mist-light,
+    mist-lightest: $mist-lightest,
+    white: $white,
+    turquoise: $turquoise,
+    turquoise-dark: $turquoise-dark,
+    turquoise-darkest: $turquoise-darkest,
+    turquoise-pale: $turquoise-pale,
+    purple: $purple,
+    purple-dark: $purple-dark,
+    green: $green,
+    green-pale: $green-pale,
+    yellow: $yellow,
+    yellow-pale: $yellow-pale,
+    orange-dark: $orange-dark,
+    grey: $grey-mid,
+    black: $black
+
+);

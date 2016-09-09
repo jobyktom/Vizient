@@ -1,0 +1,47 @@
+{
+    "blogEntries": {
+        "ID-1":{
+            "postURL": "content-page-right-image.html",
+            "postDate": "2015-10-20",
+            "postAuthor": "",
+            "postTitle": "Content page with right aligned featured image",
+            "postFeaturedImageUrl": "images/sample/Blog_Patient_Doctor.png",
+            "postExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae faucibus lacus. Fusce venenatis urna sit amet neque ornare, eu congue massa ultricies. Fusce tempus risus leo, faucibus eleifend magna posuere in. Ut feugiat nec leo eu molestie. Pellentesque gravida laoreet vestibulum. Donec vel lectus sollicitudin, tempor augue auctor, vulputate magna.",
+            "postCategories": [
+                {
+                    "categoryName": "White papers"
+                }
+            ],
+            "postCommentCount": "11"
+        },
+        "ID-2":{
+            "postURL": "content-page-no-image.html",
+            "postDate": "2015-10-20",
+            "postAuthor": "",
+            "postTitle": "Content page with no featured image",
+            "postFeaturedImageUrl": "",
+            "postExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae faucibus lacus. Fusce venenatis urna sit amet neque ornare, eu congue massa ultricies. Fusce tempus risus leo, faucibus eleifend magna posuere in. Ut feugiat nec leo eu molestie. Pellentesque gravida laoreet vestibulum. Donec vel lectus sollicitudin, tempor augue auctor, vulputate magna.",
+            "postCategories": [
+                {
+                    "categoryName": "White papers"
+                }
+            ],
+            "postCommentCount": "11"
+        },
+        "ID-3":{
+            "postURL": "content-page-right-image.html",
+            "postDate": "2015-10-20",
+            "postAuthor": "",
+            "postTitle": "Content page with right aligned featured image",
+            "postFeaturedImageUrl": "images/sample/Blog_Patient_Doctor_02.png",
+            "postExcerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae faucibus lacus. Fusce venenatis urna sit amet neque ornare, eu congue massa ultricies. Fusce tempus risus leo, faucibus eleifend magna posuere in. Ut feugiat nec leo eu molestie. Pellentesque gravida laoreet vestibulum. Donec vel lectus sollicitudin, tempor augue auctor, vulputate magna.",
+            "postCategories": [
+                {
+                    "categoryName": "White papers"
+                }
+            ],
+            "postCommentCount": "11"
+        }
+
+    }
+}

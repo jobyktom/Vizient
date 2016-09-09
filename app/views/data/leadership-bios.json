@@ -1,0 +1,54 @@
+{
+    "leadershipBios": [
+        {
+            "bioAvatarURL": "images/sample/bio-head@3x.png",
+            "bioName": "Curt Nonomaque",
+            "bioTitle": "President & Chief Executive"
+        },
+        {
+            "bioAvatarURL": "images/sample/bio-head@3x.png",
+            "bioName": "Pete Allen",
+            "bioTitle": "Executive Vice President, Sales and Marketing"
+        },
+        {
+            "bioAvatarURL": "images/sample/bio-head@3x.png",
+            "bioName": "Barbara Anason",
+            "bioTitle": "Senior Vice President of AMC Networks and Strategy"
+        },
+        {
+            "bioAvatarURL": "images/sample/bio-head@3x.png",
+            "bioName": "David Berry",
+            "bioTitle": "Senior Vice President and General Counsel"
+        },
+        {
+            "bioAvatarURL": "images/sample/bio-head@3x.png",
+            "bioName": "Scott Downing",
+            "bioTitle": "Executive Vice President, and Chief Sales and Marketing Officer"
+        },
+        {
+            "bioAvatarURL": "images/sample/bio-head@3x.png",
+            "bioName": "Christopher Dunleavy",
+            "bioTitle": "Area Senior Vice President and Chief Financial Officer"
+        },
+        {
+            "bioAvatarURL": "images/sample/bio-head@3x.png",
+            "bioName": "Jody Hatcher",
+            "bioTitle": "President, Offering Delivery and Operations"
+        },
+        {
+            "bioAvatarURL": "images/sample/bio-head@3x.png",
+            "bioName": "Byron Jobe",
+            "bioTitle": "President of Strategic Growth, Marketing and Innovation"
+        },
+        {
+            "bioAvatarURL": "images/sample/bio-head@3x.png",
+            "bioName": "Colleen Risk",
+            "bioTitle": "Executive Vice President of Research, Public Affairs and Human Resources"
+        }
+
+    ]
+
+
+
+
+}

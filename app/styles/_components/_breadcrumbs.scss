@@ -1,0 +1,23 @@
+// Breadcrumbs
+
+ol.breadcrumb {
+    background-color: $white;
+    margin: 0;
+    padding: 12px 0;
+
+    > li {
+        margin: 0;
+        font-size: $font-size-small;
+        font-family: $soleto-medium;
+    }
+
+    .active {
+        color: $black;
+    }
+}
+
+
+.breadcrumb > li + li:before {
+    content: '\/ ';
+            color: $brand;
+}

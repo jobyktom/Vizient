@@ -1,0 +1,47 @@
+extends layouts/_default
+
+block hero
+    +hero(heros.whoWeAre)
+block breadcrumbs
+    +breadcrumbs(breadcrumbs.whoWeAre)
+block content
+    main(class="body-content")
+        // Start Content section - 3 column
+        section(class="module module--outer-bg")
+            .container.module__content.bg-white
+                h2(class="module__title") Introducing Vizient
+                .row
+                    .col-sm-12.col-md-4
+                        p By converging three health care industry leaders, VHA, UHC and Novation, we created Vizient, the nation’s largest member-owned health care services company.
+                        p Backed by network-powered insights in the critical areas of clinical, operational, and supply chain performance, Vizient empowers members to deliver exceptional, cost-effective care at every turn.
+                        p Together with our members, we are fueling new models of business and new approaches to care—all through the power of brilliant connectivity.
+                    .col-sm-6.col-md-4
+                        +pullquote({classes: "styled", text:"Vizient represents a true milestone where we have come together with the most respected names in the industry to form the largest member-owned health care company in the country. ", imgURL:"images/sample/bio-head-two@3x.png", name: "Chris Hatwig", title: "President at Apexus", showSpotlightLink: true})
+                    .col-sm-6.col-md-4
+                        +sectionNav(sectionNavs.whoWeAre)
+        // End Content section - 3 column
+        // Start Purple standout content section - 2 column
+        section(class="bg-scampi module white", id="the-mission")
+            .container.module__content
+                h2(class="module__title white") The mission
+                .row
+                    .col-sm-12.col-md-4
+                        p We believe better health for everyone starts by making sure that every person has the opportunity to receive the best health care possible. We equip our members with the necessary tools and intelligence to balance cost and quality of care, so they can better serve their patients and communities.
+        // End Purple standout content section - 2 column
+        include modules/_our-leadership
+        // Start Green standout content section - 3 column
+        section(class="module bg-persiangreen white", id="our-approach")
+            .container.module__content
+                h2(class="module__title white") Our Approach
+                h3(class="module__sub-title white") We work tirelessly on achieving our mission.
+                .row
+                    .col-sm-12.col-md-4
+                        p We’ve combined the harmonizing strengths of our legacy brands VHA, UHC, and Novation, to serve more than 5,200 health system members and affiliates with
+                    .col-sm-12.col-md-4
+                        p unprecedented health care insight that helps members do more than ever before. We create and nurture these brilliant connections with an entirely unique vision
+                    .col-sm-12.col-md-4
+                        p for the future, where efficiency and empathy go hand-in-hand. We’re ready to guide our members into a thriving future of health care.
+        // End Green standout content section - 3 column
+        include modules/_brief-history
+        include modules/_brighter-future
+        +relatedlinks(relatedlinks.whoWeAre)

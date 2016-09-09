@@ -1,0 +1,500 @@
+/*
+*   Description: Vizient website
+*   Author: Jayson Hunter, Sean Hawie
+*   Date: October 2015
+*   Version 1.0.0
+*/
+
+/*eslint-disable */
+
+'use strict';
+
+var Vizient = (function () {
+
+  var $window = $(window),
+      pagePathURL = '',
+      hubPageURL = '',
+      hubPageURLLessSlash = '',
+      $body = $('body'),
+      contentScrolledClass = 'content-scrolled',
+      contentScrollOffset = 200,
+      didScroll,
+      lastScrollTop = 0,
+      delta = 5,
+      $headerBarHeight,
+      $primaryNavItems = $('#primary-nav .header-nav__nav-item'),
+      $primaryNavLinks = $('#primary-nav .header-nav__nav-link'),
+      $mobileNavItems = $('#mobile-nav .mobile-nav__nav-item'),
+      $mobileNavLinks = $('#mobile-nav .mobile-nav__nav-link'),
+      $postEntries = $('.post-entries'),
+      $postEntryList = $('.post__entry'),
+      $megaNav = $('.js-mega-nav'),
+      megaNavOpenClass = "mega-nav-is-open",
+      $megaNavClose = $('.js-mega-nav-close'),
+      $megaNavItems = $('.mega-nav__nav-content'),
+      megaNavTimeout,
+      primaryNavTimeout;
+
+  var init = function init() {
+    // Check if we've scrolled the page every 250ms
+    setInterval(function () {
+
+      if (didScroll) {
+        _hasPageScrolled();
+        didScroll = false;
+      }
+    }, 250);
+
+    // When windows resizes check height of page header and pass
+    // it to the function controlling the sticky header
+    window.onresize = function () {
+
+      $body.hasClass(contentScrolledClass) && $body.removeClass(contentScrolledClass);
+
+      setTimeout(function () {
+        _equalHeights();
+      }, 100);
+    };
+
+    // Initialise the website
+
+    _getPagePaths();
+    _setupStickyHeader();
+    _setupPrimaryNav();
+    _setupMegaNav();
+    _setupMobileNav();
+    _setupActiveMenuItems();
+    _setupSectionNav();
+  _setupSectionSubNav();
+    _setupCarousels();
+  _showTimeline();
+    _addRssFeeds();
+    _adIE8Class();
+
+    setTimeout(function () {
+      _equalHeights();
+    }, 100);
+  };
+
+  // Check if the page has been scrolled, and expand or contract the main header bar
+  var _hasPageScrolled = function _hasPageScrolled() {
+    var st = $(window).scrollTop();
+
+    // Make sure they scroll more than delta
+    if (Math.abs(lastScrollTop - st) <= delta) return;
+
+    // If they scrolled down and are past the navbar
+    if (st > lastScrollTop && st > $headerBarHeight) {
+
+      // Scroll Down
+      $body.addClass(contentScrolledClass);
+    } else {
+      // Scroll Up
+      if (st + $(window).height() < $(document).height()) {
+        $body.removeClass(contentScrolledClass);
+      }
+    }
+
+    lastScrollTop = st;
+  };
+
+  // Get an array of the page URL components, and extract the hub and content page text
+  // This text is used to add active classes to the menu navs.
+  var _getPagePaths = function _getPagePaths() {
+    var splitPagePathURL = [];
+
+    // Get the page URL
+    pagePathURL = window.location.pathname;
+    splitPagePathURL = pagePathURL.split('/');
+
+    hubPageURLLessSlash = splitPagePathURL[splitPagePathURL.length - 1];;
+    // Get the name of the the hub page E.g. 'what-we-do'
+    hubPageURL = '/' + hubPageURLLessSlash;
+  };
+
+  // The sticky header bar
+  var _setupStickyHeader = function _setupStickyHeader() {
+    $headerBarHeight = $('#header-bar').height();
+
+    // Check if the content has scrolled down by a set amount.
+    $window.scroll(function () {
+      didScroll = true;
+    });
+  };
+
+  // The Primary Nav Controller.
+  // Hovering on menu items shows the relevant Mega Nav section
+  var _setupPrimaryNav = function _setupPrimaryNav() {
+    var megaNavOpenClass = "mega-nav-is-open";
+
+    // Control displaying the mega nav on hover of the primary nav items
+    $primaryNavLinks.on('mouseover', function (e) {
+      var that = this;
+
+      window.clearTimeout(megaNavTimeout);
+
+      // Only show after short delay on hover, and hide on mouseout
+      primaryNavTimeout = setTimeout(function (e) {
+        $(that).tab('show');
+      }, 200);
+    }).on('mouseout', function () {
+      window.clearTimeout(primaryNavTimeout);
+      _setMegaNavTimeout();
+    }).on('click', function (e) {
+      // On first tap/hover open the mega nav else open the page
+      if ($(this).hasClass(megaNavOpenClass)) {
+        window.location.href = $(this).attr("data-href");
+      } else {
+        $(this).tab('show');
+      }
+    });
+  };
+
+  // MegaNav functionality. Hide on mouseout and setup close button.
+  var _setupMegaNav = function _setupMegaNav() {
+    // empty our network toggle
+    $('a[data-toggle="tab"]:eq(3)').attr('data-toggle', '').on('mouseenter', function () {
+      $primaryNavItems.removeClass('active');
+      $primaryNavLinks.removeClass(megaNavOpenClass);
+      $megaNavItems.removeClass('active in');
+    });
+
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+      $primaryNavLinks.removeClass(megaNavOpenClass);
+      $(this).addClass(megaNavOpenClass);
+    }).on('hide.bs.tab', function (e) {
+      $primaryNavLinks.removeClass(megaNavOpenClass);
+    });
+
+    $megaNav.hover(function (e) {
+      window.clearTimeout(megaNavTimeout);
+    }, function () {
+      _setMegaNavTimeout();
+    });
+
+    // Close all mega nav content blocks when the close button is clicked
+    $megaNavClose.on('click', function () {
+      $primaryNavLinks.removeClass(megaNavOpenClass);
+      $primaryNavItems.removeClass('active');
+      $megaNavItems.removeClass('active in');
+    });
+  };
+
+  // Apply a timeout to hide the mega nav
+  var _setMegaNavTimeout = function _setMegaNavTimeout() {
+    window.clearTimeout(megaNavTimeout);
+
+    megaNavTimeout = setTimeout(function () {
+      $primaryNavItems.removeClass('active');
+      $primaryNavLinks.removeClass(megaNavOpenClass);
+      $megaNavItems.removeClass('active in');
+    }, 1250);
+  };
+
+  // Control Mobile nav open/closed state
+  var _setupMobileNav = function _setupMobileNav() {
+    var $mobileMenuBar = $('#mobile-header'),
+        $mobileMenuNavIcon = $('.js-mobile-icon');
+
+    $mobileMenuNavIcon.on('click', function () {
+      $mobileMenuBar.toggleClass('is-open');
+    });
+  };
+
+  // Highlight the active menu item both on desktop nad mobile menus
+  var _setupActiveMenuItems = function _setupActiveMenuItems() {
+    var menuActiveClass = 'is-active',
+        linkURL = '',
+        hubNavItemIndex = 0,
+        hubLinkCount = $primaryNavLinks.length,
+        $subNavLinks = $('.mobile-nav__sub-nav-link'),
+        subNavItemIndex = 0,
+        subNavLinkCount = $('.mobile-nav__sub-nav-link').length,
+        foundNavItem = false;
+
+    // Highlight the active primary nav menu item
+    while (!foundNavItem && hubNavItemIndex < hubLinkCount) {
+
+      // Get the data-href value from the <a> link
+      linkURL = $($primaryNavLinks[hubNavItemIndex]).data('href');
+
+      // If the data-href matches the hub URL then make the menu item active
+      if (linkURL === hubPageURLLessSlash) {
+        foundNavItem = true;
+
+        // Highlight dekstop nav
+        $($primaryNavLinks[hubNavItemIndex]).addClass(menuActiveClass);
+
+        // Highlight mobile nav hub item
+        $($mobileNavLinks[hubNavItemIndex + 1]).addClass(menuActiveClass);
+      }
+
+      hubNavItemIndex++;
+    };
+
+    // Highlight mobile sub nav item using the data-href as before
+    foundNavItem = false;
+
+    while (!foundNavItem && subNavItemIndex < subNavLinkCount) {
+      linkURL = $($subNavLinks[subNavItemIndex]).data('href');
+
+      if (linkURL === hubPageURLLessSlash) {
+        foundNavItem = true;
+
+        $($subNavLinks[subNavItemIndex]).addClass(menuActiveClass);
+      }
+
+      subNavItemIndex++;
+    };
+  };
+
+  // The 'in page' section nav controller
+  var _setupSectionNav = function _setupSectionNav() {
+    $('.section-nav .block-list__list-link').click(function (event) {
+      event.preventDefault();
+      $('.section-nav .block-list__list-link').removeClass('active');
+      $(this).addClass('active');
+      $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top - 70
+      }, 500);
+    });
+  };
+  
+// The 'in page' section nav controller for main menu nav
+  var _setupSectionSubNav = function _setupSectionSubNav() {
+    $('.mega-nav__nav-link_module').click(function (event) {
+      //event.preventDefault();
+
+      $('html, body').animate({
+        scrollTop: $($(this).attr('href').substring($(this).attr('href').indexOf('#'))).offset().top - 70
+      }, 500);
+    });
+  };
+  
+  // Enable Carousels
+  var _setupCarousels = function _setupCarousels() {
+    var carouselDelay = 4000;
+
+    $('.carousel').carousel({
+      interval: carouselDelay
+    });
+  }; 
+
+  /*
+    Equal heights function
+    ----------------------
+    Elements labelled "equal-heights-md" will only get equalised on desktop.
+    Elements labelled "equal-heights-sm" will get equalised on tablet and desktop.
+    Elements labelled "equal-heights-mbls" will get equalised from 480px and above.
+  */
+  var _equalHeights = function _equalHeights(itemClassName) {
+
+    var heightClass = itemClassName || '.equal-height-item';
+    var w = $(window).width();
+
+    // unset all heights first
+    $('.equal-heights-md, .equal-heights-sm, .equal-heights-mbls').find(heightClass).css({ width: '', height: '' });
+
+    // < 480px
+    if (w < 480) {}
+
+    // 480px - 768px
+    else if (480 <= w && w < 768) {
+
+        $('.equal-heights-mbls').each(function () {
+
+          // find the tallest block then make all blocks that height
+          var tallestItem = 0;
+          $(this).find(heightClass).each(function () {
+            if ($(this).height() > tallestItem) tallestItem = $(this).height();
+          });
+          $(this).find(heightClass).height('').height(tallestItem);
+        });
+
+        // 768px - 1024px
+      } else if (w < 1024) {
+
+          $('.equal-heights-mbls, .equal-heights-sm').each(function () {
+
+            // find the tallest block then make all blocks that height
+            var tallestItem = 0;
+            $(this).find(heightClass).each(function () {
+              if ($(this).height() > tallestItem) tallestItem = $(this).height();
+            });
+            $(this).find(heightClass).height('').height(tallestItem);
+          });
+
+          // > 1024px
+        } else {
+
+            $('.equal-heights-mbls, .equal-heights-sm, .equal-heights-md').each(function () {
+
+              // find the tallest block then make all blocks that height
+              var tallestItem = 0;
+              $(this).find(heightClass).each(function () {
+                if ($(this).height() > tallestItem) tallestItem = $(this).height();
+              });
+              $(this).find(heightClass).height('').height(tallestItem);
+            });
+          }
+  };
+// Timeline code to history
+var _showTimeline = 
+
+function showTimeline(){
+
+$(function () {
+
+    var counter = 0,
+        divs = $('#year0,#year1, #year2, #year3,#year4,#year5,#year6,#year7,#year8,#year9');
+
+    function showDiv () {
+  divs.css({display:"block"});
+        divs.hide() // hide all divs
+            .filter(function (index) { return index == counter % 11; }) // figure out correct div to show
+            .show('fast'); // and show it
+        counter++;
+    }; // function to loop through divs and show correct div
+
+    showDiv(); // show first div    
+
+    setInterval(function () {
+        showDiv(); // show next div
+    }, 3 * 1000); // do this every 3 seconds    
+});
+}
+
+  // Populate news-and-events.html with RSS feed
+  var _addRssFeeds = function _addRssFeeds() {
+    jQuery.browser = {};
+    (function () {
+
+      jQuery.browser.msie = false;
+      jQuery.browser.version = 0;
+
+      if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+        jQuery.browser.msie = true;
+        jQuery.browser.version = RegExp.$1;
+      }
+    })();
+
+    //jQuery.getFeed({
+    //  url: 'https://www.vizientinc.com/rss/news.txt',
+    //  success: function success(feed) {
+     //   populate(feed);
+    //  }
+    //});
+
+  jQuery.getFeed({
+      url: 'https://www.vizientinc.com/rss/pressreleases.txt',
+      success: function success(prfeed) {
+        populatePressRelease(prfeed);
+      }
+    });
+  
+   /* function populate(feed) {
+      $(feed.items).each(function (index) {
+        var date = moment(new Date(this.updated)).format('D MMMM YYYY');
+        // Make temporary elem with messy description inside, and traverse to get link.
+        var link = $("<div>" + this.description + "</div>").find(".field-field-news-item-article-url a").attr('href');
+        var html = '' + '<article class="post__entry">' + '<header class="post__header">' + '<p class="post__date">' + date + '</p>' + '<a href="' + link + '" target="_blank" class="post__title"><span>' + this.title + '</span><i class="icon icon-arrow-right ml-10"></i></a>' + '</header>' + '</article>';
+
+        if (index <= 2) {
+          $('.news-posts .col-one').append(html);
+        } else if (index > 2 && index <= 5) {
+          $('.news-posts .col-two').append(html);
+        }
+      });
+    }*/
+      function populatePressRelease(prfeed) {
+      $(prfeed.items).each(function (index) {
+        var date = moment(new Date(this.updated)).format('D MMMM YYYY');
+        // Make temporary elem with messy description inside, and traverse to get link.
+        //var link = $("<div>" + this.description + "</div>").find(".field-field-news-item-article-url a").attr('href');
+    var link = this.link;
+        var html = '' + '<article class="post__entry">' + '<header class="post__header">' + '<p class="post__date">' + date + '</p>' + '<a href="' + link + '" target="_blank"  class="post__title"><span>' + this.title + '</span><i class="icon icon-arrow-right ml-10"></i></a>' + '</header>' + '</article>';
+
+        if (index < 2) {
+          $('.press-posts .col-two').append(html);
+        }
+      });
+    }
+  };
+
+  // Add a .ie8 class for css fixes
+  var _adIE8Class = function _adIE8Class() {
+    function isIE() {
+      var myNav = navigator.userAgent.toLowerCase();
+      return myNav.indexOf('msie') != -1 ? parseInt(myNav.split('msie')[1]) : false;
+    }
+
+    if (isIE() == 8) {
+      // IE8 code
+      $('html').addClass('ie8');
+    } else {
+      // Other versions IE or not IE
+    }
+  };
+
+  //  Only expose these functions to the global scope
+  return {
+    init: init
+  };
+})();
+
+var loadMoreSize = $(".blog .post__entry").size();
+var loadMoreX = 3;
+
+// On document ready bootstrap the website
+$(document).ready(function () {
+
+  Vizient.init();
+
+  //- Load More
+  $(".blog .post__entry:lt(" + loadMoreX + ")").addClass('show');
+
+  $(".js-load-more").click(function () {
+    loadMoreX = loadMoreX + 3 <= loadMoreSize ? loadMoreX + 3 : loadMoreSize;
+    $(".blog .post__entry:lt(" + loadMoreX + ")").not('.show').addClass('show');
+    if (loadMoreX == loadMoreSize) {
+      $(this).attr('disabled', true);
+    }
+    return false;
+  });
+
+  // override default options (also overrides global overrides)
+    $('div.expandable').expander({
+      slicePoint:       200,  // default is 100
+      expandPrefix:     ' ', // default is '... '
+      expandText:       '+ Expand', // default is 'read more' 
+      userCollapseText: '- Reduce', // default is 'read less'
+      moreClass: 'btn-expand',
+      lessClass: 'btn-reduce',
+      expandEffect: 'fadeIn'
+    });
+
+    //accordion
+ 
+    $(".accordion-control").click(function(event) { 
+      event.preventDefault();
+      $(this).children('.icon').toggleClass('icon-chevron-up');
+      $(this).children('.icon').toggleClass('icon-chevron-down');
+      $(this).parent('.item__hdr').siblings('.item__content').slideToggle();
+    });   
+
+    // open/close in-page nav
+    $(".nav-trigger").click(function(event) {
+      event.preventDefault();
+      $(this).children('.icon').toggleClass('icon-chevron-down');
+      $(this).children('.icon').toggleClass('icon-chevron-up');
+      $(this).siblings('.section-nav').slideToggle();
+    }); 
+
+    if ( $('.nav-special2').length ) {
+      $('.nav-special2').find('a').first().addClass('active');
+    }
+
+   
+
+});
+//# sourceMappingURL=main.js.map

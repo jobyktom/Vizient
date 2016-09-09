@@ -1,0 +1,113 @@
+extends layouts/_default
+
+block hero
+    +hero(heros.becomeASupplier)
+block breadcrumbs
+    +breadcrumbs(breadcrumbs.becomeASupplier)
+block content
+    main(class="body-content")
+        section(class="module module--outer-bg bdb-brand-24")
+            .container.module__content.bg-white
+                h2(class="module__title") Driving results
+                .row
+                    .col-sm-12.col-md-4
+                        p Our suppliers play an important role. Whether it’s delivering critical medications and supplies or a cutting-edge medical device, our suppliers are proven to drive results, improve quality and reduce costs.
+                        p Vizient Supply, LLC. (“Vizient™”) offers a unique supplier experience through increased supply chain efficiency, visibility and credibility. Our portfolio executives and contracting professionals deliver the support you need to provide the right solutions at the right price, maximizing your success.
+                    .col-sm-6.col-md-4
+                        +bigStat('100,000', 'Vizient serves the purchasing needs of more than 100,000 members and their affiliates.')
+                    .col-sm-6.col-md-4
+                        +sectionNav(sectionNavs.becomeASupplier)
+        // End Content section - 3 column
+        // Start Content section - 2 column
+        section(class="module bdb-brand-24", id="become-a-supplier")
+            .container.module__content
+                h2(class="module__title") Become a supplier
+                .row
+                    .col-sm-8
+                        p Vizient is the industry’s largest supply contracting company and the nation’s largest member-owned health care services company. We help members and their affiliates–from academic medical centers to acute and non-acute community providers–reduce costs and deliver better, smarter care for their patients and communities.
+                        p We deliver unmatched supply savings and value through our sourcing services, as well as information and data. To join our supplier team, review the benefits and bidding system to determine if Vizient is a fit for you.
+                    .col-sm-4
+                        +bigStat('+$56.8bn', 'Vizient’s purchasing volume, the largest in the industry')
+        // End Content section - 2 column
+        // Start Content section - 3 column
+        section(class="module module--outer-bg bdb-brand-24", id="supplier-benefits")
+            .container.module__content.bg-white
+                h2(class="module__title") Supplier benefits
+                .row.equal-heights-sm
+                    .col-sm-4
+                        .well.bg-linen.equal-height-item
+                            .well__body
+                                h3 Increased efficiency
+                                ul
+                                    li #[strong Reduced contracting expense] #[br] Vizient’s national agreements help suppliers negotiate once, offering benefits beyond reduced administrative tasks.
+                                    li #[strong Reduced selling costs] #[br] Vizient provides solid sales team support and marketing communications tools that reduce suppliers’ expenses.
+                                    li #[strong Predictable sales and purchasing patterns] #[br] Access to our large membership enables suppliers to plan and forecast effectively.
+                                    li #[strong Flexible sourcing strategies and contracting programs] #[br] Our flexible sourcing strategies reward members while delivering incremental volume to suppliers.
+                                    li #[strong Innovative technology] #[br] Vizient’s contract management tools allow suppliers to manage the contract life cycle through a secure, supplier-only website.
+                    .col-sm-4
+                        .well.bg-linen.equal-height-item
+                            .well__body
+                                h3 Increased visibility
+                                ul
+                                    li #[strong Member-focused organizations] #[br] Because Vizient serves a broad health care market—as well as education, corporate and hospitality customers—our suppliers have exposure to more opportunities. Vizient contracts represent more than 90 percent of members’ health care purchasing needs.
+                                    li #[strong Subject-matter experts] #[br] Our contract experts’ diverse experience spans pharmacy, nursing, administration and supply chain, equipping them to best connect supplier solutions with member needs.
+                                    li #[strong Extensive supply chain catalog] #[br] Members can access and activate contract information quickly through our online contracting database and supply chain workflow tool.
+
+                    .col-sm-4
+                        .well.bg-linen.equal-height-item
+                            .well__body
+                                h3 Increased credibility
+                                ul
+                                    li #[strong Competitive contract process] #[br] Following the principles of the American Bar Association’s Model Procurement Code, our contract process integrates qualitative and financial factors to identify the proposals with the best member value.
+                                    li #[strong Market leadership] #[br] With the industry’s largest purchasing volume, Vizient connects suppliers with more member touch points than anyone else.
+                                    li #[strong Successful track record] #[br] For 14 years , Vizient has helped suppliers of all sizes meet their business goals while providing the right solutions at the right price to our members.
+                button(class="btn btn-default btn-long") Supplier standards and requirements
+
+        // End Content section - 3 column
+        // Start Feature box with sidebar
+        section(class="module module--outer-bg bdb-brand-24", id="bid-system")
+            .container.module__content.bg-white
+                .feature-box
+                    .feature-box__content.pb-100
+                        .row
+                            .col-sm-8
+                                h2(class="feature-box__title") Bid system
+                        .row
+                            .col-sm-12.col-md-4
+                                p The bid calendar shows the product categories to be bid. After you register, you will get a confirmation number, as well as a designated portfolio executive to answer questions related to the invitation to bid categories and requirements.
+                                p We must receive a request for a bid no later than five (5) working days after the posted bid mailing date. After that time, a request for a bid will not be sent.
+                                p Learn how to participate in the Vizient Supply, LLC. (“Vizient”) competitive bid process, or how to submit a bid in Emptoris, our online eSourcing platform, by viewing our Emptoris Supplier Training module. You will receive step-by-step instructions on how to submit a bid, along with tips on creating a successful bid.
+                            .col-sm-12.col-md-4
+                                p Vizient uses eSignature to make the signing process faster and easier for suppliers by eliminating the manual routing of contracts for signature. The eSignature process is intuitive, but please view our online training instructions online for detailed information.
+                                p NOTE: Because of the ever-changing nature of the health care world, Vizient reserves the right to modify the bid/proposal calendar as needed. We encourage suppliers to visit the bid/proposal calendar often for any changes.
+                            .col-sm-12.col-md-4
+                                .well.bg-linen
+                                    .well__body
+                                        p.font-large.text-medium Bid calendar
+                                        +medialist(medialists.bidCalendar)
+                                        div.text-center.mt-30
+                                            button.btn.btn-default See full bid calendar
+                    img(src="images/rubber-band-ball.png", class="feature-box__ball")
+        // End Feature box with sidebar
+        // Start Content section - 3 column
+        section(class="module module--outer-bg bdb-brand-24", id="supplier-grievances")
+            .container.module__content.bg-white
+                h2(class="module__title") How to file a grievance
+                .row
+                    .col-xs-12.col-sm-4
+                        p The preferred method for submitting vendor grievances is through the Vizient Compliance Hotline or website. An aggrieved party may call the hotline at (877) 220-1615 or may submit a grievance via the #[a EthicsPoint] web site. The Compliance Hotline is managed by EthicsPoint, an independent third party.
+                        a(href="#") More about vendor grievances
+                            i(class="icon icon-arrow-right ml-10")
+                    .col-xs-12.col-sm-4
+                        p.h4.text-medium The Vizient Vendor Grievance Process will result in one of the following outcomes:
+                        ul
+                            li Sustain the original bid or innovative technology decision
+                            li Bid or re-bid the product or product category
+                            li Award a contract to the aggrieved party
+                    .col-xs-12.col-sm-4
+                        .well.bg-linen
+                            .well__body
+                                p.font-large.text-medium Submit a grievance
+                                +medialist(medialists.appealProcess)
+
+        +relatedlinks(relatedlinks.becomeASupplier)

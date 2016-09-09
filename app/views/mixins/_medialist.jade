@@ -1,0 +1,16 @@
+mixin medialist(mediaListObject)
+    - var mediaListClasses = mediaListObject.mediaListClasses || ''
+
+    <!-- Start Media List Component -->
+    ul(class="media-list #{mediaListClasses}")
+        each item, index in mediaListObject.mediaBlocks
+            li(class="media")
+                .media__img
+                    img(src="#{item.imgURL}", alt="#{item.mediaTitle} image")
+                .media__body
+                    div.media-title #{item.mediaTitle}
+                    if item.mediaExcerpt
+                        p #{item.mediaExcerpt}
+                    if item.linkText
+                        a(href="#{item.linkUrl}", class="media-link") #{item.linkText}
+    <!-- End Media List Component -->

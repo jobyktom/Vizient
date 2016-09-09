@@ -1,0 +1,137 @@
+extends layouts/_default
+
+block hero
+    +hero(heros.supplyChain)
+block breadcrumbs
+    +breadcrumbs(breadcrumbs.supplyChain)
+block content
+    main(class="body-content")
+        // Start Content section
+        section(class="module module--outer-bg bdb-linen-10")
+            .container.module__content.bg-white
+                .row
+                    // START - LEFT COLUMN
+                    .col-sm-6.col-md-3
+                        // Start Module - Section navigation
+                        .nav-special.hidden-xs
+                            a(href="#", title="Default navigation item", class="nav-trigger") Default navigation item
+                                i(class="icon img-right icon-chevron-up")
+                            +sectionNav(sectionNavs.supplyChainPrograms)
+                        // End Module - Section navigation
+                        // Start Module - Section navigation
+                        .nav-special.hidden-xs
+                            a(href="#", title="Default navigation item", class="nav-trigger") Default navigation item
+                                i(class="icon img-right icon-chevron-up")
+                            +sectionNav(sectionNavs.supplyChainPrograms)
+                        // End Module - Section navigation
+                    // END - LEFT COLUMN
+                    // START - MIDDLE COLUMN
+                    .col-sm-12.col-md-6
+                        // Start Module - Generic content
+                        p Leading sources identify as much as $1.1 trillion in potential waste and inefficiency that can be taken out of the U.S. healthcare system. Core areas of opportunity to eliminate waste include enhanced operational efficiency, clinical and physician alignment and management of care across the continuum. 
+                        p 
+                            img(src="images/sample/image-964@2x.png")
+                        h3.brand A pragmatic and accountable path toward sustainable operational and financial performance
+                        p MedAssets Operational Improvement Solutions are delivered by Lean and Six Sigma experts, physician and clinical experts with best practice change management and implementation know-how. 
+                        // End Module - Generic content
+                        // Start Module - Accordion
+                        .accordion--block 
+                            ul
+                                li 
+                                    .item__hdr
+                                        h3 Allina Health 
+                                        a(href="#", title="Expand", class="accordion-control")
+                                            i(class="icon icon-chevron-down")
+                                    .item__content
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        a(href="#", title="Learn more", class="module__link") Learn more
+                                            i(class="icon icon-arrow-right")
+                                li 
+                                    .item__hdr
+                                        h3 Hamilton Medical Center
+                                        a(href="#", title="Expand", class="accordion-control")
+                                            i(class="icon icon-chevron-down")
+                                    .item__content
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        a(href="#", title="Learn more", class="module__link") Learn more
+                                            i(class="icon icon-arrow-right")
+                                li 
+                                    .item__hdr
+                                        h3 INTEGRIS
+                                        a(href="#", title="Expand", class="accordion-control")
+                                            i(class="icon icon-chevron-down")
+                                    .item__content
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        a(href="#", title="Learn more", class="module__link") Learn more
+                                            i(class="icon icon-arrow-right")
+                        // End Module - Accordion
+                        P MedAssets Operational Improvement Solutions are delivered by Lean and Six Sigma experts, physician and clinical experts with best practice change management and implementation know-how. 
+                        // Start Module - Well
+                        .well.bg-linen
+                            .well__body
+                                h4 Values
+                                p Every day we operate from a strong set of values that ensure we provide outstanding experiences to our members.
+                                ul.col-split-2
+                                    li 
+                                        h5.text-medium Headline title
+                                        p Treat others as you would like to be treated
+                                    li 
+                                        h5.text-medium Headline title
+                                        p Treat others as you would like to be treated
+                                    li 
+                                        h5.text-medium Headline title
+                                        p Treat others as you would like to be treated
+                                    li 
+                                        h5.text-medium Headline title
+                                        p Treat others as you would like to be treated
+                        // End Module - well
+                        // Start Module - Well
+                        .well.bg-linen
+                            .well__body
+                                h4 Supply Chain Management Services
+                                p Accelerate adoption of leading practices and achieve sustainable cost reductions through ongoing management of your supply chain operation. 
+                        // End Module - well
+                        // Start Module - Feature box with list
+                        .feature-box
+                            .feature-box__content.equal-height-item
+                                .row
+                                    .col-sm-12.col-md-6
+                                        h3 Learn networks
+                                        p Our learn networks enable you collaborate with trusted colleagues. You can build relationships and learn from peers and experts regionally or nationally through role-based networks ranging from executive network boards for CEOs to peer-to-peer networks. You can drive knowledge sharing around common challenges through topic-specific networks.
+                                    .col-sm-12.col-md-6
+                                        h4.brand Benefits of learn networks
+                                        ul
+                                            li Connect with key learnings from members accross the nation
+                                            li Connect with key learnings from members accross the nation
+                                            li Connect with key learnings from members accross the nation
+                                            li Connect with key learnings from members accross the nation
+                        // Start Module - Feature box with list
+                    // END - MIDDLE COLUMN
+                    // START - RIGHT COLUMN
+                    .col-sm-6.col-md-3
+                        // Start Module - Login module
+                        .well.bg-linen
+                            .well__body
+                                h4.border-b Existing members
+                                p Log in to access your dashboard and solutions information
+                                a(href="#", title="Member login", class="btn btn-primary") Member login
+                        // End Module - Login module
+                        p 
+                            b Related content
+                        +moduleNav(moduleNavs.setA)
+                        // Start Module - Event module
+                        .sidebar--feat
+                            h4.brand 2016 Vizient Connections Summit
+                            p.text-medium April 13-15, 2016 Bellagio Hotel, Las Vegas
+                            p Together, we can drive exponential impact and better patient care at every turn
+                        // End Module - Event module
+                        // Start Module - PDF
+                        .module__content--margin.well.bg-graylighter
+                            .well__body
+                                h4.border-b Learn how to submit a bid
+                                img(src="images/icons/icon-pdf.png", class="img-left")
+                                p.img-p Step-by-step instructions on how to navigate Emptoris
+                                    a(href="#", title="PDF, click to download") PDF 312KB
+                        // End Module - PDF
+                    // END - RIGHT COLUMN
+        // End Content section  - Component

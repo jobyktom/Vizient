@@ -1,0 +1,136 @@
+{
+    "sectionNavs": {
+        "whatWeDo": {
+            "navListItems": [
+                {
+                    "listItemText": "Our new portfolio",
+                    "listItemTarget": "#our-new-portfolio"
+                },
+                {
+                    "listItemText": "Insights",
+                    "listItemTarget": "#insights"
+                },
+                {
+                    "listItemText": "Efficiency",
+                    "listItemTarget": "#efficiency"
+                },
+                {
+                    "listItemText": "Patient Impact",
+                    "listItemTarget": "#patient-impact"
+                },
+                {
+                    "listItemText": "Collaboration",
+                    "listItemTarget": "#collaboration"
+                }
+            ]
+        },
+        "whoWeAre": {
+            "navListItems": [
+                {
+                    "listItemText": "The mission",
+                    "listItemTarget": "#the-mission"
+                },
+                {
+                    "listItemText": "Our leadership",
+                    "listItemTarget": "#our-leadership"
+                },
+                {
+                    "listItemText": "Our approach",
+                    "listItemTarget": "#our-approach"
+                },
+                {
+                    "listItemText": "Our history",
+                    "listItemTarget": "#our-history"
+                },
+                {
+                    "listItemText": "A brighter future",
+                    "listItemTarget": "#help-us-create-a-brighter-future"
+                }
+            ]
+        },
+        "becomeAMember": {
+            "navListItems": [
+                {
+                    "listItemText": "About membership",
+                    "listItemTarget": "#about-membership"
+                },
+                {
+                    "listItemText": "Benefits of membership",
+                    "listItemTarget": "#benefits-of-membership"
+                },
+                {
+                    "listItemText": "Membership tiers",
+                    "listItemTarget": "#membership-tiers"
+                },
+                {
+                    "listItemText": "Connect with us",
+                    "listItemTarget": "#is-membership-right-for-my-organisation"
+                }
+            ]
+        },
+        "ourNetworks": {
+            "navListItems": [
+                {
+                    "listItemText": "Learn together",
+                    "listItemTarget": "#learn-together"
+                },
+                {
+                    "listItemText": "Improve together",
+                    "listItemTarget": "#improve-together"
+                },
+                {
+                    "listItemText": "Build together",
+                    "listItemTarget": "#build-together"
+                },
+                {
+                    "listItemText": "Councils",
+                    "listItemTarget": "#councils"
+                }
+            ]
+        },
+        "becomeASupplier": {
+            "navListItems": [
+                {
+                    "listItemText": "Become a supplier",
+                    "listItemTarget": "#become-a-supplier"
+                },
+                {
+                    "listItemText": "Supplier benefits",
+                    "listItemTarget": "#supplier-benefits"
+                },
+                {
+                    "listItemText": "Bid system",
+                    "listItemTarget": "#bid-system"
+                },
+                {
+                    "listItemText": "Supplier grievances",
+                    "listItemTarget": "#supplier-grievances"
+                }
+            ]
+        },
+        "supplyChainPrograms": {
+            "navListItems": [
+                {
+                    "listItemText": "Group buys",
+                    "listItemTarget": "#group-buys"
+                },
+                {
+                    "listItemText": "Committed programs",
+                    "listItemTarget": "#committed-programs"
+                },
+                {
+                    "listItemText": "NOVAKIDS",
+                    "listItemTarget": "#novakids"
+                },
+                {
+                    "listItemText": "Supplier diversity",
+                    "listItemTarget": "#supplier-diversity"
+                },
+                {
+                    "listItemText": "Innovative technology",
+                    "listItemTarget": "#innovative"
+                }
+            ]
+        }
+    }
+}

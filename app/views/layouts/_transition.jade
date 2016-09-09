@@ -1,0 +1,94 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        title VHA
+        meta(name="description", content="")
+        meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+        link(rel="shortcut icon", href="favicon.ico")
+            
+        //- build:css styles/vendor.min.css -->
+        //- endbuild -->
+        //- build:css({.tmp,app}) styles/main.min.css -->
+        // bower:css
+        link(rel='stylesheet', href='../bower_components/jquery-timeline/dist/timeline.min.css')
+        // endbower
+        link(rel="stylesheet", href="styles/main.css")
+        //- endbuild -->
+        script(src='https://code.jquery.com/jquery-1.9.0.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.0.4/js.cookie.min.js')
+        style.
+            .header {
+                background-color: #565eaa;
+                border-bottom: 4px solid #5d92b1;
+            }
+            .logo img {
+                padding-top: 20px;
+                width: 140px;
+            }
+            .container {
+                max-width: 852px;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-bottom: 15px;
+                color: white;
+            }
+            .links {
+                padding-bottom: 15px;
+                padding-top: 17px;
+            }
+            .links a {
+                color: white;
+                padding-top: 10px;
+                margin-right: 25px;
+                padding-bottom: 5px;
+            }
+
+            .close {
+                border-color: white;
+                color: white;
+                min-width: 155px;
+                float: right;
+            }
+            .thin-header .links {
+                padding-top: 7px;
+                border-bottom: none;
+            }
+            .thin-header .logo img {
+                width: 110px;
+                padding-top: 7px;
+            }
+            .thin-header .container {
+                padding-top: 13px;
+                padding-bottom: 2px;
+            }
+            .thin-header .more,
+            .thin-header .close {
+                display: none;
+            }
+            @media (max-width: 800px) {
+                .close {
+                    float: left;
+                }
+                .links {
+                    padding-top: 0;
+                }
+            }
+            [class*="col-"] {
+                margin-bottom: 0 !important;
+            }
+        script.
+            $(document).ready(function(){
+                $('.close').on('click', function(){
+                    $('.header').addClass('thin-header');
+                    Cookies.set('thin-header', true);
+                    return false;
+                });
+
+                if (Cookies.get('thin-header')) {
+                    $('.header').addClass('thin-header');
+                }
+            });
+    body
+        block content

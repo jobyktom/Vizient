@@ -1,0 +1,61 @@
+/// Buttons ///
+
+.btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-width: 2px;
+    margin-bottom: 0;
+    min-width: 150px;
+    height: 44px;
+    line-height: 1em;
+    font-family: $soleto-regular;
+    @include font-size(16px);
+    outline: none;
+    user-select: none;
+    appearance: none;
+    background-color: $orange;
+    color: $white;
+    @include transition(background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease);
+
+    
+    &:hover, &:active, &.active {
+       background-color: $orange-dark; 
+       color: $white;
+    }
+
+    &.inactive {
+        background-color: $mist;
+        &:hover, &:active, &.active {
+           background-color: $mist;
+           cursor: default;
+        }
+    }
+
+    &.alt {
+        background-color: $white;
+        color: $orange;
+        border: 2px solid $orange;
+        min-width: 146px;
+        &:hover, &:active, &.active {
+           background-color: $orange-dark;
+           border: 2px solid $orange-dark;
+           color: $white;
+        }
+    }
+
+    &.white {
+        background-color: transparent;
+        color: $white;
+        border: 2px solid $white;
+        min-width: 146px;
+        &:hover, &:active, &.active {
+           background-color: $white;
+           border: 2px solid $white;
+           color: $orange;
+        }
+        &.inactive {
+            opacity: 0.2;
+        }
+    }
+}
+

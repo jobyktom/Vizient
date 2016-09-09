@@ -1,0 +1,14 @@
+mixin breadcrumbs(breadcrumbObject)
+    <!-- Start Breadcrumb Module -->
+    section.breadcrumb-bar
+        .container
+            ol.breadcrumb
+                li
+                    a(href='#{breadcrumbs.home.url}') #{breadcrumbs.home.text}
+                each item, index in breadcrumbObject
+                    if !item.isActive
+                        li
+                            a(href='#{item.url}') #{item.text}
+                    else
+                        li(class='active') #{item.text}
+    <!-- End Breadcrumb Module -->

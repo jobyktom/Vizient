@@ -1,0 +1,84 @@
+// Pull Quotes
+
+.pull-quote {
+
+    &.styled {
+        border-top: 2px solid $brand; 
+        padding: 15px 0;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
+    .media {
+        margin-left: 32px;
+    }
+
+}
+
+
+.pull-quote__text,
+.pull-quote__author-name,
+.pull-quote__author-title {
+    color: #64666b;
+}
+
+
+.pull-quote__text {
+    position: relative;
+    font-size: $font-size-larger;
+    line-height: 1.25;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    @media (max-width: $screen-sm-min) {
+        font-size: $font-size-large;
+    }
+
+    &:before,
+    &:after {
+        content: ' ';
+        position: absolute;
+        background: url(../images/icons/icon-2-dots.png);
+        background: none, url(../images/icons/svg/icon-2-dots.svg);
+        background-size: 21px 10px;
+        width: 21px;
+        height: 10px;
+    }
+
+    &:before {
+        left: 0;
+        top: 0;
+    }
+
+    &:after {
+        right: 0;
+        bottom: 0;
+    }
+
+    .icon-2-dots--small {
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 7px;
+    }
+
+}
+
+.pull-quote__author-avatar {
+
+}
+
+.pull-quote__author-name {
+    font-family: $soleto-bold;
+    margin: 0;
+}
+
+.pull-quote__author-title {
+    font-family: $soleto-regular;
+    margin: 7px 0;
+}
+
+
+.pull-quote__link {
+    font-size: $font-size-small;
+    font-family: $soleto-bold;
+}

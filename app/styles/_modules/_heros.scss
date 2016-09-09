@@ -1,0 +1,211 @@
+/// Hero banners ///
+
+$mobileHeroHeight: 233px;
+$tabletHeroHeight: 419px;
+$DesktopHeroHeight: 550px;
+
+.hero {
+    position: relative; 
+    width: 100%;
+
+    @media (min-width: $screen-sm-min) {
+        height: $tabletHeroHeight;
+        padding-bottom: 0;
+        display: table;
+    }
+
+    @media (min-width: $screen-md-min) {
+        height: $DesktopHeroHeight;
+    }
+
+    .hero--small {
+        @media (min-width: $screen-md-min) {
+            height: 269px;
+        }
+    }
+}
+
+.hero__image {
+    position: relative;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: $mobileHeroHeight;
+
+    @media (min-width: $screen-sm-min) {
+        position: absolute;
+        height: $tabletHeroHeight;
+    }
+
+    @media (min-width: $screen-md-min) {
+        height: $DesktopHeroHeight;
+    }
+}
+
+.supplier .hero__image {
+    background-position: center center; 
+}
+
+.hero__content {
+    position: relative;
+
+    @media (min-width: $screen-xs-min) {
+        padding: 20px 0;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        display: table-cell;
+        padding: 0;
+        vertical-align: middle;
+
+        &.white {
+
+        .hero__title {
+               color: $white;
+            }
+            .hero__sub-title {
+                color: $white;
+            }
+        }
+
+    }
+
+    .btn {
+        /*padding: 20px 10px;*/
+    }
+
+}
+
+.hero__title {
+    font-family: $soleto-light;
+
+
+    @media (min-width: $screen-md-min) {
+        margin: 0;
+    }
+
+    @media (max-width: $screen-sm-min) {
+        font-size: $font-size-h2;
+        margin: 20px 0 20px 0;
+    }
+}
+
+.hero__sub-title {
+    font-size: $font-size-h3;
+    margin: 14px 0 24px 0;
+    line-height: 1.25em;
+    color: $black;
+}
+
+.hero__ctas {
+
+}
+
+.hero__cta {
+
+}
+
+.bg-hero {
+    &.scampi {
+        .hero__content--table { 
+        }
+    }
+    &.persiangreen {
+        .hero__content--table { 
+        }
+    }
+    
+    .hero__content {
+        padding: 0;
+        > .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .hero__title,
+    .hero__sub-title {
+        color: $white;
+    }
+
+    .hero__sub-title {
+        font-size: 18px;
+        line-height: 1.65em;
+    }
+
+    .hero__content--table {
+        padding-top: 30px; 
+
+        @media (min-width: $screen-sm-min) {
+            display: table;
+            height: $tabletHeroHeight;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+
+        @media (min-width: $screen-md-min) {
+            height: $DesktopHeroHeight;
+        }
+    }
+
+    
+
+}
+
+.hero__content--tablecell {
+    display: table-cell; 
+    vertical-align: middle;
+}
+
+ 
+.hero-mini {
+    min-height: 160px;
+    height: 160px;
+    background-color: $purple;
+
+    @media (max-width: $screen-sm-min) {
+        height: auto;
+    }
+    
+    .hero__content--table {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        @media (min-width: $screen-sm-min) {
+            display: table;
+            height: 160px;
+            padding-bottom: 0;
+            padding-top: 0;
+
+        }
+
+        @media (min-width: $screen-md-min) {
+            height: 160px;
+            width: 100%;
+        }
+    }
+
+    .hero__title, .hero__sub-title {
+        color: white;
+    }
+
+    p {
+        font-size: inherit;
+    }
+    
+    .button-list {
+        display: none;
+    }
+
+    .hero-mini__icon {
+        float: right;
+        background: url(../images/icons/icon-collaboration-v2.png); 
+        background-repeat: no-repeat; 
+        background-size: contain;
+        width: 140px;
+        height: 120px;
+    }
+
+
+}
