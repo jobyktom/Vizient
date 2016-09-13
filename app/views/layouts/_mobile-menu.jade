@@ -1,35 +1,39 @@
 <!-- Start Mobile Menu -->
 #mobileMenu.visible-xs-block.visible-sm-block
-    nav.collapse#primary-mobile-nav
-        ul#mobile-nav.list-unstyled.menu
-            li.search-panel.bg-gray
-                .search-panel-inner 
-                    input(placeholder="Search")
-                    button(class="btn btn-primary btn-half") Search
-            each item, x in header.menu2
-                li.panel.mobile-nav__nav-item
-                    a.item-menu(href='#{item.url}', data-href='#{item.url}', class='#{item.classes} mobile-nav__nav-link') #{item.title}
-                        i(class="icon #{item.iconClasses}")
-                    if item.subnav
-                        ul.list-unstyled.mobile-nav__sub-nav
-                            each subitem, y in item.subnav
-                                li.panel.mobile-nav__sub-nav-item
-                                    a.item-submenu(href='#{subitem.url}', data-href='#{subitem.url}', class='#{subitem.classes} mobile-nav__sub-nav-link') #{subitem.title}
-            each item, x in header.menu1
-                li.panel.panel-secondary
-                    if item.subnav
-                        a.collapsed.item-menu.item-menu-secondary(id='item-menu-secondary-#{x}', href='#submenu-secondary-#{x}', class='#{item.classes}', data-toggle='collapse', data-parent='#primary-mobile-menu', aria-controls="submenu-secondary-#{x}", aria-expanded="false") #{item.title}
-                        ul.list-unstyled.panel-collapse.collapse.submenu.submenu-secondary(id='submenu-secondary-#{x}', aria-labelledby='item-menu-secondary-#{x}')
-                            each subitem, y in item.subnav
-                                li.panel
-                                    if subitem.subnav
-                                        a.collapsed.item-submenu(id='item-submenu-secondary-#{x}-#{y}', href='#submenu-secondary-#{x}-#{y}', class='#{subitem.classes}', data-toggle='collapse', data-parent='#submenu-secondary-#{x}', aria-controls="submenu-secondary-#{x}-#{y}", aria-expanded="false") #{subitem.title}
-                                        ul.list-unstyled.panel-collapse.collapse.submenu-2(id='submenu-secondary-#{x}-#{y}', aria-labelledby='item-submenu-secondary-#{x}-#{y}')
-                                            each subitem2, z in subitem.subnav
-                                                li
-                                                    a.item-submenu-2(href='#{subitem2.url}', class='#{subitem2.classes}') #{subitem2.title}
-                                    else
-                                        a.item-submenu(href='#{subitem.url}', class='#{subitem.classes}') #{subitem.title}
-                    else
-                        a.item-menu.item-menu-secondary(href='#{item.url}', class='#{item.classes}') #{item.title}
+	nav
+		ul#mobile-nav.list-unstyled
+			li.search-panel
+				input(placeholder="Search")
+				button(class="btn icon-search") Search
+			each item, x in header.menu2
+				li.primary
+					if item.subnav
+						a.has-subnav(href='#{item.url}') #{item.title}
+						ul.subnav
+							each subitem, y in item.subnav
+								li
+									a(href='#{subitem.url}', data-href='#{subitem.url}', class='#{subitem.classes} mobile-nav__sub-nav-link') #{subitem.title}
+					else
+						a(href='#{item.url}', data-href='#{item.url}') #{item.title}
+			each item, x in header.menu1
+				if x == 0
+					li.secondary.first-item
+						if item.subnav
+							a.has-subnav(href='#item.url') #{item.title}
+							ul.subnav
+								each subitem, y in item.subnav
+									li
+										a(href='#{subitem.url}', class='#{subitem.classes}') #{subitem.title}
+						else
+							a(href='#{item.url}') #{item.title}
+				else
+					li.secondary
+						if item.subnav
+							a.has-subnav(href='#item.url') #{item.title}
+							ul.subnav
+								each subitem, y in item.subnav
+									li
+										a(href='#{subitem.url}', class='#{subitem.classes}') #{subitem.title}
+						else
+							a(href='#{item.url}') #{item.title}
 <!-- End Mobile Menu -->
