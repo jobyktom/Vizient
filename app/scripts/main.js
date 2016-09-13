@@ -193,15 +193,35 @@ var Vizient = (function () {
 
   // Control Mobile nav open/closed state
   var _setupMobileNav = function _setupMobileNav() {
-    var $mobileMenuBar = $('#mobile-header'),
-        $mobileMenuNavIcon = $('.js-mobile-icon');
+    $('.js-mobile-icon').on('click', function () {
+      $('#mobile-header').toggleClass('is-open');
+      $('#mobileMenu').toggleClass('is-open');
+      $('body').toggleClass('mobile-menu-open');
+    });
 
-    $mobileMenuNavIcon.on('click', function () {
-      $mobileMenuBar.toggleClass('is-open');
+    $('#mobile-nav .has-subnav').on('click', function(e){
+      e.preventDefault();
+
+      if ($(this).hasClass('is-open')) {
+        $(this).removeClass('is-open');
+        $(this).siblings('ul').slideUp();
+      }
+      else {
+        var $this = $(this);
+        $('#mobile-nav .has-subnav').each(function(){
+          if ($(this) != $this) {
+            $(this).removeClass('is-open');
+            $(this).siblings('ul').slideUp();
+          }
+        });
+
+        $(this).addClass('is-open');
+        $(this).siblings('ul').slideDown();
+      }
     });
   };
 
-  // Highlight the active menu item both on desktop nad mobile menus
+  // Highlight the active menu item both on desktop and mobile menus
   var _setupActiveMenuItems = function _setupActiveMenuItems() {
     var menuActiveClass = 'is-active',
         linkURL = '',

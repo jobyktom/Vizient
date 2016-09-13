@@ -1,5 +1,9 @@
 // Body Content (class added to the <main> element)
 
 .body-content {
-    position: relative;
+	position: relative;
+
+	@media (max-width: 1074px) {
+		padding-top: 60px;
+	}
 }
