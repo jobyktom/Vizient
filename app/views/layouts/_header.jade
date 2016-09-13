@@ -21,19 +21,47 @@ header(id="header-bar", class="hidden-xs hidden-sm")
                             a(role='tab', data-toggle='tab', href='#{item.url}', data-href='#{item.url}', data-target='#mega-nav-#{index}', aria-controls='mega-nav-#{index}', class='#{item.classes}') #{item.title}
                         else
                             a(href='#{item.url}', class='#{item.classes}') #{item.title}
+        //- End Primary Nav
+        //- Start Additional nav - Search, Login
         nav.additional-nav
             ul(class="list-unstyled", role="tablist")
                 li 
                     a(role='tab', href="#", class="search")
                         i(class='icon icon-search')
+                <!-- Either 1 of 2 remaining LI tags below must be present with a logged-in or logged-out class -->
+                <!-- Remove and apply class "hidden" accordingly to see different states -->
+                <!-- LOGGED OUT MODULE -->           
+                li.logged-out
+                    a(role='tab', href="#", class="btn alt") 
+                        i(class='icon icon-login')   
+                        span Login
+                <!-- LOGGED IN MODULE -->
+                <!-- toggle logged-in-active class on click --> 
+                li.logged-in.logged-in-active.hidden
+                    a(role='tab', href="#")
+                        span(class="icon-login-circle")
+                            i(class='icon icon-login')   
+                        span.username Chad Logan
+                        i(class='icon icon-chevron-down-small')
+        //- End Additional nav - Search, Login
+        //- Start Dashboard nav (LOGGED IN ONLY)
+        //- This is absoolutely positioned 
+        nav.dashboard-nav.hidden
+            ul(class="list-unstyled", role="tablist")
                 li
-                    a(role='tab', href="#", class="icon-login-circle")
-                        i(class='icon icon-login')      
+                    a(role='tab', href="#", title="My dashboard") My dashboard
+                li
+                    a(role='tab', href="#", title="My account") My account
+                li
+                    a(role='tab', href="#", title="Support") Support
+                li
+                    a(role='tab', href="#", title="Contact us") Contact us 
+        //- End Dashboard nav
 //- End Desktop Header Bar
 <!-- End Desktop Header -->
 
 <!-- Desktop subnav -->
-nav.subnav.hidden-sm
+nav.subnav.hidden
     ul
         li
             a subnav item 1

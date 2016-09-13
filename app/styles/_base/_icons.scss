@@ -85,9 +85,18 @@
     background: url(../images/icons/login-member-icon.png);
     // background: none, url(../images/icons/svg/icon-search.svg);
     background-repeat: no-repeat;
-    background-size: 17px 20px;
-    width: 17px;
-    height: 20px;
+    background-size: 13px 16px;
+    width: 13px;
+    height: 16px;
+}
+
+.icon-login-white {
+    background: url(../images/icons/login-member-icon-white.png);
+    background: none, url(../images/icons/svg/login-member-icon-white.svg);
+    background-repeat: no-repeat;
+    background-size: 13px 16px;
+    width: 13px;
+    height: 16px;
 }
 
 .icon-2-dots--small {
@@ -165,6 +174,15 @@
     background-size: 20px 11px;
     width: 20px;
     height: 11px;
+}
+
+.icon-chevron-down-small {
+    background: url(../images/icons/icon-chevron-down-small.png);
+    //background: none, url(../images/icons/svg/icon-chevron-down-small.svg);
+    background-repeat: no-repeat;
+    background-size: 11px 7px;
+    width: 11px;
+    height: 7px;
 }
 
 .icon-chevron-left {
@@ -492,7 +510,7 @@ footer {
         background-size: 24px 23px;
         background: url(../images/icons/social/li.png) no-repeat;
         background-size: cover;
-        @include image-2x("images/icons/social/li@2x.png", 100%, 100%);
+        @include image-2x("../images/icons/social/li@2x.png", 24px, 23px);
     }
 
     .icon-facebook {
@@ -501,7 +519,7 @@ footer {
         background-size: 12px 24px;
         background: url(../images/icons/social/fb.png) no-repeat;
         background-size: cover;
-        @include image-2x("images/icons/social/fb@2x.png", 100%, 100%);
+        @include image-2x("../images/icons/social/fb@2x.png", 12px, 24px);
     }
 
     .icon-twitter {
@@ -510,7 +528,7 @@ footer {
         background-size: 25px 20px;
         background: url(../images/icons/social/tw.png) no-repeat;
         background-size: cover;
-        @include image-2x("images/icons/social/tw@2x.png", 100%, 100%);
+        @include image-2x("../images/icons/social/tw@2x.png", 25px, 20px);
     }
 
     .icon-pinterest {
@@ -519,7 +537,7 @@ footer {
         background-size: 24px 24px;
         background: url(../images/icons/social/pi.png) no-repeat;
         background-size: cover;
-        @include image-2x("images/icons/social/pi@2x.png", 100%, 100%);
+        @include image-2x("../images/icons/social/pi@2x.png", 24px, 24px);
     }
 
     .icon-youtube {
@@ -528,7 +546,7 @@ footer {
         background-size: 29px 20px;
         background: url(../images/icons/social/yt.png) no-repeat;
         background-size: cover;
-        @include image-2x("images/icons/social/yt@2x.png", 100%, 100%);
+        @include image-2x("../images/icons/social/yt@2x.png", 29px, 20px);
     }
 }
 
