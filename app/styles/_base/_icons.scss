@@ -510,7 +510,7 @@ footer {
         background-size: 24px 23px;
         background: url(../images/icons/social/li.png) no-repeat;
         background-size: cover;
-        @include image-2x("images/icons/social/li@2x.png", 100%, 100%);
+        @include image-2x("../images/icons/social/li@2x.png", 24px, 23px);
     }
 
     .icon-facebook {
@@ -519,7 +519,7 @@ footer {
         background-size: 12px 24px;
         background: url(../images/icons/social/fb.png) no-repeat;
         background-size: cover;
-        @include image-2x("images/icons/social/fb@2x.png", 100%, 100%);
+        @include image-2x("../images/icons/social/fb@2x.png", 12px, 24px);
     }
 
     .icon-twitter {
@@ -528,7 +528,7 @@ footer {
         background-size: 25px 20px;
         background: url(../images/icons/social/tw.png) no-repeat;
         background-size: cover;
-        @include image-2x("images/icons/social/tw@2x.png", 100%, 100%);
+        @include image-2x("../images/icons/social/tw@2x.png", 25px, 20px);
     }
 
     .icon-pinterest {
@@ -537,7 +537,7 @@ footer {
         background-size: 24px 24px;
         background: url(../images/icons/social/pi.png) no-repeat;
         background-size: cover;
-        @include image-2x("images/icons/social/pi@2x.png", 100%, 100%);
+        @include image-2x("../images/icons/social/pi@2x.png", 24px, 24px);
     }
 
     .icon-youtube {
@@ -546,7 +546,7 @@ footer {
         background-size: 29px 20px;
         background: url(../images/icons/social/yt.png) no-repeat;
         background-size: cover;
-        @include image-2x("images/icons/social/yt@2x.png", 100%, 100%);
+        @include image-2x("../images/icons/social/yt@2x.png", 29px, 20px);
     }
 }
 

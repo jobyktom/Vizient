@@ -5,7 +5,7 @@ footer#main-footer
             .col-sm-7
                 a.logo(href='/')
                     i.icon.icon-logo-white
-            .col-sm-4.col-sm-offset-1.pl40
+            .col-sm-4.col-sm-offset-1.pl40.hidden-xs
                 +socialIcons(socialMediaLinks)
     .row-mid      
         .container      
@@ -27,6 +27,8 @@ footer#main-footer
     .row-bot 
         .container
             .col-xs-12
+                .visible-xs
+                    +socialIcons(socialMediaLinks)
                 .footer-copy 
                     p
                         strong  &copy; 2016 Vizient Inc. All rights reserved.

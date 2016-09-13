@@ -26,17 +26,19 @@
 
     }
     .border {
-        border-left: 1px solid $slate;
-        @media only screen and (max-width: $screen-sm-max) {
-            border-top: 1px solid $slate;
-            border-left: 0;
+        border-top: 1px solid $slate;
+        border-left: 0;
+        
+        @media only screen and (min-width: $screen-sm-min) {
+            border-left: 1px solid $slate;
+            border-top: 0;
         }
         
     }
     .pl40 {
-        padding-left: 40px;
-        @media only screen and (max-width: $screen-sm-max) {
-            padding-left: 0;
+        padding-left: 0px;
+        @media only screen and (min-width: $screen-sm-min) {
+            padding-left: 40px;
         }
         
     } 
@@ -94,6 +96,11 @@ nav {
         padding: 24px 0;
         margin-bottom: 0;
         @include font-size(14px);
-
+        @media only screen and (max-width: $screen-sm-max) {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+        
     }
 }
