@@ -10,7 +10,7 @@
     padding: 0;
     width: 100%;
     top: 0;
-    z-index: 99;
+    z-index: 100;
     height: 110px;
 
     // Move the header bar up on scroll
@@ -61,6 +61,7 @@
         overflow: hidden;
 
         nav.top-nav {
+            float: left;
             height: 40px;
             width: 100%;
             border-bottom: 1px solid $mist-light;
@@ -119,7 +120,7 @@
                     line-height: inherit;
                     display: inline-block;
                     padding: 0 10px;
-                    padding: 0 1vw;
+                    padding: 0 0.8vw;
                     border-left: 1px solid $grey;  
                     &:first-child {
                         border-left: 0;
@@ -162,15 +163,32 @@
         }
 
         nav.additional-nav {
-            padding-right: 40px;
-            padding-top: 10px;
+            //padding-right: 40px; 
             float: right;
             display: inline-block;
-            li {
-                display: inline-block; 
-                padding-left: 10px;
-                padding-left: 1vw;           
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    display: inline-block; 
+                    // padding-left: 10px;
+                    // padding-left: 1vw;
+                    // padding-right: 10px;
+                    // padding-right: 1vw;
+                    // padding-top: 16px;
+                    height: 70px;
+                    border-left: 1px solid $mist-light;        
+                    &:nth-child(1) {
+                        border: 0;
+                    }
+                }
             }
+
+            .search {
+                padding-right: 20px;
+            }
+
+            
 
             .icon-login-circle {
                 display: inline-block;
@@ -178,12 +196,75 @@
                 height: 36px;
                 border-radius: 72px;
                 border: solid 2px $brand;
-                .icon-login {
-                    top: -4px;
-                    position: relative;
-                    left: 8px;
+            }
+
+            /// LOGGED OUT
+            .logged-out {
+                padding-right: 40px;
+                padding-left: 20px;
+                padding-top: 16px;
+
+                .btn {
+                    display: inline-block;
+                    height: 70px; 
+                    height: 36px;
+                    min-width: auto;
+                    max-width: 98px;
+
+                    .icon-login {
+                        top: -5px;
+                        position: relative;
+                        left: -8px;
+                    }
+
+                    span {
+                        position: relative;
+                        top: -4px;
+                        @include font-size(14px);
+                        font-family: $soleto-bold;
+                    }
                 }
             }
+
+
+            /// LOGGED IN
+            .logged-in {
+                display: inline-block;
+                height: 70px; 
+                padding-top: 16px;
+                a {
+                    display: inline-block;
+                    padding-right: 40px;    
+                    width: 232px;
+                    height: 70px;
+                    &:hover {
+                        text-decoration: none;
+                    } 
+                }
+                .icon-login-circle {
+                    border: solid 2px $yellow;
+                    margin-left: 23px;
+                }
+                .icon-login {
+                    position: relative;
+                    left: 9px;
+                    top: -4px;
+                    @extend .icon-login-white;
+                }
+                .username {
+                    padding: 0 23px 0 10px;
+                    font-family: $soleto-regular;
+                }
+
+                &.logged-in-active {
+                    background-color: $slate;
+                    a {
+                        background-color: $slate;
+                        border-bottom: 1px solid $slate-light;
+                        color: white;
+                    }
+                }
+             }
         }
     }
 }
@@ -213,6 +294,39 @@ nav.subnav {
         li {
             display: inline-block;
             float: left;
+        }
+    }
+}
+
+nav.dashboard-nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+    z-index: 110; 
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            display: table;
+            a {
+                width: 232px;
+                height: 60px;
+                display: table-cell;
+                vertical-align: middle;
+                background-color: $slate;
+                border-bottom: 1px solid $slate-light;
+                color: $white;
+                padding-right: 40px;
+                font-family: $soleto-regular;
+                text-align: right; 
+                &:hover {
+                    text-decoration: none;
+                    background-color: $slate-light;
+                }
+            }
+            &:nth-last-child(1) a {
+                border-bottom: 0;
+            }
         }
     }
 }
