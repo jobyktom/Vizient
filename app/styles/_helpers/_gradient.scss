@@ -1,0 +1,14 @@
+@mixin gradient($bg1, $bg2, $midpoint) {
+    @media (min-width: $screen-md) {
+        background: $bg1;
+        background: -moz-linear-gradient(left, $bg1 0%, $bg1 $midpoint, $bg2 $midpoint, $bg2 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, $bg1 ), color-stop($midpoint, $bg1 ), color-stop($midpoint, $bg2 ), color-stop(100%, $bg2 ));
+        background: -webkit-linear-gradient(left, $bg1 0%, $bg1 $midpoint, $bg2 $midpoint, $bg2 100%);
+        background: -o-linear-gradient(left, $bg1 0%, $bg1 $midpoint, $bg2 $midpoint, $bg2 100%);
+        background: -ms-linear-gradient(left, $bg1 0%, $bg1 $midpoint, $bg2 $midpoint, $bg2 100%);
+        background: linear-gradient(to right, $bg1 0%, $bg1 $midpoint, $bg2 $midpoint, $bg2 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($bg1)}', endColorstr='#{ie-hex-str($bg2)}', GradientType=1);
+    }
+}
+
+

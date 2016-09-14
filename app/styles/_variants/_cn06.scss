@@ -10,8 +10,7 @@
 
 .cn06__v1 {
 
-	
-  	@include gradient-horizontal($mist-lightest, $mist-light, 0%, 100%);
+	@include gradient($mist-lightest, $mist-light, 50%);
 
 	.left-col {
 		background-color: $mist-lightest;
