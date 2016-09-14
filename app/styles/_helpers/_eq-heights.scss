@@ -1,9 +1,7 @@
 .row.eq-heights {
 
-    display: table;
-
-	    
-	@media (min-width: $screen-sm) {
+	@media (min-width: $screen-md) {
+		display: table;
 		[class*="col-"] {
 		    float: none;
 		    display: table-cell;

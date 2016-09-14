@@ -1,29 +1,22 @@
 // CN06
 
-.module {
-	margin: 40px 0;
-}
-
-.inner-pad {
-	padding: 20px;
-}
-
-.cn06__v1 {
-
-	@include gradient($mist-lightest, $mist-light, 50%);
-
+.cn06 {
 	.left-col {
 		background-color: $mist-lightest;
 	}
-
 	.right-col {
 		background-color: $mist-light;
 	}
+}
 
+.cn06__v1 {
+	@include gradient($mist-lightest, $mist-light, 75%);
 	ul {
 		width: 75%; 
 	}
+}
 
-	.container-fluid { 
-	}
+
+.cn06__v2 {
+	@include gradient($mist-lightest, $mist-light, 50%);
 }

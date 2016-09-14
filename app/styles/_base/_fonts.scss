@@ -1,6 +1,16 @@
 /// Fonts ///
 
-// Soleto Black
+// Soleto Thin
+@font-face {
+    font-family: 'Soleto Thin';
+    src: url('../fonts/Soleto-Thin.eot'),
+        url('../fonts/Soleto-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Soleto-Thin.woff') format('woff'),
+        url('../fonts/Soleto-Thin.ttf') format('truetype'),
+        url('../fonts/Soleto-Thin.svg#Soleto-Thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 // Soleto Light
 @font-face {
