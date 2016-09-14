@@ -1,0 +1,11 @@
+.row {
+    display: table;
+}
+
+@media (min-width: $screen-sm) {
+	[class*="col-"] {
+	    float: none;
+	    display: table-cell;
+	    vertical-align: top;
+	}
+}

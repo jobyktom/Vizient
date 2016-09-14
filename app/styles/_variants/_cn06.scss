@@ -1,0 +1,30 @@
+// CN06
+
+.module {
+	margin: 40px 0;
+}
+
+.inner-pad {
+	padding: 20px;
+}
+
+.cn06__v1 {
+
+	
+  	@include gradient-horizontal($mist-lightest, $mist-light, 0%, 100%);
+
+	.left-col {
+		background-color: $mist-lightest;
+	}
+
+	.right-col {
+		background-color: $mist-light;
+	}
+
+	ul {
+		width: 75%; 
+	}
+
+	.container-fluid { 
+	}
+}

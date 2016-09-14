@@ -1,18 +1,17 @@
 <!-- Start Desktop Header -->
 header(id="header-bar", class="hidden-xs hidden-sm")
-    //- Start Desktop Header Bar
     .master-logo
         a(href='/')
             i(class="icon icon-logo")
     .master-nav
-        //- Start Top Nav
+        // Start Top Nav
         nav.top-nav
             ul.list-unstyled
                 each item, index in header.menu1
                     li(class="header-nav__nav-item")
                         a(href='#{item.url}', class='header-nav__nav-link #{item.classes}') #{item.title}
-        //- End Top Nav
-        //- Start Primary Nav
+        // End Top Nav
+        // Start Primary Nav
         nav.primary-nav
             ul(class="list-unstyled", role="tablist")
                 each item, index in header.menu2
@@ -21,31 +20,31 @@ header(id="header-bar", class="hidden-xs hidden-sm")
                             a(role='tab', data-toggle='tab', href='#{item.url}', data-href='#{item.url}', data-target='#mega-nav-#{index}', aria-controls='mega-nav-#{index}', class='#{item.classes}') #{item.title}
                         else
                             a(href='#{item.url}', class='#{item.classes}') #{item.title}
-        //- End Primary Nav
-        //- Start Additional nav - Search, Login
+        // End Primary Nav
+        // Start Additional nav - Search, Login
         nav.additional-nav
             ul(class="list-unstyled", role="tablist")
                 li 
                     a(role='tab', href="#", class="search")
                         i(class='icon icon-search')
-                <!-- Either 1 of 2 remaining LI tags below must be present with a logged-in or logged-out class -->
-                <!-- Remove and apply class "hidden" accordingly to see different states -->
-                <!-- LOGGED OUT MODULE -->           
+                // Either 1 of 2 remaining LI tags below must be present with a logged-in or logged-out class. Remove and apply class "hidden" accordingly to see different states 
+                // LOGGED OUT MODULE            
                 li.logged-out
                     a(role='tab', href="#", class="btn alt") 
                         i(class='icon icon-login')   
                         span Login
-                <!-- LOGGED IN MODULE -->
-                <!-- toggle logged-in-active class on click --> 
+                // LOGGED IN MODULE 
+                // toggle "logged-in-active" class on click
                 li.logged-in.logged-in-active.hidden
                     a(role='tab', href="#")
                         span(class="icon-login-circle")
                             i(class='icon icon-login')   
                         span.username Chad Logan
                         i(class='icon icon-chevron-down-small')
-        //- End Additional nav - Search, Login
-        //- Start Dashboard nav (LOGGED IN ONLY)
-        //- This is absoolutely positioned 
+        // End Additional nav - Search, Login
+        // Start Dashboard nav (LOGGED IN ONLY)
+        // This is absoolutely positioned 
+        // Remove "hidden" class to reveal
         nav.dashboard-nav.hidden
             ul(class="list-unstyled", role="tablist")
                 li
@@ -56,11 +55,10 @@ header(id="header-bar", class="hidden-xs hidden-sm")
                     a(role='tab', href="#", title="Support") Support
                 li
                     a(role='tab', href="#", title="Contact us") Contact us 
-        //- End Dashboard nav
-//- End Desktop Header Bar
-<!-- End Desktop Header -->
+        // End Dashboard nav
+// End Desktop Header Bar
 
-<!-- Desktop subnav -->
+// Start Sub nav
 nav.subnav.hidden
     ul
         li
@@ -71,3 +69,4 @@ nav.subnav.hidden
             a subnav 3
         li
             a subnav 4 item 4
+// End Sub nav
