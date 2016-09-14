@@ -1,15 +1,11 @@
-.row.eq-heights {
+// .eq-heights {
+// 	@media (min-width: $screen-sm) {
+// 		display: table;
 
-    display: table;
-
-	    
-	@media (min-width: $screen-sm) {
-		[class*="col-"] {
-		    float: none;
-		    display: table-cell;
-		    vertical-align: top;
-		}
-	}
-
-}
-
+// 		[class*="col-"] {
+// 			float: none;
+// 			display: table-cell;
+// 			vertical-align: top;
+// 		}
+// 	}
+// }

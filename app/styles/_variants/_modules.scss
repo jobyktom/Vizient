@@ -1,51 +1,155 @@
 .module {
 	margin: 50px 0;
-}
 
-.module--outer-bg {
-	background-color: $mist-lightest;
-	padding: 50px;
+	&.module--outer-bg {
+		background-color: $mist-lightest;
+		padding: 50px 0;
 
-	.border {
-		&:before,
-		&:after {
-			border: 3px solid $mist-lightest;
+		.border {
+			&:before,
+			&:after {
+				border: 3px solid $mist-lightest;
+			}
 		}
 	}
-}
 
-.border {
-	position: relative;
-	z-index: 1;
-	padding: 3px;
-	border: 4px solid $yellow;
-	border-radius: 2px;
-
-	&:before,
-	&:after {
-		content: ' ';
-		position: absolute;
-		display: block;
-		width: 12px;
-		height: 12px;
-		background-color: $orange;
-		border-radius: 50%;
-		border: 3px solid $white;
+	&.module--has-cols {
+		[class*="col-"] {
+			padding-left: 0;
+			padding-right: 0;
+			margin-bottom: 0 !important;
+		}
 	}
 
-	&:before {
-		top: -8px;
-		left: -8px;
+	.border {
+		position: relative;
+		z-index: 1;
+		padding: 3px;
+		border: 4px solid $yellow;
+		border-radius: 2px;
+		height: 100%;
+
+		&:before,
+		&:after {
+			content: ' ';
+			position: absolute;
+			display: block;
+			width: 12px;
+			height: 12px;
+			background-color: $orange;
+			border-radius: 50%;
+			border: 3px solid $white;
+		}
+
+		&:before {
+			top: -8px;
+			left: -8px;
+		}
+
+		&:after {
+			bottom: -8px;
+			right: -8px;
+		}
+
+		.content {
+			border: none;
+		}
 	}
 
-	&:after {
-		bottom: -8px;
-		right: -8px;
+	.container {
+		> .row {
+			> div {
+				margin-bottom: 20px;
+			}
+		}
 	}
 
 	.content {
+		height: 100%;
 		background-color: $white;
-		padding: 40px 33px;
-		border: none;
+		border: 1px dashed $grey;
+
+		.inner-content {
+			height: 100%;
+			padding: 40px 33px;
+
+			p {
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.img {
+			background-size: cover;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+
+			@media (max-width: $screen-sm) {
+				height: 275px !important;
+			}
+		}
+	}
+
+	.arrow {
+		&:first-child {
+			.inner-content {
+				&:after {
+					left: calc(100% - 19px);
+					right: auto;
+					transform: rotate(90deg);
+				}
+			}
+		}
+
+		&:last-child {
+			.inner-content {
+				&:after {
+					left: auto;
+					right: calc(100% - 19px);
+					transform: rotate(-90deg);
+				}
+			}
+		}
+
+		.inner-content {
+			position: relative;
+			background-color: $mist;
+
+			&:after {
+				position: absolute;
+				
+				top: 45%;
+				display: block;
+				width: 54px;
+				height: 19px;
+				content: ' ';
+				background-image: url('/images/icons/svg/rounded-tri.svg');
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				background-size: cover;
+			}
+		}
+	}
+
+	.figure {
+		@include font-size(72px);
+		font-family: $soleto-light;
+		line-height: 1.13em;
+		letter-spacing: -0.6px;
+
+		sup {
+			@include font-size(24px);
+			top: -35px;
+		}
+
+		sub {
+			@include font-size(24px);
+			bottom: 2px;
+		}
+
+		@media only screen and (max-width: $screen-xs-max) {
+			@include font-size(36px);
+		}
 	}
 }
