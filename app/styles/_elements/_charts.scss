@@ -1,7 +1,8 @@
 /// charts
 
-.chart-list {
+.chart-indent {
     margin-left: inherit;
+
 
     @media (min-width: $screen-sm) {    
         margin-left: 100px;
@@ -19,24 +20,43 @@
     border: solid 6px $yellow;
     float: left;
 
-    .data-value {
-        @extend .va;
-        margin: auto;
-        text-align: center;
-        .percent {
-            margin-left: -15px;
-        }
+    .percent {
+        margin-left: -15px;
     }
 
-    + .chart-caption { 
-        margin-left: 141px;              
-        vertical-align: middle;
-        position: relative; 
-        .data-copy { 
-            padding-top: 10%;
-        }
-    }
+    + .chart-caption {
+        margin-left: 141px; 
 
+    }
 }
 
+.chart-large {
+    width: 275px;
+    height: 275px;
+    border-radius: 137.5px;
+    border: solid 26px $yellow;
+    margin: auto;
+    .percent {
+        margin-left: -25px;
+    }
+    + .chart-caption {
+        margin: auto;
+        .data-copy {
+            text-align: center;
+        }
+    }
+}
 
+.data-value {
+    @extend .va;
+    margin: auto;
+    text-align: center;
+}
+
+.chart-caption {              
+    vertical-align: middle;
+    position: relative; 
+    .data-copy { 
+        padding-top: 10%;
+    }
+}

@@ -5,7 +5,12 @@
     user-select: none; 
     background: $grey-dark;
     color: $white;
- 
+    padding-left: 24px;
+    padding-right: 24px;
+    @media (min-width: $screen-sm) {    
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 
     .logo {
         display: inline-block;
