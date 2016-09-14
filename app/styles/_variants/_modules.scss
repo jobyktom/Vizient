@@ -4,31 +4,48 @@
 
 .module--outer-bg {
 	background-color: $mist-lightest;
-}
+	padding: 50px;
 
-.module--border {
-	.container {
-		position: relative;
-		z-index: 1;
-		padding: 30px 20px 95px;
-		padding: 30px 20px;
-		border: 4px solid $yellow;
-		background-color: $white;
-
+	.border {
 		&:before,
 		&:after {
-		    content: url(../images/icons/border-dot.png);
-			position: absolute;
+			border: 3px solid $mist-lightest;
 		}
+	}
+}
 
-		&:before {
-			top: -6px;
-			left: -6px;
-		}
+.border {
+	position: relative;
+	z-index: 1;
+	padding: 3px;
+	border: 4px solid $yellow;
+	border-radius: 2px;
 
-		&:after {
-			bottom: -7px;
-			right: -7px;
-		}
+	&:before,
+	&:after {
+		content: ' ';
+		position: absolute;
+		display: block;
+		width: 12px;
+		height: 12px;
+		background-color: $orange;
+		border-radius: 50%;
+		border: 3px solid $white;
+	}
+
+	&:before {
+		top: -8px;
+		left: -8px;
+	}
+
+	&:after {
+		bottom: -8px;
+		right: -8px;
+	}
+
+	.content {
+		background-color: $white;
+		padding: 40px 33px;
+		border: none;
 	}
 }
