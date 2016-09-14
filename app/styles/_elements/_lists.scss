@@ -1,0 +1,20 @@
+/// lists //
+
+.body-content {
+
+    ul {
+        margin-top: 20px;
+        
+        li {
+            line-height: 1.25;
+        }
+
+        &.bold {
+            li {
+                font-family: $soleto-bold;
+            }
+        }
+    }
+
+}
+

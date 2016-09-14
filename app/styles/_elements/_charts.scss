@@ -1,0 +1,42 @@
+/// charts
+
+.chart-list {
+    margin-left: inherit;
+
+    @media (min-width: $screen-sm) {    
+        margin-left: 100px;
+    }
+
+    li {
+        @extend .clearfix;
+    }
+}
+
+.chart-medium {
+    width: 116px;
+    height: 116px;
+    border-radius: 58px;
+    border: solid 6px $yellow;
+    float: left;
+
+    .data-value {
+        @extend .va;
+        margin: auto;
+        text-align: center;
+        .percent {
+            margin-left: -15px;
+        }
+    }
+
+    + .chart-caption { 
+        margin-left: 141px;              
+        vertical-align: middle;
+        position: relative; 
+        .data-copy { 
+            padding-top: 10%;
+        }
+    }
+
+}
+
+
