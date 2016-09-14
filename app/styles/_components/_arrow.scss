@@ -1,0 +1,39 @@
+.arrow {
+	&:first-child {
+		.inner-content {
+			&:after {
+				left: calc(100% - 19px);
+				right: auto;
+				transform: rotate(90deg);
+			}
+		}
+	}
+
+	&:last-child {
+		.inner-content {
+			&:after {
+				left: auto;
+				right: calc(100% - 19px);
+				transform: rotate(-90deg);
+			}
+		}
+	}
+
+	.inner-content {
+		position: relative;
+		background-color: $mist;
+
+		&:after {
+			position: absolute;
+			top: 45%;
+			display: block;
+			width: 54px;
+			height: 19px;
+			content: ' ';
+			background-image: url('/images/icons/svg/rounded-tri.svg');
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: cover;
+		}
+	}
+}
