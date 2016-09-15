@@ -17,7 +17,29 @@
             margin: 40px 0 40px 0;
         }
     }
+
+    // signifies a module that has content outside (eg:header) and requires zero padding
+    &.module-outer {
+        [class*="col-"] {
+            @media (min-width: $screen-xs) {
+                padding: 20px 0 ;
+            }
+            @media (min-width: $screen-sm) {
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        // .container {
+        //     margin: 0 24px;
+        //     @media (min-width: $screen-md) {
+        //        margin: 0 auto;
+        //     }
+        // }
+
+    }
     
+    // 80px lead top vertical padding for desktop
     &.module-lead {
         [class*="col-"] {
             padding: 20px 0 0px 0;
@@ -27,16 +49,37 @@
         }
     }
 
-    .inner-pad {
-        padding: 24px;
-    }
-
     &.module--has-cols {
         [class*="col-"] {
             padding-left: 0;
             padding-right: 0;
             margin-bottom: 0 !important;
         }
+    }
+
+
+    //module gutter 
+    &.module-gutter {
+        div[class^="col-"]:not(:first-child) { 
+            padding-left: 0px; 
+            @media (min-width: $screen-md) {
+                padding-left: 9px;
+            }
+        } 
+        div[class^="col-"]:not(:last-child) { 
+            padding-right: 0px; 
+            @media (min-width: $screen-md) {
+                padding-right: 9px;
+            } 
+        }
+    }
+
+    .inner-pad {
+        padding: 24px;
+    }
+
+    .container + .container {
+        margin-top: 40px;
     }
 
 }
