@@ -57,7 +57,7 @@
 			background-position: 50% 50%;
 			background-repeat: no-repeat;
 
-			@media (max-width: $screen-sm) {
+			@media (max-width: $screen-sm-min) {
 				height: 275px !important;
 			}
 		}
@@ -65,36 +65,33 @@
 
 	&.cn03__v1 {
 		@media only screen and (max-width: $screen-sm-min) {
-			.content {
-				> div {
-					float: none;
-					width: 100%;
+			[class*="col-"] {
+				float: none;
+				width: 100%;
 
-					&.arrow {
-						&:first-child {
-							.inner-content {
-								&:after {
-									top: calc(100% - 1px);
-									bottom: auto;
-									left: 20px;
-									right: auto;
-									transform: rotate(180deg);
-								}
+				&.arrow {
+					&:first-child {
+						.inner-content {
+							&:after {
+								top: calc(100% - 1px);
+								bottom: auto;
+								left: 20px;
+								right: auto;
+								transform: rotate(180deg);
 							}
 						}
+					}
 
-						&:last-child {
-							.inner-content {
-								&:after {
-									top: auto;
-									bottom: calc(100% - 1px);
-									left: 20px;
-									right: auto;
-									transform: rotate(0deg);
-								}
+					&:last-child {
+						.inner-content {
+							&:after {
+								top: auto;
+								bottom: calc(100% - 1px);
+								left: 20px;
+								right: auto;
+								transform: rotate(0deg);
 							}
 						}
-
 					}
 				}
 			}
@@ -103,11 +100,9 @@
 
 	&.cn03__v2 {
 		@media only screen and (max-width: $screen-sm-min) {
-			.content {
-				> div {
-					float: none;
-					width: 100%;
-				}
+			[class*="col-"] {
+				float: none;
+				width: 100%;
 			}
 		}
 	}
@@ -116,11 +111,45 @@
 	}
 
 	&.cn03__v4 {
+		@media only screen and (max-width: $screen-sm-min) {
+			&.module-outer {
+				[class*="col-"] {
+					float: none;
+					width: 100%;
+					padding: 20px 0;
+					height: auto !important;
+				}
+			}
+		}
 	}
 
 	&.cn03__v5 {
+		@media only screen and (max-width: $screen-sm-min) {
+			&.module-outer {
+				[class*="col-"] {
+					float: none;
+					width: 100%;
+					padding: 20px 0;
+					height: auto !important;
+				}
+			}
+		}
 	}
 
 	&.cn03__v6 {
+		@media only screen and (max-width: $screen-sm-min) {
+			&.module-outer {
+				[class*="col-"] {
+					float: none;
+					width: 100%;
+					padding: 20px 0;
+					height: auto !important;
+
+					&.img {
+						height: 275px !important;
+					}
+				}
+			}
+		}
 	}
 }
