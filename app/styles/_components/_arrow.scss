@@ -26,6 +26,7 @@
 		&:after {
 			position: absolute;
 			top: 45%;
+			bottom: auto;
 			display: block;
 			width: 54px;
 			height: 19px;
@@ -34,6 +35,32 @@
 			background-repeat: no-repeat;
 			background-position: 50% 50%;
 			background-size: cover;
+		}
+	}
+
+	@media only screen and (max-width: $screen-xs-max) {
+		&:first-child {
+			.inner-content {
+				&:after {
+					top: calc(100% - 1px);
+					bottom: auto;
+					left: 20px;
+					right: auto;
+					transform: rotate(180deg);
+				}
+			}
+		}
+
+		&:last-child {
+			.inner-content {
+				&:after {
+					top: auto;
+					bottom: calc(100% - 1px);
+					left: 20px;
+					right: auto;
+					transform: rotate(0deg);
+				}
+			}
 		}
 	}
 }

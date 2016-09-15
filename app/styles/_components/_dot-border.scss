@@ -2,9 +2,17 @@
 	position: relative;
 	z-index: 1;
 	padding: 3px;
-	border: 4px solid $yellow;
+	border: 4px solid $yellow; // left here as a fallback in case one of the classes below is missing
 	border-radius: 2px;
 	height: 100%;
+
+	&.dot-border-yellow {
+		border: 4px solid $yellow;
+	}
+
+	&.dot-border-grey {
+		border: 4px solid $mist;
+	}
 
 	&:before,
 	&:after {
