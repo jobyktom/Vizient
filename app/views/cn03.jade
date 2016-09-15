@@ -2,51 +2,51 @@ extends layouts/_default
 
 block content
 	main(class="body-content")
-		.container
-			h1 MODULE CN03
-
+		h1 MODULE CN03
 		// V1: 1 block - 2 different columns - Arrow box - Yellow solid border
-		section(class="module cn03 cn03_v1 module--has-cols")
+		section(class="module module-outer module--has-cols cn03 cn03_v1")
 			.container
 				h3 V1: 1 block - 2 different columns - Arrow box - Yellow solid border
-				.dot-border
-					.content.clearfix
-						.eq-heights
-							.col-sm-8.eq-height-max
+				.row
+					.dot-border
+						.content.clearfix
+							.eq-heights
+								.col-sm-8.eq-height-max
+									.inner-content
+										p.metadata-byline Program
+										h3
+											a(href="#") Impact standardization
+												i.icon.icon-arrow-right.ml-10
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										p
+											a(href="#") View all of our networks
+												i.icon.icon-arrow-right.ml-10
+								.col-sm-4.arrow.eq-height-max
+									.inner-content
+										p.figure
+											sup $
+											span 200
+											sub bn
+										p In 2014, Vizient SupplyNetworks™ delivered a combined savings of more than $267 million on $7 billion in network contract spending.
+
+		// V2: 1 block - 2 equal columns - With image - Yellow solid border
+		section(class="module module-outer cn03 cn03_v2 module--has-cols")
+			.container
+				h3 V2: 1 block - 2 equal columns - With image - Yellow solid border
+				.row
+					.dot-border
+						.content.clearfix
+							.col-sm-6.eq-height-max
 								.inner-content
 									p.metadata-byline Program
 									h3
 										a(href="#") Impact standardization
 											i.icon.icon-arrow-right.ml-10
 									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-									p
-										a(href="#") View all of our networks
-											i.icon.icon-arrow-right.ml-10
-							.col-sm-4.arrow.eq-height-max
-								.inner-content
-									p.figure
-										sup $
-										span 200
-										sub bn
-									p In 2014, Vizient SupplyNetworks™ delivered a combined savings of more than $267 million on $7 billion in network contract spending.
-
-		// V2: 1 block - 2 equal columns - With image - Yellow solid border
-		section(class="module cn03 cn03_v2 module--has-cols")
-			.container
-				h3 V2: 1 block - 2 equal columns - With image - Yellow solid border
-				.dot-border
-					.content.clearfix
-						.col-sm-6.eq-height-max
-							.inner-content
-								p.metadata-byline Program
-								h3
-									a(href="#") Impact standardization
-										i.icon.icon-arrow-right.ml-10
-								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						.col-sm-6.eq-height-max.img(style="background-image:url('/images/cn03.png');")
+							.col-sm-6.eq-height-max.img(style="background-image:url('/images/cn03.png');")
 
 		// V3a: 1 block - Yellow solid border
-		section(class="module cn03 cn03_v3")
+		section(class="module module-outer cn03 cn03_v3")
 			.container
 				h3 V3a: 1 block - Yellow solid border
 				.row
@@ -61,7 +61,7 @@ block content
 									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 		// V3b: 1 block - Grey dashed border
-		section(class="module cn03 cn03_v3")
+		section(class="module module-outer cn03 cn03_v3")
 			.container
 				h3 V3b: 1 block - Grey dashed border
 				.row
@@ -75,7 +75,7 @@ block content
 								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 		// V4a: 2 blocks - Yellow solid border
-		section(class="module cn03 cn03_v4")
+		section(class="module module-outer module-gutter cn03 cn03_v4")
 			.container
 				h3 V4a: 2 blocks - Yellow solid border
 				.row
@@ -100,7 +100,7 @@ block content
 									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 		// V4b: 2 blocks - Grey dashed border
-		section(class="module cn03 cn03_v4")
+		section(class="module module-outer module-gutter cn03 cn03_v4")
 			.container
 				h3 V4b: 2 blocks - Grey dashed border
 				.row
@@ -123,7 +123,7 @@ block content
 								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 		// V5a: 3 blocks - Yellow solid border
-		section(class="module cn03 cn03_v5")
+		section(class="module module-outer module-gutter cn03 cn03_v5")
 			.container
 				h3 V5a: 3 blocks - Yellow solid border
 				.row
@@ -157,7 +157,7 @@ block content
 									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 		// V5b: 3 blocks - Grey dashed border
-		section(class="module cn03 cn03_v5")
+		section(class="module module-outer module-gutter cn03 cn03_v5")
 			.container
 				h3 V5b: 3 blocks - Grey dashed border
 				.row
@@ -189,20 +189,22 @@ block content
 
 		// V6 row1: 1 block - 2 equal columns - With image - Yellow solid border
 		// V6 row2: 3 blocks - Grey dashed border
-		section(class="module cn03 cn03_v2 module--has-cols")
+		section(class="module module-outer module-gutter cn03 cn03_v2 module--has-cols")
 			.container
 				h3 V6 row1: 1 block - 2 equal columns - With image - Yellow solid border
 				h3 V6 row2: 3 blocks - Grey dashed border
-				.dot-border
-					.content.clearfix
-						.col-sm-6.eq-height-max
-							.inner-content
-								p.metadata-byline Program
-								h3
-									a(href="#") Impact standardization
-										i.icon.icon-arrow-right.ml-10
-								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						.col-sm-6.eq-height-max.img(style="background-image:url('/images/cn03.png');")
+				.row 
+					.dot-border
+						.content.clearfix
+							.col-sm-6.eq-height-max
+								.inner-content
+									p.metadata-byline Program
+									h3
+										a(href="#") Impact standardization
+											i.icon.icon-arrow-right.ml-10
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							.col-sm-6.eq-height-max.img(style="background-image:url('/images/cn03.png');")
+			.container
 				.row
 					.col-md-4.eq-height-max
 						.content
