@@ -4,7 +4,8 @@
 		ul#mobile-nav.list-unstyled
 			li.search-panel
 				input(placeholder="Search")
-				button(class="btn icon-search") Search
+				button(class="btn", title="Search")
+					i(class="icon icon-search-white")
 			each item, x in header.menu2
 				li.primary
 					if item.subnav

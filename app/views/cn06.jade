@@ -2,9 +2,15 @@ extends layouts/_default
 
 block content
     main(class="body-content")
-        h1 cn06
-        h2 cn06 v1
-        // Start Content Section - cn06__v1
+        // Standard Module Dev Notes
+        section(class="module")
+            .container
+                .row
+                    .col-xs-12
+                        h3 CN06
+                        include components/_devnotes
+        // End Dev Notes
+        // START: CN06 v1
         section(class="module module-lead module-bleed-edges cn06 cn06__v1")
             .container
                 .row.eq-heights
@@ -20,9 +26,8 @@ block content
                                 li Bullet point of what this solution does
                                 li Another bullet point of what this solution does
                                 li Another key advantage of this solution to get you to click 
-        // End Content Section - cn06__v1
         h2 cn06 v2
-        // Start Content Section - cn06__v2
+        // START: CN06 v2
         section(class="module module-bleed-edges cn06 cn06__v2")
             .container
                 .row.eq-heights
@@ -44,9 +49,8 @@ block content
                                         .data-value 82 <span class="percent">%</span> 
                                     .chart-caption 
                                         .data-copy Bullet point of what this solution does
-        // End Content Section - cn06__v2
         h2 cn06 v3
-        // Start Content Section - cn06__v3
+        // START: CN06 v3
         section(class="module module-bleed-edges cn06 cn06__v3")
             .container
                 .row.eq-heights
@@ -63,4 +67,3 @@ block content
                                         .data-value 82 <span class="percent">%</span> 
                                     .chart-caption 
                                         .data-copy Bullet point of what this solution does 
-        // End Content Section - cn06__v3 
