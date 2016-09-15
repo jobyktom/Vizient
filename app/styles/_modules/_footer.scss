@@ -3,8 +3,8 @@
 #main-footer { 
     
     user-select: none; 
-    background: $grey-dark;
-    color: $white;
+    background: $peach-light;
+    color: $brand;
     padding-left: 24px;
     padding-right: 24px;
     @media (min-width: $screen-sm) {    
@@ -24,18 +24,18 @@
     }
     .row-mid {
         
-        border-top: 1px solid $slate;
-        border-bottom: 1px solid $slate;
+        border-top: 1px solid $orange-dark;
+        border-bottom: 1px solid $orange-dark;
     }
     .row-bot {
 
     }
     .border {
-        border-top: 1px solid $slate;
+        border-top: 1px solid $orange-dark;
         border-left: 0;
         
         @media only screen and (min-width: $screen-sm-min) {
-            border-left: 1px solid $slate;
+            border-left: 1px solid $orange-dark;
             border-top: 0;
         }
         
@@ -72,7 +72,7 @@ nav {
         column-gap: 20px;
 
         a {
-            color: $white;
+            color: $brand;
             @include font-size(16px);
         }
     }
@@ -81,7 +81,7 @@ nav {
     &.secondary {
         padding: 40px 0;
         a {
-            color: $grey-mid;
+            color: $brand;
             @include font-size(14px);
         }
     }
@@ -95,7 +95,7 @@ nav {
         margin-bottom: 20px;
     }
     p { 
-        color: $grey-mid;
+        color: $brand;
         font-family: $soleto-regular;
         float: right;
         padding: 24px 0;
