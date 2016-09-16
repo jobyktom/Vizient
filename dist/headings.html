@@ -159,37 +159,98 @@
       </div><!-- End Mobile Menu --><!-- End Mobile Header -->
       <!-- +hero(heros.home)-->
       <main class="body-content">
-        <!-- HEADINGS / FONT TYPES-->
-        <section class="module">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 col-md-6">
-                <h3>Gen 3 code drop. </h3>
-                <p>Last updated: 16th Sep 2016</p>
-                <h3>Modules</h3>
-                <ul>
-                  <li> <a href="cn03.html">Module cn03</a></li>
-                  <li> <a href="cn06.html">Module cn06</a></li>
-                  <li> <a href="cn09.html">Module cn09</a></li>
-                </ul>
-                <h3>Pages</h3>
-                <ul>
-                  <li> <a href="product-detail.html">Product Detail     </a></li>
-                </ul>
-                <h3>Development Notes</h3>
-                <p>As per Front End deliverables for <i>Gen2</i>, we are utilising a 12 column grid via Bootstrap v3. </p>
-                <p>HEADER - Desktop and Mobile header + navigation built. Logged out state. Subnav TBC but this will sit <i>outside</i> the *HEADER* HTML tag.</p>
-                <p>MODULES - Each module or row is encapuslated by a *SECTION* tag, each with specific classes which are mandatory. Some are global and some are module specific. Heights of modules need to be resolved.</p>
-                <p>All HTML mark up contained within each *SECTION* should be accounted for.   </p>
-                <p>SECTION classes that begin with "module-outer", "module-bleed") etc. determine margin and padding both internally and externally are mandatory for layout. A full list of these module <i>types</i> will be provided in further code drops.</p>
-                <p>Module specific styles (eg. "cn03__v1"). These determine color and styles specific to that particular module as outlined in design. Utilising these classes helps ensure modules not to deviate from established designs. If a module does not have a variant class, certain specific styles will be missing. This MAY affect layout, but the intention is to keep this aethetic.</p>
-                <p>Module layout and structure must stay fixed, however content within each singular component can of course be changed as needed.</p>
-                <p>Headings. For all modules containing headings - where a heading exists outside and above of a module which contains a row of border style components, that heading is optional. </p>
-                <p>Tablet landscape breakpoints are currently WIP. The focus for this delivery now is on desktop view. The code is responsive, but WIP for  smaller views. This will not affect markup, just CSS.</p>
+        <!-- Start Content section - 2 column-->
+        <section class="module module--outer-bg bdb-brand-24">
+          <div class="module__content bg-white">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <h1>This is an H1 tag</h1>
+                  <h2>This is an H2 tag</h2>
+                  <h3>This is an H3 tag</h3>
+                  <h4>This is an H4 tag</h4>
+                  <h5>This is an H5 tag</h5>
+                  <h6>This is an H6 tag</h6>
+                  <div class="metadata-bold">Metadata bold</div>
+                  <div class="metadata-regular">Metadata regular</div>
+                  <div class="metadata-italic">Metadata italic</div>
+                  <div class="metadata-eyebrow">Metadata eyebrow</div>
+                  <div class="metadata-byline">Metadata byline</div>
+                  <div class="e28">editorial copy 28px</div>
+                  <div class="e24">editorial copy 24px</div>
+                  <div class="e20">editorial copy 20px</div>
+                  <div class="e18">editorial copy 18px</div><a href="#" class="btn">See our story</a><a href="#" class="btn active">See our story</a><a href="#" class="btn inactive">See our story</a><a href="#" class="btn alt">See our story</a><a href="#" class="btn white">See our story                             </a><a href="#" class="btn-block mb-20"><span class="text-medium">View all news and events</span><i class="icon icon-arrow-right ml-10"></i></a><a href="#" class="btn-block mb-20"><span class="text-medium font-small">View all news and events</span><i class="icon icon-arrow-right ml-10"></i></a><a href="#" class="btn-block mb-20"><span class="text-std font-small">14/20 Regular Link</span><i class="icon icon-arrow-right ml-10"></i></a>
+                </div>
+                <div class="col-sm-6"><!-- Start Pull Quote Component -->
+                  <div class="pull-quote styled">
+                    <div class="pull-quote__text">Better care leads to a better quality of life for everyone. We’re delivering a better way forward by connecting our members to the expertise, solutions and insights that improve their business.</div>
+                    <div class="media">
+                      <div class="media__img"><img src="images/sample/bio-head-two@3x.png" class="avatar pull-quote__author-avatar"/></div>
+                      <div class="media__body">
+                        <div class="h4 pull-quote__author-name">Chris Hatwig</div>
+                        <div class="h5 pull-quote__author-title">President at Apexus</div><a href="leader-bio-page.html" class="pull-quote__link">See spotlight profile<i class="icon icon-arrow-right ml-10"></i></a>
+                      </div>
+                    </div>
+                  </div><!-- End Pull Quote Component -->
+                </div>
               </div>
             </div>
           </div>
         </section>
+        <!-- End Content section - 2 column-->
+        <!-- Start Recent News and Events section - 3 column-->
+        <section class="module module--outer-bg bdb-brand-24">
+          <div class="container module__content bg-white">
+            <div class="row">
+              <div class="col-sm-12">
+                <h3 class="text-light mb-30">Recent News and Events</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <!-- Start Event calendar date-->
+                <div class="clearfix mbb-30">
+                  <div class="post__calendar-date pull-left">
+                    <div class="text-medium font-larger mb-5">12</div>
+                    <div class="text-light">Nov</div>
+                  </div>
+                  <div class="text-medium font-large ml-80 lh-one-four">Association for healthcare foodservice</div>
+                </div>
+                <!-- End Event calendar date--><a href="events-calendar.html"><strong>View all News and Events</strong><i class="icon icon-arrow-right ml-10"></i></a>
+              </div>
+              <div class="col-sm-4">
+                <article class="post__entry">
+                  <header class="post__header">
+                    <p class="post__date">2015-10-20</p><a href="content-page-no-image.html" class="post__title"><span>Content page with no featured image</span><i class="icon icon-arrow-right ml-20"></i></a>
+                  </header>
+                  <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae faucibus lacus. Fusce venenatis urna sit amet neque ornare, eu congue massa ultricies. Fusce tempus risus leo, faucibus eleifend magna posuere in. Ut feugiat nec leo eu molestie. Pellentesque gravida laoreet vestibulum. Donec vel lectus sollicitudin, tempor augue auctor, vulputate magna.</p>
+                </article>
+                <article class="post__entry">
+                  <header class="post__header">
+                    <p class="post__date">2015-10-20</p><a href="content-page-right-image.html" class="post__title"><span>Content page with right aligned featured image</span><i class="icon icon-arrow-right ml-20"></i></a>
+                  </header>
+                  <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae faucibus lacus. Fusce venenatis urna sit amet neque ornare, eu congue massa ultricies. Fusce tempus risus leo, faucibus eleifend magna posuere in. Ut feugiat nec leo eu molestie. Pellentesque gravida laoreet vestibulum. Donec vel lectus sollicitudin, tempor augue auctor, vulputate magna.</p>
+                </article>
+              </div>
+              <div class="col-sm-4">
+                <!-- Start Event well module-->
+                <div class="well well--empty">
+                  <div class="well__body">
+                    <article class="post__entry">
+                      <header class="post__header"><a href="#" class="post__title"><span>Inaugural 2015 Conference</span><i class="icon icon-arrow-right ml-10"></i></a></header>
+                      <div class="post__featured-image mb-25"><img src="http://placehold.it/265x265" class="post__featured-image"/></div>
+                      <div class="text-medium mb-5">02-04 December 2015</div>
+                      <div class="text-medium">Drury Plaza Hotel, St Louis, MO</div>
+                      <p class="post__content mt-15">The inaugural Members’ Conference opens its doors on XX XX XX.</p>
+                    </article>
+                  </div>
+                </div>
+                <!-- End Event well module-->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Recent News and Events section - 3 column-->
       </main><!-- Start Footer -->
       <footer id="main-footer">
         <div class="row-top">
