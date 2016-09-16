@@ -8,6 +8,12 @@ html {
 body, h1, h2, h3, h4, h5, h6, p {
 	color: $grey-dark;
 }
+
+p, li {
+	@media only screen and (max-width: $screen-sm-max) {
+		@include font-size(14px);
+	}
+}
  
 
 h1 {

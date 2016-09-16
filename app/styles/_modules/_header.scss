@@ -54,11 +54,14 @@
 
     .master-nav {
         float: left;
+        width: 80%;
+        width: -webkit-calc(100% - 243px);
+        width: -moz-calc(100% - 243px); 
         width: calc(100% - 243px);
         display: inline-block;
         height: 110px;
         border-left: 1px solid $mist-light;
-        overflow: hidden;
+        //overflow: hidden;
 
         nav.top-nav {
             float: left;

@@ -5,67 +5,37 @@ block hero
 
 block content
     main(class="body-content")
-        // Start Content section - 2 column
-        section(class="module module--outer-bg bdb-brand-24")
-            .module__content.bg-white
-                .container
-                    .row
-                        .col-sm-12.col-md-6
-                            h1 This is an H1 tag
-                            h2 This is an H2 tag
-                            h3 This is an H3 tag
-                            h4 This is an H4 tag
-                            h5 This is an H5 tag
-                            h6 This is an H6 tag
-                            .metadata-bold Metadata bold
-                            .metadata-regular Metadata regular
-                            .metadata-italic Metadata italic
-                            .metadata-eyebrow Metadata eyebrow
-                            .metadata-byline Metadata byline
-                            .e28 editorial copy 28px
-                            .e24 editorial copy 24px
-                            .e20 editorial copy 20px
-                            .e18 editorial copy 18px
-                            a.btn(href="#") See our story
-                            a.btn.active(href="#") See our story
-                            a.btn.inactive(href="#") See our story
-                            a.btn.alt(href="#") See our story
-                            a.btn.white(href="#") See our story                             
-                            a.btn-block.mb-20(href="#")
-                                span.text-medium View all news and events
-                                i(class="icon icon-arrow-right ml-10")
-                            a.btn-block.mb-20(href="#")
-                                span.text-medium.font-small View all news and events
-                                i(class="icon icon-arrow-right ml-10")
-                            a.btn-block.mb-20(href="#")
-                                span.text-std.font-small 14/20 Regular Link
-                                i(class="icon icon-arrow-right ml-10")
-                            
-                        .col-sm-6
-                            +pullquote({classes: "styled", text:"Better care leads to a better quality of life for everyone. We’re delivering a better way forward by connecting our members to the expertise, solutions and insights that improve their business.", imgURL:"images/sample/bio-head-two@3x.png", name: "Chris Hatwig", title: "President at Apexus", showSpotlightLink: true})
-        // End Content section - 2 column
-        // Start Recent News and Events section - 3 column
-        section(class="module module--outer-bg bdb-brand-24")
-            .container.module__content.bg-white
+        // HEADINGS / FONT TYPES
+        section(class="module")
+            .container
                 .row
-                    .col-sm-12
-                        h3(class="text-light mb-30") Recent News and Events
-                .row
-                    .col-sm-4
-                        +eventCalendarDate('12', 'Nov', 'Association for healthcare foodservice')
-                        a(href="events-calendar.html")
-                            strong View all News and Events
+                    .col-sm-12.col-md-6
+                        h1 This is an H1 tag
+                        h2 This is an H2 tag
+                        h3 This is an H3 tag
+                        h4 This is an H4 tag
+                        h5 This is an H5 tag
+                        h6 This is an H6 tag
+                        .metadata-bold Metadata bold
+                        .metadata-regular Metadata regular
+                        .metadata-italic Metadata italic
+                        .metadata-eyebrow Metadata eyebrow
+                        .metadata-byline Metadata byline
+                        .e28 editorial copy 28px
+                        .e24 editorial copy 24px
+                        .e20 editorial copy 20px
+                        .e18 editorial copy 18px
+                        a.btn(href="#") See our story
+                        a.btn.active(href="#") See our story
+                        a.btn.inactive(href="#") See our story
+                        a.btn.alt(href="#") See our story
+                        a.btn.white(href="#") See our story                             
+                        a.btn-block.mb-20(href="#")
+                            span.text-medium View all news and events
                             i(class="icon icon-arrow-right ml-10")
-                    .col-sm-4
-                        each item, key in blogEntries
-                            if key != 'ID-1'
-                                article.post__entry
-                                    header.post__header
-                                        p(class="post__date") #{item.postDate}
-                                        a(class="post__title", href="#{item.postURL}")
-                                            span #{item.postTitle}
-                                            i(class="icon icon-arrow-right ml-20")
-                                    p(class="post__content") #{item.postExcerpt}
-                    .col-sm-4
-                        +eventWell('Inaugural 2015 Conference', '265', '265')
-        // End Recent News and Events section - 3 column
+                        a.btn-block.mb-20(href="#")
+                            span.text-medium.font-small View all news and events
+                            i(class="icon icon-arrow-right ml-10")
+                        a.btn-block.mb-20(href="#")
+                            span.text-std.font-small 14/20 Regular Link
+                            i(class="icon icon-arrow-right ml-10")

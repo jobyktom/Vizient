@@ -55,7 +55,7 @@ var Vizient = (function() {
 
 		_getPagePaths();
 		_setupStickyHeader();
-		_setupPrimaryNav();
+		//_setupPrimaryNav();
 		_setupMegaNav();
 		_setupMobileNav();
 		_setupActiveMenuItems();
@@ -118,34 +118,34 @@ var Vizient = (function() {
 		});
 	};
 
-	// The Primary Nav Controller.
-	// Hovering on menu items shows the relevant Mega Nav section
-	var _setupPrimaryNav = function _setupPrimaryNav() {
-		var megaNavOpenClass = "mega-nav-is-open";
+	// // The Primary Nav Controller.
+	// // Hovering on menu items shows the relevant Mega Nav section
+	// var _setupPrimaryNav = function _setupPrimaryNav() {
+	// 	var megaNavOpenClass = "mega-nav-is-open";
 
-		// Control displaying the mega nav on hover of the primary nav items
-		$primaryNavLinks.on('mouseover', function(e) {
-			var that = this;
+	// 	// Control displaying the mega nav on hover of the primary nav items
+	// 	$primaryNavLinks.on('mouseover', function(e) {
+	// 		var that = this;
 
-			window.clearTimeout(megaNavTimeout);
+	// 		window.clearTimeout(megaNavTimeout);
 
-			// Only show after short delay on hover, and hide on mouseout
-			primaryNavTimeout = setTimeout(function(e) {
-				$(that).tab('show');
-			}, 200);
-		}).on('mouseout', function() {
-			window.clearTimeout(primaryNavTimeout);
-			_setMegaNavTimeout();
-		}).on('click', function(e) {
-			// On first tap/hover open the mega nav else open the page
-			if ($(this).hasClass(megaNavOpenClass)) {
-				window.location.href = $(this).attr("data-href");
-			}
-			else {
-				$(this).tab('show');
-			}
-		});
-	};
+	// 		// Only show after short delay on hover, and hide on mouseout
+	// 		primaryNavTimeout = setTimeout(function(e) {
+	// 			$(that).tab('show');
+	// 		}, 200);
+	// 	}).on('mouseout', function() {
+	// 		window.clearTimeout(primaryNavTimeout);
+	// 		_setMegaNavTimeout();
+	// 	}).on('click', function(e) {
+	// 		// On first tap/hover open the mega nav else open the page
+	// 		if ($(this).hasClass(megaNavOpenClass)) {
+	// 			window.location.href = $(this).attr("data-href");
+	// 		}
+	// 		else {
+	// 			$(this).tab('show');
+	// 		}
+	// 	});
+	// };
 
 	// MegaNav functionality. Hide on mouseout and setup close button.
 	var _setupMegaNav = function _setupMegaNav() {

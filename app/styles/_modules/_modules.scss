@@ -11,42 +11,60 @@
     position: relative;
     
     [class*="col-"] {
-        padding: 20px 0 0px 0;
-        @media (min-width: $screen-md) {
-            padding: 40px 0 0px 0;
-            margin: 40px 0 40px 0;
+        padding: 20px 0 20px 0;
+        margin: 20px 0 0 0;
+        @media (min-width: $screen-sm) {
+            padding: 40px 0 40px 0;
+            margin: 0px 0 0px 0;
         }
     }
 
     // signifies a module that has content outside (eg:header) and requires zero padding
     &.module-outer {
+        
+        padding: 20px 0;
+        @media (min-width: $screen-sm) {
+            padding: 40px 0;
+        }
+
         [class*="col-"] {
-            @media (min-width: $screen-xs) {
-                padding: 20px 0 ;
-            }
             @media (min-width: $screen-sm) {
                 padding: 0;
-                margin: 0;
+                margin: 20px 0;
             }
         }
+ 
 
-        // .container {
-        //     margin: 0 24px;
-        //     @media (min-width: $screen-md) {
-        //        margin: 0 auto;
-        //     }
-        // }
-
+        .module-inner {
+            padding: 20px;
+            @media (min-width: $screen-sm) {
+                padding: 40px;
+            }
+        }
     }
     
-    // 80px lead top vertical padding for desktop
-    &.module-lead {
-        [class*="col-"] {
-            padding: 20px 0 0px 0;
-            @media (min-width: $screen-md) {
-                padding: 80px 0 40px 0;
+    
+    &.module-bleed  {
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+            @media (min-width: $screen-xs) {
+                padding-left: inherit;
+                padding-right: inherit; 
+            }
+
+            [class*="col-"] {
+                padding-left: 35px;
+                padding-right: 35px;
+                margin: 0;
+                @media (min-width: $screen-sm) {
+                    padding: inherit;
+                    margin: 0;
+                }
             }
         }
+
+
     }
 
     &.module--has-cols {
@@ -54,6 +72,7 @@
             padding-left: 0;
             padding-right: 0;
             margin-bottom: 0 !important;
+            margin-top: 0 !important;
         }
     }
 
@@ -74,10 +93,14 @@
         }
     }
 
-    .inner-pad {
-        padding: 24px;
+    .module-inner {
+        padding: 20px 0;
+        @media (min-width: $screen-sm) {
+            padding: 40px;
+        }
     }
 
+    // specifically set for two rows of modules contained within each section tag
     .container + .container {
         margin-top: 40px;
     }

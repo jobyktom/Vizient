@@ -2,19 +2,21 @@ extends layouts/_default
 
 block content
     main(class="body-content")
+        // PAGE - Not all modules are accounted for here.
+        // HEADER - Still to be built and included.
         // START: CN06 v1
-        section(class="module module-lead module-bleed-edges cn06 cn06__v1")
+        section(class="module module-bleed cn06 cn06__v1")
             .container
                 .row.eq-heights
                     .col-sm-12.col-md-8.left-col
-                        .inner-pad
+                        .module-inner
                             h3 Automation that improves value analysis results
                             p As health care becomes more outcomes-based, value analysis is more critical than ever. Vizient leverages strategic analytics and proven processes to build a comprehensive value analysis program.  Combined with our consulting services, the Vizient ValueLYNX™ analytics solution helps members streamline their new product utilization process, implement and measure utilization initiatives and track realized savings. Leveraging our best practice approach, we enable hospitals to build a clinically led process for rapid and sustained outcome improvement.
                             p As health care becomes more outcomes-based, value analysis is more critical than ever. Vizient leverages.
                     .col-sm-12.col-md-4.right-col
-                        .inner-pad
+                        .module-inner
                             h5 Short list of benefits
-                            ul.bold
+                            ul.bold.bullets
                                 li Bullet point of what this solution does
                                 li Another bullet point of what this solution does
                                 li Another key advantage of this solution to get you to click 
@@ -23,19 +25,35 @@ block content
             .container
                 .row
                     .col-xs-12.col-sm-8
-                        .inner-pad
-                            h1 Automation that improves value analysis results
-                            p As health care becomes more outcomes-based, value analysis is more critical than ever. Vizient leverages strategic analytics and proven processes to build a comprehensive value analysis program.  Combined with our consulting services, the Vizient ValueLYNX™ analytics solution helps members streamline their new product utilization process, implement and measure utilization initiatives and track realized savings. Leveraging our best practice approach, we enable hospitals to build a clinically led process for rapid and sustained outcome improvement.
-                            ul.bold.bullets
-                                li As health care becomes more outcomes-based
-                                li Value analysis is more critical than ever.
-                                li Vizient leverages strategic analytics and proven processes
-                                li Combined with our consulting services, the Vizient ValueLYNX™
-                            h3 Automation that improves value analysis results
-                            p As health care becomes more outcomes-based, value analysis is more critical than ever. Vizient leverages strategic analytics and proven processes to build a comprehensive value analysis program.  Combined with our consulting services, the Vizient ValueLYNX™ analytics solution helps members streamline their new product utilization process, implement and measure utilization initiatives and track realized savings. Leveraging our best practice approach, we enable hospitals to build a clinically led process for rapid and sustained outcome improvement.
-                            p
-                                a(href="#").btn See our story
-                            p
-                                a(href="#").btn-block.mb-20
-                                    span.text-medium.font-small View all news and events
+                        p As health care becomes more outcomes-based, value analysis is more critical than ever. Vizient leverages strategic analytics and proven processes to build a comprehensive value analysis program.  Combined with our consulting services, the Vizient ValueLYNX™ analytics solution helps members streamline their new product utilization process, implement and measure utilization initiatives and track realized savings. Leveraging our best practice approach, we enable hospitals to build a clinically led process for rapid and sustained outcome improvement.
+                        p As health care becomes more outcomes-based, value analysis is more critical than ever. Vizient leverages strategic analytics and proven processes to build a comprehensive value analysis program.  Combined with our consulting services, the Vizient ValueLYNX™ analytics solution helps members streamline their new product utilization process, implement and measure utilization initiatives and track realized savings. Leveraging our best practice approach, we enable hospitals to build a clinically led process for rapid and sustained outcome improvement.
+        // START: CN03 v5b: 3 blocks - Grey dashed border
+        section(class="module module-outer module-gutter cn03 cn03__v5")
+            .container
+                h3 Related products
+                .row
+                    .col-sm-4.eq-height-max
+                        .content
+                            .module-inner
+                                p.metadata-byline Product
+                                h3
+                                    a(href="#", title="PriceLYNX™") PriceLYNX™
                                         i.icon.icon-arrow-right.ml-10
+                                p As health care becomes more outcomes-based, value analysis is more critical than ever. Vizient leverages strategic analytics and proven processes to build a comprehensive value analysis program.  Combined with our consulting services, the Vizient ValueLYNX™ analytics solution helps members streamline their new product utilization process, implement and measure utilization initiatives and track realized savings. Leveraging our best practice approach, we enable hospitals to build a clinically led process for rapid and sustained outcome improvement.
+                    .col-sm-4.eq-height-max
+                        .content
+                            .module-inner
+                                p.metadata-byline Program
+                                h3
+                                    a(href="#", title="Impact standardization") Impact standardization
+                                        i.icon.icon-arrow-right.ml-10
+                                p As health care becomes more outcomes-based, value analysis is more critical than ever. Vizient leverages strategic analytics and proven processes to build a comprehensive value analysis program.  Combined with our consulting services, the Vizient ValueLYNX™ analytics solution helps members streamline their new product utilization process, implement and measure utilization initiatives and track realized savings. Leveraging our best practice approach, we enable hospitals to build a clinically led process for rapid and sustained outcome improvement.
+                    .col-sm-4.eq-height-max
+                        .content
+                            .module-inner
+                                p.metadata-byline Program
+                                h3
+                                    a(href="#", title="Impact standardization") Impact standardization
+                                        i.icon.icon-arrow-right.ml-10
+                                p As health care becomes more outcomes-based, value analysis is more critical than ever. Vizient leverages strategic analytics and proven processes to build a comprehensive value analysis program.  Combined with our consulting services, the Vizient ValueLYNX™ analytics solution helps members streamline their new product utilization process, implement and measure utilization initiatives and track realized savings. Leveraging our best practice approach, we enable hospitals to build a clinically led process for rapid and sustained outcome improvement.
+                                p A short benefit statement that uses customer facing terminology that makes sense to non-members, that encourages to explore further.

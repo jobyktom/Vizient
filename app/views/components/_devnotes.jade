@@ -1,5 +1,8 @@
-p Each module or row is encapuslated by a *SECTION* tag
-p All HTML mark up contained within each section must be accounted for and present for back end deployment
-p All Section classes for each variation are mandatory
-p Global classes begin with "module-" (eg. "module-outer"). These determine margin and padding both internally and externally. 
-p Module specific styles (eg. "cn03__v1"). These determine color and styles specific to that particular module as outlined in design. Utilising these classes helps ensure modules not to deviate from established designs. So, for example, if a module does not have a variant class, certain specific styles will not show and elements will break.
+p As per Front End deliverables for <i>Gen2</i>, we are utilising a 12 column grid via Bootstrap v3. 
+p Each module or row is encapuslated by a *SECTION* tag, each with specific classes which are mandatory. Some are global and some are module specific. 
+p All HTML mark up contained within each *SECTION* should be accounted for.   
+p Global classes that begin with "module-???" (eg. "module-outer" "module-bleed"). These determine margin and padding both internally and externally. 
+p Module specific styles (eg. "cn03__v1"). These determine color and styles specific to that particular module as outlined in design. Utilising these classes helps ensure modules not to deviate from established designs. So, for example, if a module does not have a variant class, certain specific styles will be missing.
+p Module layout and structure must stay fixed, however content within each singular component can of course be changed as needed.
+p Headings. For all modules containing headings - where a heading exists outside and above of a module which contains a row of border style components, that heading is optional. 
+p Tablet breakpoints are currently WIP. The focus for now is on desktop, but we do no envistage markup delivered to change. 
