@@ -54,8 +54,8 @@
             }
 
             [class*="col-"] {
-                padding-left: 35px;
-                padding-right: 35px;
+                padding-left: 20px;
+                padding-right: 20px;
                 margin: 0;
                 @media (min-width: $screen-sm) {
                     padding: inherit;
@@ -81,13 +81,13 @@
     &.module-gutter {
         div[class^="col-"]:not(:first-child) { 
             padding-left: 0px; 
-            @media (min-width: $screen-sm) {
+            @media (min-width: $screen-md) {
                 padding-left: 9px;
             }
         } 
         div[class^="col-"]:not(:last-child) { 
             padding-right: 0px; 
-            @media (min-width: $screen-sm) {
+            @media (min-width: $screen-md) {
                 padding-right: 9px;
             } 
         }

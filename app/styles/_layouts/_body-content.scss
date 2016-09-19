@@ -1,9 +1,14 @@
 // Body Content (class added to the <main> element)
 
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
 .body-content {
 	position: relative;
 
-	@media (max-width: 1074px) {
-		padding-top: 60px;
-	}
+	// @media (max-width: 1074px) {
+	// 	padding-top: 60px;
+	// }
 }

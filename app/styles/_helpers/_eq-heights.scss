@@ -1,14 +1,15 @@
- 
-.row.eq-heights {
-
-	@media (min-width: $screen-md) {
-		display: table;
-		[class*="col-"] {
-		    float: none;
-		    display: table-cell;
-		    vertical-align: top;
-		}
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+	// margin-left: 0;
+	// margin-right: 0;
+	
+	@media (min-width: $screen-sm) {
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display:         flex;
 	}
-
 }
- 

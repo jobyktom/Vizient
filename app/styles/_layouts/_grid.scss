@@ -3,24 +3,24 @@
 
 // Containers
 
-.container {
-    position: relative;
-}
+// .container {
+//     position: relative;
+// }
 
 
-@media (max-width: $screen-mbls) {
+// @media (max-width: $screen-mbls) {
 
-  [class*="col-"]{
-      margin: 0px;
-      padding: 0px;
+//   [class*="col-"]{
+//       margin: 0px;
+//       padding: 0px;
 
-  }
-}
+//   }
+// }
 
-// spacing needed for modules on smaller devices
+// // spacing needed for modules on smaller devices
 
-.col-sm-4 {
-	@media (max-width: $screen-sm-min) {
-    	margin-bottom: 40px;
-	}
-}
+// .col-sm-4 {
+// 	@media (max-width: $screen-sm-min) {
+//     	margin-bottom: 40px;
+// 	}
+// }

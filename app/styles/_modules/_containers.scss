@@ -4,11 +4,18 @@
 
 	@media (min-width: $screen-xs) {
 		width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	@media (min-width: $screen-sm) {
+
+		width: 100%;
 		padding-left: 35px;
 		padding-right: 35px;
 	}
 
-	@media (min-width: $screen-sm) {
+	@media (min-width: $screen-md) {
 
 		width: 100%;
 		padding-left: 35px;
