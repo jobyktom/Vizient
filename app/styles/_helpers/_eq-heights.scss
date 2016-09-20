@@ -2,11 +2,48 @@
  * Row with equal height columns
  * --------------------------------------------------
  */
-.row-eq-height {
+
+.row-eq-height-xs {
+	// margin-left: 0;
+	// margin-right: 0;
+	
+	@media (min-width: $screen-xs) {
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display:         flex;
+	}
+}
+
+.row-eq-height-sm {
 	// margin-left: 0;
 	// margin-right: 0;
 	
 	@media (min-width: $screen-sm) {
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display:         flex;
+	}
+}
+
+.row-eq-height-md {
+	// margin-left: 0;
+	// margin-right: 0;
+	
+	@media (min-width: $screen-md) {
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display:         flex;
+	}
+}
+
+.row-eq-height-lg {
+	// margin-left: 0;
+	// margin-right: 0;
+	
+	@media (min-width: $screen-lg) {
 	  display: -webkit-box;
 	  display: -webkit-flex;
 	  display: -ms-flexbox;

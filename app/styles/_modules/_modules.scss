@@ -80,16 +80,23 @@
     //module gutter 
     &.module-gutter {
         div[class^="col-"]:not(:first-child) { 
-            padding-left: 0px; 
+            margin-left: 0px; 
             @media (min-width: $screen-sm) {
-                padding-left: 9px;
+                margin-left: 9px;
             }
         } 
         div[class^="col-"]:not(:last-child) { 
-            padding-right: 0px; 
+            margin-right: 0px; 
             @media (min-width: $screen-sm) {
-                padding-right: 9px;
+                margin-right: 9px;
             } 
+        }
+
+        // nested = zero
+        .row-inner {
+            div[class^="col-"] {
+               margin: 0;     
+            }
         }
     }
 

@@ -1,31 +1,27 @@
 .cn05 {
+	background-color: $mist-lightest;
+}
+
+.cn05__v1 {
 	[class*="col-"] {
-		.metadata-eyebrow,
-		.metadata-byline,
-		a,
-		p {
+
+		* {
 			color: $white;
 		}
 
 		&:nth-child(1) {
-			.content {
-				background-color: $purple;
-				border-top: 8px solid $purple-dark;
-			}
+			background-color: $purple;
+			border-top: 8px solid $purple-dark;
 		}
 
 		&:nth-child(2) {
-			.content {
-				background-color: $turquoise-dark;
-				border-top: 8px solid #018380;
-			}
+			background-color: $turquoise-dark;
+			border-top: 8px solid $teal;
 		}
 
 		&:nth-child(3) {
-			.content {
-				background-color: #018380;
-				border-top: 8px solid $turquoise-dark;
-			}
+			background-color: $teal;
+			border-top: 8px solid $turquoise-dark;
 		}
 	}
 }
