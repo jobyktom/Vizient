@@ -1,5 +1,9 @@
 .cn05 {
 	background-color: $mist-lightest;
+
+	.metadata-byline {
+		padding-bottom: 15px;
+	}
 }
 
 .cn05__v1 {
@@ -24,4 +28,26 @@
 			border-top: 8px solid $turquoise-dark;
 		}
 	}
+}
+
+.cn05__v2 {
+
+	.left-col { 
+		border-top: 8px solid $mist;
+		border-left: 1px solid $mist;
+		border-right: 1px solid $mist;
+		border-bottom: 1px solid $mist;
+
+		.metadata-byline {
+			padding-top: 15px;
+		}
+	}
+
+	.right-col { 
+		border-top: 8px solid $brand;
+		border-left: 1px solid $mist;
+		border-right: 1px solid $mist;
+		border-bottom: 1px solid $mist;
+	}
+ 
 }

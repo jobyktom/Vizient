@@ -81,13 +81,13 @@
     &.module-gutter {
         div[class^="col-"]:not(:first-child) { 
             margin-left: 0px; 
-            @media (min-width: $screen-sm) {
+            @media (min-width: $screen-md) {
                 margin-left: 9px;
             }
         } 
         div[class^="col-"]:not(:last-child) { 
             margin-right: 0px; 
-            @media (min-width: $screen-sm) {
+            @media (min-width: $screen-md) {
                 margin-right: 9px;
             } 
         }

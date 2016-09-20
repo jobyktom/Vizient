@@ -99,6 +99,9 @@ h5 {
 	line-height: 1.29em;
 	letter-spacing: 3px;
 	margin-bottom: 40px;
+	@media only screen and (max-width: $screen-sm-max) {
+		margin-bottom: 20px;
+	}
 }
 
 .metadata-byline {
@@ -116,6 +119,9 @@ h5 {
 	font-family: $soleto-bold;
 	line-height: 1.29em;
 	letter-spacing: -0.5px;
+	@media only screen and (max-width: $screen-sm-max) {
+		@include font-size(22px);
+	}
 }
 
 .e24 {
