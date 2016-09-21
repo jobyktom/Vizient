@@ -6,7 +6,10 @@
 
 	sup {
 		@include font-size(24px);
-		top: -35px;
+		
+		@media only screen and (min-width: $screen-sm) {
+			top: -35px;
+		}
 	}
 
 	sub {

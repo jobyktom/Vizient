@@ -37,6 +37,10 @@ Gulp help:
 gulp help
 ```
 
+## GIT 
+# Ensure you work on your own branch with post fix for initials eg. dev-rb, dev-sp etc
+# Gulp DIST only to be ran in branch "dev" once you've merged local branch changes into it
+
 
 ## Built-in features
 

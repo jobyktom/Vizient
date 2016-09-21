@@ -1,11 +1,16 @@
 .dot-border {
+	float: none;
 	position: relative;
 	z-index: 1;
 	padding: 3px;
 	border: 4px solid $yellow; // left here as a fallback in case one of the classes below is missing
 	border-radius: 2px;
 	height: 100%;
-
+	
+	@media only screen and (min-width: $screen-sm) {
+		float: left;
+	}
+	
 	&.dot-border-yellow {
 		border: 4px solid $yellow;
 	}
@@ -39,4 +44,8 @@
 	.content {
 		border: none !important;
 	}
+}
+
+.dash-border {
+	border: 1px dashed $grey;
 }

@@ -100,6 +100,29 @@
         }
     }
 
+    //module gutter 
+    &.module-gutter-sm {
+        div[class^="col-"]:not(:first-child) { 
+            margin-left: 0px; 
+            @media (min-width: $screen-sm) {
+                margin-left: 9px;
+            }
+        } 
+        div[class^="col-"]:not(:last-child) { 
+            margin-right: 0px; 
+            @media (min-width: $screen-sm) {
+                margin-right: 9px;
+            } 
+        }
+
+        // nested = zero
+        .row-inner {
+            div[class^="col-"] {
+               margin: 0;     
+            }
+        }
+    }
+
     .module-inner {
         padding: 20px 0;
         @media (min-width: $screen-sm) {
