@@ -27,3 +27,8 @@ a:link {
         text-decoration: underline;
     }
 }
+
+.arrow-link {
+    @extend .text-medium;
+    @include font-size(14px);
+}

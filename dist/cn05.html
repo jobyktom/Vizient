@@ -157,38 +157,94 @@
           </ul>
         </nav>
       </div><!-- End Mobile Menu --><!-- End Mobile Header -->
-      <!-- +hero(heros.home)-->
       <main class="body-content">
-        <!-- HEADINGS / FONT TYPES-->
-        <section class="module">
+        <div class="container">
+          <h1>MODULE CN05</h1>
+        </div>
+        <!-- START: cn05 v1-->
+        <!-- Newsletter - 3 column coloured boxes -->
+        <!-- module-outer required as title exists outside of bootstrap cols -->
+        <section class="module module-outer module-gutter cn05 cn05__v1">
           <div class="container">
-            <div class="row">
-              <div class="col-sm-12 col-md-6">
-                <h3>Gen 3 code drop. </h3>
-                <p>Last updated: 16th Sep 2016</p>
-                <h3>Modules</h3>
-                <ul>
-                  <li> <a href="cn03.html">Module cn03</a></li>
-                  <li> <a href="cn05.html">Module cn05</a></li>
-                  <li> <a href="cn06.html">Module cn06</a></li>
-                  <li> <a href="cn09.html">Module cn09</a></li>
-                  <li> <a href="cn12.html">Module cn12</a></li>
-                </ul>
-                <h3>Pages</h3>
-                <ul>
-                  <li> <a href="product-detail.html">Product Detail     </a></li>
-                </ul>
-                <h3>Development Notes</h3>
-                <p>As per Front End deliverables for <i>Gen2</i>, we are utilising a 12 column grid via Bootstrap v3. </p>
-                <p>HEADER - Desktop and Mobile header + navigation built. Logged out state. Subnav TBC but this will sit <i>outside</i> the *HEADER* HTML tag.</p>
-                <p>MODULES - Each module or row is encapuslated by a *SECTION* tag, each with specific classes which are mandatory. Some are global and some are module specific. Heights of modules need to be resolved.</p>
-                <p>All HTML mark up contained within each *SECTION* should be accounted for.   </p>
-                <p>SECTION classes that begin with "module-outer", "module-bleed") etc. determine margin and padding both internally and externally are mandatory for layout. A full list of these module <i>types</i> will be provided in further code drops.</p>
-                <p>Module specific styles (eg. "cn03__v1"). These determine color and styles specific to that particular module as outlined in design. Utilising these classes helps ensure modules not to deviate from established designs. If a module does not have a variant class, certain specific styles will be missing. This MAY affect layout, but the intention is to keep this aethetic.</p>
-                <p>Module layout and structure must stay fixed, however content within each singular component can of course be changed as needed.</p>
-                <p>Headings. For all modules containing headings - where a heading exists outside and above of a module which contains a row of border style components, that heading is optional. </p>
-                <p>Tablet landscape breakpoints are currently WIP. The focus for this delivery now is on desktop view. The code is responsive, but WIP for  smaller views. This will not affect markup, just CSS.</p>
-                <p>For equal height cols, ensure the postfix on "row" class includes the appropriate designation. So, div class="row row-eq-height-md" where any child cols have a "md" designation. div class="row row-eq-height-sm" where child cols have a "sm" designation.</p>
+            <h3>Related news / Newsletter [cn05 v1 - 3 column coloured boxes]</h3>
+            <div class="row row-eq-height-md">
+              <div class="col-xs-12 col-md-4">
+                <div class="module-inner">
+                  <p class="metadata-eyebrow">Newsletter</p>
+                  <p class="metadata-byline">Issue 1 • February 2016</p>
+                  <p class="e28"><a href="#">Clinical &amp; performance improvement<i class="icon icon-arrow-right-white ml-10"></i></a></p>
+                  <p>Lorem ipsum dolor et ami Proin sit amet massa purus. Aliquam venenatis enim eu nunc facilisis convallis. Sed quis urna sit amet nulla tristique euismod.  </p>
+                  <p>Lorem ipsum dolor et ami Proin sit amet massa purus. Aliquam venenatis enim eu nunc facilisis convallis. Sed quis urna sit amet nulla tristique euismod.  </p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4">
+                <div class="module-inner">
+                  <p class="metadata-eyebrow">Newsletter</p>
+                  <p class="metadata-byline">Issue 2 • June 2016</p>
+                  <p class="e28"><a href="#">Clinical &amp; performance improvement<i class="icon icon-arrow-right-white ml-10"></i></a></p>
+                  <p>Lorem ipsum dolor et ami Proin sit amet massa purus. Aliquam venenatis enim eu nunc facilisis convallis. Sed quis urna sit amet nulla tristique euismod. Sed placerat augue magna, et euismod mi volutpat non. Sed quis urna sit amet nulla tristique euismod</p>
+                  <p>Lorem ipsum dolor et ami Proin sit amet massa purus. Aliquam venenatis enim eu nunc facilisis convallis. Sed quis urna sit amet nulla tristique euismod.  </p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4">
+                <div class="module-inner">
+                  <p class="metadata-eyebrow">Newsletter</p>
+                  <p class="metadata-byline">Issue 4 • August 2016</p>
+                  <p class="e28"><a href="#">Clinical &amp; performance improvement<i class="icon icon-arrow-right-white ml-10"></i></a></p>
+                  <p>Lorem ipsum dolor et ami Proin sit amet massa purus. Aliquam venenatis enim eu nunc facilisis convallis. Sed quis urna sit amet nulla tristique euismod. Sed placerat augue magna, et euismod mi volutpat non. Sed quis urna sit amet nulla tristique euismod.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- START: cn05 v2-->
+        <!-- Newsletter - 2 column boxes, 1 col spans 2 cols. -->
+        <!-- module-outer required as title exists outside of bootstrap cols -->
+        <section class="module module-outer module-gutter cn05 cn05__v2">
+          <div class="container">
+            <h3>Related insights [cn05 v2]</h3>
+            <div class="row row-eq-height-md">
+              <div class="col-xs-12 col-md-8 left-col">
+                <div class="row row-inner">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="module-inner">
+                      <p class="metadata-eyebrow">Insight</p>
+                      <div><img src="images/avatars/byron.png" alt="Byron Jobe" class="avatar-sm"><span class="metadata-byline">By Byron Jobe</span></div>
+                      <p class="e28"><a href="#">Clinical &amp; performance improvement<i class="icon icon-arrow-right-white ml-10"></i></a></p>
+                      <p class="metadata-byline">7 July 2016</p>
+                      <p>With nearly all of the waste leaving a hospital originating from a purchasing decision, supply chain leaders are in a unique position to lead efforts that will reduce the supply chain leaders supply chain leaders ...</p>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="module-inner">
+                      <ul class="list-unstyled news-items">
+                        <li><img src="images/avatars/byron.png" alt="Byron Jobe" class="avatar-sm"><span class="metadata-byline">By Byron Jobe</span><a href="#" title="Another relevant title of content goes here">
+                            <div class="e20">Another relevant title of content goes here</div></a>
+                          <div class="metadata-byline">7 July 2016</div>
+                        </li>
+                        <li><img src="images/avatars/byron.png" alt="Byron Jobe" class="avatar-sm"><span class="metadata-byline">By Byron Jobe</span><a href="#" title="Another relevant title of content goes here">
+                            <div class="e20">Another relevant title of content goes here</div></a>
+                          <div class="metadata-byline">7 July 2016</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4 right-col">
+                <div class="module-inner">
+                  <p class="metadata-eyebrow">Press release </p>
+                  <ul class="list-unstyled news-items">
+                    <li>
+                      <div class="metadata-byline">7 July 2016</div><a>
+                        <div class="e20">Another relevant title of content goes here</div></a>
+                    </li>
+                    <li>
+                      <div class="metadata-byline">7 July 2016</div><a>
+                        <div class="e20">Another relevant title of content goes here</div></a>
+                    </li>
+                  </ul><a href="#" title="View all press releases" class="arrow-link">View all press releases <i class="icon icon-arrow-right ml-10"></i></a>
+                </div>
               </div>
             </div>
           </div>
