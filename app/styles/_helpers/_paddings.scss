@@ -8,7 +8,10 @@
     }
 
     .pt-#{$space} {
-        padding-top: #{$space}px !important ;
+        padding-top: 0px !important;
+        @media (min-width: $screen-sm) {
+            padding-top: #{$space}px !important ;
+        }
     }
 
     .pb-#{$space} {
