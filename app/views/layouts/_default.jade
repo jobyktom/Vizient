@@ -21,7 +21,11 @@ html(lang="en")
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js')
     body
+        <!--[if lt IE 9]>
+        <div class="browsehappy"><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div>
+        <![endif]-->
         .outer-wrapper
             include _header
             include _mobile-header
@@ -39,7 +43,7 @@ html(lang="en")
         script(src='../bower_components/jquery.expander/jquery.expander.js')
         // endbower
         //- endbuild -->
-        script(src='https://cdn.jsdelivr.net/jquery.jfeed/0.1/jquery.jfeed.js')
+        //- script(src='https://cdn.jsdelivr.net/jquery.jfeed/0.1/jquery.jfeed.js')
         //- build:js(.tmp) scripts/plugins.min.js -->
         //- endbuild -->
         //- build:js(.tmp) scripts/main.min.js -->

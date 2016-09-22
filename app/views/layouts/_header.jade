@@ -17,7 +17,7 @@ header(id="header-bar", class="hidden-xs hidden-sm")
                 each item, index in header.menu2
                     li
                         if index > 0 && index < 6
-                            a(role='tab', data-toggle='tab', href='#{item.url}', data-href='#{item.url}', data-target='#mega-nav-#{index}', aria-controls='mega-nav-#{index}', class='#{item.classes}') #{item.title}
+                            a(role='tab', data-toggle='tab', href='#{item.url}', data-href='#{item.url}', data-target='#mega-nav-#{index}',  class='#{item.classes}') #{item.title}
                         else
                             a(href='#{item.url}', class='#{item.classes}') #{item.title}
         // End Primary Nav
