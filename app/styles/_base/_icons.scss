@@ -31,7 +31,6 @@
     speak: none;
 }
 
-
 .icon-logo {
     background: url(../images/icons/vizient-logo.png);
     background: none, url(../images/icons/svg/vizient-logo.svg);
@@ -631,4 +630,19 @@
     background: url(../images/icons/file-types/Zip.png);
     background: url(../images/icons/file-types/Zip.svg);
     @include image-2x("../images/icons/file-types/Zip@2x.png", 21px, 25px);
+}
+
+
+
+// arrows
+
+.arrow-mist {
+    background: none, url(/images/icons/svg/arrow-curved.svg);
+    background-repeat: no-repeat;
+}
+
+.arrow {   
+    background-size: 150px 65px;
+    width: 150px;
+    height: 65px;
 }

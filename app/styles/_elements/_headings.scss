@@ -15,6 +15,9 @@ p, li {
 	}
 }
  
+.italic {
+	font-family: $soleto-italic;
+}
 
 h1 {
 	@include font-size(72px);

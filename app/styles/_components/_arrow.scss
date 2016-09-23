@@ -1,66 +1,26 @@
-.arrow {
-	&:first-child {
-		.inner-content {
-			&:after {
-				left: calc(100% - 19px);
-				right: auto;
-				transform: rotate(90deg);
-			}
-		}
-	}
+.arrow-right {
+	 
+	transform: rotate(0deg);	 
+	position: absolute;
+	top: -46px;
+	left: -25px; 
 
-	&:last-child {
-		.inner-content {
-			&:after {
-				left: auto;
-				right: calc(100% - 19px);
-				transform: rotate(-90deg);
-			}
-		}
-	}
-
-	.inner-content {
-		position: relative;
-		background-color: $mist;
-
-		&:after {
-			position: absolute;
-			top: 45%;
-			bottom: auto;
-			display: block;
-			width: 54px;
-			height: 19px;
-			content: ' ';
-			background-image: url('/images/icons/svg/rounded-tri.svg');
-			background-repeat: no-repeat;
-			background-position: 50% 50%;
-			background-size: cover;
-		}
-	}
-
-	@media only screen and (max-width: $screen-xs-max) {
-		&:first-child {
-			.inner-content {
-				&:after {
-					top: calc(100% - 1px);
-					bottom: auto;
-					left: 20px;
-					right: auto;
-					transform: rotate(180deg);
-				}
-			}
-		}
-
-		&:last-child {
-			.inner-content {
-				&:after {
-					top: auto;
-					bottom: calc(100% - 1px);
-					left: 20px;
-					right: auto;
-					transform: rotate(0deg);
-				}
-			}
-		}
+	@media only screen and (min-width: $screen-sm) {
+		position: absolute;
+		top: 40%;
+		top: calc(100% / 2 - 33px);
+		left: -88px;
+		transform: rotate(270deg);
 	}
 }
+
+.arrow-down {
+	 
+	transform: rotate(180deg);	 
+	position: absolute;
+	top: -46px;
+	left: 0px; 
+
+}
+
+ 

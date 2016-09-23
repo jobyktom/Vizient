@@ -17,19 +17,15 @@
             padding: 40px 0 40px 0;
             margin: 0px 0 0px 0;
         }
+
+        [class*="col-"] {
+            @media (max-width: $screen-md) {
+            padding: 0 !important;
+
+            }
+        }
     }
 
-    //- for all cols=12 => lg 
-    [class*="-12"]:not[class*="-xs"],
-    [class*="-12"]:not[class*="-sm"],
-    [class*="-12"]:not[class*="-md"] {
-        .module-inner {
-            width: auto;
-            @media (min-width: $screen-lg) {
-                width: 75%;
-            }
-        }  
-    }
 
     // signifies a module that has content outside (eg:header) and requires zero padding
     &.module-outer {
@@ -82,28 +78,21 @@
 
     }
 
-    &.module--has-cols {
-        [class*="col-"] {
-            padding-left: 0;
-            padding-right: 0;
-            margin-bottom: 0 !important;
-            margin-top: 0 !important;
-        }
-    }
-
 
     //module gutter 
-    &.module-gutter {
+    &.module-gutter-md {
         div[class^="col-"]:not(:first-child) { 
             margin-left: 0px; 
+            padding: 0;
             @media (min-width: $screen-md) {
-                margin-left: 9px;
+                margin-left: 4px;
             }
         } 
         div[class^="col-"]:not(:last-child) { 
             margin-right: 0px; 
+            padding: 0;
             @media (min-width: $screen-md) {
-                margin-right: 9px;
+                margin-right: 4px;
             } 
         }
 
@@ -120,13 +109,13 @@
         div[class^="col-"]:not(:first-child) { 
             margin-left: 0px; 
             @media (min-width: $screen-sm) {
-                margin-left: 9px;
+                margin-left: 4px;
             }
         } 
         div[class^="col-"]:not(:last-child) { 
             margin-right: 0px; 
             @media (min-width: $screen-sm) {
-                margin-right: 9px;
+                margin-right: 4px;
             } 
         }
 
@@ -142,6 +131,12 @@
         padding: 20px 0;
         @media (min-width: $screen-sm) {
             padding: 40px;
+        }
+
+        &.reduce-width {
+            @media (min-width: $screen-lg) {
+                width: 75%;
+            }            
         }
     }
 

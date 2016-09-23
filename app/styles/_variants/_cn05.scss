@@ -55,6 +55,12 @@
 		border-right: 1px solid $mist;
 		border-bottom: 1px solid $mist;
 	}
+
+	.module-inner {
+		@media (max-width: $screen-sm) {
+			padding-top: 0;
+		}
+	}
  }
 
 .cn05__v3 {

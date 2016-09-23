@@ -28,31 +28,25 @@
 		}
 		&:nth-child(2) {
 			background-color: $mist;
-			.arrow {
-				@include arrow(top, 40px, 20px, $mist);
-				position: absolute;
-				top: -20px;
-				left: 20px;
-				@media only screen and (min-width: $screen-sm) {
-					@include arrow(left, 40px, 20px, $mist);
-					position: absolute;
-					top: 45%;
-					left: -20px;
-				}
-			}
+			
+		 
 		}
 	}
 
 	[class*="col-"] {
 		margin: 0 !important;
 	}
-
-
 }
 .cn03__v2 {
 
 	
-	
+	.bg-image {
+		background-size: cover;
+		width: 100%;
+		min-height: 275px;
+		height: 100%;
+	}
+
 	img {
 		width: 100%;
 	}
@@ -61,8 +55,13 @@
 		margin: 0 !important;
 		&:nth-child(1) {
 			background-color: $white;
-			height: 272px;
-			overflow: hidden;
+			// height: auto;
+			// overflow: inherit;
+			// @media only screen and (min-width: $screen-sm) {
+			// 	height: 272px;
+			// 	overflow: hidden;
+			// }
+
 		}
 		&:nth-child(2) {
 			padding: 0;
@@ -82,6 +81,13 @@
 .cn03__v5 {
 	[class*="col-"] {
 		background-color: $white;
+		padding: 0 !important;
+	}
+}
+
+.cn03__v4 {
+	[class*="col-"] {
+		padding: 0 !important;
 	}
 }
 

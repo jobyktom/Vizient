@@ -32,3 +32,7 @@ a:link {
     @extend .text-medium;
     @include font-size(14px);
 }
+
+.module-link-arrow {
+    margin-right: -25px;
+}
