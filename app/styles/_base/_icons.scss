@@ -154,6 +154,15 @@
     height: 12px;
 }
 
+.icon-arrow-left-white {
+    background: url(../images/icons/icon-arrow-left-white.png);
+    // background: none, url(../images/icons/svg/icon-arrow-left.svg);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    width: 12px;
+    height: 12px;
+}
+
 .icon-arrow-left--medium {
     background: url(../images/icons/icon-arrow-left-medium.png);
     background: none, url(../images/icons/svg/icon-arrow-left.svg);
@@ -638,6 +647,11 @@
 
 .arrow-mist {
     background: none, url(/images/icons/svg/arrow-curved.svg);
+    background-repeat: no-repeat;
+}
+
+.arrow-purple {
+    background: none, url(/images/icons/svg/arrow-curved-purple.svg);
     background-repeat: no-repeat;
 }
 

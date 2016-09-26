@@ -24,3 +24,42 @@
 .cn06__v3 {
 	@include gradient($mist-lightest, $mist-light, 50%);
 }
+
+.cn06__v4 {
+	@include gradient($mist-lightest, $mist-light, 50%);
+
+	.right-col .module-inner {
+		width: auto;
+		margin-left: inherit; 
+		@media (min-width: $screen-sm) {
+			width: 460px;
+		}
+		@media (min-width: $screen-md) {
+			margin-left: 105px;
+			width: auto;
+		}
+		
+		.metadata-eyebrow {
+			margin-bottom: 15px;
+			padding-bottom: 15px;
+			border-bottom: 1px dashed $grey;
+		}
+
+		ul {
+			
+			li { 
+				a {
+					@include font-size(18px);
+					
+				}
+				.icon {
+					float: right;
+					position: relative;
+					top: 5px;
+				}
+			}
+		}
+	}
+	
+
+}
