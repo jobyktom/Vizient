@@ -180,7 +180,12 @@
                     // padding-right: 1vw;
                     // padding-top: 16px;
                     height: 70px;
-                    border-left: 1px solid $mist-light;        
+                    border-left: 0;        
+                    
+                    @media only screen and (min-width: $screen-lg) {
+                        border-left: 1px solid $mist-light;        
+                    }
+                    
                     &:nth-child(1) {
                         border: 0;
                     }
@@ -189,6 +194,9 @@
 
             .search {
                 padding-right: 20px;
+                @media only screen and (max-width: $screen-lg) {
+                    padding-right: 0;
+                }
             }
 
             
@@ -213,11 +221,17 @@
                     height: 36px;
                     min-width: auto;
                     max-width: 98px;
-
+                    
+                    @media only screen and (max-width: $screen-lg) {
+                        padding: 10px;     
+                    }
                     .icon-login {
                         top: -5px;
                         position: relative;
                         left: -8px;
+                        @media only screen and (max-width: $screen-lg) {
+                            left: 0;
+                        }
                     }
 
                     span {
@@ -225,6 +239,10 @@
                         top: -4px;
                         @include font-size(14px);
                         font-family: $soleto-bold;
+
+                        @media only screen and (max-width: $screen-lg) {
+                            display: none;
+                        }
                     }
                 }
             }
@@ -239,7 +257,11 @@
                     display: inline-block;
                     padding-right: 40px;    
                     width: 232px;
-                    height: 70px;
+                    height: 55px;
+                    @media only screen and (max-width: $screen-lg) {
+                        width: 98px;
+                    }
+
                     &:hover {
                         text-decoration: none;
                     } 
@@ -257,10 +279,21 @@
                 .username {
                     padding: 0 23px 0 10px;
                     font-family: $soleto-regular;
-                }
+                    @media only screen and (max-width: $screen-lg) {
+                        display: none;
+                    }
 
+                }
+                .icon-chevron-down-small {
+                    @media only screen and (max-width: $screen-lg) {
+                        display: none;
+                    }
+                }
                 &.logged-in-active {
                     background-color: $slate;
+                    @media only screen and (max-width: $screen-lg) {
+                        margin-left: 20px;
+                    }
                     a {
                         background-color: $slate;
                         border-bottom: 1px solid $slate-light;
