@@ -283,6 +283,7 @@ nav.subnav {
     z-index: 99;
     height: 60px;
     background-color: $mist;
+    padding-top: 10px;
 
     
     // Move the header bar up on scroll
@@ -297,9 +298,54 @@ nav.subnav {
         li {
             display: inline-block;
             float: left;
+
+            a.active{
+                color: $orange;
+            }
+            a{
+                color: $grey-dark;
+                padding:13px;
+            }
         }
     }
 }
+
+// nav.navbar-right {
+//         position: relative;
+//         float: right;
+//         padding-right:10px;
+//         z-index: 999;
+//         right:0px;
+
+//     .dropdown {
+//         position: relative;
+//         display: inline-block;
+//         padding-top: 5px;
+//         span.icon-arrow-down{
+//             display:inline-block;
+//         }
+//     }
+
+//     .dropdown-content {
+//         display: none;
+//         position: absolute;
+//         background-color: $mist;
+//         min-width: 250px;
+//         text-align: right;
+//         right: 0px;
+//         padding: 12px 16px;
+//         li{
+//             list-style:none;
+//             a{
+//                 color: $grey-dark;
+//             }
+//         }
+//     }
+//     .dropdown:hover .dropdown-content {
+//         display: block;
+//     }
+
+// }
 
 nav.dashboard-nav {
     position: absolute;
@@ -333,3 +379,22 @@ nav.dashboard-nav {
         }
     }
 }
+
+#more-nav {
+    display: none;
+    vertical-align: top;
+    padding-left: 0;
+    width: 150px;
+    float: right;
+    text-align: right;
+    .subfilter li{
+        padding: 0 8px;
+        text-align: right;
+        list-style-type: none;
+    }
+}
+#nav-bar-filter, #more-nav {
+    display: inline-block;
+    background-color: $mist;
+}
+

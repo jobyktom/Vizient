@@ -28,6 +28,7 @@ html(lang="en")
         <![endif]-->
         .outer-wrapper
             include _header
+            include _subnav
             include _mobile-header
             block hero
             block breadcrumbs
@@ -49,4 +50,5 @@ html(lang="en")
         //- build:js(.tmp) scripts/main.min.js -->
         //- script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-expander/1.7.0/jquery.expander.min.js") -->
         script(src="scripts/main.js")
+        script(src="scripts/sub-menu.js")
         //- endbuild -->
