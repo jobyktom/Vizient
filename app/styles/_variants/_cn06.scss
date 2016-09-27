@@ -10,7 +10,12 @@
 }
 
 .cn06__v1 {
-	@include gradient($mist-lightest, $mist-light, 75%);
+	@include gradient($mist-lightest, $mist-light, 50%);
+	.right-col .module-inner {
+		@media (min-width: $screen-md) {
+			padding-left: 16%; 
+		}
+	}
 	ul {
 		width: 75%; 
 	}
@@ -62,4 +67,10 @@
 	}
 	
 
+}
+
+.row-cta {
+	[class*="col-"] {
+		background: transparent;
+	}
 }
