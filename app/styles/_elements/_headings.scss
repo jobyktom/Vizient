@@ -15,6 +15,10 @@ p, li {
 	}
 }
  
+.bold {
+	font-family: $soleto-medium;
+}
+
 .italic {
 	font-family: $soleto-italic;
 }
@@ -69,6 +73,16 @@ h4 {
 }
 
 h5 {
+	@include font-size(24px);
+	font-family: $soleto-light;
+	line-height: 1.35em;
+	letter-spacing: -0.2px;
+	@media only screen and (max-width: $screen-sm-max) {
+		@include font-size(18px);
+	}
+}
+
+h6{
 	@include font-size(20px);
 	font-family: $soleto-light;
 	line-height: 1.35em;

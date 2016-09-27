@@ -63,7 +63,7 @@ var Vizient = (function() {
 		_setupSectionSubNav();
 		_setupCarousels();
 		_adIE8Class();
-		_equalHeights();
+		//_equalHeights();
 
 		// setTimeout(function() {
 		// 	_equalHeights();
@@ -115,35 +115,7 @@ var Vizient = (function() {
 			didScroll = true;
 		});
 	};
-
-	// // The Primary Nav Controller.
-	// // Hovering on menu items shows the relevant Mega Nav section
-	// var _setupPrimaryNav = function _setupPrimaryNav() {
-	// 	var megaNavOpenClass = "mega-nav-is-open";
-
-	// 	// Control displaying the mega nav on hover of the primary nav items
-	// 	$primaryNavLinks.on('mouseover', function(e) {
-	// 		var that = this;
-
-	// 		window.clearTimeout(megaNavTimeout);
-
-	// 		// Only show after short delay on hover, and hide on mouseout
-	// 		primaryNavTimeout = setTimeout(function(e) {
-	// 			$(that).tab('show');
-	// 		}, 200);
-	// 	}).on('mouseout', function() {
-	// 		window.clearTimeout(primaryNavTimeout);
-	// 		_setMegaNavTimeout();
-	// 	}).on('click', function(e) {
-	// 		// On first tap/hover open the mega nav else open the page
-	// 		if ($(this).hasClass(megaNavOpenClass)) {
-	// 			window.location.href = $(this).attr("data-href");
-	// 		}
-	// 		else {
-	// 			$(this).tab('show');
-	// 		}
-	// 	});
-	// };
+ 
 
 
 	// Control Mobile nav open/closed state
@@ -253,133 +225,6 @@ var Vizient = (function() {
 			interval: carouselDelay
 		});
 	};
-
-	// // Equal Heights LDB -----------------------------------------
-	// var _equalHeights = {
-	// 	init: function() {
-	// 		var selectorMax = '.eq-height-max',
-	// 			selectorMin = '.eq-height-min';
-
-	// 		$(window).load(function() {
-	// 			_equalHeights.equalize(selectorMax, 'max');
-	// 			_equalHeights.equalize(selectorMin, 'min');
-	// 		});
-
-	// 		$(window).resize(function() {
-	// 			_equalHeights.equalize(selectorMax, 'max');
-	// 			_equalHeights.equalize(selectorMin, 'min');
-	// 		});
-	// 	},
-
-	// 	equalize: function(className, minMax) {
-	// 		var currentTallest = 0,
-	// 			currentShortest = 0,
-	// 			currentRowStart = 0,
-	// 			rowDivs = new Array(),
-	// 			$el,
-	// 			topPosition = 0;
-
-	// 		var selector = className || '.eq-height-max';
-
-	// 		$(selector).each(function() {
-	// 			$el = $(this);
-	// 			$($el).height('auto');
-	// 			topPosition = $el.position().top;
-
-	// 			if (currentRowStart != topPosition) {
-	// 				if (minMax == 'min') {
-	// 					for (var currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
-	// 							rowDivs[currentDiv].height(currentShortest);
-	// 					}
-	// 				}
-	// 				else {
-	// 					for (var currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
-	// 						rowDivs[currentDiv].height(currentTallest);
-	// 					}
-	// 				}
-
-	// 				rowDivs.length = 0;
-	// 				currentRowStart = topPosition;
-	// 				currentShortest = $el.height();
-	// 				currentTallest = $el.height();
-	// 				rowDivs.push($el);
-	// 			}
-	// 			else {
-	// 				rowDivs.push($el);
-
-	// 				if (minMax == 'min') {
-	// 					currentShortest = (currentShortest > $el.height()) ? ($el.height()) : (currentShortest);
-	// 				}
-	// 				else {
-	// 					currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
-	// 				}
-	// 			}
-
-	// 			for (var currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
-	// 				rowDivs[currentDiv].height(currentTallest);
-	// 			}
-	// 		});
-	// 	}
-	// };
-
-/*
-	Equal heights function
-	----------------------
-	Elements labelled "equal-heights-md" will only get equalised on desktop.
-	Elements labelled "equal-heights-sm" will get equalised on tablet and desktop.
-	Elements labelled "equal-heights-mbls" will get equalised from 480px and above.
-*/
-	
-	var _equalHeights = function _equalHeights(itemClassName) {
-		var heightClass = itemClassName || '.equal-height-item';
-		var w = $(window).width();
-
-		// unset all heights first
-		$('.equal-heights-md, .equal-heights-sm, .equal-heights-mbls').find(heightClass).css({
-			width: '',
-			height: ''
-		});
-
-		// < 480px
-		if (w < 480) {}
-
-		// 480px - 768px
-		else if (480 <= w && w < 768) {
-			$('.equal-heights-mbls').each(function() {
-				// find the tallest block then make all blocks that height
-				var tallestItem = 0;
-				$(this).find(heightClass).each(function() {
-						if ($(this).height() > tallestItem) tallestItem = $(this).height();
-				});
-				$(this).find(heightClass).height('').height(tallestItem);
-			});
-		}
-
-		// 768px - 1024px
-		else if (w < 1024) {
-			$('.equal-heights-mbls, .equal-heights-sm').each(function() {
-				// find the tallest block then make all blocks that height
-				var tallestItem = 0;
-				$(this).find(heightClass).each(function() {
-					if ($(this).height() > tallestItem) tallestItem = $(this).height();
-				});
-				$(this).find(heightClass).height('').height(tallestItem);
-			});
-		}
-
-		// > 1024px
-		else {
-			$('.equal-heights-mbls, .equal-heights-sm, .equal-heights-md').each(function() {
-				// find the tallest block then make all blocks that height
-				var tallestItem = 0;
-				$(this).find(heightClass).each(function() {
-					if ($(this).height() > tallestItem) tallestItem = $(this).height();
-				});
-				$(this).find(heightClass).height('').height(tallestItem);
-			});
-		}
-	};
-
  
 
 	// Add a .ie8 class for css fixes
@@ -411,18 +256,15 @@ var loadMoreX = 3;
 $(document).ready(function() {
 	Vizient.init();
 
+	$('.content-hidden').hide();
+
 	//- Load More
-	$(".blog .post__entry:lt(" + loadMoreX + ")").addClass('show');
-
-	$(".js-load-more").click(function() {
-		loadMoreX = loadMoreX + 3 <= loadMoreSize ? loadMoreX + 3 : loadMoreSize;
-		$(".blog .post__entry:lt(" + loadMoreX + ")").not('.show').addClass('show');
-		if (loadMoreX == loadMoreSize) {
-			$(this).attr('disabled', true);
-		}
-		return false;
+	$("#cn03__v7__cta").click(function(e) {
+		e.preventDefault();
+		$('#cn03__v7__wrapper').show();
+		$(this).hide();
 	});
-
+	
 	// override default options (also overrides global overrides)
 	$('div.expandable').expander({
 		slicePoint: 200, // default is 100
@@ -450,8 +292,5 @@ $(document).ready(function() {
 		$(this).siblings('.section-nav').slideToggle();
 	});
 
-	if ($('.nav-special2').length) {
-		$('.nav-special2').find('a').first().addClass('active');
-	}
 });
 //# sourceMappingURL=main.js.map
