@@ -25,18 +25,18 @@
     }
     .row-mid {
         
-        border-top: 1px solid $orange-dark;
-        border-bottom: 1px solid $orange-dark;
+        border-top: 1px solid $waxflower;
+        border-bottom: 1px solid $waxflower;
     }
     .row-bot {
 
     }
     .border {
-        border-top: 1px solid $orange-dark;
+        border-top: 1px solid $waxflower;
         border-left: 0;
         
         @media only screen and (min-width: $screen-sm-min) {
-            border-left: 1px solid $orange-dark;
+            border-left: 1px solid $waxflower;
             border-top: 0;
         }
         
@@ -96,8 +96,8 @@ nav {
         margin-bottom: 20px;
     }
     p { 
-        color: $brand;
-        font-family: $soleto-regular;
+        color: $slate-light;
+        font-family: $soleto-light;
         float: right;
         padding: 24px 0;
         margin-bottom: 0;
