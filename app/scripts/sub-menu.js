@@ -42,6 +42,14 @@ $().ready(function () {
 					else {
 						$("#more-nav").hide();
 					}
+
+				});
+				
+				$("#more-nav > li > a").on('click',function(event) {	
+					event.preventDefault();
+					$("ul.subfilter").toggle("slow", function() {
+						$("#more-nav > li > a").toggleClass("is-open");
+					});
 				});
 				
 				$(window).trigger("resize"); //call resize handler to build menu right

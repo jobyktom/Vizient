@@ -285,7 +285,15 @@ nav.subnav {
     background-color: $mist;
     padding-top: 10px;
 
-    
+    #nav-bar-filter > li:first-child > a{
+        color: $orange;
+        text-decoration: underline;
+    }
+    // .nav-bar-filter li a:active {
+    //     color: $orange;
+    //     text-decoration: underline;
+    // }
+
     // Move the header bar up on scroll
     @media only screen and (min-width: $screen-md-min) {
         .content-scrolled &{
@@ -310,42 +318,6 @@ nav.subnav {
     }
 }
 
-// nav.navbar-right {
-//         position: relative;
-//         float: right;
-//         padding-right:10px;
-//         z-index: 999;
-//         right:0px;
-
-//     .dropdown {
-//         position: relative;
-//         display: inline-block;
-//         padding-top: 5px;
-//         span.icon-arrow-down{
-//             display:inline-block;
-//         }
-//     }
-
-//     .dropdown-content {
-//         display: none;
-//         position: absolute;
-//         background-color: $mist;
-//         min-width: 250px;
-//         text-align: right;
-//         right: 0px;
-//         padding: 12px 16px;
-//         li{
-//             list-style:none;
-//             a{
-//                 color: $grey-dark;
-//             }
-//         }
-//     }
-//     .dropdown:hover .dropdown-content {
-//         display: block;
-//     }
-
-// }
 
 nav.dashboard-nav {
     position: absolute;
@@ -386,12 +358,47 @@ nav.dashboard-nav {
     padding-left: 0;
     width: 150px;
     float: right;
-    text-align: right;
+    // text-align: right;
+    li > a.active {
+        font-size: $font-size-small;
+        background-image: url(../images/icons/icon-chevron-down.png);
+        background-image: url(../images/icons/svg/icon-chevron-down.svg);
+        background-repeat: no-repeat;
+        background-size: 10px 10px;
+        background-position: right 0px top 19px;
+
+        &.is-open {
+            background-image: url(../images/icons/icon-chevron-up.png);
+            background-image: url(../images/icons/svg/icon-chevron-up.svg);
+        }
+        // }
+    }
+    .subfilter{
+        padding: 8px;
+        display: none;
+        margin-top: 12px;
+        min-width: 210px;
+        right: 60px;
+        position: relative;
+        background-color: $mist;
+    }
+    
     .subfilter li{
-        padding: 0 8px;
         text-align: right;
         list-style-type: none;
+        border-bottom: 1px solid $grey;
+        width: 100%;
+        margin: 0px;
+        padding:13px 0px 13px 0px;
+        line-height: 1.1em;
+        // display: none;
     }
+    .subfilter ul li:last-child {
+        border-bottom: none!important;
+    }
+}
+#more-nav > li > ul > li:last-child {
+    border-bottom: none!important;
 }
 #nav-bar-filter, #more-nav {
     display: inline-block;

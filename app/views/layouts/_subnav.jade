@@ -34,6 +34,17 @@
 //-                     a(href="#") Separated link
 //- // End Sub nav
 
+//- .hidden-xs.hidden-sm
+
+//- nav.subnav
+//-     ul(class="nav-bar-filter" id="nav-bar-filter")
+//-         each item, index in header.menu2
+//-             li
+//-                 a(href='#{item.url}') #{item.title}
+//-     ul(id="more-nav")
+//-         li
+//-             a(href="#" class="active") More options
+//-             ul.subfilter
 
 
 
@@ -60,12 +71,10 @@ nav.subnav
         li
             a(href="#") item2
         li
-            a(href="#") item3
-        li
             a(href="#") item4
 
 
     ul(id="more-nav")
         li
-            a(href="#") More &gt;
+            a(href="#" class="active") More options
             ul.subfilter
