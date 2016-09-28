@@ -15,7 +15,16 @@
 		@media (min-width: $screen-md) {
 			padding-left: 16%; 
 		}
+
+		ul {
+			margin-bottom: 0;
+			@media (min-width: $screen-md) {
+				margin-bottom: 20px;
+			}	
+		}
+
 	}
+
 }
 
 

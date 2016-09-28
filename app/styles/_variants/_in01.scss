@@ -1,9 +1,7 @@
 .in01 {
 
 	@media only screen and (max-width: $screen-sm-max) {
-		.btn {
-			width: 100%;
-		}
+		
 		p{
 			line-height: 28px;
 		}
@@ -13,6 +11,10 @@
 }
 .in01__v1 {
 	
+	padding-top: 20px;
+	@media only screen and (min-width: $screen-sm) {
+		padding-top: 40px;
+	}
 
   	.module-inner {
 		padding: 10px;
@@ -37,12 +39,6 @@
   	.right-col {
   		text-align: center;
 
-  		.btn {
-  			width: 100%;
-  			@media only screen and (min-width: $screen-sm) {
-  				width: auto;
-  			}
-  			
-  		}
+  		
   	}
 }
