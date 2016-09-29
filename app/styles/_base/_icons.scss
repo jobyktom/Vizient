@@ -508,6 +508,15 @@
     width: 58px;
     height: 58px;
 }
+.icon-video-play-white{
+    // need to add the PNG for fallback
+    background: none, url(../images/icons/svg/icon-video-play-white.svg);
+    display: block;
+    width: 80px;
+    height: 79px;
+    background-repeat: no-repeat;
+    background-position: center center
+}
 
 .icon-video-pause {
     background: url(../images/icons/icon-video-pause.png);

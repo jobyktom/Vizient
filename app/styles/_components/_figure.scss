@@ -36,3 +36,31 @@
 	}
     
 }
+
+.rectangle {
+  width: 185px;
+  height: 44px;
+  background-color: #ffbf2d;
+  float: right;
+  padding:10px;
+  margin: 0px!important;
+}
+
+.rectangle-3 {
+    width: 80px;
+    height: 79px;
+    opacity: 0.8;
+    background-color: #ff4e00;
+    position: relative;
+    float: right;
+    bottom: 79px;
+}
+
+.oval {
+	background: none, url(../images/icons/svg/icon-circle-chain.svg);
+	display: block;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-right : 10px;
+}
