@@ -42,34 +42,55 @@
 
 	}
 
+
+
 	.mobile-menu__logo {
 		display: inline-block;
 		background: url(../images/icons/vizient-logo-small.png);
 		background: none, url(../images/icons/svg/vizient-logo.svg);
-		background-size: 90px 22px;
+		background-size: 70px 20px;
 		background-repeat: no-repeat;
-		width: 90px;
-		height: 23px;
+		width: 70px;
+		height: 20px;
+	}
+	.mobile-menu__outer, .mobile-login__outer {
+		position: absolute;
+		display: block;
+		width: 36px;
+		height: 36px;
+		top: 50%;
+		right: 20px;
+		line-height: 20px;
+		margin-top: -19px;
+		border: 2px solid $brand;
+		@include border-radius(18px);
+	}
+
+	.mobile-login__outer {
+		right: 63px;
+
+		.icon-login {
+			position: relative;
+			top: 4px;
+			left: 9px;
+		}
 	}
 
 	.mobile-menu__icon {
-		position: absolute;
-		top: 50%;
-		right: 20px;
-		width: 20px;
-		height: 17px;
-		display: block;
-		margin-top: -9px;
+		width: 13px;
+		height: 15px;
 		color: $orange;
 		cursor: pointer;
-		text-indent: -56px;
-		text-transform: uppercase;
-		line-height: 20px;
+		display: inline-block;
 		background: url(../images/icons/icon-menu.png);
 		background: none, url(../images/icons/svg/icon-menu.svg);
-		background-size: 20px 17px;
+		background-size: 13px 15px;
 		background-repeat: no-repeat;
 		text-decoration: none;
+		position: relative;
+		top: 9px;
+		left: 9px;
+
 	
 		&:hover {
 			text-decoration: none;
@@ -83,14 +104,14 @@
 		.mobile-menu__logo {
 			background: url(../images/icons/vizient-logo-white-small.png);
 			background: none, url(../images/icons/svg/vizient-logo-white.svg);
-			background-size: 90px 23px;
-			width: 90px;
-			height: 23px;
+			background-size: 70px 20px;
+			width: 70px;
+			height: 20px;
 		}
 
 		.mobile-menu__icon {
 			color: transparent;
-			top: 21px;
+			top: -2px;
 			background: url(../images/icons/icon-close-white.png);
 			background: none, url(../images/icons/svg/icon-close-white.svg);
 			background-size: 12px;
@@ -102,6 +123,7 @@
 			border-radius: 50%;
 			padding: 16px;
 			text-indent: -9999px;
+			margin-left: -10px;
 		}
 	}
 }

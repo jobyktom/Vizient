@@ -48,6 +48,10 @@
         }
         
     } 
+
+    .nav-contact {
+        display: none !important;
+    }
 }
 
 
@@ -55,7 +59,7 @@
  
 
 nav {
-    font-family: $soleto-regular;
+    font-family: $soleto-medium;
     
 
     li {

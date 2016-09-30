@@ -1,35 +1,36 @@
 <!-- Start Footer -->
 footer#main-footer
-    .row-top
-        .container
-            .col-sm-7
-                a.logo(href='/', title="Vizient")
-                    i.icon.icon-logo
-            .col-sm-4.col-sm-offset-1.pl40.hidden-xs
-                +socialIcons(socialMediaLinks)
-    .row-mid      
-        .container      
-            .col-sm-5
-                nav.primary
-                    ul.list-unstyled
-                        each item, index in header.menu2
-                            li
-                                a(href='#{item.url}', title='#{item.title}') #{item.title}
-                        each item, index in header.menu1
-                            li
-                                a(href='#{item.url}', title='#{item.title}', class='#{item.classes}') #{item.title}
-            .col-sm-4.col-sm-offset-3.border.pl40
-                nav.secondary
-                    ul.list-unstyled
-                        each item, index in footer.menu3
-                            li
-                                a(href='#{item.url}', title='#{item.title}') #{item.title}
-    .row-bot 
-        .container
-            .col-xs-12
-                .visible-xs
-                    +socialIcons(socialMediaLinks)
-                .footer-copy 
-                    p
-                        &copy; 2016 Vizient Inc. All rights reserved.
+	.row-top
+		.container
+			.col-sm-7
+				a.logo(href='/', title="Vizient")
+					i.icon.icon-logo
+			.col-sm-4.col-sm-offset-1.pl40.hidden-xs
+				+socialIcons(socialMediaLinks)
+	.row-mid      
+		.container      
+			.col-sm-5
+				nav.primary
+					ul.list-unstyled
+						each item, index in header.menu2
+							li
+								a(href='#{item.url}', title='#{item.title}') #{item.title}
+						each item, index in header.menu1
+							li
+								a(href='#{item.url}', title='#{item.title}', class='#{item.classes}') #{item.title}
+						li
+							a(href="#", title="Careers") Careers
+			.col-sm-4.col-sm-offset-3.border.pl40
+				nav.secondary
+					ul.list-unstyled
+						each item, index in footer.menu3
+							li
+								a(href='#{item.url}', title='#{item.title}') #{item.title}
+	.row-bot 
+		.container
+			.col-xs-12
+				.visible-xs
+					+socialIcons(socialMediaLinks)
+				.footer-copy 
+					p &copy; 2016 Vizient Inc. All rights reserved.
 <!-- End Footer -->

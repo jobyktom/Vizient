@@ -2,7 +2,6 @@
 
 #header-bar {
     background-color: $white;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15); 
     user-select: none;
     transition: top .2s;
     transition-timing-function: ease-out;
@@ -106,6 +105,25 @@
                     vertical-align: middle;
 
                 }
+
+                .nav-contact {
+                    display: none;
+                    
+                    @media only screen and (min-width: $screen-md-min) {
+                        color: $brand;
+                        display: inline-block;
+                    }
+                }
+
+            }
+
+            .hat {
+                position: absolute;
+                height: 4px;
+                width: 64px;
+                border-top: 4px solid $brand;
+                top: 0;
+                right: 40px;
             }
         }
 
@@ -316,8 +334,7 @@ nav.subnav {
     z-index: 99;
     height: 60px;
     background-color: $mist;
-    padding-top: 10px;
-
+    
     #nav-bar-filter > li:first-child > a{
         color: $orange;
         text-decoration: underline;
@@ -336,6 +353,8 @@ nav.subnav {
 
     ul {
         @extend .clearfix;
+        margin-top: 10px;
+
         li {
             display: inline-block;
             float: left;
@@ -436,5 +455,9 @@ nav.dashboard-nav {
 #nav-bar-filter, #more-nav {
     display: inline-block;
     background-color: $mist;
+}
+
+#nav-bar-filter {
+    padding-left: 30px;
 }
 
