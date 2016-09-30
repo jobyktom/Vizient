@@ -72,6 +72,11 @@
 
 			},
 			{
+				"title": "Blog",
+				"url": "blog.html",
+				"classes": ""
+			},
+			{
 				"title": "Events",
 				"url": "events.html",
 				"classes": "",
@@ -106,14 +111,9 @@
 
 			},
 			{
-				"title": "Careers",
-				"url": "careers.html",
-				"classes": ""
-			},
-			{
 				"title": "Contact us",
 				"url": "contact-us.html",
-				"classes": ""
+				"classes": "nav-contact"
 			}
 		],
 		"menu2": [
