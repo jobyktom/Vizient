@@ -25,7 +25,7 @@ footer#main-footer
 					ul.list-unstyled
 						each item, index in footer.menu3
 							li
-								a(href='#{item.url}', title='#{item.title}') #{item.title}
+								a(href='#{item.url}', title='#{item.title}', class='#{item.classes}') #{item.title}
 	.row-bot 
 		.container
 			.col-xs-12

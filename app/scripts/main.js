@@ -265,6 +265,13 @@ $(document).ready(function() {
 		$('.cn03__v7 .row').slice(1, -1).show();
 		$(this).hide();
 	});
+
+
+
+	$(".toggle-ab").click(function(e) {
+		e.preventDefault();
+		$('body').toggleClass('accessibility');
+	});
 	
 	// override default options (also overrides global overrides)
 	$('div.expandable').expander({

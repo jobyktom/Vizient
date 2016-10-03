@@ -85,6 +85,9 @@ nav {
     
     &.secondary {
         padding: 40px 0;
+        ul {
+            margin-bottom: 0;
+        }
         a {
             color: $brand;
             @include font-size(14px);
