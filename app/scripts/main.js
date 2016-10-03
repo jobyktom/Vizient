@@ -53,6 +53,8 @@ var Vizient = (function() {
 
 		// Initialise the website
 
+    
+
 		_getPagePaths();
 		_setupStickyHeader();
 		//_setupPrimaryNav();
@@ -62,13 +64,17 @@ var Vizient = (function() {
 		_setupSectionNav();
 		_setupSectionSubNav();
 		_setupCarousels();
-    _setupAnimatedCharts();
+    
 		_adIE8Class();
 		//_equalHeights();
 
 		// setTimeout(function() {
 		// 	_equalHeights();
 		// }, 100);
+
+    // RICH: Init Animated charts - need to do this only when element is visible in viewport, or is scrolled
+    // into viewport.
+    _setupAnimatedCharts(); 
 	};
 
 	// Check if the page has been scrolled, and expand or contract the main header bar
@@ -227,7 +233,7 @@ var Vizient = (function() {
 		});
 	};
 
-  // Enable Animated Charts
+  // RICH: Enable Animated Charts
   var _setupAnimatedCharts = function _setupAnimatedCharts() {
     $('.chart').easyPieChart({
       barColor: '#FFC02E',
