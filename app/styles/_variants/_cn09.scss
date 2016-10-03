@@ -34,6 +34,9 @@
 	.dot-border-left{
 		margin-bottom: 40px;
 		font-size: $font-size-larger;
+			@media (max-width: $screen-sm-max) {
+				font-size: $font-size-large !important;
+			}
 	}
 	.download{
 		font-size: $font-size-base;

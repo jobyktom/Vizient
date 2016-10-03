@@ -10,7 +10,7 @@
 		  	color:$purple-dark;
 		  	font-size: $font-size-small;
 		  	letter-spacing: 3px;
-		  	@media (min-width: $screen-sm-min) {
+		  	@media (max-width: $screen-sm-max) {
 		  		font-size: $font-size-smaller;
 		  	}
 	 	}
