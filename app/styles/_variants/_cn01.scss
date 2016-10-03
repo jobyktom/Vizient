@@ -5,13 +5,22 @@
 		margin: 0 !important;
 		padding:0 !important;
 	}
+
+	.icon-arrow-right-white{
+		@media (max-width: $screen-sm-max) {
+		  		margin-right: 20px !important;
+		  		// include font-size: $font-size-smaller;
+		 }
+		
+	}
 	.rectangle {
 		p{
 		  	color:$purple-dark;
 		  	font-size: $font-size-small;
 		  	letter-spacing: 3px;
 		  	@media (max-width: $screen-sm-max) {
-		  		font-size: $font-size-smaller;
+		  		@include font-size(12px);
+		  		// include font-size: $font-size-smaller;
 		  	}
 	 	}
   	}
