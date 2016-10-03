@@ -1,0 +1,29 @@
+// CN07
+
+.cn07 {
+  [class*="col-"] {
+    border: 1px solid $turquoise;
+    border-top: 8px solid $turquoise;
+    color: $white;
+    
+    // Can this be made global somehow? Overriding existing class for this instance.
+    .module-inner {
+      padding: 0 20px;
+
+      @media only screen and (min-width: $screen-sm) {
+        padding: 0 25px
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        padding: 0 40px;
+      }
+    }
+    
+    // Use color class instead? And should it be a HTML heading tag for greater accessibility?
+    .e28 {
+      a {
+        color: $grey-dark;
+      }
+    }
+  }
+}
