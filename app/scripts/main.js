@@ -72,9 +72,6 @@ var Vizient = (function() {
 		// 	_equalHeights();
 		// }, 100);
 
-    // RICH: Init Animated charts - need to do this only when element is visible in viewport, or is scrolled
-    // into viewport.
-    _setupAnimatedCharts(); 
 	};
 
 	// Check if the page has been scrolled, and expand or contract the main header bar
@@ -235,14 +232,7 @@ var Vizient = (function() {
 
   // RICH: Enable Animated Charts
   var _setupAnimatedCharts = function _setupAnimatedCharts() {
-    $('.chart').easyPieChart({
-      barColor: '#FFC02E',
-      lineCap: 'butt',
-      lineWidth: 32,
-      scaleLength: 0,
-      size: 260,
-      trackColor: '#565EAA'
-    });
+    
   };
 
 	// Add a .ie8 class for css fixes
@@ -309,6 +299,19 @@ $(document).ready(function() {
 		$(this).children('.icon').toggleClass('icon-chevron-up');
 		$(this).siblings('.section-nav').slideToggle();
 	});
+
+  // Animated charts
+  // Need to trigger this only when element is already visible in viewport on load, or is scrolled
+  // into after load viewport.
+  // Also need to review if any options set here should be moved into data attributes instead.
+  $('.chart').easyPieChart({
+      barColor: '#FFC02E',
+      lineCap: 'butt',
+      lineWidth: 32,
+      scaleLength: 0,
+      size: 260,
+      trackColor: '#565EAA'
+    });
 
 });
 //# sourceMappingURL=main.js.map
