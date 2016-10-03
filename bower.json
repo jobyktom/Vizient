@@ -9,7 +9,8 @@
     "jQuery-ajaxTransport-XDomainRequest": "*",
     "moment": "~2.10.6",
     "jquery-timeline": "*",
-    "jquery.expander": "*"
+    "jquery.expander": "*",
+    "jquery.easy-pie-chart": "^2.1.6"
   },
   "devDependencies": {}
 }

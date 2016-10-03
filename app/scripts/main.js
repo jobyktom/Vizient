@@ -62,6 +62,7 @@ var Vizient = (function() {
 		_setupSectionNav();
 		_setupSectionSubNav();
 		_setupCarousels();
+    _setupAnimatedCharts();
 		_adIE8Class();
 		//_equalHeights();
 
@@ -225,7 +226,18 @@ var Vizient = (function() {
 			interval: carouselDelay
 		});
 	};
- 
+
+  // Enable Animated Charts
+  var _setupAnimatedCharts = function _setupAnimatedCharts() {
+    $('.chart').easyPieChart({
+      barColor: '#FFC02E',
+      lineCap: 'butt',
+      lineWidth: 32,
+      scaleLength: 0,
+      size: 260,
+      trackColor: '#565EAA'
+    });
+  };
 
 	// Add a .ie8 class for css fixes
 	var _adIE8Class = function _adIE8Class() {
