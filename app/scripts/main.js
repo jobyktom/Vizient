@@ -256,9 +256,10 @@ var loadMoreX = 3;
 $(document).ready(function() {
 	Vizient.init();
 
+	//- Hide all rows except first and last for cta
 	$('.cn03__v7 .row').slice(1, -1).hide();
 
-	//- Load More
+	//- Load More trigger - then hide when clicked
 	$("#cn03__v7__cta").click(function(e) {
 		e.preventDefault();
 		$('.cn03__v7 .row').slice(1, -1).show();
