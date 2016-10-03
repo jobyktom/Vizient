@@ -1,27 +1,29 @@
 /// charts
 
-.chart {
-  height: 260px;
-  position: relative;
-  width: 260px;
-  
-  .chart-percentage {
-    @include font-size(90px);
-    display: block;
-    letter-spacing: -5px;
-    line-height: 260px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-
-    &:after {
-      @include font-size(36px);
-      display: inline-block;
-      content: '%';
-    } 
-  }
-  .chart-percentage-value {
-    
-  }
+.chart-container {
+  text-align: center;
 }
 
+.chart {
+  display: inline-block;
+  height: 260px;
+  margin-bottom: 32px;
+  position: relative;
+  width: 260px;
+}
+  
+.chart-percentage {
+  @include font-size(90px);
+  display: block;
+  letter-spacing: -5px;
+  line-height: 260px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+
+  &:after {
+    @include font-size(36px);
+    display: inline-block;
+    content: '%';
+  } 
+}
