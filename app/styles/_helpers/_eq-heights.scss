@@ -50,3 +50,22 @@
 	  display:         flex;
 	}
 }
+
+// ie9 no flexbox 
+.no-flexbox section {
+	[class*="row-eq"] {
+		box-sizing: border-box;
+		display: table;
+		table-layout: fixed;
+		width: 100%; 
+
+		[class*="col-"] {
+			display: table-cell;
+			flex: 1;
+			flex-direction: column;
+			position: relative;
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+		}
+	}
+}
