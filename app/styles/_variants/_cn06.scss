@@ -71,8 +71,21 @@
 			}
 		}
 	}
-	
+}
 
+.cn06__v5 {
+  [class*="col-"] {
+    &:nth-child(1) {
+      padding: 0 !important;
+    }
+  }
+
+  .bg-image {
+    background-size: cover;
+    width: 100%;
+    min-height: 275px;
+    height: 100%;
+  }
 }
 
 .row-cta {
