@@ -256,12 +256,12 @@ var loadMoreX = 3;
 $(document).ready(function() {
 	Vizient.init();
 
-	$('.content-hidden').hide();
+	$('.cn03__v7 .row').slice(1, -1).hide();
 
 	//- Load More
 	$("#cn03__v7__cta").click(function(e) {
 		e.preventDefault();
-		$('#cn03__v7__wrapper').show();
+		$('.cn03__v7 .row').slice(1, -1).show();
 		$(this).hide();
 	});
 	
