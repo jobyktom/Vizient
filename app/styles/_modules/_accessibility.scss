@@ -1,7 +1,3 @@
-<<<<<<< 622fcad3b4a295ae5c2da2198497ca0aa8388260
-
-=======
->>>>>>> accessibility
 // accessibility v1 solution. simple.
 // when clicked in footer, class added to body
 // all bg elements > white. all copy > black.
@@ -10,17 +6,10 @@
 .accessibility section {
     background: none;
     background-color: $white !important;
-<<<<<<< 622fcad3b4a295ae5c2da2198497ca0aa8388260
 
-=======
->>>>>>> accessibility
     [class*="col-"] {
         background-color: $white !important;
         *:not(.btn) {
             color: $black !important;
         }
     }
-<<<<<<< 622fcad3b4a295ae5c2da2198497ca0aa8388260
-=======
-}
->>>>>>> accessibility
