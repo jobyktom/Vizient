@@ -1,0 +1,16 @@
+// accessibility
+
+// when clicked in footer, class added to body
+ 
+
+.accessibility section {
+
+    [class*="col-"] {
+        background-color: $white !important;
+        *:not(.btn) {
+            color: $black !important;
+        }
+    }
+
+
+}
