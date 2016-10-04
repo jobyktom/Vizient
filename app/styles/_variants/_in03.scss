@@ -1,0 +1,86 @@
+.in03 {
+
+
+}
+.in03__v1 {
+	
+	.share-icons{
+		.icon-circle:hover{
+			background-color: $orange-dark;
+		}
+
+		.icon-oval:hover{
+			background-color: $orange-dark;
+			color: $white;
+		}
+	} 
+
+	.share-icons .icon-circle:hover{
+		background-color: $orange-dark;
+	}
+	
+
+	.share-icons__icon {
+	    display: inline-block;
+	    margin-bottom: 0;
+	    margin-right: 12px;
+	    margin-bottom: 10px;
+	    font-size: $font-size-base;
+	    @media only screen and (max-width: $screen-sm-max) {		
+			margin-right: 4px;
+			&li:last-child{
+				margin-right: 0px;
+				padding-right:0px;
+			}
+		}
+		
+	}
+	
+	.share-icons li:last-child {
+		@media only screen and (max-width: 371px ) {		
+			width:100%;
+		}
+	}
+	.icon-circle{
+		width: 44px;
+		height: 44px;
+		border-radius: 100px;
+		background-color: $white;
+		border: solid 2px $orange;
+	}
+
+	.icon-oval{
+		width: 116px;
+		height: 44px;
+		border-radius: 100px;
+		background-color: $white;
+		border: solid 2px $orange;
+		@media only screen and ( max-width: 371px) {		
+			width: 100%;
+			// width: 326px;
+			height: 44px;
+			border-radius: 100px;
+			background-color: $white;
+			border: solid 2px $orange;
+			margin-top: 10px;
+		}
+	}
+  
+	.icon-share-email,
+	.icon-share-download,
+	.icon-share-print,
+	.icon-share-rss-feed
+	{
+		background-position: 9px 9px;
+	}
+
+	.icon-share-icon
+	{
+		background-position: 24px 10px;
+		padding : 6px 10px 0px 52px;
+		@media only screen and (max-width: 371px) {		
+		    background-position: 110px 10px;
+		    padding: 8px 10px 0px 135px;
+		}
+	}
+}

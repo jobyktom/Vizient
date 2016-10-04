@@ -10,11 +10,10 @@
 
 	.arrow {
 		position: absolute;
-		bottom: -46px;
+		bottom: -18px;
 		left: -46px;
-		z-index: 10;
-		transform: rotate(180deg);
-		 
+		z-index: -1;
+		transform: rotate(180deg);		 
 	}
 
 	a {
@@ -33,7 +32,7 @@
 
 
 .cn11__v6 { 
-	background-color: $purple;
+	background-color: $turquoise-dark;
 
 	a {
 	 	color: $white;
