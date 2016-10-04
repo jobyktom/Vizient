@@ -53,6 +53,8 @@ var Vizient = (function() {
 
 		// Initialise the website
 
+    
+
 		_getPagePaths();
 		_setupStickyHeader();
 		//_setupPrimaryNav();
@@ -62,12 +64,14 @@ var Vizient = (function() {
 		_setupSectionNav();
 		_setupSectionSubNav();
 		_setupCarousels();
+    
 		_adIE8Class();
 		//_equalHeights();
 
 		// setTimeout(function() {
 		// 	_equalHeights();
 		// }, 100);
+
 	};
 
 	// Check if the page has been scrolled, and expand or contract the main header bar
@@ -286,7 +290,11 @@ var Vizient = (function() {
 			interval: carouselDelay
 		});
 	};
- 
+
+  // RICH: Enable Animated Charts
+  var _setupAnimatedCharts = function _setupAnimatedCharts() {
+    
+  };
 
 	// Add a .ie8 class for css fixes
 	var _adIE8Class = function _adIE8Class() {
@@ -373,5 +381,27 @@ $(document).ready(function() {
 		$(this).siblings('.section-nav').slideToggle();
 	});
 
+  // Animated charts
+  // Need to trigger this only when element is already visible in viewport on load, or is scrolled
+  // into after load viewport.
+  // Also need to review if any options set here should be moved into data attributes instead.
+  if ( $('.chart').length ) {
+
+    $('.chart').each(function(){
+      
+      var chartSize = $(this).data('size'),
+          chartLineWidth = $(this).data('lineWidth');
+
+      $(this).easyPieChart({
+        barColor: '#FFC02E',
+        lineCap: 'butt',
+        lineWidth: chartLineWidth,
+        scaleLength: 0,
+        size: chartSize,
+        trackColor: '#565EAA'
+      });
+
+    });
+  }
 });
 //# sourceMappingURL=main.js.map
