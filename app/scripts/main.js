@@ -194,6 +194,67 @@ var Vizient = (function() {
 		};
 	};
 
+	/*
+    Equal heights function
+    ----------------------
+    Elements labelled "equal-heights-md" will only get equalised on desktop.
+    Elements labelled "equal-heights-sm" will get equalised on tablet and desktop.
+    Elements labelled "equal-heights-mbls" will get equalised from 480px and above.
+	*/
+	// var _equalHeights = function _equalHeights(itemClassName) {
+
+	// var heightClass = itemClassName || '.equal-height-item';
+	// var w = $(window).width();
+
+	// // unset all heights first
+	// $('.row-eq-height-md, .row-eq-height-sm, .row-eq-height-mbls').find(heightClass).css({ width: '', height: '' });
+
+	// // < 480px
+	// if (w < 480) {}
+
+	// // 480px - 768px
+	// else if (480 <= w && w < 768) {
+
+	//     $('.row-eq-height-mbls').each(function () {
+
+	//       // find the tallest block then make all blocks that height
+	//       var tallestItem = 0;
+	//       $(this).find(heightClass).each(function () {
+	//         if ($(this).height() > tallestItem) tallestItem = $(this).height();
+	//       });
+	//       $(this).find(heightClass).height('').height(tallestItem);
+	//     });
+
+	     
+	//   } else if (w < 768) {
+
+	//       $('.row-eq-height-mbls, .row-eq-height-sm').each(function () {
+
+	//         // find the tallest block then make all blocks that height
+	//         var tallestItem = 0;
+	//         $(this).find(heightClass).each(function () {
+	//           if ($(this).height() > tallestItem) tallestItem = $(this).height();
+	//         });
+	//         $(this).find(heightClass).height('').height(tallestItem);
+	//       });
+
+	       
+	//     } else {
+
+	//         $('.row-eq-height-mbls, .row-eq-height-sm, .row-eq-height-md').each(function () {
+
+	//           // find the tallest block then make all blocks that height
+	//           var tallestItem = 0;
+	//           $(this).find(heightClass).each(function () {
+	//             if ($(this).height() > tallestItem) tallestItem = $(this).height();
+	//           });
+	//           $(this).find(heightClass).height('').height(tallestItem);
+	//         });
+	//       }
+	// };
+
+	// end eq heights
+
 	// The 'in page' section nav controller
 	var _setupSectionNav = function _setupSectionNav() {
 		$('.section-nav .block-list__list-link').click(function(event) {
@@ -255,6 +316,17 @@ var loadMoreX = 3;
 // On document ready bootstrap the website
 $(document).ready(function() {
 	Vizient.init();
+
+	// hide subnav
+	//$('.subnav').hide();
+
+	// 
+	$('#header-bar .primary-nav a').click(function() {
+	  	$('body').toggleClass('subnav-active');
+	  	$('.subnav').slideToggle("fast", function() {
+
+	  	});
+	});
  
 	//- Hide all rows except first and last for cta
  

@@ -5,8 +5,19 @@
 	width: 100%;
 	height: 100%;
 	padding-top: 60px;
-
+	@include transition(all 0.3s ease);
+	
 	@media (min-width: $screen-md-min) {
-		padding-top: 160px;
+		padding-top: 110px;
 	}
+
+	// if body = subnav-active compensate by pushing content down
+	.subnav-active & {
+		@media (min-width: $screen-md-min) {
+			padding-top: 160px;
+		}
+	}
+
+
 }
+

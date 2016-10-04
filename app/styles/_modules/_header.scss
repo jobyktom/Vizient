@@ -11,6 +11,7 @@
     top: 0;
     z-index: 100;
     height: 110px;
+    border-bottom: 1px solid $mist-light;
 
     // Move the header bar up on scroll
     @media only screen and (min-width: $screen-md-min) {
@@ -325,6 +326,7 @@
 
 
 nav.subnav {
+    display: none;
     width: 100%;
     top: 110px;
     transition: top .2s;
