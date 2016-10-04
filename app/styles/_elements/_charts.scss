@@ -2,6 +2,45 @@
 
 .chart-container {
   text-align: center;
+
+  // Using flexbox here so we need to account for IE9 by
+  // producing mixin for old standard.
+
+  &.chart-small {
+    @media (min-width: $screen-md) {
+      align-items: center;
+      display: flex;
+    }
+
+    .chart {
+      height: 120px;
+      width: 120px;
+      
+      @media (min-width: $screen-md) {
+        display: 1;
+        margin-right: 20px;
+
+      } 
+      
+    }
+    
+    .chart-percentage {
+      @include font-size(48px);
+      letter-spacing: -1px;
+      line-height: 120px;
+
+      &:after {
+        @include font-size(16px);
+      }
+    }
+
+    .chart-caption {
+      @media (min-width: $screen-md) {
+        margin-bottom: 32px;
+        text-align: left;
+      }
+    }
+  }
 }
 
 .chart {
@@ -11,7 +50,7 @@
   position: relative;
   width: 260px;
 }
-  
+
 .chart-percentage {
   @include font-size(90px);
   display: block;

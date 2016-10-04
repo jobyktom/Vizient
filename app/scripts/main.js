@@ -304,14 +304,23 @@ $(document).ready(function() {
   // Need to trigger this only when element is already visible in viewport on load, or is scrolled
   // into after load viewport.
   // Also need to review if any options set here should be moved into data attributes instead.
-  $('.chart').easyPieChart({
-      barColor: '#FFC02E',
-      lineCap: 'butt',
-      lineWidth: 32,
-      scaleLength: 0,
-      size: 260,
-      trackColor: '#565EAA'
-    });
+  if ( $('.chart').length ) {
 
+    $('.chart').each(function(){
+      
+      var chartSize = $(this).data('size'),
+          chartLineWidth = $(this).data('lineWidth');
+
+      $(this).easyPieChart({
+        barColor: '#FFC02E',
+        lineCap: 'butt',
+        lineWidth: chartLineWidth,
+        scaleLength: 0,
+        size: chartSize,
+        trackColor: '#565EAA'
+      });
+
+    });
+  }
 });
 //# sourceMappingURL=main.js.map
