@@ -19,7 +19,6 @@
       @media (min-width: $screen-md) {
         display: 1;
         margin-right: 20px;
-
       } 
       
     }
@@ -35,8 +34,9 @@
     }
 
     .chart-caption {
+      margin-bottom: 32px;
+      
       @media (min-width: $screen-md) {
-        margin-bottom: 32px;
         text-align: left;
       }
     }
