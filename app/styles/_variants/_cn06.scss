@@ -74,6 +74,8 @@
 }
 
 .cn06__v5 {
+  @include gradient($mist-lightest, $mist-light, 50%);
+  
   [class*="col-"] {
     &:nth-child(1) {
       padding: 0 !important;
