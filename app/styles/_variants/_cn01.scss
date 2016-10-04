@@ -5,7 +5,12 @@
 		margin: 0 !important;
 		padding:0 !important;
 	}
-
+	.module-inner p:first-child{
+		@media (max-width: $screen-sm-max) {
+			margin-top: 25px;
+		}
+		
+	}
 	.icon-arrow-right-white{
 		@media (max-width: $screen-sm-max) {
 		  		margin-right: 20px !important;
