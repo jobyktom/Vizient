@@ -50,3 +50,30 @@
 	  display:         flex;
 	}
 }
+
+// ie9 no flexbox 
+.no-flexbox section {
+	[class*="row-eq"] {
+		box-sizing: border-box;
+		display: table;
+		table-layout: fixed;
+		width: 100%;  
+
+		[class*="col-"] {
+			display: table-cell;
+			flex: 1;
+			flex-direction: column;
+			position: relative; 
+		}
+
+		// quick fix to compensate for gutter widths not working due to bootstrap overrides
+
+		.col-md-4, .col-sm-4 {
+			width: 32%;
+		}
+
+		.col-md-6, .col-sm-6 {
+			width: 49%;
+		}
+	}
+}

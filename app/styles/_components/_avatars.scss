@@ -18,3 +18,19 @@
 .avatar-lg {
     height: 180px; 
 }
+
+.author-block{
+	float: right;
+	.author-desc{
+		text-align: right;
+		float: left;
+		margin-right: 20px;
+		span{
+			display: block;
+			color: $black;
+		}
+	}
+	.avatar{
+		float: left;
+	}
+}

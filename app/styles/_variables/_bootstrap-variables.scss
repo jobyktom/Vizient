@@ -46,12 +46,12 @@ $link-hover-color: $orange;
 /// Grid ///
 
 // Gutter
-$grid-gutter-width: 20px;
+$grid-gutter-width: 8px;
 
 // Container
-$container-tablet: (708px + $grid-gutter-width);
-$container-desktop: (940px + $grid-gutter-width);
-$container-large-desktop: (940px + $grid-gutter-width);
+$container-tablet: (752px + $grid-gutter-width);
+$container-desktop: (1024px + $grid-gutter-width);
+$container-large-desktop: (1201px + $grid-gutter-width);
 
 // Breakpoints
 $screen-xs: 320px;

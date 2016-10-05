@@ -337,6 +337,11 @@
 				"title": "Site map",
 				"url": "#",
 				"classes": ""
+			},
+			{
+				"title": "Accessibility",
+				"url": "#",
+				"classes": "toggle-ab"
 			}
 		]
 	},

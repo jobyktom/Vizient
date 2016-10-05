@@ -39,3 +39,12 @@ img {
 		font-size: $font-size-smaller;
 	}
 }
+
+.img-caption {
+  height: 52px;
+  background-color: $mist-lightest;
+  padding: 15px 65px 0px 20px;
+  color: $grey-dark;
+  font-style: italic;
+  font-weight: bold;
+}

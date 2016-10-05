@@ -1,42 +1,17 @@
-.figure {
-	@include font-size(72px);
+.figure { 
 	font-family: $soleto-light;
 	line-height: 1.13em;
 	letter-spacing: -0.6px;
-
-	sup {
-		@include font-size(16px);
-		top: -13px;
-		@media only screen and (min-width: $screen-sm) {
-			top: -17px;
-			@include font-size(24px);
-		}
-
-		@media only screen and (min-width: $screen-md) {
-			top: -32px;
-		}
-	}
-
-	sub {
-		@include font-size(16px);
-		bottom: 0px;
-		left: 3px;
-		
-		@media only screen and (min-width: $screen-sm) {
-			@include font-size(24px);
-		}
-	}
-	
 	@include font-size(36px);
+	
 	@media only screen and (min-width: $screen-sm) {
 		@include font-size(48px);
-	}
-	@media only screen and (min-width: $screen-md) {
+	} 
+	
+	@media only screen and (min-width: $screen-lg) {
 		@include font-size(72px);
-	}
-    
+	} 
 }
-
 .rectangle {
   width: 185px;
   height: 44px;

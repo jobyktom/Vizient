@@ -7,14 +7,18 @@
 			padding: 50px 0 30px 0;
 		}
 	}
-
+	.row{
+		z-index: 99;
+	}
 	.arrow {
 		position: absolute;
-		bottom: -46px;
-		left: -46px;
-		z-index: 10000;
-		transform: rotate(180deg);
-		 
+		bottom: -18px;
+		left: -0px;
+		z-index: 9;
+		background-size: 50px 20px;
+		height: 20px;
+		width: 50px;
+		// transform: rotate(180deg);		 
 	}
 
 	a {
@@ -33,7 +37,7 @@
 
 
 .cn11__v6 { 
-	background-color: $purple;
+	background-color: $turquoise-dark;
 
 	a {
 	 	color: $white;
