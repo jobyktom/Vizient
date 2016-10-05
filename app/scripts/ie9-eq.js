@@ -6,25 +6,27 @@ var Vizient = (function() {
 
 	var init = function init() {
 		 
-
+		if(document.body.className === 'ie9') {
 		// When windows resizes check height of page header and pass
 		// it to the function controlling the sticky header
-		window.onresize = function() {
-			 
+			window.onresize = function() {
+				 
+				setTimeout(function() {
+					_equalHeights();
+				}, 100);
+			};
+
+			// Initialise the website
+
+			
+			_equalHeights();
+			
+
 			setTimeout(function() {
 				_equalHeights();
 			}, 100);
+
 		};
-
-		// Initialise the website
-
-		if(document.body.className === 'ie9') {
-			_equalHeights();
-		};
-
-		setTimeout(function() {
-			_equalHeights();
-		}, 100);
 	};
  
 	/*
