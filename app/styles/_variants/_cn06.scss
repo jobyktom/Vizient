@@ -61,7 +61,6 @@
 			li { 
 				a {
 					@include font-size(18px);
-					
 				}
 				.icon {
 					float: right;
@@ -94,4 +93,14 @@
 	[class*="col-"] {
 		background: transparent;
 	}
+}
+
+.cn06__v6 {
+  a {
+    color: $grey-dark;
+  }
+
+  .icon {
+    float: right;
+  }
 }
