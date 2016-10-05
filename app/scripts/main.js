@@ -1,8 +1,8 @@
 /*
  *   Description: Vizient website
- *   Author: Jayson Hunter, Sean Hawie
- *   Date: October 2015
- *   Version 1.0.0
+ *   Author: Jayson Hunter, Sean Hawie. Expanded/modified: Rob Bradley.
+ *   Date: October 2016
+ *   Version 3.0.1
  */
 /*eslint-disable */
 'use strict';
