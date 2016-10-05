@@ -542,11 +542,12 @@
     // background: url(../images/icons/icon-email.png) no-repeat;
     background: none, url(../images/icons/svg/icon-share-email.svg) no-repeat;
     background-repeat: no-repeat;
-    background-size: 20px 18px;
-    width: 20px;
-    height: 18px;
+    // background-size: 20px 18px;
+    // width: 20px;
+    // height: 18px;
     &:hover{
         background: none, url(../images/icons/svg/icon-share-email-white.svg) no-repeat;
+        background-size: 20px 18px;
     }
 
 }
@@ -554,42 +555,45 @@
     // background: url(../images/icons/icon-email.png) no-repeat;
     background: none, url(../images/icons/svg/icon-share-download.svg) no-repeat;
     background-repeat: no-repeat;
-    background-size: 20px 18px;
-    width: 20px;
-    height: 18px;
+    // background-size: 20px 18px;
+    // width: 20px;
+    // height: 18px;
     &:hover{
         background: none, url(../images/icons/svg/icon-share-download-white.svg) no-repeat;
+        // background-size: 20px 18px;
     }
 }
 .icon-share-print {
     // background: url(../images/icons/icon-email.png) no-repeat;
     background: none, url(../images/icons/svg/icon-share-print.svg) no-repeat;
     background-repeat: no-repeat;
-    background-size: 20px 18px;
-    width: 20px;
-    height: 18px;
+    // background-size: 20px 18px;
+    // width: 20px;
+    // height: 18px;
     &:hover{
         background: none, url(../images/icons/svg/icon-share-print-white.svg) no-repeat;
+        // background-size: 20px 18px;
     }
 }
 .icon-share-rss-feed {
     // background: url(../images/icons/icon-email.png) no-repeat;
     background: none, url(../images/icons/svg/icon-share-rss-feed.svg) no-repeat;
     background-repeat: no-repeat;
-    background-size: 20px 18px;
-    width: 20px;
-    height: 18px;
+    // background-size: 20px 18px;
+    // width: 20px;
+    // height: 18px;
     &:hover{
         background: none, url(../images/icons/svg/icon-share-rss-feed-white.svg) no-repeat;
+        // background-size: 20px 18px;
     }
 }
 .icon-share-icon {
     // background: url(../images/icons/icon-email.png) no-repeat;
     background: none, url(../images/icons/svg/icon-share-icon.svg) no-repeat;
     background-repeat: no-repeat;
-    background-size: 20px 18px;
-    width: 20px;
-    height: 19px;
+    // background-size: 20px 18px;
+    // width: 20px;
+    // height: 19px;
     &:hover{
         background: none, url(../images/icons/svg/icon-share-icon-white.svg) no-repeat;
     }
@@ -728,7 +732,7 @@
     background-repeat: no-repeat;
 }
 .arrow {   
-    background-size: 150px 65px;
-    width: 150px;
-    height: 65px;
+    background-size: 50px 20px;
+    height: 20px;
+    width: 50px;
 }
