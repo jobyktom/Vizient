@@ -78,7 +78,7 @@ $(document).ready(function() {
 
     $("#more-nav > li > a").on('click', function(event) {
         event.preventDefault();
-        $("ul.subfilter").toggle("slow", function() {
+        $("ul.subfilter").slideToggle("fast", function() {
             $("#more-nav > li > a").toggleClass("is-open");
         });
     });
