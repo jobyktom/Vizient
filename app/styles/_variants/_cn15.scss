@@ -1,0 +1,139 @@
+.cn15 { 
+	background-color: $mist-lightest;
+	background-image: url('/images/horizontal-pipes-yellow.png');
+	background-repeat:no-repeat;
+	background-position:top right;
+
+
+	.dot-border {
+		&:before,
+		&:after {
+			border: 3px solid $mist-lightest;
+		}
+	}
+
+	.bg-image {
+		// background-size: cover;
+		width: 100%;
+		min-height: 275px;
+		height: 100%;
+		background-repeat:no-repeat;
+		right: 0px;
+		top:0px
+	}
+	.img {
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+
+		@media (max-width: $screen-sm-min) {
+			height: 275px !important;
+		}
+	}
+}
+
+
+.cn15__v1 { 
+	// [class*="col-"] { 
+	// 	&:nth-child(1) {
+	// 		background-color: $white;
+	// 	}
+	// 	&:nth-child(2) {
+	// 		background-color: $mist;
+			
+		 
+	// 	}
+	// }
+
+	// [class*="col-"] {
+	// 	margin: 0 !important;
+	// }
+
+	[class*="col-"] {
+		background-color: $white;
+		padding: 0 !important;
+	}
+	.metadata-eyebrow,
+	h5{
+		margin-bottom: 15px;
+	}
+	p{
+		margin-bottom: 0px;
+	}
+
+}
+.cn03__v2 {
+
+	
+	.bg-image {
+		background-size: cover;
+		width: 100%;
+		min-height: 275px;
+		height: 100%;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	[class*="col-"] {
+		margin: 0 !important;
+		&:nth-child(1) {
+			background-color: $white;
+			// height: auto;
+			// overflow: inherit;
+			// @media only screen and (min-width: $screen-sm) {
+			// 	height: 272px;
+			// 	overflow: hidden;
+			// }
+
+		}
+		&:nth-child(2) {
+			padding: 0;
+		}
+	}
+} 
+
+.cn03__v3 {
+	[class*="col-"] {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+}
+
+.cn03__v3,
+.cn03__v4,
+.cn03__v5 {
+	[class*="col-"] {
+		background-color: $white;
+		padding: 0 !important;
+	}
+}
+
+.cn03__v4 {
+	[class*="col-"] {
+		padding: 0 !important;
+	}
+}
+
+.cn03__v6 {
+	img {
+		height: 275px !important;
+	}
+}
+
+.cn03__v7 {
+	[class*="col-"] {
+		@media (min-width: $screen-sm) {
+			margin-top: 4px !important;
+			margin-bottom: 4px !important;
+		}
+	}
+}
+
+// v6
+.module.cn03__v1 + .module.cn03__v5 {
+	padding-top: 0;
+	margin-top: -20px;
+	position: relative;
+}
