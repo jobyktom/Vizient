@@ -1,0 +1,60 @@
+// filter nav
+// more options etc
+
+#more-nav {
+    display: none;
+    vertical-align: top;
+    padding-left: 0;
+    width: 150px;
+    float: right;
+    // text-align: right;
+    li > a.active {
+        font-size: $font-size-small;
+        background-image: url(../images/icons/icon-chevron-down.png);
+        background-image: url(../images/icons/svg/icon-chevron-down.svg);
+        background-repeat: no-repeat;
+        background-size: 10px 10px;
+        background-position: right 0px top 19px;
+
+        &.is-open {
+            background-image: url(../images/icons/icon-chevron-up.png);
+            background-image: url(../images/icons/svg/icon-chevron-up.svg);
+        }
+        // }
+    }
+    .subfilter{
+        padding: 8px;
+        display: none;
+        margin-top: 12px;
+        min-width: 210px;
+        right: 60px;
+        position: relative;
+        background-color: $mist;
+    }
+    
+    .subfilter li{
+        text-align: right;
+        list-style-type: none;
+        border-bottom: 1px solid $grey;
+        width: 100%;
+        margin: 0px;
+        padding:13px 0px 13px 0px;
+        line-height: 1.1em;
+        // display: none;
+    }
+    .subfilter ul li:last-child {
+        border-bottom: none!important;
+    }
+}
+#more-nav > li > ul > li:last-child {
+    border-bottom: none!important;
+}
+#nav-bar-filter, #more-nav {
+    display: inline-block;
+    background-color: $mist;
+}
+
+#nav-bar-filter {
+    padding-left: 30px;
+}
+

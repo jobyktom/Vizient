@@ -30,13 +30,13 @@ header(id="header-bar", class="hidden-xs hidden-sm")
                         i(class='icon icon-search')
                 // Either 1 of 2 remaining LI tags below must be present with a logged-in or logged-out class. Remove and apply class "hidden" accordingly to see different states 
                 // LOGGED OUT MODULE            
-                li.logged-out
+                li.logged-out.hidden
                     a(role='tab', href="#", class="btn alt") 
                         i(class='icon icon-login')   
                         span Login
                 //- LOGGED IN MODULE 
                 //- toggle "logged-in-active" class on click
-                li.logged-in.hidden
+                li.logged-in
                     a(role='tab', href="#", id="dashboard-menu")
                         span(class="icon-login-circle")
                             span(class='icon icon-login')   

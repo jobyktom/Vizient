@@ -335,6 +335,14 @@ $(document).ready(function() {
 
 	  	});
 	});
+
+	$('#header-bar #dashboard-menu').click(function() {
+	  	$('.logged-in').toggleClass('logged-in-active');
+	  	$('.dashboard-nav').slideToggle("fast", function() {
+
+	  	});
+	});
+
  
 	//- Hide all rows except first and last for cta
  

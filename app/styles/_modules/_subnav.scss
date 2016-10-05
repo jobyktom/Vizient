@@ -1,0 +1,48 @@
+// subnav
+
+nav.subnav {
+    display: none;
+    width: 100%;
+    top: 110px;
+    transition: top .2s;
+    transition-timing-function: ease-out;
+    position: fixed;
+    padding: 0;
+    z-index: 99;
+    height: 60px;
+    background-color: $mist;
+    
+    #nav-bar-filter > li:first-child > a{
+        color: $orange;
+        text-decoration: underline;
+    }
+    // .nav-bar-filter li a:active {
+    //     color: $orange;
+    //     text-decoration: underline;
+    // }
+
+    // Move the header bar up on scroll
+    @media only screen and (min-width: $screen-md-min) {
+        .content-scrolled &{
+          top: 0;
+        }
+    }
+
+    ul {
+        @extend .clearfix;
+        margin-top: 10px;
+
+        li {
+            display: inline-block;
+            float: left;
+
+            a.active{
+                color: $orange;
+            }
+            a{
+                color: $grey-dark;
+                padding:13px;
+            }
+        }
+    }
+}

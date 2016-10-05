@@ -1,0 +1,35 @@
+// dashboard nav
+
+nav.dashboard-nav {
+    display: none;
+    position: absolute;
+    top: 110px;
+    right: 0;
+    z-index: 110; 
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            display: table;
+            a {
+                width: 232px;
+                height: 60px;
+                display: table-cell;
+                vertical-align: middle;
+                background-color: $slate;
+                border-bottom: 1px solid $slate-light;
+                color: $white;
+                padding-right: 40px;
+                font-family: $soleto-regular;
+                text-align: right; 
+                &:hover {
+                    text-decoration: none;
+                    background-color: $slate-light;
+                }
+            }
+            &:nth-last-child(1) a {
+                border-bottom: 0;
+            }
+        }
+    }
+}
