@@ -2,9 +2,11 @@
 
 .cn20 {
   &.cn20__v1 {
-    .icon-section {
-      background-position: center bottom;
-      height: 110px !important;
+    @media only screen and (min-width: $screen-sm) {
+      .icon-section {
+        background-position: center;
+        height: 110px;
+      }
     }
 
     @media only screen and (min-width: $screen-md) {
@@ -13,6 +15,8 @@
       }
 
       .icon-section {
+        background-position: left top;
+        height: 110px;
         left: 0;
         position: absolute;
         top: 0;
