@@ -1,0 +1,68 @@
+#header-bar {
+    .master-nav {
+        nav.top-nav {
+            float: left;
+            height: 40px;
+            width: 100%;
+            border-bottom: 1px solid $mist-light;
+            padding-top: 11px;
+            display: inline-block;
+
+            ul {
+                float: right;
+                padding-right: 40px;
+            }
+
+            li {
+                margin: 0;
+                padding: 0 7px;
+                float: left;
+                line-height: 1em;
+                float: left;
+
+                @media only screen and (max-width: $screen-sm-max) {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                }
+
+                a {
+                    line-height: 16px;
+                    color: $slate;
+                    font-size: $font-size-smaller;
+                    position: relative;
+                    padding-left: 8px;
+                    font-family: $soleto-regular;
+                    vertical-align: middle;
+
+                }
+
+                .nav-contact {
+                    display: none;
+                    
+                    @media only screen and (min-width: $screen-md-min) {
+                        color: $brand;
+                        display: inline-block;
+                    }
+                }
+
+            }
+
+            .hat {
+                position: absolute;
+                height: 4px;
+                width: 64px;
+                border-top: 4px solid $brand;
+                top: 0;
+                right: 40px;
+            }
+        }      
+    }
+}

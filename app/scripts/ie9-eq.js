@@ -1,34 +1,32 @@
-/*
- *   Description: Vizient website
- *   Author: Jayson Hunter, Sean Hawie
- *   Date: October 2015
- *   Version 1.0.0
+/* IE 9 equal height cols for flexbox fallback
  */
 /*eslint-disable */
-'use strict';
 
 var Vizient = (function() {
 
 	var init = function init() {
 		 
-
+		if(document.body.className === 'ie9') {
 		// When windows resizes check height of page header and pass
 		// it to the function controlling the sticky header
-		window.onresize = function() {
-			 
+			window.onresize = function() {
+				 
+				setTimeout(function() {
+					_equalHeights();
+				}, 100);
+			};
+
+			// Initialise the website
+
+			
+			_equalHeights();
+			
+
 			setTimeout(function() {
 				_equalHeights();
 			}, 100);
+
 		};
-
-		// Initialise the website
-
-		 
-		_equalHeights();
-
-		setTimeout(function() {
-			_equalHeights();
-		}, 100);
 	};
  
 	/*
@@ -104,4 +102,4 @@ $(document).ready(function() {
 	Vizient.init();  
 
 });
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=ie9-eq.js.map

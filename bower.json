@@ -3,12 +3,9 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.4",
-    "jfeed": "*",
     "jquery": "1.11.3",
-    "lightingfly": "~0.2.1",
-    "jQuery-ajaxTransport-XDomainRequest": "*",
+    "lightingfly": "~0.2.1", 
     "moment": "~2.10.6",
-    "jquery-timeline": "*",
     "jquery.expander": "*",
     "jquery.easy-pie-chart": "^2.1.6"
   },
@@ -19,4 +16,8 @@
       "dependencies": {}
     }
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> dev-rb
