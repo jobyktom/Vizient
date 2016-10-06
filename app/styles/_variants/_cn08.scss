@@ -1,0 +1,83 @@
+// CN08
+
+.cn8 {
+  &.cn8__v1 {
+    [class*="col-"] {
+      &:last-child {
+        padding: 0 !important;
+      }
+    }
+
+    .bg-image {
+      background-size: cover;
+      width: 100%;
+      min-height: 275px;
+      height: 100%;
+    }
+
+    .arrow {
+      background-position: top center;
+      background-size: 100%;
+      bottom: -20px;
+      height: 22px;
+      left: 20px;
+      position: absolute;
+      width: 50px;
+      z-index: 1;
+
+      @media only screen and (min-width: $screen-md) {
+        background-position: left center;
+        bottom: 47%;
+        height: 32px;
+        left: auto;
+        right: -50px;
+        transform: rotate(270deg); 
+        width: 75px;
+      }
+    }
+  }
+
+  &.cn8__v2,
+  &.cn8__v3 {
+    .container {
+      border-top: 1px dotted $grey-mid;
+    }
+    [class*="col-"] {
+      border-bottom: 1px dotted $grey-mid;
+
+      @media only screen and (min-width: $screen-sm) {
+        border-right: 1px dotted $grey-mid;
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &.cn8__v4,
+  &.cn8__v5 {
+    @media only screen and (min-width: $screen-md) {
+      article {
+        position: relative;
+      }
+
+      .icon-section {
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
+
+      .article-content {
+        margin-left: 130px;
+      }
+    }
+  }
+
+  &.cn8__v5 {
+    .icon-section {
+      background-position: center bottom;
+      height: 110px !important;
+    }
+  }
+}

@@ -1,16 +1,14 @@
 extends layouts/_default
 
 block content
-	main(class="body-content")
-		section(class="module")
-			.container
-				.row
-					.col-xs-12
-					h3 MODULE CN11 v2
-					include modules/_cn11__v2
-		section(class="module")
-			.container
-				.row
-					.col-xs-12
-					h3 MODULE CN11 v6
-					include modules/_cn11__v6
+
+  main(class="body-content")
+      .container
+        h3 MODULE CN11 v2
+      include modules/_cn11__v2
+      .container
+        h3 MODULE CN11 v3
+      include modules/_cn11__v3
+      .container
+        h3 MODULE CN11 v6
+      include modules/_cn11__v6
