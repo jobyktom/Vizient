@@ -209,14 +209,7 @@ var Vizient = (function() {
     Elements labelled "row-eq-height-md" will only get equalised on desktop.
     Elements labelled "row-eq-height-sm" will get equalised on tablet and desktop.
     Elements labelled "row-eq-height-mbls" will get equalised from 480px and above.
-	*/
-	/*
-    Equal heights function
-    ----------------------
-    Elements labelled "row-eq-height-md" will only get equalised on desktop.
-    Elements labelled "row-eq-height-sm" will get equalised on tablet and desktop.
-    Elements labelled "row-eq-height-mbls" will get equalised from 480px and above.
-	*/
+	*/ 
 	var _equalHeights = function _equalHeights(itemClassName) {
 
 	var heightClass = itemClassName || '.eq-height';
