@@ -1,0 +1,25 @@
+.cn17 {
+    &.cn17__v1 {
+        background-color: $purple;
+        
+        h3, p {
+            color: $white;
+        }
+        [class*="col-"] {
+            &:last-child {
+                padding-top: 0;
+                
+                @media (min-width: $screen-sm) {
+                    padding-top: 40px;
+                }
+            }
+            img {
+                width: 40%;
+
+                @media (min-width: $screen-sm) {
+                    width: auto
+                }
+            }
+        }
+    }
+}
