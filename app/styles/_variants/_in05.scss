@@ -1,0 +1,60 @@
+.in05 { 
+	background-color: $mist-lightest;
+	
+	background-repeat:no-repeat;
+	background-position:top right;
+
+	
+	@media only screen and (min-width : $screen-xs){
+		background-image: url('/images/horizontal-pipes-yellow-mobile.png');
+	}
+	@media only screen and (min-width : $screen-sm){
+		background-image: url('/images/horizontal-pipes-yellow-tablet.png');
+	}
+	@media only screen and (min-width : $screen-md){
+		background-image: url('/images/horizontal-pipes-yellow-desktop.png');
+	}
+
+	.dot-border {
+		&:before,
+		&:after {
+			border: 3px solid $mist-lightest;
+		}
+	}
+
+	.bg-image {
+		// background-size: cover;
+		width: 100%;
+		// min-height: 275px;
+		// height: 100%;
+		background-repeat:no-repeat;
+		right: 0px;
+		top:0px
+	}
+	.img {
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+
+		@media (max-width: $screen-sm-min) {
+			// height: 275px !important;
+		}
+	}
+}
+
+
+.in05__v1 { 
+
+	[class*="col-"] {
+		background-color: $white;
+		padding: 0 !important;
+	}
+	.metadata-eyebrow,
+	h5{
+		margin-bottom: 15px;
+	}
+	p{
+		margin-bottom: 0px;
+	}
+
+}
