@@ -26,6 +26,7 @@
 .pull-quote__text {
     position: relative;
     font-size: $font-size-larger;
+    font-style: italic;
     line-height: 1.25;
     padding-left: 32px;
     padding-right: 32px;
@@ -53,8 +54,8 @@
     }
 
     &:after {
-        right: 0;
-        bottom: 0;
+        // right: 0;
+        // bottom: 0;
     }
 
     .icon-2-dots--small {

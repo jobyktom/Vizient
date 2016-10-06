@@ -134,6 +134,14 @@
     width: 12px;
     height: 12px;
 }
+.icon-arrow-right-darkgrey {
+    // background: url(../images/icons/icon-arrow-right-white.png);
+    background: none, url(../images/icons/svg/icon-arrow-right-darkgrey.svg);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    width: 12px;
+    height: 12px;
+}
 
 .icon-arrow-right--small{
     background: url(../images/icons/icon-arrow-right-small.png);
@@ -753,4 +761,8 @@
     background-size: 50px 20px;
     height: 20px;
     width: 50px;
+}
+.arrow-curved-white {
+    background: none, url(../images/icons/svg/arrow-curved-white.svg);
+    background-repeat: no-repeat;
 }
