@@ -114,6 +114,10 @@
 
 .cn02__v4 [class*="col-"] * {
      color: $black;
+     .metadata-eyebrow{
+		color: $slate-light;
+		margin-bottom: 15px;
+	}
 }
 
 .cn02__v4 {
