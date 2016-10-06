@@ -35,6 +35,63 @@
 	}
 }
 
+.cn11__v3 { 
+  background: $purple url(../images/banners/bg-triangle-pattern.png) no-repeat;
+  background-position: calc(100% + 100px) -20%;
+  background-size: 300px auto;
+  padding-top: 120px;
+  
+  @media (min-width: $screen-sm) {
+    background-position: calc(100% + 200px) bottom;
+    background-size: auto;
+    padding-top: 0;
+  }
+
+  @media (min-width: $screen-sm) {
+    background-position: calc(100% + 150px) bottom;
+    background-size: 50%;
+    padding-top: 0;
+  }
+
+  @media (min-width: $screen-lg) {
+    background-position: right bottom;
+    background-size: contain;
+    padding-top: 0;
+  }
+
+  a {
+    color: $white;
+  }
+
+  h1 {
+    color: $white;
+    width: auto;
+    @media (min-width: $screen-md) {
+      width: 75%;
+    }
+  }
+
+  p {
+    @include font-size(22px);
+    color: $white;
+
+    @media (min-width: $screen-md) {
+      @include font-size(28px);
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: -18px;
+    left: -0px;
+    z-index: 9;
+    background-size: 50px 20px;
+    height: 20px;
+    width: 50px;
+    //transform: rotate(180deg);    
+  }
+}
+
 
 .cn11__v6 { 
 	background-color: $turquoise-dark;

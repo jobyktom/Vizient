@@ -1,18 +1,18 @@
 .arrow-right {
-	 
-	transform: rotate(0deg);	 
-	position: absolute;
-	top: -46px;
-	left: -25px; 
+  transform: rotate(0deg);   
+  position: absolute;
+  top: -46px;
+  left: -25px; 
 
-	@media only screen and (min-width: $screen-sm) {
-		position: absolute;
-		top: 40%;
-		top: calc(100% / 2 - 33px);
-		left: -88px;
-		transform: rotate(270deg);
-	}
+  @media only screen and (min-width: $screen-sm) {
+    position: absolute;
+    top: 40%;
+    top: calc(100% / 2 - 33px);
+    left: -88px;
+    transform: rotate(270deg);
+  }
 }
+
 
 .arrow-down {
 	 
