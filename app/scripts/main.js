@@ -2,7 +2,7 @@
  *   Description: Vizient website
  *   Author: Jayson Hunter, Sean Hawie. Expanded/modified: Rob Bradley.
  *   Date: October 2016
- *   Version 3.0.1
+ *   Version 3.0.0
  */
 /*eslint-disable */
 'use strict';
@@ -45,33 +45,38 @@ var Vizient = (function() {
 		// it to the function controlling the sticky header
 		window.onresize = function() {
 			$body.hasClass(contentScrolledClass) && $body.removeClass(contentScrolledClass);
-
-			// setTimeout(function() {
-			// 	_equalHeights();
-			// }, 100);
+ 
 		};
 
 		// Initialise the website
 
-    
-
-		_getPagePaths();
-		_setupStickyHeader();
-		//_setupPrimaryNav();
-		//_setupMegaNav();
+		//_getPagePaths();
+		_setupStickyHeader(); 
 		_setupMobileNav();
 		_setupActiveMenuItems();
 		_setupSectionNav();
 		_setupSectionSubNav();
 		_setupCarousels();
     
-		_adIE8Class();
+		//_adIE8Class();
+		
 		//_equalHeights();
+ 
+		// When windows resizes check height of page header and pass
+		// it to the function controlling the sticky header
+		window.onresize = function() {				 
+			setTimeout(function() {
+				_equalHeights();
+			}, 100);
+		};
 
-		// setTimeout(function() {
-		// 	_equalHeights();
-		// }, 100);
-
+		// Initialise the website
+		_equalHeights();
+		
+		setTimeout(function() {
+			_equalHeights();
+		}, 100);
+ 
 	};
 
 	// Check if the page has been scrolled, and expand or contract the main header bar
@@ -201,61 +206,76 @@ var Vizient = (function() {
 	/*
     Equal heights function
     ----------------------
-    Elements labelled "equal-heights-md" will only get equalised on desktop.
-    Elements labelled "equal-heights-sm" will get equalised on tablet and desktop.
-    Elements labelled "equal-heights-mbls" will get equalised from 480px and above.
+    Elements labelled "row-eq-height-md" will only get equalised on desktop.
+    Elements labelled "row-eq-height-sm" will get equalised on tablet and desktop.
+    Elements labelled "row-eq-height-mbls" will get equalised from 480px and above.
 	*/
-	// var _equalHeights = function _equalHeights(itemClassName) {
+	/*
+    Equal heights function
+    ----------------------
+    Elements labelled "row-eq-height-md" will only get equalised on desktop.
+    Elements labelled "row-eq-height-sm" will get equalised on tablet and desktop.
+    Elements labelled "row-eq-height-mbls" will get equalised from 480px and above.
+	*/
+	var _equalHeights = function _equalHeights(itemClassName) {
 
-	// var heightClass = itemClassName || '.equal-height-item';
-	// var w = $(window).width();
+	var heightClass = itemClassName || '.eq-height';
+	var w = $(window).width();
 
-	// // unset all heights first
-	// $('.row-eq-height-md, .row-eq-height-sm, .row-eq-height-mbls').find(heightClass).css({ width: '', height: '' });
 
-	// // < 480px
-	// if (w < 480) {}
+	if($('html').hasClass('ie9')){
 
-	// // 480px - 768px
-	// else if (480 <= w && w < 768) {
+		// unset all heights first
+		$('.row-eq-height-md, .row-eq-height-sm, .row-eq-height-mbls').find(heightClass).css({ width: '', height: '' });
 
-	//     $('.row-eq-height-mbls').each(function () {
+		// < 480px
+		if (w < 480) {}
 
-	//       // find the tallest block then make all blocks that height
-	//       var tallestItem = 0;
-	//       $(this).find(heightClass).each(function () {
-	//         if ($(this).height() > tallestItem) tallestItem = $(this).height();
-	//       });
-	//       $(this).find(heightClass).height('').height(tallestItem);
-	//     });
+		// 480px - 768px
+		else if (480 <= w && w < 768) {
 
-	     
-	//   } else if (w < 768) {
+		    $('.row-eq-height-mbls').each(function () {
 
-	//       $('.row-eq-height-mbls, .row-eq-height-sm').each(function () {
+		      // find the tallest block then make all blocks that height
+		      var tallestItem = 0;
+		      $(this).find(heightClass).each(function () {
+		        if ($(this).height() > tallestItem) tallestItem = $(this).height();
+		      });
+		      $(this).find(heightClass).height('').height(tallestItem);
+		    });
 
-	//         // find the tallest block then make all blocks that height
-	//         var tallestItem = 0;
-	//         $(this).find(heightClass).each(function () {
-	//           if ($(this).height() > tallestItem) tallestItem = $(this).height();
-	//         });
-	//         $(this).find(heightClass).height('').height(tallestItem);
-	//       });
+		     
+		  } else if (w < 768) {
 
-	       
-	//     } else {
+		      $('.row-eq-height-mbls, .row-eq-height-sm').each(function () {
 
-	//         $('.row-eq-height-mbls, .row-eq-height-sm, .row-eq-height-md').each(function () {
+		        // find the tallest block then make all blocks that height
+		        var tallestItem = 0;
+		        $(this).find(heightClass).each(function () {
+		          if ($(this).height() > tallestItem) tallestItem = $(this).height();
+		        });
+		        $(this).find(heightClass).height('').height(tallestItem);
+		      });
 
-	//           // find the tallest block then make all blocks that height
-	//           var tallestItem = 0;
-	//           $(this).find(heightClass).each(function () {
-	//             if ($(this).height() > tallestItem) tallestItem = $(this).height();
-	//           });
-	//           $(this).find(heightClass).height('').height(tallestItem);
-	//         });
-	//       }
-	// };
+		       
+		    } else {
+
+		        $('.row-eq-height-mbls, .row-eq-height-sm, .row-eq-height-md').each(function () {
+
+		          // find the tallest block then make all blocks that height
+		          var tallestItem = 0;
+		          $(this).find(heightClass).each(function () {
+		            if ($(this).height() > tallestItem) tallestItem = $(this).height();
+		          });
+		          $(this).find(heightClass).height('').height(tallestItem);
+		        });
+		      }
+		};
+
+		// end eq heights
+ 	};
+
+
 
 	// end eq heights
 
@@ -296,21 +316,7 @@ var Vizient = (function() {
     
   };
 
-	// Add a .ie8 class for css fixes
-	var _adIE8Class = function _adIE8Class() {
-		function isIE() {
-			var myNav = navigator.userAgent.toLowerCase();
-			return myNav.indexOf('msie') != -1 ? parseInt(myNav.split('msie')[1]) : false;
-		}
-
-		if (isIE() == 8) {
-			// IE8 code
-			$('html').addClass('ie8');
-		}
-		else {
-			// Other versions IE or not IE
-		}
-	};
+	 
 
 	//  Only expose these functions to the global scope
 	return {
