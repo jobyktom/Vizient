@@ -96,11 +96,29 @@
 }
 
 .cn06__v6 {
-  a {
-    color: $grey-dark;
-  }
+    a {
+        color: $grey-dark;
+    }
 
-  .icon {
-    float: right;
-  }
+    .icon {
+        float: right;
+    }
+
+    [class*="col-"] {
+        &:last-child {
+            .metadata-eyebrow {
+                border-bottom: 1px dotted $slate-light;
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+            }
+            li {
+                &:last-child {
+                    border-top: 1px dotted $slate-light;
+                    margin-top: 20px;
+                    padding-top: 15px;
+                }
+            }
+        }
+    }
+
 }
