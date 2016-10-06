@@ -12,5 +12,11 @@
     "jquery.expander": "*",
     "jquery.easy-pie-chart": "^2.1.6"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "overrides": {
+    "jquery.easy-pie-chart": {
+      "main": "./dist/jquery.easypiechart.js",
+      "dependencies": {}
+    }
+  }
 }
