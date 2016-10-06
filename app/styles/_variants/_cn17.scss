@@ -1,0 +1,178 @@
+.cn17 {
+    .metadata-eyebrow {
+        border-bottom: 1px dotted $grey-mid;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+
+    .icon-arrow-right {
+        float: right;
+    }
+
+    li {
+        &:last-child {
+            border-top: 1px dotted $grey-mid;
+            margin-top: 20px;
+            padding-top: 15px;
+        }
+    }
+
+    &.cn17__v1,
+    &.cn17__v2  {
+        .bg-image {
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            float: right;
+            height: 200px;
+            margin-bottom: -40px;
+            margin-right: -40px;
+            width: 100%;
+
+            @media only screen and (min-width: $screen-md) {
+                margin: 0;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+
+        .module-inner {
+            @include clearfix;
+            height: 100%;
+        }
+    }
+
+    &.cn17__v1,
+    &.cn17__v2,
+    &.cn17__v4 {
+        .arrow {
+            background-position: top center;
+            background-size: 100%;
+            bottom: -20px;
+            height: 22px;
+            left: 20px;
+            position: absolute;
+            width: 50px;
+            z-index: 1;
+
+            @media only screen and (min-width: $screen-md) {
+                background-position: left center;
+                bottom: 47%;
+                height: 32px;
+                left: auto;
+                right: -50px;
+                transform: rotate(270deg); 
+                width: 75px;
+            }
+        }   
+    }
+
+    &.cn17__v1 {
+        position: relative;
+
+        .arrow {
+            bottom: -20px;
+
+            @media only screen and (min-width: $screen-md) {
+                bottom: 47%;
+                left: auto;
+                right: -50px;
+                transform: rotate(270deg); 
+            }
+        }
+
+        [class*="col-"] {
+            @media only screen and (min-width: $screen-md) {
+                &:first-child {
+                    border-bottom: 1px dotted $grey-mid;
+                }
+            }
+
+            &:last-child {
+                background: $purple;
+                //padding-bottom: 200px;
+
+                h3, p, a {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &.cn17__v2 {
+        .arrow {
+            transform: rotate(180deg); 
+            top: -20px;
+
+            @media only screen and (min-width: $screen-md) {
+                top: 47%;
+                left: -50px;
+                transform: rotate(90deg); 
+            }
+        }
+
+        [class*="col-"] {
+            &:first-child {
+                background: $purple;
+
+                h3, p, a {
+                    color: $white;
+                }
+            }
+            @media only screen and (min-width: $screen-md) {
+                &:last-child {
+                    border-bottom: 1px dotted $grey-mid;
+                }
+            }
+        }
+    }
+
+    &.cn17__v3 {
+        [class*="col-"] {
+            border-bottom: 1px dotted  $grey-mid;
+            
+            @media only screen and (min-width: $screen-md) {
+                &:first-child {
+                    border-right: 1px dotted $grey-mid;
+                }
+            }
+            .metadata-eyebrow {
+                border-bottom: 1px dotted $grey-mid;
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+            }
+
+            .icon-arrow-right {
+                float: right;
+            }
+
+            li {
+                &:last-child {
+                    border-top: 1px dotted $grey-mid;
+                    margin-top: 20px;
+                    padding-top: 15px;
+                }
+            }
+        }
+    }
+
+    &.cn17__v4 {
+        .arrow {
+            bottom: -20px;
+
+            @media only screen and (min-width: $screen-md) {
+                bottom: 47%;
+                left: auto;
+                right: -50px;
+                transform: rotate(270deg); 
+            }
+        }
+
+        [class*="col-"] {
+            &:first-child {
+                background: $mist-light;
+            }
+        }
+    }
+}
