@@ -26,8 +26,13 @@
             float: right;
             height: 200px;
             margin-bottom: -40px;
-            margin-right: -40px;
+            margin-right: -20px;
+            overflow: hidden;
             width: 100%;
+
+            @media only screen and (min-width: $screen-sm) {
+                margin-right: -40px;
+            }
 
             @media only screen and (min-width: $screen-md) {
                 margin: 0;
@@ -91,6 +96,7 @@
 
             &:last-child {
                 background: $purple;
+
                 //padding-bottom: 200px;
 
                 h3, p, a {
