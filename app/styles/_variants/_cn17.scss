@@ -9,6 +9,20 @@
         float: right;
     }
 
+    @media only screen and (min-width: $screen-sm) {
+        .list-unstyled,
+        .metadata-eyebrow {
+            width: 70%;
+        }
+    }
+
+    @media only screen and (min-width: $screen-md) {
+        .list-unstyled,
+        .metadata-eyebrow {
+            width: 100%;
+        }
+    }
+
     li {
         &:last-child {
             border-top: 1px dotted $grey-mid;
@@ -22,15 +36,17 @@
         .bg-image {
             background-position: bottom right;
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: 65% auto;
             float: right;
-            height: 200px;
+            height: 150px;
             margin-bottom: -40px;
             margin-right: -20px;
             overflow: hidden;
             width: 100%;
 
             @media only screen and (min-width: $screen-sm) {
+                background-size: contain;
+                height: 200px;
                 margin-right: -40px;
             }
 
