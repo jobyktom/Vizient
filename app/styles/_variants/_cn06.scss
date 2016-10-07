@@ -112,7 +112,10 @@
                 padding-bottom: 15px;
             }
             li {
+                @include font-size(18px);
+
                 &:last-child {
+                    @include font-size(14px);
                     border-top: 1px dotted $slate-light;
                     margin-top: 20px;
                     padding-top: 15px;
