@@ -97,23 +97,26 @@
     min-height: 275px;
     height: 100%;
   }
- //  	.arrow-curved-white{
-	// 	left: -34px;
-	// 	z-index: 9999;
-	// 	transform: rotate(90deg);
-	// 	@media (max-width: $screen-md)  {
-	// 		top:-18px;
-	// 		left: 25px;
-	// 		z-index: 9999;
-	// 		transform: rotate(0deg);
-	// 		// position:static;
-	// 	}
+  	.arrow-curved-white{
+		left: 602px;
+		z-index: 9999;
+		transform: rotate(90deg);
+		@media (max-width: $screen-md)  {
+			top:-2px;
+			left: 25px;
+			z-index: 9999;
+			transform: rotate(0deg);
+		}
 
-	// }
+	}
 }
 
 .cn02__v4 [class*="col-"] * {
      color: $black;
+     .metadata-eyebrow{
+		color: $slate-light;
+		margin-bottom: 15px;
+	}
 }
 
 .cn02__v4 {
