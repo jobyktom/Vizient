@@ -11,7 +11,7 @@
 			padding-right: 160px;
 		}
 		&:nth-child(2) {
-			background-color: $mist-light;;
+			// background-color: $mist-light;;
 		}
 	}
 	.bg-image {
@@ -26,6 +26,11 @@
 	}
 	.img-caption{
 		margin-bottom: 30px;
+	}
+	.dot-border-bottom{
+		border-bottom:1px dotted $grey;
+		margin-bottom: 40px!important;
+		padding-bottom: 20px!important;
 	}
 	.dot-border{
 		padding:20px 45px 10px 40px!important;

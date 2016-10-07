@@ -1,7 +1,10 @@
 extends layouts/_default
 
-block content
-  main(class="body-content")
-    .container
-      h3 MODULE CN20 v1
-    include modules/_cn20__v1
+block content 
+	main(class="body-content")
+		section(class="module")
+			.container
+				.row
+					.col-xs-12
+						h3 CN20 v1
+		include modules/_cn20__v1
