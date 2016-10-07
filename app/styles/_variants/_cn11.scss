@@ -45,7 +45,6 @@
         
         // Left
         &:last-child {
-            padding-top: 0;
             position: relative;
 
             .module-inner {
@@ -74,6 +73,17 @@
 
     h1 {
         margin-bottom: 15px;
+
+        &.heading-large {
+            @include font-size(36px);
+
+            @media (min-width: $screen-sm) {
+                @include font-size(48px);
+            }
+            @media (min-width: $screen-md) {
+                @include font-size(64px);
+            }
+        }
     }
 
     p {
@@ -108,7 +118,8 @@
     
     // Variants
 
-    &.cn11__v3 {
+    &.cn11__v3,
+    &.cn11__v4 {
         .bg-image {
             background-position: bottom 30px left 150px;
             background-size: 100%;
