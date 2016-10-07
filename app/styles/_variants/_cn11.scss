@@ -4,25 +4,29 @@
     // Heights
     @media (min-width: $screen-sm) {
         &.hgt-tiny {
-            [class*="col-"] {
+            [class*="col-"],
+            .bg-image {
                 min-height: 150px;
             }
         }
 
         &.hgt-small {
-            [class*="col-"] {
+            [class*="col-"],
+            .bg-image {
                 min-height: 200px;
             }
         }
 
         &.hgt-medium {
-            [class*="col-"] {
+            [class*="col-"],
+            .bg-image {
                 min-height: 250px;
             }
         }
 
         &.hgt-big {
-            [class*="col-"] {
+            [class*="col-"],
+            .bg-image {
                 min-height: 300px;
             }
         }
@@ -36,7 +40,7 @@
         &:first-child {
             .module-inner {
                 padding: 0;
-                height: 100%;
+                //height: 100%;
 
                 @media (min-width: $screen-sm) {
                     padding: 40px;
