@@ -2,6 +2,12 @@
     
     // Heights
     @media (min-width: $screen-sm) {
+        &.hgt-tiny {
+            [class*="col-"] {
+                min-height: 150px;
+            }
+        }
+
         &.hgt-small {
             [class*="col-"] {
                 min-height: 200px;
