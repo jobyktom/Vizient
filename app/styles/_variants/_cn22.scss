@@ -5,17 +5,8 @@
 	p{
 		margin-bottom: 15px;
 	}
-	
-	&.cn22__v1 {
-
-		[class*="col-"] {
-			margin: 0 !important;
-			padding:0 !important;
-		}
-		
-		h4, p {
-			color: $white;
-		}
+	h4, p {
+		color: $white;
 	}
 
 	&.cn22__v2 {
@@ -30,21 +21,16 @@
 		}
 
 		@include gradient($turquoise-dark, $Sunglow, 50%);
-		h4, p {
-			color: $white;
-		}
-  
+		  
 		.arrow-turquoise-dark{
 			left: -17px;
 			z-index: 9999;
 			transform: rotate(270deg);
-	} 
+		} 
 
 		[class*="col-"] {
 
-			
 			&:first-child {
-				padding:40px 73px 40px 45px!important;
 
 				@media (min-width: $screen-sm) {
 					@include gradient($turquoise-dark, $turquoise-dark, 100%);
@@ -78,9 +64,6 @@
 	}
 	&.cn22__v3 {
 		@include gradient($turquoise-dark, $white, 50%);
-		 h4, p {
-			color: $white;
-		}
 		.bg-image {
 			background-size: cover;
 			width: 100%;
@@ -94,18 +77,15 @@
 			padding:0px !important;
 		}
 		.arrow-turquoise-dark{
-		left: -17px;
-		z-index: 9999;
-		transform: rotate(270deg);
-		@media (max-width: $screen-md)  {
-			top:257px;
-			left: 25px;
+			left: -17px;
 			z-index: 9999;
-			transform: rotate(180deg);
+			transform: rotate(270deg);
+			@media (max-width: $screen-md)  {
+				top:257px;
+				left: 25px;
+				z-index: 9999;
+				transform: rotate(180deg);
+			}
 		}
-
 	}
-
-	}
-
 }
