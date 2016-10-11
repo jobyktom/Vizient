@@ -1,19 +1,23 @@
 .cn22 {
-	
+	h4{
+		margin-bottom: 40px;
+	}
+	p{
+		margin-bottom: 15px;
+	}
 	
 	&.cn22__v1 {
+
+		[class*="col-"] {
+			margin: 0 !important;
+			padding:0 !important;
+		}
 		
 		h4, p {
 			color: $white;
 		}
-		h4{
-			margin-bottom: 40px;
-		}
-		p{
-			margin-bottom: 15px;
-		}
-
 	}
+
 	&.cn22__v2 {
 		.left-col {
 			background-color: $turquoise-dark;
@@ -29,12 +33,7 @@
 		h4, p {
 			color: $white;
 		}
-		h4{
-			margin-bottom: 40px;
-		}
-		p{
-			margin-bottom: 15px;
-		}  
+  
 		.arrow-turquoise-dark{
 			left: -17px;
 			z-index: 9999;
