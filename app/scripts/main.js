@@ -351,7 +351,9 @@ $(document).ready(function() {
 	  	event.preventDefault();
 	  	$('.result-row').hide();
 	  	$(bookmark_id).show("slow", function() {
-
+	  		$('html, body').animate({
+                    scrollTop: $(bookmark_id).offset().top-50
+             }, 500);
 	  	});
 	});
 
