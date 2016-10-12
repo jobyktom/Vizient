@@ -19,6 +19,7 @@ body {
 #mobileMenu {
 	user-select: none;
 	background-color: $white;
+	border-right: 2px solid $mist;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -26,7 +27,6 @@ body {
 	width: 80%;
 	height: 100%;
 	z-index: 998;
-	border-right: 2px solid $mist;
 	-webkit-transition: right .3s;
 	        transition: right .3s;
     padding: 83px 25px 23px 25px;
@@ -37,6 +37,55 @@ body {
 		right: 20%;
     }
 
+    ul {
+    	li {
+    		&.primary {
+				margin: 0 -25px;
+			}
+    	}
+    }
+}
+
+#dashboardSideMenu {
+	.js-accordion-nav-trigger {
+		@include font-size(16px);
+		background-color: $slate;
+		color: $white;
+		line-height: 1;
+		margin-bottom: 0;
+		padding: 20px 25px;
+
+		@media (max-width: $screen-sm) {
+			background-image: url(../images/icons/icon-chevron-down.png);
+			background-image: url(../images/icons/svg/icon-chevron-down.svg);
+			background-repeat: no-repeat;
+			background-size: 17px 9px;
+			background-position: right 25px top 23px;
+			cursor: pointer;
+			
+			&.is-open {
+				background-image: url(../images/icons/icon-chevron-up.png);
+				background-image: url(../images/icons/svg/icon-chevron-up.svg);
+				background-repeat: no-repeat;
+				background-size: 17px 9px;
+				background-position: right 25px top 23px;
+			}
+		}
+	}
+
+	@media (max-width: $screen-sm) {
+		#dashboard-side-nav {
+			display: none;
+
+			&.is-open {
+				display: block;
+			}
+		}
+	}
+}
+
+#mobileMenu,
+#dashboardSideMenu {
 	ul {
 		margin: 0;
 		padding: 0;
@@ -77,7 +126,6 @@ body {
 
 			&.primary {
 				position: relative;
-				margin: 0 -25px;
 
 				a {
 					font-size: 16px;

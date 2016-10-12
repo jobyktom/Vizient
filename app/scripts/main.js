@@ -52,6 +52,7 @@ var Vizient = (function() {
 
 		//_getPagePaths();
 		_setupStickyHeader(); 
+		_setupDashboardNav();
 		_setupMobileNav();
 		_setupActiveMenuItems();
 		_setupSectionNav();
@@ -124,8 +125,38 @@ var Vizient = (function() {
 			didScroll = true;
 		});
 	};
- 
 
+	// Next two functions could be refined and made into one later
+	// Perhaps setupAccordionNav to be less specific to their
+	// context.
+ 	
+ 	// Control Dashboard nav open/closed state
+	var _setupDashboardNav = function _setupDashboardNav() {
+		$('.js-accordion-nav-trigger').on('click', function() {
+			$(this).toggleClass('is-open');
+			$('#dashboard-side-nav').toggleClass('is-open');
+		});
+		$('#dashboard-side-nav .has-subnav').on('click', function(e) {
+			e.preventDefault();
+
+			if ($(this).hasClass('is-open')) {
+				$(this).removeClass('is-open');
+				$(this).siblings('ul').slideUp();
+			}
+			else {
+				var $this = $(this);
+				$('#dashboard-side-nav .has-subnav').each(function() {
+					if ($(this) != $this) {
+						$(this).removeClass('is-open');
+						$(this).siblings('ul').slideUp();
+					}
+				});
+
+				$(this).addClass('is-open');
+				$(this).siblings('ul').slideDown();
+			}
+		});
+	};
 
 	// Control Mobile nav open/closed state
 	var _setupMobileNav = function _setupMobileNav() {

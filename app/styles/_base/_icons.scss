@@ -741,7 +741,6 @@
 }
 
 
-
 // arrows
 
 .arrow-mist {
@@ -784,15 +783,24 @@
     width: 50px;
 }
 
+.icon-delete {
+    background: url(../images/icons/icon-delete.png);
+    background: none, url(../images/icons/svg/icon-delete.svg);
+    background-repeat: no-repeat;
+    background-size: 21px;
+    width: 21px;
+    height: 21px;
+}
+
 // Icons: Sections
 
-.icon-arrows {
-  background: url(../images/icons/icon-arrows.png);
-  background: none, url(../images/icons/svg/icon-arrows.svg);
-  background-repeat: no-repeat;
-  height: 95px;
-  width: 106px;  
-}
+// .icon-arrows {
+//   background: url(../images/icons/icon-arrows.png);
+//   background: none, url(../images/icons/svg/icon-arrows.svg);
+//   background-repeat: no-repeat;
+//   height: 95px;
+//   width: 106px;  
+// }
 
 // .icon-chart {
 //   background: url(../images/icons/icon-chart.png);
@@ -802,13 +810,13 @@
 //   width: 103px;
 // }
 
-.icon-eye {
-  background: url(../images/icons/icon-eye.png);
-  background: none, url(../images/icons/svg/icon-eye.svg);
-  background-repeat: no-repeat;
-  height: 66px;
-  width: 107px; 
-}
+// .icon-eye {
+//   background: url(../images/icons/icon-eye.png);
+//   background: none, url(../images/icons/svg/icon-eye.svg);
+//   background-repeat: no-repeat;
+//   height: 66px;
+//   width: 107px; 
+// }
 
 // .icon-magnifying-glass {
 //   background: url(../images/icons/icon-magnifying-glass.png);
@@ -818,29 +826,29 @@
 //   width: 102px;
 // }
 
-.icon-medical-cross {
-  background: url(../images/icons/icon-medical-cross.png);
-  background: none, url(../images/icons/svg/icon-medical-cross.svg);
-  background-repeat: no-repeat;
-  height: 104px;
-  width: 104px; 
-}
+// .icon-medical-cross {
+//   background: url(../images/icons/icon-medical-cross.png);
+//   background: none, url(../images/icons/svg/icon-medical-cross.svg);
+//   background-repeat: no-repeat;
+//   height: 104px;
+//   width: 104px; 
+// }
 
-.icon-network {
-  background: url(../images/icons/icon-medical-network.png);
-  background: none, url(../images/icons/svg/icon-network.svg);
-  background-repeat: no-repeat;
-  height: 100px;
-  width: 115px; 
-}
+// .icon-network {
+//   background: url(../images/icons/icon-medical-network.png);
+//   background: none, url(../images/icons/svg/icon-network.svg);
+//   background-repeat: no-repeat;
+//   height: 100px;
+//   width: 115px; 
+// }
 
-.icon-physician {
-  background: url(../images/icons/icon-physician.png);
-  background: none, url(../images/icons/svg/icon-physician.svg);
-  background-repeat: no-repeat;
-  height: 100px;
-  width: 79px;
-}
+// .icon-physician {
+//   background: url(../images/icons/icon-physician.png);
+//   background: none, url(../images/icons/svg/icon-physician.svg);
+//   background-repeat: no-repeat;
+//   height: 100px;
+//   width: 79px;
+// }
 
 // .icon-plaster {
 //   background: url(../images/icons/icon-plaster.png);

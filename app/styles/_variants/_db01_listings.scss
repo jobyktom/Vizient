@@ -1,0 +1,144 @@
+// DB01
+
+.db01-listings {
+	&.module {
+		[class*="col-"] {
+			background: $white;
+			border-top: 8px solid $mist;
+			padding: 20px;
+
+			@media (min-width: $screen-sm) {
+				&:first-child {
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+	@media (min-width: $screen-sm) {
+		header {
+			min-height: 75px;
+		}
+
+		section {
+			position: relative;
+		}
+
+		footer {
+			bottom: 20px;
+			position: absolute;
+			right: 20px;
+			text-align: right;
+			width: 100%;
+
+			a {
+				color: $grey-dark;
+			}
+		}
+	}
+
+	h2 {
+		@include font-size(18px);
+		color: $orange;
+	}
+
+	li {
+		background: $mist-lightest;
+		border-left: 3px solid $orange;
+		margin-bottom: 2px;
+
+		> a,
+		> span {
+			border-bottom: 1px solid $grey;
+			border-right: 1px solid $mist;
+			color: $grey-dark;
+			display: block;
+			padding: 20px 0 20px 20px;
+		}
+
+		> span {
+			min-height: 65px;
+			padding-right: 170px;
+			position: relative;
+
+			.btn {
+				margin: -22px 20px 0 0;
+				min-width: 0;
+				position: absolute;
+				right: 0;
+				top: 50%;
+			}
+		}
+
+		> a {
+			min-height: 65px;
+			padding-right: 64px;
+			position: relative;
+
+			&:after {
+				@extend .icon-arrow-right;
+				background-position: center;
+				border-left: 1px solid $grey;
+				content:'';
+				display: block;
+				height: calc(100% - 20px);
+				margin: 10px 0;
+				padding: 15px 20px 15px 15px;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+
+			&.has-time {
+				padding-top: 25px;
+			}
+
+			&.is-deletable {
+				&:after {
+					display: none;
+				}
+
+				.delete {
+					@extend .icon-delete;
+					background-position: center;
+					height: calc(100% - 20px);
+					border-left: 1px solid $grey;
+					display: block;
+					height: calc(100% - 20px);
+					margin: 10px 0;
+					padding: 15px 20px 15px 15px;
+					position: absolute;
+					right: 0;
+					top: 0;
+					width: 21px;
+				}
+			}
+		}
+
+		time {
+			@include font-size(10px);
+			left: 20px;
+			position: absolute;
+			top: 10px;
+		}
+
+		
+	}
+
+	.border-green {
+		li {
+			border-left: 3px solid $green;
+		}
+	}
+
+	.border-purple {
+		li {
+			border-left: 3px solid $purple;
+		}
+	}
+
+	.border-turquoise {
+		li {
+			border-left: 3px solid $turquoise;
+		}
+	}
+}

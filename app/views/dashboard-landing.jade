@@ -1,0 +1,323 @@
+extends layouts/_dashboard
+
+block content
+	main(class="body-content dashboard")
+		.row.row-eq-height-md
+			.col-xs-12.col-md-3.col-lg-2.plr-0.eq-height.dashboard-side-nav
+				include layouts/_dashboard-menu
+				
+			.col-xs-12.col-md-9.col-lg-10.plr-0.eq-height.dashboard-content
+
+				// START: DB01
+				section(class="module module-gutter-sm db01-listings")
+					.container.mb-20
+						.row.row-eq-height-sm
+							section.col-xs-12.col-sm-6.eq-height
+								header
+									h2 Frequently used
+
+								ul.list-unstyled
+									li
+										a(href="#", class="has-time", title="") The UHC Vitals in Performance tool (VIP) has been updated ›
+											time(datetime="2016-09-09T07:15") Last Accessed 7:15AM 09-09-16
+									li
+										a(href="#", class="has-time", title="") The UHC Vitals in Performance tool (VIP) has been updated ›
+											time(datetime="2016-09-09T07:15") Last Accessed 7:15AM 09-09-16
+									li
+										a(href="#", class="has-time", title="") The UHC Vitals in Performance tool (VIP) has been updated ›
+											time(datetime="2016-09-09T07:15") Last Accessed 7:15AM 09-09-16
+
+								footer
+									a(href="#", class="bold") View all tools
+										span.icon.icon-arrow-right.ml-10
+
+							section.col-xs-12.col-sm-6.eq-height
+								header
+									h2 My Notifications
+
+								ul.list-unstyled.border-turquoise
+									li
+										a(href="#", class="is-deletable has-time", title="") The UHC Vitals in Performance tool (VIP) has been updated ›
+											time(datetime="2016-09-09T07:00") 7:00AM 09•09•16
+											span(class="delete")
+									li
+										a(href="#", class="is-deletable has-time", title="") New for 2016: Quality Leadership Q&amp;A Award for Community Hospitals ›
+											time(datetime="2016-09-09T07:00") 7:00AM 09•09•16
+											span(class="delete")
+									li
+										a(href="#", class="is-deletable has-time", title="") The UHC Vitals in Performance tool (VIP) has been updated ›
+											time(datetime="2016-09-09T07:00") 7:00AM 09•09•16
+											span(class="delete")
+								
+								footer		
+									a(href="#", class="bold") View all notifications
+										span.icon.icon-arrow-right.ml-10
+
+				// START: CN11
+				section(class="module module-bleed cn11")
+					.container.mb-20
+						.row.bg-green
+							.col-xs-12.col-md-10.col-lg-8
+								.module-inner
+									h3 Another title
+
+									p At Vizient, we strive to help members solve the challenges we know affect the quality of clinical care and operational efficiency, making sure it is never compromised. Our consulting arm provides members with valuable data and insights and advisory services that are unmatched in the industry.
+
+									a(href="#", class="bold") View all consulting solutions
+										span.icon.icon-arrow-right.ml-10
+				
+				// START: DB01
+				section(class="module module-gutter-sm db01-listings")
+					.container.mb-20
+						.row.row-eq-height-sm
+							section.col-xs-12.col-sm-6.eq-height
+								header
+									h2 My Tools
+
+									p Tools you currently have access to:
+
+								ul.list-unstyled
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+
+								p New tools available to you:
+
+								ul.list-unstyled
+									li
+										span Bundled pricing and perforamnce (BPP) ›
+											a(class="btn", href="#") Get access
+								
+								footer
+									a(href="#", class="bold") View all tools
+										span.icon.icon-arrow-right.ml-10
+
+							section.col-xs-12.col-sm-6.eq-height
+								header
+									h2 My Listservers
+
+									p Listservers you currently have access to:
+
+								ul.list-unstyled.border-purple
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+
+								p Recommended ListServer:
+
+								ul.list-unstyled.border-purple
+									li
+										span Bundled pricing and perforamnce (BPP) ›
+											a(class="btn", href="#") Get access
+								
+								footer
+									a(href="#", class="bold") View all Listservers
+										span.icon.icon-arrow-right.ml-10
+
+				// START: DB01
+				section(class="module module-gutter-sm db01-listings")
+					.container.mb-20
+						.row.row-eq-height-sm
+							section.col-xs-12.col-sm-6.eq-height
+								header
+									h2 My reports
+
+								ul.list-unstyled.border-purple
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+								
+								footer
+									a(href="#", class="bold") View all reports
+										span.icon.icon-arrow-right.ml-10
+
+							section.col-xs-12.col-sm-6.eq-height
+								header
+									h2 My Councils
+
+									p Listservers you have currently access to:
+
+								ul.list-unstyled
+									li
+										a(href="#", title="") Cardiovascular Network ›
+
+									li
+										a(href="#", title="") Ambulatory Care and Physician Practice Network ›
+
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+
+								p Recommended Council:
+
+								ul.list-unstyled
+									li
+										span Bundled pricing and perforamnce (BPP) ›
+											a(class="btn", href="#") Get access
+								
+								footer
+									a(href="#", class="bold") View all my councils
+										span.icon.icon-arrow-right.ml-10
+
+				// START: CN11
+				section(class="module module-bleed cn11")
+					.container.mb-20
+						.row.bg-turquoise
+							.col-xs-12.col-md-10.col-lg-8
+								.module-inner
+									h3 Another title
+
+									p At Vizient, we strive to help members solve the challenges we know affect the quality of clinical care and operational efficiency, making sure it is never compromised. Our consulting arm provides members with valuable data and insights and advisory services that are unmatched in the industry.
+									
+									a(href="#", class="bold") View all consulting solutions
+										span.icon.icon-arrow-right.ml-10
+
+				// START: DB01
+				section(class="module module-gutter-sm db01-listings")
+					.container.mb-20
+						.row.row-eq-height-sm
+							section.col-xs-12.col-sm-6.eq-height
+								header
+									h2 My Networks
+
+									p Networks you have currently access to:
+
+								ul.list-unstyled
+									li
+										a(href="#", title="") Chief Human Resources Officers Network ›
+									li
+										a(href="#", title="") Chief Human Resources Officers Network ›
+									li
+										a(href="#", title="") Chief Human Resources Officers Network ›
+								
+								p Recommended Networks:
+
+								ul.list-unstyled
+									li
+										span Another amazing network
+											a(class="btn", href="#") Get access
+
+							section.col-xs-12.col-sm-6.eq-height
+								header
+									h2 My collaboratives
+
+									p UHC Imperatives for Quality (IQ) Program:
+
+								ul.list-unstyled.border-green
+									li
+										a(href="#", title="") Advance Practice Providers Utilization Benchmarking Project ›
+									li
+										a(href="#", title="") Adverse Drug Events Improvement Collaborative Prescribing Opioids for Chronic Pain ›
+									li
+										a(href="#", title="") Chronic Disease Medical Home - Cohort 2 Improvement Collaborative ›
+								
+								footer
+									a(href="#", class="bold") View all my collaboratives
+										span.icon.icon-arrow-right.ml-10
+
+				// START CN12 v1 Dashboard Version
+				section(class="module module-bleed cn12 cn12__v1")
+					.container.mb-20
+						.row.row-eq-height-lg
+							.col-xs-12.col-sm-6.col-md-8.eq-height
+								.module-inner
+									article(class="event")
+										p.metadata-eyebrow Next Event
+										
+										p.metadata-byline 28-30 September 2016 • Dallas TX
+				
+										.event-description
+											h3 2016 Vizient Clinical Connections Summit
+											
+											p Lorem ipsum dolor et ami Proin sit amet massa purus. Aliquam venenatis enim eu nunc facilisis convallis. Sed quis urna sit amet nulla tristique euismod. Sed placerat augue magna, et euismod mi volutpat non. Sed quis urna sit amet nulla tristique euismod
+											
+											a(href="#", class="btn", title="View all events") Register for this event
+								
+							.col-xs-12.col-sm-6.col-md-4.eq-height
+								.module-inner
+									p.metadata-eyebrow Webinars and education
+
+									ul(class="list-events has-calendar-dates")
+										li
+											time(class="calendar-date", datetime="2016-09-30")
+												span(class="date") 30
+												span(class="month") Sep
+
+											a(href="#" title="Supply Chain Education Series") Supply Chain Education Series - Part 3: Thinking Outside the Emergency Box
+												span.icon.icon-arrow-right-white.ml-10
+										
+
+										li
+											time(class="calendar-date", datetime="2016-09-30")
+												span(class="date") 30
+												span(class="month") Sep
+
+											a(href="#", title="Supply Chain Education Series") Supply Chain Education Series - Part 3: Thinking Outside the Emergency Box
+												span.icon.icon-arrow-right-white.ml-10
+
+									a(href="#") View all webinars and education
+										span.icon.icon-arrow-right-white.ml-10
+
+				// START: CN05 v2 
+				// module-outer required as title exists outside of bootstrap cols 
+				section(class="module module-bleed module-gutter-sm cn05 cn05__v2")
+					.container
+						.row.row-eq-height-md
+							.col-xs-12.col-md-8.eq-height.left-col
+								.row.row-inner
+									.col-xs-12.col-sm-6
+										.module-inner
+											p.metadata-eyebrow Insight
+											div
+												img.avatar-sm(src="images/avatars/byron.png", alt="Byhosron Jobe")
+												span.metadata-byline By Byron Jobe
+											p.e28
+												a(href="#") Clinical &amp; performance improvement
+													span.icon.icon-arrow-right-white.ml-10
+											p.metadata-byline 7 July 2016
+											p With nearly all of the waste leaving a hospital originating from a purchasing decision, supply chain leaders are in a unique position to lead efforts that will reduce the supply chain leaders supply chain leaders ...
+									.col-xs-12.col-sm-6
+										.module-inner
+											ul.list-unstyled.news-items
+												li
+													img.avatar-sm(src="images/avatars/byron.png", alt="Byron Jobe")
+													span.metadata-byline By Byron Jobe
+													a(href="#", title="Another relevant title of content goes here")
+														.e20 Another relevant title of content goes here
+													.metadata-byline 7 July 2016
+												li
+													img.avatar-sm(src="images/avatars/byron.png", alt="Byron Jobe")
+													span.metadata-byline By Byron Jobe
+													a(href="#", title="Another relevant title of content goes here")
+														.e20 Another relevant title of content goes here
+													.metadata-byline 7 July 2016
+							.col-xs-12.col-md-4.eq-height.right-col
+								.module-inner
+									p.metadata-eyebrow Press release 
+									ul.list-unstyled.news-items
+										li
+											.metadata-byline 7 July 2016
+											a
+												.e20 Another relevant title of content goes here
+										li
+											.metadata-byline 7 July 2016
+											a
+												.e20 Another relevant title of content goes here
+
+									a(href="#", title="View all press releases", class="arrow-link") View all press releases 
+										span.icon.icon-arrow-right.ml-10
+				// END: CN05 v2

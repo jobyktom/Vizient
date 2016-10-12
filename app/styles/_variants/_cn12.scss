@@ -27,16 +27,6 @@
     .module-inner {
       @extend .clearfix;
       height: 100%;
-      
-      @media (min-width: $screen-md) {
-        &:first-child {
-          padding-right: 20px;
-        }
-
-        &:last-child {
-          padding-left: 20px;
-        }
-      }
     }
 
     * {

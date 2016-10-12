@@ -1,0 +1,153 @@
+extends layouts/_dashboard
+
+block content
+	main(class="body-content dashboard")
+		.row.row-eq-height-md
+			.col-xs-12.col-md-3.col-lg-2.plr-0.eq-height.dashboard-side-nav
+				include layouts/_dashboard-menu
+				
+			.col-xs-12.col-md-9.col-lg-10.plr-0.eq-height.dashboard-content
+				// START: CN11 v2
+				section(class="module module-bleed cn11 cn11__v2 bg-purple hgt-medium")
+					.container
+						.row.row-eq-height-sm
+							.col-xs-12.col-sm-8.eq-height
+								.arrow.arrow-purple
+								.module-inner
+									h2 Chief Human Resources Officers Network
+									p.large-text The Chief Human Resources Offcers Network provides a platform for academic medical centers senior executives to network, share ideas and access valuable UCH resources.
+							.col-xs-12.col-sm-4.eq-height
+								.module-inner
+									h6 Contact us
+									ul.list-unstyled
+										li
+											b(class="bold") Angie Stefaniou
+											br
+											a(href="#") angie.stefaniou@vizientinc.com
+
+										li
+											b(class="bold") Adam Zuckermann
+											br
+											a(href="#") adam.zuckermann@vizientinc.com
+				
+				// START: CN09 v1
+				section(class="module module-outer cn09 cn09__v1 bg-white")
+					.container
+						.row
+							.col-xs-12.col-md-7
+								h3 Our Mission (CNO9)
+								
+								ul
+									li(class="bold") Provide a forum for the most senior human resources executives within the UCH membership for candid and constructive discussions
+
+									li(class="bold") Further the exchange of information. best practices and research on human resources issues
+
+									li(class="bold") Providing leadership by evaluating, recommending and implementing human resources solutions to health care and related business challenges
+
+									li(class="bold") Support the mission of UCH and its members to advance knowledge, foster collaboration and help members compete in their respective health care markets.
+								
+								h4 Our leadership and steering committee
+								
+								p Our current leadership includes:<br> <b class="bold">Chair:</b> Maria Curran, VCU Medical Center
+								
+								ul
+									li(class="bold") Maria Curran
+
+									li(class="bold") Alisa Ford
+
+									li(class="bold") Laurie Gunn
+
+									li(class="bold") Sue Kopfle
+
+									li(class="bold") Cheryl Locke
+
+									li(class="bold") Kathleen McComber 
+
+									li(class="bold") Dawn Murphy 
+
+									li(class="bold") David Odato 
+
+									li(class="bold") Mary Ellen Schopp 
+
+									li(class="bold") Pat Wren
+
+
+
+
+				// START CN12 v1 Dashboard Version
+				section(class="module module-bleed cn12 cn12__v1")
+					.container.mb-20
+						.row.row-eq-height-lg
+							.col-xs-12.col-sm-6.col-md-8.eq-height
+								.module-inner
+									article(class="event")
+										p.metadata-eyebrow Next Event
+										
+										p.metadata-byline 28-30 September 2016 • Dallas TX
+				
+										.event-description
+											h3 2016 Vizient Clinical Connections Summit
+											
+											p Lorem ipsum dolor et ami Proin sit amet massa purus. Aliquam venenatis enim eu nunc facilisis convallis. Sed quis urna sit amet nulla tristique euismod. Sed placerat augue magna, et euismod mi volutpat non. Sed quis urna sit amet nulla tristique euismod
+											
+											a(href="#", class="btn", title="View all events") Register for this event
+								
+							.col-xs-12.col-sm-6.col-md-4.eq-height
+								.module-inner
+									p.metadata-eyebrow Webinars and education
+
+									ul(class="list-events has-calendar-dates")
+										li
+											time(class="calendar-date", datetime="2016-09-30")
+												span(class="date") 30
+												span(class="month") Sep
+
+											a(href="#" title="Supply Chain Education Series") Supply Chain Education Series - Part 3: Thinking Outside the Emergency Box
+												span.icon.icon-arrow-right-white.ml-10
+										
+
+										li
+											time(class="calendar-date", datetime="2016-09-30")
+												span(class="date") 30
+												span(class="month") Sep
+
+											a(href="#", title="Supply Chain Education Series") Supply Chain Education Series - Part 3: Thinking Outside the Emergency Box
+												span.icon.icon-arrow-right-white.ml-10
+
+									a(href="#") View all webinars and education
+										span.icon.icon-arrow-right-white.ml-10
+
+				// START: DB01
+				section(class="module module-gutter-sm db01-listings")
+					.container.mb-20
+						.row.row-eq-height-sm
+							section.col-xs-12.col-sm-6.eq-height
+								header
+									h2 Recommended A
+
+									p Tools you have currently access to:
+
+								ul.list-unstyled
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+
+
+							section.col-xs-12.col-sm-6.eq-height
+								header
+									h2 Recommended A
+
+									p Listservers you have currently access to:
+
+								ul.list-unstyled.border-purple
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
+
+									li
+										a(href="#", title="") Clinical Database Resource Manager (CDB/RM) ›
