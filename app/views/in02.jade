@@ -1,0 +1,16 @@
+extends layouts/_default
+
+block content
+	main(class="body-content") 
+		.container
+			h3 IN02
+		include modules/_in02__v1
+		section(class="module")
+			.container
+				.row
+					.col-xs-12.result-row#result1
+						include modules/_cn08__v3
+					.col-xs-12.result-row#result2
+						include modules/_cn08__v3
+					.col-xs-12.result-row#result3
+						include modules/_cn08__v3

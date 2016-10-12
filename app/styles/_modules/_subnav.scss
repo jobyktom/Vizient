@@ -10,7 +10,8 @@ nav.subnav {
     padding: 0;
     z-index: 99;
     height: 60px;
-    background-color: $mist;
+    background-color: $white;
+    opacity: 0.9;
     
     #nav-bar-filter > li:first-child > a{
         color: $orange;

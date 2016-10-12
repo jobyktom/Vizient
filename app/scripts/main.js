@@ -357,12 +357,34 @@ $(document).ready(function() {
 
 	// hide subnav
 	//$('.subnav').hide();
-
+	// if the main element has the class 'showSubNav' then show the 
+	// sub nav menu and add a padding of 60px to the section to avoid the 
+	// overlapping if not reverse the action
+	if($('main').hasClass('showSubNav')){
+		$('.subnav').show();
+		$('section.cn11').addClass('pt-60');
+	}else{
+		$('.subnav').hide();
+		$('section.cn11').removeClass('pt-60');
+	}
 	// 
-	$('#header-bar .primary-nav a').click(function() {
-	  	$('body').toggleClass('subnav-active');
-	  	$('.subnav').slideToggle("fast", function() {
+	// $('#header-bar .primary-nav a').click(function() {
+	//   	$('body').toggleClass('subnav-active');
+	//   	$('.subnav').slideToggle("fast", function() {
 
+	//   	});
+	// });
+
+	$('.choose-challange ul.list-unstyled li a').click(function(event) {
+	  	var bookmark_id = $(this).attr('href');
+	  	$('.choose-challange ul.list-unstyled li a').removeClass('active');
+	  	$(this).addClass('active');
+	  	event.preventDefault();
+	  	$('.result-row').hide();
+	  	$(bookmark_id).show("slow", function() {
+	  		$('html, body').animate({
+                    scrollTop: $(bookmark_id).offset().top-50
+             }, 500);
 	  	});
 	});
 
