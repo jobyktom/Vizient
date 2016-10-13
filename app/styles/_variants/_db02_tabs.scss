@@ -79,11 +79,11 @@
 	}
 
 	.tab-pane {
-		display: table;
+		
 
 		article {
 			@media (min-width: $screen-md) {
-				display: table-row;
+				display: table;
 
 				&:after,
 				&:before {
