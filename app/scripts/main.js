@@ -358,13 +358,37 @@ $(document).ready(function() {
 	});
 
 	$('#header-bar #dashboard-menu').click(function() {
-	  	$('.logged-in').toggleClass('logged-in-active');
-	  	$('.dashboard-nav').slideToggle("fast", function() {
+	  	// $('.logged-in').toggleClass('logged-in-active');
+	  	// $('.dashboard-nav').slideToggle("fast", function() {
 
-	  	});
+	  	// });
 	});
 
- 
+    $(document).click(function (event) {
+
+        var clickover = $(event.target);
+        // if clicked on the logged-in menu 
+        if ( (clickover.is("a#dashboard-menu")) || (clickover.is("span.username")) ){
+        	$('.logged-in').toggleClass('logged-in-active');
+	  		$('.dashboard-nav').slideToggle("fast", function() {
+	  			// $(".icon-chevron-down-small").css({'transform' : 'rotate(180deg)'});
+	  		});
+	  		if($('.logged-in').hasClass('logged-in-active')){
+	  			$(".icon-chevron-down-small").css({'transform' : 'rotate(180deg)'});
+	  		}else{
+	  			$(".icon-chevron-down-small").css({'transform' : 'rotate(0deg)'});
+	  		}   	
+        }else{ // if clicked on outside logged-in menu 
+        	if($('.logged-in').hasClass('logged-in-active')){
+	        		$('.logged-in').removeClass('logged-in-active')
+	        		$('.dashboard-nav').slideToggle("fast", function() {
+	        			$(".icon-chevron-down-small").css({'transform' : 'rotate(0deg)'});
+		  			});
+        	}
+        }
+
+    });
+
 	//- Hide all rows except first and last for cta
  
 	$('.cn03__v7 .row').slice(1, -1).hide();
