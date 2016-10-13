@@ -18,6 +18,30 @@
 			height: 275px !important;
 		}
 	}
+
+	ul {
+		margin-top: 20px;
+		padding-left: 20px;
+		list-style-type: none;
+		 
+		li {
+			font-family: $soleto-bold;
+			position: relative;
+			line-height: 1.25;
+
+			&:before {
+				content: ' ';
+				display: block;
+				position: absolute;
+				top: 7px;
+				left: -18px;
+				width: 5px;
+				height: 5px;
+				border-radius: 1px;
+				background-color: $purple;
+			}
+		}
+	}
 }
 
 
@@ -103,6 +127,15 @@
 			margin-top: 4px !important;
 			margin-bottom: 4px !important;
 		}
+	}
+
+	.row-cta {
+		background-color: #fff;
+		margin-top: 20px;
+
+        @media (min-width: $screen-sm) {
+            margin-top: 40px;
+        }
 	}
 }
 
