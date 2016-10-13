@@ -331,10 +331,10 @@ $(document).ready(function() {
 	// overlapping if not reverse the action
 	if($('main').hasClass('showSubNav')){
 		$('.subnav').show();
-		$('section.cn11').addClass('pt-60');
+		$('section.banner').addClass('pt-60');
 	}else{
 		$('.subnav').hide();
-		$('section.cn11').removeClass('pt-60');
+		$('section.banner').removeClass('pt-60');
 	}
 	// 
 	// $('#header-bar .primary-nav a').click(function() {
