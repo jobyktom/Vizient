@@ -63,7 +63,11 @@
 	border: 1px dashed $grey;
 }
 
-.left-dash-border{
+.bottom-dot-border {
+	border-bottom: 1px dotted $grey;
+}
+
+.left-dash-border {
 	border-left: 1px dotted $grey;
 }
 

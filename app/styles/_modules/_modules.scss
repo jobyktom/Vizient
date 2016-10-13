@@ -54,7 +54,6 @@
         }
     }
     
-    
     &.module-bleed  {
         .container {
             padding-left: 0;
@@ -128,7 +127,8 @@
     }
 
     .module-inner {
-        padding: 20px 0;
+        padding: 20px;
+        
         @media (min-width: $screen-sm) {
             padding: 40px;
         }

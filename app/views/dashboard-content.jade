@@ -1,7 +1,7 @@
 extends layouts/_dashboard
 
 block content
-	main(class="body-content dashboard")
+	main(class="body-content")
 		.row.row-eq-height-md
 			.col-xs-12.col-md-3.col-lg-2.plr-0.eq-height.dashboard-side-nav
 				include layouts/_dashboard-menu
@@ -16,6 +16,7 @@ block content
 								.module-inner
 									h2 Chief Human Resources Officers Network
 									p.large-text The Chief Human Resources Offcers Network provides a platform for academic medical centers senior executives to network, share ideas and access valuable UCH resources.
+							
 							.col-xs-12.col-sm-4.eq-height
 								.module-inner
 									h6 Contact us
@@ -31,48 +32,93 @@ block content
 											a(href="#") adam.zuckermann@vizientinc.com
 				
 				// START: CN09 v1
-				section(class="module module-outer cn09 cn09__v1 bg-white")
-					.container
-						.row
-							.col-xs-12.col-md-7
-								h3 Our Mission (CNO9)
+				section(class="module cn09 cn09__v1 bg-white")
+						.row.row-eq-height-md
+							.col-xs-12.col-md-8.eq-height
+								.module-inner
+									h3 Our Mission (CNO9)
+									
+									ul
+										li(class="bold") Provide a forum for the most senior human resources executives within the UCH membership for candid and constructive discussions
+
+										li(class="bold") Further the exchange of information. best practices and research on human resources issues
+
+										li(class="bold") Providing leadership by evaluating, recommending and implementing human resources solutions to health care and related business challenges
+
+										li(class="bold") Support the mission of UCH and its members to advance knowledge, foster collaboration and help members compete in their respective health care markets.
+									
+									h4 Our leadership and steering committee
+									
+									p Our current leadership includes:<br> <b class="bold">Chair:</b> Maria Curran, VCU Medical Center
+									
+									ul
+										li(class="bold") Maria Curran
+
+										li(class="bold") Alisa Ford
+
+										li(class="bold") Laurie Gunn
+
+										li(class="bold") Sue Kopfle
+
+										li(class="bold") Cheryl Locke
+
+										li(class="bold") Kathleen McComber 
+
+										li(class="bold") Dawn Murphy 
+
+										li(class="bold") David Odato 
+
+										li(class="bold") Mary Ellen Schopp 
+
+										li(class="bold") Pat Wren
+
+							.col-xs-12.col-md-4.left-solid-border.eq-height
 								
-								ul
-									li(class="bold") Provide a forum for the most senior human resources executives within the UCH membership for candid and constructive discussions
+								div(class="bg-mist-lightest")
+									.module-inner
+										p.metadata-eyebrow.bottom-dot-border Disclaimer
 
-									li(class="bold") Further the exchange of information. best practices and research on human resources issues
+										p We have recently migrated all network content onto our new digital platforms. Whilst we have brought most of our recent content, some older content is not available. Please contact us if you have any specific requests for access to content that is not here.
 
-									li(class="bold") Providing leadership by evaluating, recommending and implementing human resources solutions to health care and related business challenges
+								div(class="bg-orange-dark")
+									.module-inner
+										div(class="event")
+											p.metadata-eyebrow Get involved
+											
+											p.metadata-byline 28-30 September 2016 • Dallas TX
+					
+											.event-description
+												h4 Human Resources and AMC CHRO Joint Network Meeting 
+												
+												p 
+													<time datetime="2016-09-27" class="bold">Sept 27, 2016:</time> Reception &amp; Dinner
+													br
+													<time datetime="2016-09-28" class="bold">Sept 28, 2016:</time> Meeting
 
-									li(class="bold") Support the mission of UCH and its members to advance knowledge, foster collaboration and help members compete in their respective health care markets.
-								
-								h4 Our leadership and steering committee
-								
-								p Our current leadership includes:<br> <b class="bold">Chair:</b> Maria Curran, VCU Medical Center
-								
-								ul
-									li(class="bold") Maria Curran
+												p Held in conjuction with the 2016 Vizient Clinical Connections Summit.
+												
+												a(href="#", class="btn", title="View all events") Register for this event
+									
+								div
+									.module-inner
+										p.metadata-eyebrow.bottom-dot-border (CN02) Quick links
 
-									li(class="bold") Alisa Ford
-
-									li(class="bold") Laurie Gunn
-
-									li(class="bold") Sue Kopfle
-
-									li(class="bold") Cheryl Locke
-
-									li(class="bold") Kathleen McComber 
-
-									li(class="bold") Dawn Murphy 
-
-									li(class="bold") David Odato 
-
-									li(class="bold") Mary Ellen Schopp 
-
-									li(class="bold") Pat Wren
-
-
-
+										ul(class="list-unstyled")
+											li
+												a(href="#", title="") Drug shortage mitigation
+													span.icon.icon-arrow-right.ml-10
+											li
+												a(href="#", title="") Accrediation
+													span.icon.icon-arrow-right.ml-10
+											li
+												a(href="#", title="") Care team optimization
+													span.icon.icon-arrow-right.ml-10
+											li
+												a(href="#", title="") Clinical cost management
+													span.icon.icon-arrow-right.ml-10
+											li
+												a(href="#", title="") Improving patient experience
+													span.icon.icon-arrow-right.ml-10
 
 				// START CN12 v1 Dashboard Version
 				section(class="module module-bleed cn12 cn12__v1")

@@ -64,11 +64,12 @@ body {
 			cursor: pointer;
 			
 			&.is-open {
-				background-image: url(../images/icons/icon-chevron-up.png);
-				background-image: url(../images/icons/svg/icon-chevron-up.svg);
+				background-color: $orange;
+				background-image: url(../images/icons/icon-close-white.png);
+				background-image: url(../images/icons/svg/icon-close-white.svg);
 				background-repeat: no-repeat;
-				background-size: 17px 9px;
-				background-position: right 25px top 23px;
+				background-size: 14px;
+				background-position: right 25px top 20px;
 			}
 		}
 	}

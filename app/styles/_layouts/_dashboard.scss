@@ -1,11 +1,30 @@
 // Dashboard
 
 .dashboard {
-	.dashboard-side-nav {
-		border-right: 1px solid $grey;
-	}
+	.body-content {
+		background: $grey;
 
-	.dashboard-content {
-		background: $mist-light;
+		.dashboard-side-nav {
+			border-right: 1px solid $grey;
+		}
+
+		.dashboard-content {
+			background: $mist-light;
+		}
+
+		> .row {
+			> [class*="col-"] {
+				&:first-child {
+					background: $white;
+				}
+				&:last-child {
+					max-width: 1200px;
+				}
+			}
+		}
+	}
+	
+	#main-footer {
+		margin-top: 0;
 	}
 }
