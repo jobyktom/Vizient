@@ -52,6 +52,7 @@ $grid-gutter-width: 8px;
 $container-tablet: (752px + $grid-gutter-width);
 $container-desktop: (1024px + $grid-gutter-width);
 $container-large-desktop: (1201px + $grid-gutter-width);
+$container-max-width: 1440px;
 
 // Breakpoints
 $screen-xs: 320px;
