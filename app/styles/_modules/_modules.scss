@@ -7,7 +7,8 @@
 
 //section
 .module {
-
+    margin: 0 auto;
+    max-width: $page-max-width;
     position: relative;
     
     [class*="col-"] {
@@ -23,6 +24,15 @@
             padding: 0 !important;
 
             }
+        }
+    }
+
+    // overrides the boxed in style, mainly used for the banners
+    &.module-stretch {
+        max-width: none;
+
+        .container {
+            background-color: transparent;
         }
     }
 
@@ -74,8 +84,6 @@
                 }
             }
         }
-
-
     }
 
 
@@ -138,6 +146,10 @@
                 width: 75%;
             }            
         }
+    }
+
+    .container {
+        background-color: #fff;
     }
  
 

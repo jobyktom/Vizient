@@ -14,6 +14,10 @@
 
     .bg-#{$colour} {
         background-color: $value;
+
+        &.module > .container {
+			background-color: $value;        	
+        }
     }
 
 }
