@@ -13,11 +13,12 @@
 
 			@media (min-width: $screen-sm) {
 				&:first-child {
-					margin-right: 20px;
+					margin-right: 19px;
 				}
 			}
 		}
 	}
+
 	@media (min-width: $screen-sm) {
 		header {
 			min-height: 75px;

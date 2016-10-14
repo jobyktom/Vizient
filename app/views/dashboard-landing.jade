@@ -2,11 +2,11 @@ extends layouts/_dashboard
 
 block content
 	main(class="body-content")
-		.row.row-eq-height-md
-			.col-xs-12.col-md-3.col-lg-2.plr-0.eq-height.dashboard-side-nav
+		.row
+			.col-xs-12.col-md-3.col-lg-2.plr-0.dashboard-side-nav
 				include layouts/_dashboard-menu
 				
-			.col-xs-12.col-md-9.col-lg-10.plr-0.eq-height.dashboard-content
+			.col-xs-12.col-md-9.col-lg-10.plr-0.dashboard-content
 				// START CN08 v1
 				section(class="module module-bleed mb-40 cn8 cn8__v1 bg-purple-dark")
 					.container
