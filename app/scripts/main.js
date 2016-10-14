@@ -381,7 +381,9 @@ $(document).ready(function() {
 	  	$(this).addClass('active');
 	  	event.preventDefault();
 	  	$('.result-row').hide();
-	  	$(bookmark_id).show();
+	  	$(bookmark_id).fadeIn( "slow", function() {
+    		// Animation complete
+  		});
 	  	document.location.href=bookmark_id;
 	});
 
