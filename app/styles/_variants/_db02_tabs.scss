@@ -101,6 +101,12 @@
 					margin-top: 0;
 					padding: 0;
 					text-align: center;
+
+					@media (min-width: $screen-sm) {
+						.btn {
+							width: auto;
+						}
+					}
 					
 					@media (min-width: $screen-md) {
 						padding: 40px 0;
