@@ -3,9 +3,9 @@
 .db01-listings {
 	&.module {
 		.container {
-    		background-color: transparent;
+			background-color: transparent;
 		}
-		
+
 		[class*="col-"] {
 			background: $white;
 			border-top: 8px solid $mist;
