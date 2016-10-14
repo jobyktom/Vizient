@@ -3,13 +3,28 @@
 .dashboard {
 	.body-content {
 		background: $grey;
+		padding-bottom: 0;
+		
+		@media only screen and (min-width: $screen-lg) {
+			&:before {
+				content: none;
+			}
 
-		.dashboard-side-nav {
-			border-right: 1px solid $grey;
+			.dashboard-side-nav {
+				display:table-cell;
+				float: none;
+				vertical-align: top;
+			}
 		}
 
 		.dashboard-content {
 			background: $mist-light;
+			border-left: 1px solid $grey;
+			
+			@media only screen and (min-width: $screen-lg) {
+				display:table-cell;
+				float: none;
+			}
 		}
 
 		> .row {

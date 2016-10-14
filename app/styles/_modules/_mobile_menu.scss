@@ -73,14 +73,15 @@ body {
 			}
 		}
 	}
+	#dashboard-side-nav {
+		display: none;
 
-	@media (max-width: $screen-sm) {
-		#dashboard-side-nav {
-			display: none;
+		@media (min-width: $screen-md) {
+			display: block;
+		}
 
-			&.is-open {
-				display: block;
-			}
+		&.is-open {
+			display: block;
 		}
 	}
 }

@@ -41,7 +41,7 @@
 			border-radius: 0;
 			color: $grey-dark;
 			margin-right: 2px;
-			padding: 20px 40px;
+			padding: 20px;
 			
 			&:active,
 			&:focus,
@@ -79,8 +79,8 @@
 	}
 
 	.tab-pane {
+		padding-bottom: 40px;
 		
-
 		article {
 			@media (min-width: $screen-md) {
 				display: table;
@@ -101,6 +101,12 @@
 					margin-top: 0;
 					padding: 0;
 					text-align: center;
+
+					@media (min-width: $screen-sm) {
+						.btn {
+							width: auto;
+						}
+					}
 					
 					@media (min-width: $screen-md) {
 						padding: 40px 0;

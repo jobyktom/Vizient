@@ -5,5 +5,5 @@
    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
    <desc>Created with Sketch.</desc>
    <defs></defs>
-   <path d="M25,4.03312935e-06 C32,0.0122167657 38,19.9999984 50,19.9999984 C38,19.9999984 12,19.9999984 0,19.9999984 C12,19.9999984 18.000034,-0.0122086402 25,4.03312935e-06 Z" id="Triangle" stroke="none" fill="#e8e8e9" fill-rule="evenodd" transform="translate(25.000000, 9.999998) scale(1, -1) translate(-25.000000, -9.999998) "></path>
+   <path d="M25,4.03312935e-06 C32,0.0122167657 38,19.9999984 50,19.9999984 C38,19.9999984 12,19.9999984 0,19.9999984 C12,19.9999984 18.000034,-0.0122086402 25,4.03312935e-06 Z" id="Triangle" stroke="none" transform="translate(25.000000, 9.999998) scale(1, -1) translate(-25.000000, -9.999998) "></path>
 </svg>
