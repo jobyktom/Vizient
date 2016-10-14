@@ -1,0 +1,85 @@
+// CN21
+
+.cn21 {
+  &.bg-mist {
+    svg {
+      fill: $mist;
+    }
+
+    .icon-arrow-right svg {
+      fill: $orange;
+    }
+  }
+
+  &.bg-green {
+    svg {
+      fill: $green;
+    }
+    .module-inner * {
+      color: $grey-dark;
+    }
+  }
+
+  &.bg-sunglow {
+    svg {
+      fill: $Sunglow;
+    }
+
+    .module-inner * {
+      color: $grey-dark;
+    }
+  }
+
+  &.bg-purple {
+    .module-inner * {
+      color: #fff;
+    }
+
+    svg {
+      fill: $purple;
+    }
+
+    .icon-arrow-right svg {
+      fill: #fff;
+    }
+  }
+
+  &.bg-turquoise-dark {
+    .module-inner * {
+      color: #fff;
+    }
+
+    svg {
+      fill: $turquoise-dark;
+    }
+
+    .icon-arrow-right svg {
+      fill: #fff;
+    }
+  }
+
+  .arrow {
+    bottom: -19px;
+    height: 21px;
+    left: 20px;
+    position: absolute;
+    
+    @media only screen and (min-width: $screen-sm) {
+      left: 50%;
+      transform: (translateX(-50%));
+    }
+  }
+
+  svg {
+    fill: #fff;
+  }
+
+  .icon-arrow-right {
+    background-image: none;
+    line-height: 1;
+
+    svg {
+      fill: $grey-dark;
+    }
+  }
+}

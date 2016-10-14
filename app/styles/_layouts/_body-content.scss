@@ -6,7 +6,21 @@
 }
 
 .body-content {
+	background-color: #f1f1f1;
+	padding-bottom: 40px;
 	position: relative;
+
+	&:before {
+		background-color: #fff;
+		bottom: 0;
+		content: '';
+		left: 50%;
+		max-width: $page-max-width;
+		position: absolute;
+		top: 0;
+		transform: translateX(-50%);
+		width: 100%;
+	}
 
 	// @media (max-width: 1074px) {
 	// 	padding-top: 60px;

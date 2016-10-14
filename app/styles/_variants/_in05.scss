@@ -15,6 +15,10 @@
 		background-image: url('/images/horizontal-pipes-yellow-desktop.png');
 	}
 
+	&.module .container {
+		background-color: transparent;
+	}
+
 	.dot-border {
 		&:before,
 		&:after {
