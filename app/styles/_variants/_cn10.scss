@@ -4,5 +4,9 @@
 	&.bg-image {
 		background-size: cover;
 		background-position:right center;
+
+		.container {
+			background-color: transparent;
+		}
 	}
 }
