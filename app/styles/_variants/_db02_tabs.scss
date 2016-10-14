@@ -79,6 +79,8 @@
 	}
 
 	.tab-pane {
+		padding-bottom: 40px;
+		
 		article {
 			@media (min-width: $screen-md) {
 				display: table;
