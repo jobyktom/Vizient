@@ -41,7 +41,7 @@
 			border-radius: 0;
 			color: $grey-dark;
 			margin-right: 2px;
-			padding: 20px 40px;
+			padding: 20px;
 			
 			&:active,
 			&:focus,
@@ -79,8 +79,6 @@
 	}
 
 	.tab-pane {
-		
-
 		article {
 			@media (min-width: $screen-md) {
 				display: table;
