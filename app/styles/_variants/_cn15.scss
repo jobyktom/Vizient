@@ -1,0 +1,125 @@
+.cn15 {
+  ul.timeline {
+    margin: 0;
+
+    li {
+      border-top: 1px dashed $slate-light;
+      margin: 0;
+      padding: 0;
+      position: relative;
+
+      @media only screen and (min-width: $screen-sm) {
+        border-left: 1px dashed $slate-light;
+        border-top: 1px solid $grey;
+        padding: 16px 0 10px 92px;
+
+        &:before {
+          background-color: $grey;
+          border-radius: 100%;
+          content: '';
+          height: 9px;
+          left: -5px;
+          position: absolute;
+          top: -5px;
+          width: 9px;
+        }
+
+        &:last-child {
+          border-left: none;
+        }
+
+        &.milestone {
+          border-top: 2px solid $yellow;
+          padding-right: 36%;
+
+          @media only screen and (min-width: $screen-md) {
+            padding-right: 42%;
+          }
+
+          &:before {
+            background-color: $orange;
+            border: 2px solid #fff;
+            height: 13px;
+            left: -7px;
+            top: -7px;
+            width: 13px;
+          }
+        }
+      }
+    }
+
+    input {
+      display: none;
+
+      &:checked + label {
+        &:after {
+          background-image: url(../images/icons/svg/icon-chevron-up.svg);
+        }
+
+        + .timeline_details {
+          max-height: 500px;
+        }
+      }
+    }
+
+    .timeline_details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .5s ease-in-out;
+
+      @media only screen and (min-width: $screen-sm) {
+        max-height: none;
+      }
+
+      p:last-child {
+        padding-bottom: 15px;
+      }
+    }
+
+    label {
+      color: $orange;
+      cursor: pointer;
+      display: block;
+      font-family: $soleto-medium;
+      @include font-size(14px);
+      line-height: 1;
+      padding: 20px 0;
+      position: relative;
+      margin: 0;
+
+      &:after {
+        background: url(../images/icons/svg/icon-chevron-down.svg) center no-repeat;
+        content: '';
+        height: 10px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+      }
+
+      @media only screen and (min-width: $screen-sm) {
+        color: $turquoise-dark;
+        cursor: default;
+        @include font-size(20px);
+        left: 14px;
+        position: absolute;
+        top: 16px;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    p {
+      @include font-size(14px);
+      margin: 0;
+      padding-bottom: 5px;
+    }
+
+    strong {
+      font-family: $soleto-regular;
+    }
+  }
+}
