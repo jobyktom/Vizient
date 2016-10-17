@@ -375,17 +375,17 @@ $(document).ready(function() {
 	//   	});
 	// });
 
-	$('.choose-challange ul.list-unstyled li a').click(function(event) {
-	  	var bookmark_id = $(this).attr('href');
-	  	$('.choose-challange ul.list-unstyled li a').removeClass('active');
-	  	$(this).addClass('active');
-	  	event.preventDefault();
-	  	$('.result-row').hide();
-	  	$(bookmark_id).fadeIn( "slow", function() {
-    		// Animation complete
-  		});
-	  	document.location.href=bookmark_id;
-	});
+	// $('.choose-challange ul.list-unstyled li a').click(function(event) {
+	//   	var bookmark_id = $(this).attr('href');
+	//   	$('.choose-challange ul.list-unstyled li a').removeClass('active');
+	//   	$(this).addClass('active');
+	//   	event.preventDefault();
+	//   	$('.result-row').hide();
+	//   	$(bookmark_id).fadeIn( "slow", function() {
+ //    		// Animation complete
+ //  		});
+	//   	document.location.href=bookmark_id;
+	// });
 
 	$('#header-bar #dashboard-menu').click(function() {
 	  	// $('.logged-in').toggleClass('logged-in-active');
