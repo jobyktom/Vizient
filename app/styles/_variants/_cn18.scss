@@ -37,4 +37,42 @@
             }
         }
     }
+    &.cn18__v2 {
+    
+    h4, p {
+        color: $white;
+    }
+
+    [class*="col-"] {
+        @media (min-width: $screen-sm) {
+            &:first-child {
+                text-align: center;
+            }
+        }
+
+        &:last-child {
+            padding-top: 0;
+            
+            @media (min-width: $screen-sm) {
+                padding-top: 40px;
+            }
+
+            @media (min-width: $screen-lg) {
+                p {
+                    max-width: 75%;
+                }
+            }
+        }
+
+        img {
+            display: inline-block;
+            width: 40%;
+
+            @media (min-width: $screen-sm) {
+                margin-top: 40px;
+                width: auto
+            }
+        }
+    }
+}
 }
