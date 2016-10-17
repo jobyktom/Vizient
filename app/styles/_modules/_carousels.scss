@@ -1,0 +1,72 @@
+.carousel-fade {
+	.container {
+		position: relative;
+	}
+
+	[class*="col-"] {
+		&:first-child {
+			padding-bottom: 80px !important;
+		}
+	}
+
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .item {
+        	&.active {
+        		display: flex;
+        	}
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+
+    .carousel-indicators {
+    	left: 40px;
+    	margin-left: 0;
+    	width: auto;
+
+    	li {
+    		border: none;
+    		border-radius: 100%;
+    		display: inline-block;
+    		font-size: 14px;
+    		position: relative;
+    		text-align: center;
+    		text-indent: 0;
+    		height: 30px;
+    		padding-top: 3px;
+    		vertical-align: center;
+    		width: 30px;
+
+			&.active {
+				background: transparent;
+				border: 2px solid $orange;
+			}
+    	}
+    }
+}

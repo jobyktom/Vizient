@@ -74,14 +74,15 @@ body {
 		}
 	}
 	#dashboard-side-nav {
-		display: none;
+		max-height: 0;
+		transition: max-height .5s ease-in-out;
 
 		@media (min-width: $screen-md) {
-			display: block;
+			max-height: auto;
 		}
 
 		&.is-open {
-			display: block;
+			max-height: 1000px;
 		}
 	}
 }

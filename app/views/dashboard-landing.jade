@@ -8,15 +8,36 @@ block content
 				
 			.col-xs-12.col-md-9.col-lg-10.plr-0.dashboard-content
 				// START CN08 v1
-				section(class="module module-bleed mb-40 cn8 cn8__v1 bg-purple-dark")
-					.container
-						.row.row-eq-height-md
+				section(class="module module-bleed mb-40 cn8 cn8__v1 bg-purple-dark carousel carousel-fade slide", id="dashboard-carousel", data-ride="carousel", data-pause="hover")
+					.container(class="carousel-inner", role="listbox")
+						ol(class="carousel-indicators")
+							li(data-target="#dashboard-carousel", data-slide-to="0", class="active") 1
+							li(data-target="#dashboard-carousel", data-slide-to="0") 2
+						
+						.row.row-eq-height-md.item.active
 							.col-xs-12.col-md-6.eq-height
 								.arrow.arrow-left.arrow-purple-dark
 								.module-inner
 									article
 										h4
-											a(href="#", title="") Direct Supply Chain Contracting Gaining System
+											a(href="#", title="") 1 Direct Supply Chain Contracting Gaining System
+												
+										p At Vizient, we strive to help members solve the challenges we know affect the quality of clinical care and operational efficiency, making sure it is never compromised.
+										
+										a(href="#", title="") View all consulting solutions
+											span.icon.icon-arrow-right.ml-10
+
+							.col-xs-12.col-md-6.eq-height.hidden-sm.hidden-xs
+								// INLINE STYLE FOR CMS
+								.bg-image(style="background-image: url('images/cn05-v5.jpg')", alt="Description of image")
+						
+						.row.row-eq-height-md.item
+							.col-xs-12.col-md-6.eq-height
+								.arrow.arrow-left.arrow-purple-dark
+								.module-inner
+									article
+										h4
+											a(href="#", title="") 2 Direct Supply Chain Contracting Gaining System
 												
 										p At Vizient, we strive to help members solve the challenges we know affect the quality of clinical care and operational efficiency, making sure it is never compromised.
 										
