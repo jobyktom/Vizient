@@ -1,0 +1,39 @@
+.cn28 {
+
+}
+
+.cn28__v1 {
+	.numbers{
+		font-family: $soleto-light;
+		font-size: 100px;
+		font-weight: 300;
+		line-height: 0.8;
+		letter-spacing: -1px;
+		color: $grey-dark;
+	}
+	.icon-dot{
+		background: url(../images/icons/border-dot.png);
+		width: 10px;
+		height: 10px;
+		background-position: 10px 13px;
+		margin-top: 40px;
+	}
+	.inner-content{
+		width: 80%;
+	}
+	@media only screen and (max-width: $screen-md) {
+		.inner-content{
+			margin-left: 45px;
+			margin-top: -20px;
+			width: 90%;
+		}
+		.numbers{
+			font-size: 36px;
+			margin-bottom: 0px!important;
+		}
+		.icon-dot{
+			margin-top: 11px;
+		}
+	}
+}
+
