@@ -35,4 +35,46 @@
 			}
 		}
 	}
+	&.cn14__v2 {
+		.module-inner{
+			padding-top:10px!important;
+			padding-bottom:0px!important;
+		}
+		.calendar-date{
+			width: 44px;
+			height: 44px;
+			background-color: $orange-dark;
+			float: left;
+			span{
+			color: $white!important;
+			}
+		}
+		p.metadata-eyebrow{
+			@media only screen and (min-width: $screen-xs) and (max-width: $screen-sm) {
+					position: absolute!important;
+				    left: 0px!important;
+				    top: -25px!important;
+			}
+			margin-bottom: 15px!important;
+			padding-bottom:0px!important;
+		}
+		p.metadata-byline{
+			margin-bottom: 10px!important;
+		}
+		p.e20{
+			color: $orange;
+		}
+		.event-description {
+			margin-left: 66px;
+			// position: absolute;
+			// top:0px;
+			// margin-bottom: 30px!important;
+		}
+		.event {
+			margin-top: 0;
+
+
+		}
+	}
+
 }
