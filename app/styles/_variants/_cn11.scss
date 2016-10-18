@@ -17,11 +17,8 @@
             }
         }
 
-        &.hgt-medium {
-            [class*="col-"],
-            .bg-image {
-                min-height: 250px;
-            }
+        &.hgt-medium [class*="col-"] .bg-image {
+            min-height: 250px;
         }
 
         &.hgt-big {
@@ -37,16 +34,16 @@
     [class*="col-"] {
 
         // Right
-        &:nth-child(1) {
-            .module-inner {
-                padding: 0;
-                //height: 100%;
+        // &:nth-child(1) {
+        //     .module-inner {
+        //         padding: 0;
+        //         //height: 100%;
 
-                @media (min-width: $screen-sm) {
-                    padding: 40px;
-                }
-            }
-        }
+        //         @media (min-width: $screen-sm) {
+        //             padding: 40px;
+        //         }
+        //     }
+        // }
         
         // Left
         &:nth-child(2) {
@@ -135,9 +132,143 @@
         width: 50px;
         z-index: 1;
     }
+
+    .banner .container:first-child {
+        display: table;
+        height: 100%;
+
+        .row {
+            display: table-cell;
+            vertical-align: bottom;
+        }
+    }
     
     // Variants
+    &.cn11__v1 {
+        &.banner {
+            background-color: $grey-alt;
+            background-position: right 20% top 0;
+            background-repeat: no-repeat;
+            height: 469px;
 
+            @media (min-width: $screen-sm) {
+                background-position: right 33%  top 0;
+            }
+
+            @media (min-width: $screen-lg) {
+                background-position: right 0;
+            }
+
+            &:after {
+                @include gradient-vertical(transparent, rgba(#fff, .8), 35%, 70%);
+                bottom: 0;
+                content: '';
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+
+                @media (min-width: $screen-sm) {
+                    @include gradient-directional(rgba(#fff, .7), transparent, 72deg);
+                }
+            }
+
+            .container:first-child {
+                background-color: transparent;
+                display: table;
+                height: 100%;
+                position: relative;
+                z-index: 1;
+
+                .row {
+                    display: table-cell;
+                    padding: 30px 24px;
+                    vertical-align: bottom;
+
+                    @media (min-width: $screen-sm) {
+                        padding: 0 0 0 40px;
+                        vertical-align: middle;
+                    }
+
+                    @media (min-width: $screen-md) {
+                        padding-left: 40px;
+                    }
+
+                    @media (min-width: $screen-lg) {
+                        padding-left: percentage(1 / $grid-columns);
+                    }
+                }
+            }
+
+            p {
+                margin: 0 0 24px;
+            }
+        }
+
+        &.module.module-bleed .container [class*="col-"] {
+            margin: 0;
+            padding: 0;
+        }
+
+        .module-inner {
+            padding: 24px;
+
+            @media (min-width: $screen-sm) {
+                padding: 20px;
+            }
+
+            @media (min-width: $screen-md) {
+                padding: 30px;
+            }
+
+            @media (min-width: $screen-lg) {
+                padding: 40px;
+            }
+        }
+
+        h1 {
+            @include font-size(72px);
+            font-family: $soleto-thin;
+
+            sup, sub {
+                font-size: $font-size-larger;
+                top: -1.5em;
+            }
+
+            sub {
+                left: 5px;
+                top: 0;
+            }
+        }
+
+        p {
+            margin: 0 0 44px 0;
+
+            @media (min-width: $screen-lg) {
+                margin: 0 18% 0 0;
+            }
+        }
+
+        a.btn-circle-arrow {
+            background: url(../images/icons/svg/icon-arrow-right-white.svg) center no-repeat;
+            border: 2px solid #fff;
+            border-radius: 100%;
+            bottom: 20px;
+            height: 44px;
+            position: absolute;
+            right: 24px;
+            width: 44px;
+
+            @media (min-width: $screen-sm) {
+                right: 30px;
+            }
+
+            @media (min-width: $screen-lg) {
+                bottom: 30px;
+                right: 44px;
+            }
+        }
+    }
     &.cn11__v3,
     &.cn11__v4 {
         .bg-image {

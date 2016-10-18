@@ -37,6 +37,10 @@
 	  display: -ms-flexbox;
 	  display:         flex;
 	}
+
+	[class*="col-"]:last-child {
+		flex-grow: 2;
+	}
 }
 
 .row-eq-height-lg {

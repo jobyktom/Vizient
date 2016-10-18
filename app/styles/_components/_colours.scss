@@ -11,8 +11,10 @@
 .bg-turquoise,
 &.bg-turquoise,
 .bg-turquoise-dark,
-&.bg-turquoise-dark {
-	h1, h2, h3, h4, h5, h6, p, li, a {
+&.bg-turquoise-dark,
+.bg-teal,
+&.bg-teal {
+	h1, h2, h3, h4, h5, h6, p, li, a, figure {
 		color: $white;
 	}
 }
