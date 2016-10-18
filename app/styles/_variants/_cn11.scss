@@ -94,7 +94,9 @@
     }
 
 	.bg-green,
-    &.bg-green {
+    &.bg-green,
+    .bg-yellow,
+    &.bg-yellow {
 		a {
 			color: $grey-dark;
 		}
@@ -296,6 +298,39 @@
                 background-size: cover;
             }
         }
+    }
+
+    &.cn11__v5 {
+        .module-inner {
+            padding: 0;
+        }
+
+        @media (max-width: $screen-sm) {
+            .bg-image {
+                height: 100px;
+            }
+        }
+        @media (min-width: $screen-sm) {
+            h1 {
+                @include font-size(48px);
+            }
+
+            .module-inner {
+                padding: 20px;
+            }
+        }
+
+        @media (min-width: $screen-md) {
+            h1 {
+                @include font-size(78px);
+            }
+
+            .module-inner {
+                padding: 40px;
+            }
+        }
+
+
     }
 
     &.cn11__v6 {
