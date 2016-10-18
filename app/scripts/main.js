@@ -115,7 +115,8 @@ var Vizient = (function() {
 	// Responsive Dashboard Tabs
 	var _dashboardTabs = function _dashboardTabs(breakpoint) {
 
-		var $dashboardTabs = $('.tabs-dashboard');
+		var $dashboardTabs = $('.tabs-dashboard'),
+			headerHeight = $('#mobile-header').outerHeight();
 
 		// Check component exists
 		if ( $dashboardTabs.length ) {
@@ -125,12 +126,15 @@ var Vizient = (function() {
 			// where the tabs are stacked vertically.
 			if (breakpoint == 'bp-x-small') {
 
-				console.log('Tabs scroll');
+				$dashboardTabs.find('.tab a').on('click', function(){
+					$('html, body').animate({
+        				scrollTop: $('.tab-content').offset().top - headerHeight
+    				}, 800);
+				});
 
 			} else {
 
-				console.log('Tabs don\'t scroll');
-		
+				$dashboardTabs.find('.tab a').off();
 			}
 		}
 
