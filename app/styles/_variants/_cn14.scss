@@ -1,0 +1,38 @@
+// CN20
+
+.cn14 {
+	&.cn14__v1 {
+		[class*="col-"] {
+			margin: 0 !important;
+			padding:0 !important;
+		}
+		.metadata-eyebrow{
+			padding-bottom: 0px!important;
+		}
+		.downloadlinkText{
+			// margin-bottom:40px;
+		}
+		.e28{
+			margin-bottom: 20px!important;
+		}
+		p.post__content{
+			@media only screen and (min-width: $screen-sm) {
+				width:80%!important;
+				padding-bottom:0px!important;
+				margin-bottom: 0px!important;
+			}
+
+		}
+		.bottom-row{
+			padding-top: 0px!important;
+		}
+
+		[class*="col-"] {
+			&:nth-child(2) {
+				p{
+					width:90%!important;
+				}
+			}
+		}
+	}
+}
