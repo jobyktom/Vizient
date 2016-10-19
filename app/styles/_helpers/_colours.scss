@@ -16,17 +16,16 @@
 		
 		// Automatic content colors
 
-        @if 	$colour == green 
+        @if 	$colour == white
+        	or 	$colour == green
         	or 	$colour == yellow
         	or 	$colour == mist 
         	or 	$colour == mist-light 
-        	or 	$colour == mist-lightest 
+        	or 	$colour == mist-lightest
+        	or 	$colour == peach-light
         	or 	$colour == sunglow {
 			
-			* {
-				color: $grey-dark;
-			}
-
+			*,
 			a:link {
 				color: $grey-dark;
 			}
@@ -37,12 +36,11 @@
 			}
 
 	    } @else {
-			
-			* {
-				color: $white;
-			}
 
-			a:link {
+			*,
+			a:link,
+			.metadata-byline,
+			.metadata-eyebrow {
 				color: $white;
 			}
 	    }
