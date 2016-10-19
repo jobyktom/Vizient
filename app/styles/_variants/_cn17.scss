@@ -109,16 +109,6 @@
                     border-bottom: 1px dotted $grey-mid;
                 }
             }
-
-            &:last-child {
-                background: $purple;
-
-                //padding-bottom: 200px;
-
-                h3, p, a {
-                    color: $white;
-                }
-            }
         }
     }
 
@@ -135,13 +125,6 @@
         }
 
         [class*="col-"] {
-            &:first-child {
-                background: $purple;
-
-                h3, p, a {
-                    color: $white;
-                }
-            }
             @media only screen and (min-width: $screen-md) {
                 &:last-child {
                     border-bottom: 1px dotted $grey-mid;
@@ -188,12 +171,6 @@
                 left: auto;
                 right: -50px;
                 transform: rotate(270deg); 
-            }
-        }
-
-        [class*="col-"] {
-            &:first-child {
-                background: $mist-light;
             }
         }
     }
