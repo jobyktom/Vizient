@@ -15,7 +15,11 @@
 		
 		// Automatic content colors
 
-        @if $colour == green or $colour == yellow or $colour == mist-light or $colour == sunglow {
+        @if 	$colour == green 
+        	or 	$colour == yellow 
+        	or 	$colour == mist-light 
+        	or 	$colour == mist-lightest 
+        	or 	$colour == sunglow {
 			
 			* {
 				color: $grey-dark;

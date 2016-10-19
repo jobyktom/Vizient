@@ -1,14 +1,5 @@
 // CN06
 
-.cn06 {
-	.left-col {
-		background-color: $mist-lightest;
-	}
-	.right-col {
-		background-color: $mist-light;
-	}
-}
-
 .cn06__v1 {
 	@include gradient($mist-lightest, $mist-light, 50%);
 	.right-col .module-inner {
@@ -24,27 +15,17 @@
 		}
 
 	}
-
-}
-
-
-.cn06__v2 {
-	@include gradient($mist-lightest, $mist-light, 50%);
-}
-
-.cn06__v3 {
-	@include gradient($mist-lightest, $mist-light, 50%);
 }
 
 .cn06__v4 {
-	@include gradient($mist-lightest, $mist-light, 50%);
-
 	.right-col .module-inner {
 		width: auto;
 		margin-left: inherit; 
+		
 		@media (min-width: $screen-sm) {
 			width: 460px;
 		}
+		
 		@media (min-width: $screen-md) {
 			margin-left: 105px;
 			width: auto;
@@ -70,21 +51,19 @@
 	}
 }
 
-.cn06__v5 {
-  @include gradient($mist-lightest, $mist-light, 50%);
-  
-  [class*="col-"] {
-    &:nth-child(1) {
-      padding: 0 !important;
-    }
-  }
+.cn06__v5 {  
+  	[class*="col-"] {
+    	&:nth-child(1) {
+      		padding: 0 !important;
+    	}
+  	}
 
-  .bg-image {
-    background-size: cover;
-    width: 100%;
-    min-height: 275px;
-    height: 100%;
-  }
+  	.bg-image {
+    	background-size: cover;
+    	width: 100%;
+    	min-height: 275px;
+    	height: 100%;
+  	}
 }
 
 .row-cta {
@@ -94,10 +73,6 @@
 }
 
 .cn06__v6 {
-    a {
-        color: $grey-dark;
-    }
-
     .icon {
         float: right;
     }
@@ -121,5 +96,4 @@
             }
         }
     }
-
 }
