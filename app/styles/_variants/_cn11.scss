@@ -223,6 +223,10 @@
             }
         }
 
+        [class*="col-"]:last-child .module-inner {
+            position: static;
+        }
+
         &.module.module-bleed .container [class*="col-"] {
             margin: 0;
             padding: 0;
