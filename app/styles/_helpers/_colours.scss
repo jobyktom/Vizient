@@ -16,7 +16,8 @@
 		// Automatic content colors
 
         @if 	$colour == green 
-        	or 	$colour == yellow 
+        	or 	$colour == yellow
+        	or 	$colour == mist 
         	or 	$colour == mist-light 
         	or 	$colour == mist-lightest 
         	or 	$colour == sunglow {
@@ -28,7 +29,8 @@
 			a:link {
 				color: $grey-dark;
 			}
-
+			
+			// This may be too global
 			.metadata-eyebrow {
 				color: $slate-light;
 			}
@@ -37,8 +39,6 @@
 			
 			* {
 				color: $white;
-
-
 			}
 
 			a:link {
@@ -48,6 +48,8 @@
     }
 
     // Font colours - use to override where automatic settings are undesirable
+    // but try to avoid and list in comment here where its been used so we can try
+    // and minimise usage later.
 
     .#{$colour} {
         color: $value !important;
