@@ -15,7 +15,7 @@
 		
 		// Automatic content colors
 
-        @if $colour == green or $colour == yellow {
+        @if $colour == green or $colour == yellow or $colour == mist-light or $colour == sunglow {
 			
 			* {
 				color: $grey-dark;
@@ -23,6 +23,10 @@
 
 			a:link {
 				color: $grey-dark;
+			}
+
+			.metadata-eyebrow {
+				color: $slate-light;
 			}
 
 	    } @else {
