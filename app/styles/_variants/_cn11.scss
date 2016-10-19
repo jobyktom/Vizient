@@ -329,14 +329,43 @@
                 padding: 40px;
             }
         }
-
-
     }
 
     &.cn11__v6 {
         .link-back {
             display: inline-block;
             margin-bottom: 15px;
+        }
+    }
+
+    &.cn11__v7 {
+        padding-top: 13px;
+
+        @media (min-width: $screen-sm) {
+            padding-top: 0;
+        }
+
+        @media (min-width: $screen-md) {
+            padding-top: 8px;
+        }
+
+        [class*="col-"]:last-child .module-inner {
+            position: static;
+        }
+
+        h1 {
+            font-family: $soleto-thin;
+            @include font-size(36px);
+            margin: 0 0 10px;
+
+            @media (min-width: $screen-sm) {
+                @include font-size(48px);
+                margin: 0;
+            }
+
+            @media (min-width: $screen-md) {
+                @include font-size(72px);
+            }
         }
     }
 
