@@ -20,7 +20,9 @@
 }
 
 .bg-green,
-&.bg-green {
+&.bg-green,
+.bg-yellow,
+&.bg-yellow {
 	a {
 		color: $grey-dark;
 	}

@@ -1,126 +1,138 @@
 
 .cn11 {
-    
-    // Heights
-    @media (min-width: $screen-sm) {
-        &.hgt-tiny {
-            min-height: 150px;
-
-            [class*="col-"],
-            .bg-image {
-                min-height: 150px;
-            }
-        }
-
-        &.hgt-small {
-            min-height: 200px;
-            
-            [class*="col-"],
-            .bg-image {
-                min-height: 200px;
-            }
-        }
-
-        &.hgt-medium {
-            min-height: 250px;
-            
-            [class*="col-"],
-            .bg-image {
-                min-height: 250px;
-            }
-        }
-
-        &.hgt-big {
-            min-height: 300px;
-
-            [class*="col-"],
-            .bg-image {
-                min-height: 300px;
-            }
-        }
-    }
-
     // Columns
     
-    [class*="col-"]:last-child {
-        position: relative;
+    [class*="col-"]:last-child .module-inner {
+        position: static;
 
-        .module-inner {
-            padding: 0;
+        @media (max-width: $screen-sm - 1) {
+            padding: 20px 0;
+        }
 
-            @media (min-width: $screen-sm) {
-                bottom: 0;
-                padding: 40px;
-                position: absolute;
-
-                *:last-child {
-                    margin-bottom: 0;
-                    padding-bottom: 0;
-                }
-            }
+        *:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
     }
 
-    // These rules should be moved globally and be dfor color choice settings
-    // made by CMS choice of bg color
-	
-	.bg-orange,
-	&.bg-orange,
-	.bg-purple,
-    &.bg-purple,
-    .bg-turquoise,
-    &.bg-turquoise,
-    .bg-turquoise-dark,
-    &.bg-turquoise-dark {
-        h1, h2, h3, h4, h5, h6, p, li, a {
-            color: $white;
-        }
-    }
-
-	.bg-green,
-    &.bg-green,
-    .bg-yellow,
-    &.bg-yellow {
-		a {
-			color: $grey-dark;
-		}
-    }
 
     // Content Elements
 
     h1 {
-        margin-bottom: 15px;
-
-        &.heading-large {
-            @include font-size(36px);
-
-            @media (min-width: $screen-sm) {
-                @include font-size(48px);
-            }
-            @media (min-width: $screen-md) {
-                @include font-size(64px);
-            }
-        }
-    }
-
-    p {
-    	&.large-text {
-    		@include font-size(22px);
-    	}
-    }
-
-    .bg-image {
-        background-position: center right;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 200px;
+        font-family: $soleto-thin;
+        @include font-size(36px);
+        line-height: 1.2;
 
         @media (min-width: $screen-sm) {
-            background-size: contain;
-            height: 100%;
-            width: 100%;
+            @include font-size(48px);
+        }
+
+        @media (min-width: $screen-md) {
+            @include font-size(72px);
+            line-height: 1.1;
         }
     }
+
+    h2 {
+        font-family: $soleto-thin;
+        @include font-size(28px);
+        line-height: 1.3;
+
+        @media (min-width: $screen-md) {
+            @include font-size(48px);
+            line-height: 1.2;
+        }
+    }
+
+    h3 {
+        font-family: $soleto-thin;
+        @include font-size(24px);
+
+        @media (min-width: $screen-md) {
+            @include font-size(36px);
+        }
+    }
+
+    h4 {
+        font-family: $soleto-thin;
+        @include font-size(22px);
+        line-height: 1.3;
+
+        @media (min-width: $screen-md) {
+            @include font-size(28px);
+        }
+    }
+
+    h5 {
+        font-family: $soleto-thin;
+    }
+
+    &.banner-with-image {
+        @media (max-width: $screen-sm - 1) {
+            [class*="col-"]:first-child .module-inner {
+                padding-bottom: 0;
+                padding-top: 0;
+            }
+        }
+
+        [class*="col-"]:last-child {
+            position: relative;
+
+            .module-inner {
+                padding: 0;
+
+                @media (min-width: $screen-sm) {
+                    bottom: 0;
+                    padding: 40px;
+                    position: absolute;
+                }
+            }
+        }
+
+        .module-inner .bg-image {
+            height: 100px;
+
+            @media (min-width: $screen-sm) {
+                height: 160px;
+            }
+
+            @media (min-width: $screen-md) {
+                height: 240px;
+            }
+        }
+
+        .bg-image {
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 140px;
+
+            @media (min-width: $screen-sm) {
+                height: 240px;
+            }
+
+            @media (min-width: $screen-md) {
+                height: 320px;
+            }
+        }
+
+        &.cn11__v3 .bg-image {
+            @media (min-width: $screen-sm) {
+                background-position: left center;
+                background-size: cover;
+                height: 350px;
+            }
+
+            @media (min-width: $screen-md) {
+                height: 430px;
+            }
+
+            @media (min-width: $screen-lg) {
+                height: 320px;
+            }
+        }
+    }
+
 
     // Descender arrow
 
@@ -135,13 +147,24 @@
         z-index: 1;
     }
 
-    .banner .container:first-child {
-        display: table;
-        height: 100%;
+    .link-back {
+        @include font-size(14px);
+        padding-left: 20px;
+        position: relative;
 
-        .row {
-            display: table-cell;
-            vertical-align: bottom;
+        @media (min-width: $screen-sm) {
+            font-size: inherit;
+        }
+
+        span {
+            left: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &.icon-arrow-left-darkgrey {
+                transform: translateY(-50%) rotate(180deg);
+            }
         }
     }
     
@@ -272,165 +295,6 @@
             @media (min-width: $screen-lg) {
                 bottom: 30px;
                 right: 44px;
-            }
-        }
-    }
-    &.cn11__v3,
-    &.cn11__v4 {
-        .bg-image {
-            background-position: bottom 30px left 150px;
-            background-size: 100%;
-
-            @media (min-width: $screen-sm) {
-                background-position: center left;
-                background-size: cover;
-            }
-        }
-    }
-
-    &.cn11__v5 {
-        .module-inner {
-            padding: 0;
-        }
-
-        @media (max-width: $screen-sm) {
-            .bg-image {
-                height: 100px;
-            }
-        }
-        @media (min-width: $screen-sm) {
-            h1 {
-                @include font-size(48px);
-            }
-
-            .module-inner {
-                padding: 20px;
-            }
-        }
-
-        @media (min-width: $screen-md) {
-            h1 {
-                @include font-size(78px);
-            }
-
-            .module-inner {
-                padding: 40px;
-            }
-        }
-    }
-
-    &.cn11__v6 {
-        .link-back {
-            display: inline-block;
-            margin-bottom: 15px;
-        }
-    }
-
-    &.cn11__v7 {
-        padding-top: 13px;
-
-        @media (min-width: $screen-sm) {
-            padding-top: 0;
-        }
-
-        @media (min-width: $screen-md) {
-            padding-top: 8px;
-        }
-
-        [class*="col-"]:last-child .module-inner {
-            position: static;
-        }
-
-        h1 {
-            font-family: $soleto-thin;
-            @include font-size(36px);
-            margin: 0 0 10px;
-
-            @media (min-width: $screen-sm) {
-                @include font-size(48px);
-                margin: 0;
-            }
-
-            @media (min-width: $screen-md) {
-                @include font-size(72px);
-            }
-        }
-    }
-
-    &.cn11__v9 {
-        padding-top: 13px;
-
-        @media (min-width: $screen-sm) {
-            padding-top: 8px;
-        }
-
-        @media (min-width: $screen-md) {
-            padding-top: 0;
-        }
-
-        [class*="col-"]:last-child .module-inner {
-            position: static;
-        }
-
-        h3 {
-            font-family: $soleto-thin;
-            @include font-size(24px);
-            margin: 0 0 10px;
-
-            @media (min-width: $screen-sm) {
-                margin: 0;
-            }
-
-            @media (min-width: $screen-md) {
-                @include font-size(36px);
-            }
-        }
-    }
-
-    &.cn11__v10 {
-        [class*="col-"]:last-child .module-inner {
-            position: static;
-
-            @media (max-width: $screen-sm - 1) {
-                padding: 20px 0 5px;
-            }
-        }
-
-        h1 {
-            font-family: $soleto-thin;
-            @include font-size(36px);
-            margin: 0;
-
-            @media (min-width: $screen-sm) {
-                @include font-size(48px);
-            }
-
-            @media (min-width: $screen-md) {
-                @include font-size(72px);
-            }
-        }
-
-        h5 {
-            font-family: $soleto-thin;
-        }
-    }
-
-    &.cn11__v11 {
-        [class*="col-"]:last-child .module-inner {
-            position: static;
-
-            @media (max-width: $screen-sm - 1) {
-                padding: 20px 0 5px;
-            }
-        }
-
-        h2 {
-            font-family: $soleto-thin;
-            @include font-size(28px);
-            margin: 0;
-
-            @media (min-width: $screen-md) {
-                @include font-size(48px);
             }
         }
     }
