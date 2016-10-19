@@ -4,6 +4,8 @@
     // Heights
     @media (min-width: $screen-sm) {
         &.hgt-tiny {
+            min-height: 150px;
+
             [class*="col-"],
             .bg-image {
                 min-height: 150px;
@@ -11,6 +13,8 @@
         }
 
         &.hgt-small {
+            min-height: 200px;
+            
             [class*="col-"],
             .bg-image {
                 min-height: 200px;
@@ -18,6 +22,8 @@
         }
 
         &.hgt-medium {
+            min-height: 250px;
+            
             [class*="col-"],
             .bg-image {
                 min-height: 250px;
@@ -25,6 +31,8 @@
         }
 
         &.hgt-big {
+            min-height: 300px;
+
             [class*="col-"],
             .bg-image {
                 min-height: 300px;
@@ -37,19 +45,19 @@
     [class*="col-"] {
 
         // Right
-        &:nth-child(1) {
-            .module-inner {
-                padding: 0;
-                //height: 100%;
+        // &:nth-child(1) {
+        //     .module-inner {
+        //         padding: 0;
+        //         //height: 100%;
 
-                @media (min-width: $screen-sm) {
-                    padding: 40px;
-                }
-            }
-        }
+        //         @media (min-width: $screen-sm) {
+        //             padding: 40px;
+        //         }
+        //     }
+        // }
         
         // Left
-        &:nth-child(2) {
+        &:last-child {
             position: relative;
 
             .module-inner {
@@ -59,6 +67,11 @@
                     bottom: 0;
                     padding: 40px;
                     position: absolute;
+
+                    *:last-child {
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                    }
                 }
             }
         }
@@ -81,7 +94,9 @@
     }
 
 	.bg-green,
-    &.bg-green {
+    &.bg-green,
+    .bg-yellow,
+    &.bg-yellow {
 		a {
 			color: $grey-dark;
 		}
@@ -135,9 +150,143 @@
         width: 50px;
         z-index: 1;
     }
+
+    .banner .container:first-child {
+        display: table;
+        height: 100%;
+
+        .row {
+            display: table-cell;
+            vertical-align: bottom;
+        }
+    }
     
     // Variants
+    &.cn11__v1 {
+        &.banner {
+            background-color: $grey-alt;
+            background-position: right 20% top 0;
+            background-repeat: no-repeat;
+            height: 469px;
 
+            @media (min-width: $screen-sm) {
+                background-position: right 33%  top 0;
+            }
+
+            @media (min-width: $screen-lg) {
+                background-position: right 0;
+            }
+
+            &:after {
+                @include gradient-vertical(transparent, rgba(#fff, .8), 35%, 70%);
+                bottom: 0;
+                content: '';
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+
+                @media (min-width: $screen-sm) {
+                    @include gradient-directional(rgba(#fff, .7), transparent, 72deg);
+                }
+            }
+
+            .container:first-child {
+                background-color: transparent;
+                display: table;
+                height: 100%;
+                position: relative;
+                z-index: 1;
+
+                .row {
+                    display: table-cell;
+                    padding: 30px 24px;
+                    vertical-align: bottom;
+
+                    @media (min-width: $screen-sm) {
+                        padding: 0 0 0 40px;
+                        vertical-align: middle;
+                    }
+
+                    @media (min-width: $screen-md) {
+                        padding-left: 40px;
+                    }
+
+                    @media (min-width: $screen-lg) {
+                        padding-left: percentage(1 / $grid-columns);
+                    }
+                }
+            }
+
+            p {
+                margin: 0 0 24px;
+            }
+        }
+
+        &.module.module-bleed .container [class*="col-"] {
+            margin: 0;
+            padding: 0;
+        }
+
+        .module-inner {
+            padding: 24px;
+
+            @media (min-width: $screen-sm) {
+                padding: 20px;
+            }
+
+            @media (min-width: $screen-md) {
+                padding: 30px;
+            }
+
+            @media (min-width: $screen-lg) {
+                padding: 40px;
+            }
+        }
+
+        h1 {
+            @include font-size(72px);
+            font-family: $soleto-thin;
+
+            sup, sub {
+                font-size: $font-size-larger;
+                top: -1.5em;
+            }
+
+            sub {
+                left: 5px;
+                top: 0;
+            }
+        }
+
+        p {
+            margin: 0 0 44px 0;
+
+            @media (min-width: $screen-lg) {
+                margin: 0 18% 0 0;
+            }
+        }
+
+        a.btn-circle-arrow {
+            background: url(../images/icons/svg/icon-arrow-right-white.svg) center no-repeat;
+            border: 2px solid #fff;
+            border-radius: 100%;
+            bottom: 20px;
+            height: 44px;
+            position: absolute;
+            right: 24px;
+            width: 44px;
+
+            @media (min-width: $screen-sm) {
+                right: 30px;
+            }
+
+            @media (min-width: $screen-lg) {
+                bottom: 30px;
+                right: 44px;
+            }
+        }
+    }
     &.cn11__v3,
     &.cn11__v4 {
         .bg-image {
@@ -151,10 +300,112 @@
         }
     }
 
+    &.cn11__v5 {
+        .module-inner {
+            padding: 0;
+        }
+
+        @media (max-width: $screen-sm) {
+            .bg-image {
+                height: 100px;
+            }
+        }
+        @media (min-width: $screen-sm) {
+            h1 {
+                @include font-size(48px);
+            }
+
+            .module-inner {
+                padding: 20px;
+            }
+        }
+
+        @media (min-width: $screen-md) {
+            h1 {
+                @include font-size(78px);
+            }
+
+            .module-inner {
+                padding: 40px;
+            }
+        }
+    }
+
     &.cn11__v6 {
         .link-back {
             display: inline-block;
             margin-bottom: 15px;
+        }
+    }
+
+    &.cn11__v7 {
+        padding-top: 13px;
+
+        @media (min-width: $screen-sm) {
+            padding-top: 0;
+        }
+
+        @media (min-width: $screen-md) {
+            padding-top: 8px;
+        }
+
+        [class*="col-"]:last-child .module-inner {
+            position: static;
+        }
+
+        h1 {
+            font-family: $soleto-thin;
+            @include font-size(36px);
+            margin: 0 0 10px;
+
+            @media (min-width: $screen-sm) {
+                @include font-size(48px);
+                margin: 0;
+            }
+
+            @media (min-width: $screen-md) {
+                @include font-size(72px);
+            }
+        }
+    }
+
+    &.cn11__v9 {
+        padding-top: 13px;
+
+        @media (min-width: $screen-sm) {
+            padding-top: 8px;
+        }
+
+        @media (min-width: $screen-md) {
+            padding-top: 0;
+        }
+
+        [class*="col-"]:last-child .module-inner {
+            position: static;
+        }
+
+        h3 {
+            font-family: $soleto-thin;
+            @include font-size(24px);
+            margin: 0 0 10px;
+
+            @media (min-width: $screen-sm) {
+                margin: 0;
+            }
+
+            @media (min-width: $screen-md) {
+                @include font-size(36px);
+            }
+        }
+    }
+
+    &.cn11__v11 {
+        h1 {
+            @include font-size(28px);
+
+            @media (min-width: $screen-md) {
+                @include font-size(48px);
+            }
         }
     }
 }

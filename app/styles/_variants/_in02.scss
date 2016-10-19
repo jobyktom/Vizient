@@ -20,39 +20,43 @@
 		background: none, url(../images/icons/svg/manage.svg);
 	}
 
-	a.active{
-		position:relative;
-	}
-	a.active span.icon.icon-oval-large{
-		background-color: $orange-dark;
-		color: $white;
+	.active {
+		a {
+			position: relative;
+		}
+
+		span.icon.icon-oval-large {
+			background-color: $orange-dark;
+			color: $white;
+		}
+		
+		span.triangle{
+		    background: url(../images/icons/svg/triangle-orange-down.svg);
+		    background-repeat: no-repeat;
+		    width: 25px;
+		    height: 10px;
+		    position: absolute;
+		    display: inline-block;
+		    top: 110px;
+		    left: -160px;
+		    @media only screen and ( min-width: $screen-sm) {
+
+		    }
+	    	@media only screen and ( min-width: $screen-md) {
+		    	top: 110px;
+		    	left: -181px;
+	    	}
+	    	@media only screen and ( min-width: $screen-lg) {
+	    		top: 132px;
+	    		left: -198px;
+		    }
+		    
+		}
 	}
 	.triangle{
 		display: none;
 	}
-	a.active span.triangle{
-	    background: url(../images/icons/svg/triangle-orange-down.svg);
-	    background-repeat: no-repeat;
-	    width: 25px;
-	    height: 10px;
-	    position: absolute;
-	    display: inline-block;
-	    top: 110px;
-	    left: -160px;
-	    @media only screen and ( min-width: $screen-sm) {
-
-	    }
-    	@media only screen and ( min-width: $screen-md) {
-	    	top: 110px;
-	    	left: -181px;
-    	}
-    	@media only screen and ( min-width: $screen-lg) {
-    		top: 132px;
-    		left: -198px;
-	    }
-	    
-	}
-
+	
 	.icon-oval-large{
 		width: 100%;
 		height: 66px;

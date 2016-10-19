@@ -171,6 +171,15 @@
     height: 12px;
 }
 
+.icon-arrow-left-darkgrey {
+    background: none, url(../images/icons/svg/icon-arrow-right-darkgrey.svg);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(180deg);
+}
+
 .icon-arrow-left--medium {
     background: url(../images/icons/icon-arrow-left-medium.png);
     background: none, url(../images/icons/svg/icon-arrow-left.svg);
@@ -760,6 +769,11 @@
 
 .arrow-purple {
     background: none, url(../images/icons/svg/arrow-curved-purple.svg);
+    background-repeat: no-repeat;
+}
+
+.arrow-yellow {
+    background: none, url(../images/icons/svg/arrow-curved-yellow.svg);
     background-repeat: no-repeat;
 }
 
