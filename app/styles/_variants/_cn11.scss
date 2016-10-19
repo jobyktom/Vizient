@@ -80,27 +80,27 @@
     // These rules should be moved globally and be dfor color choice settings
     // made by CMS choice of bg color
 	
-	.bg-orange,
-	&.bg-orange,
-	.bg-purple,
-    &.bg-purple,
-    .bg-turquoise,
-    &.bg-turquoise,
-    .bg-turquoise-dark,
-    &.bg-turquoise-dark {
-        h1, h2, h3, h4, h5, h6, p, li, a {
-            color: $white;
-        }
-    }
+	// .bg-orange,
+	// &.bg-orange,
+	// .bg-purple,
+ //    &.bg-purple,
+ //    .bg-turquoise,
+ //    &.bg-turquoise,
+ //    .bg-turquoise-dark,
+ //    &.bg-turquoise-dark {
+ //        h1, h2, h3, h4, h5, h6, p, li, a {
+ //            color: $white;
+ //        }
+ //    }
 
-	.bg-green,
-    &.bg-green,
-    .bg-yellow,
-    &.bg-yellow {
-		a {
-			color: $grey-dark;
-		}
-    }
+	// .bg-green,
+ //    &.bg-green,
+ //    .bg-yellow,
+ //    &.bg-yellow {
+	// 	a {
+	// 		color: $grey-dark;
+	// 	}
+ //    }
 
     // Content Elements
 

@@ -4,12 +4,6 @@
 
 @each $colour, $value in $colourMap {
 
-    // Font colours
-
-    .#{$colour} {
-        color: $value;
-    }
-
     // Background colours
 
     .bg-#{$colour} {
@@ -18,6 +12,36 @@
         &.module > .container {
 			background-color: $value;        	
         }
+		
+		// Automatic content colors
+
+        @if $colour == green or $colour == yellow {
+			
+			* {
+				color: $grey-dark;
+			}
+
+			a:link {
+				color: $grey-dark;
+			}
+
+	    } @else {
+			
+			* {
+				color: $white;
+
+
+			}
+
+			a:link {
+				color: $white;
+			}
+	    }
     }
 
+    // Font colours - use to override where automatic settings are undesirable
+
+    .#{$colour} {
+        color: $value !important;
+    }
 }
