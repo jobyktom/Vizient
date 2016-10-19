@@ -1,0 +1,34 @@
+// CN20
+
+.cn29 {
+  &.cn29__v1 {
+    .article-content p{
+      margin-right: 15%;
+    }
+    article {
+        img{
+          max-width: 144px;
+          max-height: 121px;
+        }
+    }
+    @media only screen and (min-width: $screen-md) {
+      article {
+        position: relative;
+        img{
+          max-width: 144px;
+          max-height: 121px;
+        }
+      }
+
+      .icon-section {
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
+
+      .article-content {
+        margin-left: 190px;
+      }
+    }
+  }
+}
