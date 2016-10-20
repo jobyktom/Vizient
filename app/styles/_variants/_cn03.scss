@@ -1,6 +1,4 @@
 .cn03 { 
-	background-color: $mist-lightest;
-
 	.dot-border {
 		&:before,
 		&:after {
@@ -44,26 +42,13 @@
 	}
 }
 
-
 .cn03__v1 { 
-	[class*="col-"] { 
-		&:nth-child(1) {
-			background-color: $white;
-		}
-		&:nth-child(2) {
-			background-color: $mist;
-			
-		 
-		}
-	}
-
 	[class*="col-"] {
 		margin: 0 !important;
 	}
 }
-.cn03__v2 {
 
-	
+.cn03__v2 {
 	.bg-image {
 		background-size: cover;
 		width: 100%;
@@ -77,16 +62,7 @@
 
 	[class*="col-"] {
 		margin: 0 !important;
-		&:nth-child(1) {
-			background-color: $white;
-			// height: auto;
-			// overflow: inherit;
-			// @media only screen and (min-width: $screen-sm) {
-			// 	height: 272px;
-			// 	overflow: hidden;
-			// }
-
-		}
+		
 		&:nth-child(2) {
 			padding: 0;
 		}
@@ -104,7 +80,6 @@
 .cn03__v4,
 .cn03__v5 {
 	[class*="col-"] {
-		background-color: $white;
 		padding: 0 !important;
 	}
 }
@@ -118,24 +93,6 @@
 .cn03__v6 {
 	img {
 		height: 275px !important;
-	}
-}
-
-.cn03__v7 {
-	[class*="col-"] {
-		@media (min-width: $screen-sm) {
-			margin-top: 4px !important;
-			margin-bottom: 4px !important;
-		}
-	}
-
-	.row-cta {
-		background-color: #fff;
-		margin-top: 20px;
-
-        @media (min-width: $screen-sm) {
-            margin-top: 40px;
-        }
 	}
 }
 

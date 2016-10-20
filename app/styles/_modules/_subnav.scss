@@ -9,9 +9,11 @@ nav.subnav {
     position: fixed;
     padding: 0;
     z-index: 99;
-    height: 60px;
+    height: 48px;
     background-color: $white;
     opacity: 0.9;
+    padding-top :15px;
+    padding-bottom:15px;
     
     #nav-bar-filter > li:first-child > a{
         color: $orange;
@@ -31,18 +33,19 @@ nav.subnav {
 
     ul {
         @extend .clearfix;
-        margin-top: 10px;
+        // margin-top: 10px;
 
         li {
             display: inline-block;
             float: left;
+            line-height: normal!important;
 
             a.active{
                 color: $orange;
             }
             a{
                 color: $grey-dark;
-                padding:13px;
+                padding:0 13px 0 13px;
             }
         }
     }

@@ -4,20 +4,53 @@
 
 @each $colour, $value in $colourMap {
 
-    // Font colours
-
-    .#{$colour} {
-        color: $value;
-    }
-
     // Background colours
 
     .bg-#{$colour} {
         background-color: $value;
-
+		
+		// ??? No idea why this is here but scared to remove it :)
         &.module > .container {
 			background-color: $value;        	
         }
+		
+		// Automatic content colors
+
+        @if 	$colour == white
+        	or 	$colour == green
+        	or 	$colour == yellow
+        	or 	$colour == mist 
+        	or 	$colour == mist-light 
+        	or 	$colour == mist-lightest
+        	or 	$colour == peach-light
+        	or 	$colour == sunglow {
+			
+			*,
+			a:link {
+				color: $grey-dark;
+			}
+			
+			// This may be too global
+			.metadata-eyebrow {
+				color: $slate-light;
+			}
+
+	    } @else {
+
+			*,
+			a:link,
+			.metadata-byline,
+			.metadata-eyebrow {
+				color: $white;
+			}
+	    }
     }
 
+    // Font colours - use to override where automatic settings are undesirable
+    // but try to avoid and list in comment here where its been used so we can try
+    // and minimise usage later.
+
+    .#{$colour} {
+        color: $value !important;
+    }
 }

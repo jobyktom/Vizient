@@ -76,6 +76,7 @@
         }
 
         [class*="col-"]:last-child {
+
             position: relative;
 
             .module-inner {
@@ -89,12 +90,16 @@
             }
         }
 
+
+    	// Content Elements
+
         .module-inner .bg-image {
             height: 100px;
 
             @media (min-width: $screen-sm) {
                 height: 160px;
             }
+
 
             @media (min-width: $screen-md) {
                 height: 240px;

@@ -64,6 +64,18 @@ var Vizient = (function() {
 		
 		//_equalHeights();
  
+		_toggleClearTextControl();
+		_clearText();
+
+		// Responsive JavaScript Components
+		$(window).on('breakpoint-change', function(e, breakpoint) {
+
+			_dashboardCarousel(breakpoint);
+
+			_dashboardTabs(breakpoint);
+
+		});
+
 		// When windows resizes check height of page header and pass
 		// it to the function controlling the sticky header
 		window.onresize = function() {				 
@@ -79,6 +91,84 @@ var Vizient = (function() {
 			_equalHeights();
 		}, 100);
  
+	};
+
+	var _toggleClearTextControl = function _toggleClearTextControl() {
+		$('.js-search-input').on('input',function() {
+			var $searchInput = $(this),
+				$clearText = $searchInput.parent().find('.js-clear-text');
+
+			if ( $searchInput.val() != '') {
+				$clearText.removeClass('hide');
+			} else {
+				$clearText.addClass('hide');
+			}
+		});
+	}
+
+	var _clearText = function _clearText() {
+		$('.js-clear-text').on('click', function() {
+			var $clearText = $(this),
+				$searchInput = $clearText.parent().find('.js-search-input');
+
+			$searchInput.val('');
+			$clearText.addClass('hide')
+		});
+	};
+
+	// Responsive Dashboard Carousel
+	var _dashboardCarousel = function _dashboardCarousel(breakpoint) {
+
+		var $dashboardCarousel = $('.carousel-dashboard');
+
+		// Check component exists
+		if ( $dashboardCarousel.length ) {
+
+			// Determine behaviour
+			// - Only allow carousel to operate at largest breakpoint
+			// - Otherwise hack 'destroy' of it, in absence of proper method in Bootstrap.
+			if (breakpoint == 'bp-large') {
+
+				$dashboardCarousel.carousel();
+
+			} else {
+
+				$dashboardCarousel.carousel('pause').carousel(0);
+  			
+  				$dashboardCarousel.off('bs.carousel.data-api'); 
+	
+			}
+
+		}
+
+	};
+
+	// Responsive Dashboard Tabs
+	var _dashboardTabs = function _dashboardTabs(breakpoint) {
+
+		var $dashboardTabs = $('.tabs-dashboard'),
+			headerHeight = $('#mobile-header').outerHeight();
+
+		// Check component exists
+		if ( $dashboardTabs.length ) {
+
+			// Determine behaviour
+			// - Add scrolling to content behaviour to tabs only at x-small viewport
+			// where the tabs are stacked vertically.
+			if (breakpoint == 'bp-x-small') {
+
+				$dashboardTabs.find('.tab a').on('click', function(){
+					$('html, body').animate({
+        				scrollTop: $('.tab-content').offset().top - headerHeight
+    				}, 800);
+				});
+
+			} else {
+
+				$dashboardTabs.find('.tab a').off();
+			}
+		}
+
 	};
 
 	// Check if the page has been scrolled, and expand or contract the main header bar
@@ -130,8 +220,8 @@ var Vizient = (function() {
 	// Next two functions could be refined and made into one later
 	// Perhaps setupAccordionNav to be less specific to their
 	// context.
- 	
- 	// Control Dashboard nav open/closed state
+	
+	// Control Dashboard nav open/closed state
 	var _setupDashboardNav = function _setupDashboardNav() {
 		$('.js-accordion-nav-trigger').on('click', function() {
 			$(this).toggleClass('is-open');
@@ -236,11 +326,11 @@ var Vizient = (function() {
 	};
 
 	/*
-    Equal heights function
-    ----------------------
-    Elements labelled "row-eq-height-md" will only get equalised on desktop.
-    Elements labelled "row-eq-height-sm" will get equalised on tablet and desktop.
-    Elements labelled "row-eq-height-mbls" will get equalised from 480px and above.
+	Equal heights function
+	----------------------
+	Elements labelled "row-eq-height-md" will only get equalised on desktop.
+	Elements labelled "row-eq-height-sm" will get equalised on tablet and desktop.
+	Elements labelled "row-eq-height-mbls" will get equalised from 480px and above.
 	*/ 
 	var _equalHeights = function _equalHeights(itemClassName) {
 
@@ -259,46 +349,46 @@ var Vizient = (function() {
 		// 480px - 768px
 		else if (480 <= w && w < 768) {
 
-		    $('.row-eq-height-mbls').each(function () {
+			$('.row-eq-height-mbls').each(function () {
 
-		      // find the tallest block then make all blocks that height
-		      var tallestItem = 0;
-		      $(this).find(heightClass).each(function () {
-		        if ($(this).height() > tallestItem) tallestItem = $(this).height();
-		      });
-		      $(this).find(heightClass).height('').height(tallestItem);
-		    });
+			  // find the tallest block then make all blocks that height
+			  var tallestItem = 0;
+			  $(this).find(heightClass).each(function () {
+				if ($(this).height() > tallestItem) tallestItem = $(this).height();
+			  });
+			  $(this).find(heightClass).height('').height(tallestItem);
+			});
 
-		     
+			 
 		  } else if (w < 768) {
 
-		      $('.row-eq-height-mbls, .row-eq-height-sm').each(function () {
+			  $('.row-eq-height-mbls, .row-eq-height-sm').each(function () {
 
-		        // find the tallest block then make all blocks that height
-		        var tallestItem = 0;
-		        $(this).find(heightClass).each(function () {
-		          if ($(this).height() > tallestItem) tallestItem = $(this).height();
-		        });
-		        $(this).find(heightClass).height('').height(tallestItem);
-		      });
+				// find the tallest block then make all blocks that height
+				var tallestItem = 0;
+				$(this).find(heightClass).each(function () {
+				  if ($(this).height() > tallestItem) tallestItem = $(this).height();
+				});
+				$(this).find(heightClass).height('').height(tallestItem);
+			  });
 
-		       
-		    } else {
+			   
+			} else {
 
-		        $('.row-eq-height-mbls, .row-eq-height-sm, .row-eq-height-md').each(function () {
+				$('.row-eq-height-mbls, .row-eq-height-sm, .row-eq-height-md').each(function () {
 
-		          // find the tallest block then make all blocks that height
-		          var tallestItem = 0;
-		          $(this).find(heightClass).each(function () {
-		            if ($(this).height() > tallestItem) tallestItem = $(this).height();
-		          });
-		          $(this).find(heightClass).height('').height(tallestItem);
-		        });
-		      }
+				  // find the tallest block then make all blocks that height
+				  var tallestItem = 0;
+				  $(this).find(heightClass).each(function () {
+					if ($(this).height() > tallestItem) tallestItem = $(this).height();
+				  });
+				  $(this).find(heightClass).height('').height(tallestItem);
+				});
+			  }
 		};
 
 		// end eq heights
- 	};
+	};
 
 
 
@@ -338,7 +428,7 @@ var Vizient = (function() {
 
   // RICH: Enable Animated Charts
   var _setupAnimatedCharts = function _setupAnimatedCharts() {
-    
+	
   };
 
 	// The 'in page' section nav controller
@@ -397,49 +487,37 @@ $(document).ready(function() {
 	//   	});
 	// });
 
-	// $('.choose-challange ul.list-unstyled li a').click(function(event) {
-	//   	var bookmark_id = $(this).attr('href');
-	//   	$('.choose-challange ul.list-unstyled li a').removeClass('active');
-	//   	$(this).addClass('active');
-	//   	event.preventDefault();
-	//   	$('.result-row').hide();
-	//   	$(bookmark_id).fadeIn( "slow", function() {
- //    		// Animation complete
- //  		});
-	//   	document.location.href=bookmark_id;
-	// });
-
 	$('#header-bar #dashboard-menu').click(function() {
-	  	// $('.logged-in').toggleClass('logged-in-active');
-	  	// $('.dashboard-nav').slideToggle("fast", function() {
+		// $('.logged-in').toggleClass('logged-in-active');
+		// $('.dashboard-nav').slideToggle("fast", function() {
 
-	  	// });
+		// });
 	});
 
-    $(document).click(function (event) {
+	$(document).click(function (event) {
 
-        var clickover = $(event.target);
-        // if clicked on the logged-in menu 
-        if ( (clickover.is("a#dashboard-menu")) || (clickover.is("span.username")) ){
-        	$('.logged-in').toggleClass('logged-in-active');
-	  		$('.dashboard-nav').slideToggle("fast", function() {
-	  			// $(".icon-chevron-down-small").css({'transform' : 'rotate(180deg)'});
-	  		});
-	  		if($('.logged-in').hasClass('logged-in-active')){
-	  			$(".icon-chevron-down-small").css({'transform' : 'rotate(180deg)'});
-	  		}else{
-	  			$(".icon-chevron-down-small").css({'transform' : 'rotate(0deg)'});
-	  		}   	
-        }else{ // if clicked on outside logged-in menu 
-        	if($('.logged-in').hasClass('logged-in-active')){
-	        		$('.logged-in').removeClass('logged-in-active')
-	        		$('.dashboard-nav').slideToggle("fast", function() {
-	        			$(".icon-chevron-down-small").css({'transform' : 'rotate(0deg)'});
-		  			});
-        	}
-        }
+		var clickover = $(event.target);
+		// if clicked on the logged-in menu 
+		if ( (clickover.is("a#dashboard-menu")) || (clickover.is("span.username")) ){
+			$('.logged-in').toggleClass('logged-in-active');
+			$('.dashboard-nav').slideToggle("fast", function() {
+				// $(".icon-chevron-down-small").css({'transform' : 'rotate(180deg)'});
+			});
+			if($('.logged-in').hasClass('logged-in-active')){
+				$(".icon-chevron-down-small").css({'transform' : 'rotate(180deg)'});
+			}else{
+				$(".icon-chevron-down-small").css({'transform' : 'rotate(0deg)'});
+			}   	
+		}else{ // if clicked on outside logged-in menu 
+			if($('.logged-in').hasClass('logged-in-active')){
+					$('.logged-in').removeClass('logged-in-active')
+					$('.dashboard-nav').slideToggle("fast", function() {
+						$(".icon-chevron-down-small").css({'transform' : 'rotate(0deg)'});
+					});
+			}
+		}
 
-    });
+	});
 
 	//- Hide all rows except first and last for cta
  
@@ -492,21 +570,21 @@ $(document).ready(function() {
   // Also need to review if any options set here should be moved into data attributes instead.
   if ( $('.chart').length ) {
 
-    $('.chart').each(function(){
-      
-      var chartSize = $(this).data('size'),
-          chartLineWidth = $(this).data('lineWidth');
+	$('.chart').each(function(){
+	  
+	  var chartSize = $(this).data('size'),
+		  chartLineWidth = $(this).data('lineWidth');
 
-      $(this).easyPieChart({
-        barColor: '#FFC02E',
-        lineCap: 'butt',
-        lineWidth: chartLineWidth,
-        scaleLength: 0,
-        size: chartSize,
-        trackColor: '#565EAA'
-      });
+	  $(this).easyPieChart({
+		barColor: '#FFC02E',
+		lineCap: 'butt',
+		lineWidth: chartLineWidth,
+		scaleLength: 0,
+		size: chartSize,
+		trackColor: '#565EAA'
+	  });
 
-    });
+	});
   }
 });
 //# sourceMappingURL=main.js.map

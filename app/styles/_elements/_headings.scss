@@ -176,6 +176,9 @@ h6{
 	line-height: 1.44em;
 	letter-spacing: -0.3px;
 }
+.e18-light {
+	font-family: $soleto-light;
+}
 
 .chart-medium {
 	.data-value {
@@ -204,4 +207,19 @@ h6{
 	p {
 		@include font-size(16px); 
 	}
+}
+.downloadlinkText{
+	font-family: $soleto-medium;
+	@include font-size(14px);
+	font-weight: 500;
+	letter-spacing: 0px;
+	color: $orange
+}
+.extraLightNumbers {
+	font-family: $soleto-thin;
+	@include font-size(72px);
+	font-weight: 100;
+	line-height: 1;
+	letter-spacing: -3.2px;
+	color: $grey-dark;
 }

@@ -1,0 +1,47 @@
+// Breakpoint Mixins
+// See: http://zerosixthree.se/detecting-media-queries-with-javascript/
+
+@mixin bp-large { // $screen-lg: 1201px;
+  	@media only screen and (min-width: $screen-lg) {
+    	@content;    
+  	}  
+}
+
+@mixin bp-medium { // $screen-md: 1024px;
+  	@media only screen and (min-width: $screen-md) {
+    	@content;    
+  	}  
+}
+
+@mixin bp-small { // $screen-sm: 768px;
+  	@media only screen and (min-width: $screen-sm) {
+    	@content;    
+  	}  
+}
+
+// Write breakpoint to pseudo element
+
+@mixin define-breakpoint($name) {
+    &:after {
+    	content: $name;
+      	display: block;
+    }
+}
+
+// Tag body class with breakpoints
+
+body {
+	@include define-breakpoint('bp-x-small');
+
+    @include bp-small() {
+        @include define-breakpoint('bp-small');
+    }
+
+    @include bp-medium() {
+        @include define-breakpoint('bp-medium');
+    }
+
+    @include bp-large() {
+        @include define-breakpoint('bp-large');   
+    }  
+}

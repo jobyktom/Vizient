@@ -1,0 +1,48 @@
+// NV08
+
+.nv08 {
+	border-top: 8px solid $mist;
+	border-left: 1px solid $mist;
+	border-right: 1px solid $mist;
+	border-bottom: 1px solid $mist;
+
+	.metadata-byline {
+		padding-top: 15px;
+	}
+
+	ul {
+		@include clearfix;
+		margin-bottom: 0;
+	}
+	
+	&.module {
+		li[class*="col-"] {
+
+			&:first-child {
+				margin-bottom: 30px !important;
+				padding-bottom: 20px !important;
+
+				@media (min-width: $screen-sm) {
+					border-bottom: none;
+					border-right: 1px dotted $grey;
+					padding-right: 20px !important;
+				}
+
+				@media (min-width: $screen-md) {
+					border-bottom: 1px dotted $grey;
+					border-right: none;
+				}
+			}
+
+			&:last-child {
+				@media (min-width: $screen-sm) {
+					padding-left: 20px !important;
+				}
+
+				@media (min-width: $screen-md) {
+					padding-left: 0 !important;
+				}
+			}
+		}
+	}
+}

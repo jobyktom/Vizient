@@ -1,6 +1,4 @@
 .cn01 { 
-	// background-color: $white;
-
 	[class*="col-"] {
 		margin: 0 !important;
 		padding:0 !important;
@@ -14,7 +12,6 @@
 	.icon-arrow-right-white{
 		@media (max-width: $screen-sm-max) {
 		  		margin-right: 20px !important;
-		  		// include font-size: $font-size-smaller;
 		 }
 		
 	}
@@ -25,7 +22,6 @@
 		  	letter-spacing: 3px;
 		  	@media (max-width: $screen-sm-max) {
 		  		@include font-size(12px);
-		  		// include font-size: $font-size-smaller;
 		  	}
 	 	}
   	}
@@ -45,11 +41,6 @@
 	}
 }
 
-
-.cn01__v1 [class*="col-"] * {
-    color: $white;
-}
-
 .cn01__v1 {
 	.bg-image {
 		background-size: cover;
@@ -65,10 +56,6 @@
 	[class*="col-"] {
 		&:nth-child(1) {
 			padding: 0;
-		}
-		&:nth-child(2) {
-			background-color: $turquoise-dark;
-			color: $white;
 		}
 	}
 }
@@ -91,78 +78,39 @@
 
 	[class*="col-"] {
 		margin: 0 !important;
-		&:nth-child(1) {
-			background-color: $turquoise-dark;
-		}
+
 		&:nth-child(2) {
 			padding: 0;
 		}
 	}
 } 
 
-.cn01__v3 [class*="col-"] * {
-    color: $white;
-}
-
 .cn01__v3 {
-
-	
 	.pull-quote__text-turquoise{
-		color: $black;
 		font-family: $soleto-italic;
 	}
 
 	[class*="col-"] {
 		margin: 0 !important;
-		&:nth-child(1) {
-			background-color: $turquoise-dark;
-		}
-		&:nth-child(2) {
-			background-color: $yellow;
-		}
 	}
-
-} 
-.cn01__v4 [class*="col-"] * {
-    color: $white;
 }
+
 .cn01__v4 {
-
 	[class*="col-"] {
 		margin: 0 !important;
 		padding: 0!important;
-		&:nth-child(1) {
-			background-color: $turquoise-dark;
-		}
-		&:nth-child(2) {			
-			background-color: $turquoise-dark;
-		}
 	}
 }
 
-.cn01__v5 [class*="col-"] * {
-    color: $white;
-}
 .cn01__v5 {
-
 	[class*="col-"] {
 		margin: 0 !important;
 		padding: 0!important;
-		&:nth-child(1) {
-			background-color: $turquoise-dark;
-		}
-		&:nth-child(2) {			
-			background-color: $yellow;
-			p.figure *, p {
-				color: $black!important;
-			}
-		}
-
 	}
 
 	p.figure{
 		margin-top: 75px;
-		color: $black;
+
 		@media (max-width: $screen-sm-min) {
 			margin-top: 0px !important;
 		}
