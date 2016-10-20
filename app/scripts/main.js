@@ -58,6 +58,8 @@ var Vizient = (function() {
 		_setupSectionNav();
 		_setupSectionSubNav();
 		_setupCarousels();
+		_toggleClearTextControl();
+		_clearText();
 
 		// Responsive JavaScript Components
 		$(window).on('breakpoint-change', function(e, breakpoint) {
@@ -83,6 +85,30 @@ var Vizient = (function() {
 			_equalHeights();
 		}, 100);
  
+	};
+
+	var _toggleClearTextControl = function _toggleClearTextControl() {
+		$('.js-search-input').on('input',function() {
+
+			var $searchInput = $(this),
+				$clearText = $searchInput.parent().find('.js-clear-text');
+
+			if ( $searchInput.val() != '') {
+				$clearText.removeClass('hide');
+			} else {
+				$clearText.addClass('hide');
+			}
+		});
+	}
+
+	var _clearText = function _clearText() {
+		$('.js-clear-text').on('click', function() {
+			var $clearText = $(this),
+				$searchInput = $clearText.parent().find('.js-search-input');
+
+			$searchInput.val('');
+			$clearText.addClass('hide')
+		});
 	};
 
 	// Responsive Dashboard Carousel
