@@ -89,7 +89,6 @@ var Vizient = (function() {
 
 	var _toggleClearTextControl = function _toggleClearTextControl() {
 		$('.js-search-input').on('input',function() {
-
 			var $searchInput = $(this),
 				$clearText = $searchInput.parent().find('.js-clear-text');
 
