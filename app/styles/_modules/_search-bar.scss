@@ -64,11 +64,12 @@
 	top: 120px;
   transition: all .2s ease-out;
 	width: 100%;
-	z-index: 101;
+	z-index: 0;
 
 	&.is-active {
 		opacity: 1;
 		top: 110px;
+		z-index: 101;
 	}
 
 	@media (min-width: $screen-md) {
