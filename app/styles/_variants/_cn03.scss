@@ -96,24 +96,6 @@
 	}
 }
 
-.cn03__v7 {
-	[class*="col-"] {
-		@media (min-width: $screen-sm) {
-			margin-top: 4px !important;
-			margin-bottom: 4px !important;
-		}
-	}
-
-	.row-cta {
-		background-color: #fff;
-		margin-top: 20px;
-
-        @media (min-width: $screen-sm) {
-            margin-top: 40px;
-        }
-	}
-}
-
 // v6
 .module.cn03__v1 + .module.cn03__v5 {
 	padding-top: 0;
