@@ -6,6 +6,10 @@
 			line-height: 28px;
 		}
 	}
+	[class*="col-"] {
+			margin: 0 !important;
+			padding:0 !important;
+		}
 
 
 }
@@ -18,11 +22,9 @@
 
   	.module-inner {
 		padding: 10px;
-		padding-top: 0;
-		
+		padding-top: 0;		
 		@media only screen and (min-width: $screen-sm) {
 			padding: 20px;
-
 		}
 	}
 
@@ -44,4 +46,30 @@
 
   		
   	}
+}
+.in01__v2 {
+	p{
+		color: $orange;
+		@media only screen and (max-width: $screen-sm) {
+			@include font-size(18px);
+		}
+	}
+	
+	
+	.two-dot-border{
+	    border: 4px solid #ffc02e;
+	    border-radius: 2px;
+	    height: 100%;
+	    padding : 30px;
+	}
+	.left-col{
+		p{
+			padding-right:30px!important;
+		}
+		@media only screen and (max-width: $screen-md) {
+			padding-bottom:40px!important;
+
+		}
+		
+	}
 }

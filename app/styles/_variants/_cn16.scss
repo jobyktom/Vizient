@@ -1,0 +1,17 @@
+// CN20
+
+.cn16 {
+	&.cn16__v1 {
+		img{
+			@media only screen and (min-width: $screen-sm) {
+				max-width: 108px;
+				max-height:108px;
+			}
+			@media only screen and (min-width: $screen-md) {
+				max-width: 186px;
+				max-height:186px;
+			}
+		}
+	}
+
+}
