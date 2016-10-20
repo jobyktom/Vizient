@@ -58,6 +58,7 @@ var Vizient = (function() {
 		_setupSectionNav();
 		_setupSectionSubNav();
 		_setupCarousels();
+		_setupSearchBar();
     
 		//_adIE8Class();
 		
@@ -339,6 +340,27 @@ var Vizient = (function() {
   var _setupAnimatedCharts = function _setupAnimatedCharts() {
     
   };
+
+	// The 'in page' section nav controller
+	var _setupSearchBar = function _setupSearchBar() {
+		$('#mobileMenu').find('.typeahead-input').attr('placeholder', 'Search for a solution');
+
+		$('.search').click(function(event) {
+			event.preventDefault();
+			
+			if ($(this).find('i').hasClass('icon-search')) {
+				$(this).find('i').removeClass('icon-search').addClass('icon-close');
+			} else {
+				$(this).find('i').addClass('icon-search').removeClass('icon-close');
+			}
+
+			$('.search-bar').toggleClass('is-active');
+		});
+
+		$('.typeahead-input').typeahead({
+				source: ['Suppliers', 'Suppliers search number one', 'Suppliers search number two', 'Suppliers search number three']
+    });
+	};
 
 	 
 

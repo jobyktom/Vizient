@@ -535,6 +535,15 @@
     height: 16px;
 }
 
+.icon-close-slate {
+    background: url(../images/icons/icon-close-slate.png);
+    background: none, url(../images/icons/svg/icon-close-slate.svg);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
 .icon-video-play {
     background: url(../images/icons/icon-video-play.png);
     background: none, url(../images/icons/svg/icon-video-play.svg);
@@ -784,6 +793,11 @@
 
 .arrow-white {
     background: none, url(../images/icons/svg/arrow-curved-white.svg);
+    background-repeat: no-repeat;
+}
+
+.arrow-slate {
+    background: none, url(../images/icons/svg/arrow-curved-slate.svg);
     background-repeat: no-repeat;
 }
 

@@ -29,12 +29,16 @@ body {
 	z-index: 998;
 	-webkit-transition: right .3s;
 	        transition: right .3s;
-    padding: 83px 25px 23px 25px;
+    padding: 60px 0 0;
     overflow-x: hidden;
     overflow-y: auto;
 
     &.is-open {
 		right: 20%;
+    }
+
+    nav {
+    	margin: 0 25px;
     }
 
     ul {

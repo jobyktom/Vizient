@@ -1,12 +1,13 @@
 <!-- Start Mobile Menu -->
 #mobileMenu.visible-xs-block.visible-sm-block
+	include _search-bar
 	nav
 		ul#mobile-nav.list-unstyled
-			li.search-panel
-				label Search
-				input(placeholder="Search")
-				button(class="btn", title="Search")
-					span(class="icon icon-search-white")
+			//- li.search-panel
+			//- 	label Search
+			//- 	input(type="text" placeholder="Search" data-provide="typeahead" autocomplete="off" data-source="Suppliers, Suppliers search number one, Suppliers search number two, Suppliers search number three")
+			//- 	button(class="btn", title="Search")
+			//- 		span(class="icon icon-search-white")
 			each item, x in header.menu2
 				li.primary
 					if item.subnav
