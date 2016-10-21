@@ -1,4 +1,4 @@
-.content-scrolled .search-bar {
+.content-scrolled .search-bar.is-active {
 	top: -196px;
 }
 
@@ -62,7 +62,7 @@
 	padding: 20px 40px;
 	position: fixed;
 	top: 120px;
-  transition: all .2s ease-out;
+	transition: all .2s ease-out;
 	width: 100%;
 	z-index: 0;
 
