@@ -30,6 +30,7 @@ html(lang="en")
         <![endif]-->
         .outer-wrapper
             include _header
+            include _search-bar
             include _subnav
             include _mobile-header
             block hero
@@ -40,6 +41,7 @@ html(lang="en")
         // bower:js
         script(src='../bower_components/jquery/dist/jquery.js')
         script(src='../bower_components/bootstrap-sass/assets/javascripts/bootstrap.js')
+        script(src='../bower_components/bootstrap-sass/assets/javascripts/bootstrap/typeahead.js')
         script(src='../bower_components/moment/moment.js')
         script(src='../bower_components/jquery.expander/jquery.expander.js')
         script(src='../bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.js')
