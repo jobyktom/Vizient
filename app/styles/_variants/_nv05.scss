@@ -68,6 +68,7 @@
 	// Select styles - this may be worth making global
 	select {
 		@extend .bold;
+		appearance: none;
 		background: url(../images/icons/icon-chevron-down.png);
     	background: none, url(../images/icons/svg/icon-chevron-down.svg);
     	background-color: $white;
