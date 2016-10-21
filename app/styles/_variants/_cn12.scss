@@ -1,7 +1,5 @@
 .cn12 {
   .row {
-    background-color: $orange-dark;
-    
     [class*="col-"] {
       border-bottom: 1px dotted $white;
 
@@ -27,10 +25,6 @@
     .module-inner {
       @extend .clearfix;
       height: 100%;
-    }
-
-    * {
-      color: $white;
     }
 
     .metadata-eyebrow {
