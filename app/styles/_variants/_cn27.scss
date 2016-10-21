@@ -25,9 +25,14 @@
 			[class*="row"],
 			[class*="e18"],
 			[class*="e18-light"]{
-				margin: 10 !important;
+				// margin: 10px !important;
 				padding:0 !important;
 				line-height: 1.44;
+			}
+			.e18{
+				@media only screen and (max-width: $screen-xs-max) {
+					margin-bottom:0px!important;
+				}
 			}
 			.e18,.e18-light{
 				margin-bottom:10px;
@@ -40,8 +45,8 @@
 				}
 			}
 			.dtd{
-				padding-left: 50px!important;
-				@media only screen and (max-width: $screen-sm) {
+				padding-left: 60px!important;
+				@media only screen and (max-width: $screen-xs-max) {
 					padding-left: 0px!important;
 				}
 			}			
@@ -56,7 +61,7 @@
 		}
 	&.cn27__v2{
 		.text-block{
-			margin-right: 80px!important;
+			// margin-right: 80px!important;
 		}
 		.image-block{
 			margin-top: 20px!important;
