@@ -179,7 +179,15 @@ h6{
 .e18-light {
 	font-family: $soleto-light;
 }
-
+.e24-light{
+	@include font-size(24px);
+	font-family: $soleto-light;
+}
+.e16{
+	@include font-size(16px);
+	font-family: $soleto-light;
+	line-height: 1.5;
+}
 .chart-medium {
 	.data-value {
 		@include font-size(48px);

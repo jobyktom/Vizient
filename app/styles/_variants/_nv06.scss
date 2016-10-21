@@ -1,0 +1,45 @@
+.nv06 {
+	[class*="col-"] {
+		margin: 0 !important;
+		padding:0 !important;
+	}
+	&.nv06__v1 {
+			
+		.search-results{
+			padding-bottom:20px;
+			span
+			{
+				letter-spacing: -0.5px;
+				@include font-size(28px);
+				line-height: 1.29em;
+				@media only screen and (max-width: $screen-sm-max) {
+					@include font-size(24px);
+					line-height: 1.33em;
+				}
+			}
+
+			.results-text{
+				font-weight: 300px!important;
+			}
+		}
+		.sort-section{
+			float:right;
+		}
+		.sort-by{
+			padding-top: 9px;
+			float:right!important;
+			.active{
+				font-weight: bolder!important;
+			}
+			.rel,
+			.date{
+				color: $orange;
+			}
+			@media only screen and (max-width: $screen-sm-max) {
+				padding-top: 5px;
+				float:right;
+			}
+		}
+	}
+
+}
