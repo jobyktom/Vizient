@@ -27,7 +27,7 @@
 	
 	// Needs checking and globalising
   	.arrow {
-		@media (max-width: $screen-md)  {
+		@media (max-width: $screen-md - 1)  {
 			top:-2px;
 			left: 25px;
 			z-index: 9999;
