@@ -8,7 +8,7 @@
     "moment": "~2.10.6",
     "jquery.expander": "*",
     "jquery.easy-pie-chart": "^2.1.6",
-    "bootstrap3-typeahead": "https://github.com/bassjobsen/Bootstrap-3-Typeahead.git#master"
+    "bootstrap3-typeahead": "https://github.com/bassjobsen/Bootstrap-3-Typeahead.git#master" 
   },
   "devDependencies": {},
   "overrides": {

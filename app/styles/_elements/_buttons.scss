@@ -35,6 +35,17 @@
 		}
 	}
 
+	&[type='reset'] {
+		background-color: $white;
+		border-color: $orange;
+		color: $orange  !important;
+
+		&:hover, &:active, &.active {
+			border-color: $orange-dark;
+			color: $orange-dark  !important;
+		}
+	}
+
 	&.alt {
 		background-color: $white;
 		color: $orange !important;

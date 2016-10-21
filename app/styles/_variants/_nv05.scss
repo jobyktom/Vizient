@@ -1,0 +1,92 @@
+// NV05
+
+.nv05 {
+	h3 {
+		font-size: 22px;
+		margin: 0;
+		min-height: 60px;
+		padding: 17px 25px;
+		position: relative;
+
+		@media (min-width: $screen-md) {
+			display: none;
+		}
+
+		&:after {
+			background: url(../images/icons/icon-chevron-down-white.png);
+    		background: none, url(../images/icons/svg/icon-chevron-down-white.svg);
+    		background-color: $orange;
+    		background-repeat: no-repeat;
+    		background-size: 20px 11px;
+			border-radius: 100%;
+			content: '';
+			cursor: pointer;
+			display: block;
+			height: 42px;
+			position: absolute;
+			right: 25px;
+			top: 10px;
+			width: 42px;
+
+		}
+	}
+
+	[class*="col-"] {
+		.module-inner{
+			padding: 20px 25px 0;
+		}
+	}
+
+	.row {
+		&:last-child {
+			.module-inner {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	legend {
+		font-size: 18px;
+		margin-bottom: 0;		
+	}
+
+	ul {
+		margin: 0 !important;
+		
+		li {
+			label {
+				font-family: 'Soleto Light';
+			}		
+			&:first-child {
+				label {
+					@extend .bold;
+				}
+			}
+		}
+	}
+
+	// Select styles - this may be worth making global
+	select {
+		@extend .bold;
+		background: url(../images/icons/icon-chevron-down.png);
+    	background: none, url(../images/icons/svg/icon-chevron-down.svg);
+    	background-color: $white;
+    	background-position: center right 10px;
+    	background-repeat: no-repeat;
+    	background-size: 12px 12px;
+		border-radius: 39px;
+		height: auto;
+		line-height: 1;
+		font-size: 16px;
+		margin: 10px 0;
+		padding: 7px 10px;
+	}
+
+	.btn {
+		width: 100%;
+
+		&:first-child {
+			margin-bottom: 10px;
+		}
+	}
+}
