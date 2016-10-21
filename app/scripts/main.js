@@ -66,6 +66,7 @@ var Vizient = (function() {
  
 		_toggleClearTextControl();
 		_clearText();
+		_toggleRegion();
 
 		// Responsive JavaScript Components
 		$(window).on('breakpoint-change', function(e, breakpoint) {
@@ -73,6 +74,8 @@ var Vizient = (function() {
 			_dashboardCarousel(breakpoint);
 
 			_dashboardTabs(breakpoint);
+
+			_filterPanels(breakpoint);
 
 		});
 
@@ -93,6 +96,41 @@ var Vizient = (function() {
  
 	};
 
+	var _toggleRegion = function _toggleRegion() {
+		$('.js-toggle-trigger').on('click',function() {
+			var $toggleTrigger = $(this),
+				$toggleRegion = $toggleTrigger.closest('.js-toggle-region'),
+				$toggleContent = $toggleRegion.find('.js-toggle-content');
+
+			$toggleRegion.toggleClass('.js-toggle-visible');
+			$toggleContent.toggleClass('hide');
+		});
+	};
+
+	// Responsive Filter Panel states
+	var _filterPanels = function _filterPanels(breakpoint) {
+
+		var $filterPanels = $('.js-filter-panels'),
+			$toggleContent = $filterPanels.find('.js-toggle-content');
+
+		// Check component exists
+		if ( $filterPanels.length ) {
+			
+			// Determine behaviour
+			if (breakpoint == 'bp-medium' || breakpoint == 'bp-large') {
+
+				$filterPanels.removeClass('js-toggle-visible')
+				$toggleContent.removeClass('hide');
+
+			} else {
+
+				$filterPanels.addClass('js-toggle-visible')
+				$toggleContent.addClass('hide');
+			}
+		}
+
+	};
+
 	var _toggleClearTextControl = function _toggleClearTextControl() {
 		$('.js-search-input').on('input',function() {
 			var $searchInput = $(this),
@@ -104,7 +142,7 @@ var Vizient = (function() {
 				$clearText.addClass('hide');
 			}
 		});
-	}
+	};
 
 	var _clearText = function _clearText() {
 		$('.js-clear-text').on('click', function() {

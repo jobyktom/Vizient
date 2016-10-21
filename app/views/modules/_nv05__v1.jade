@@ -1,71 +1,72 @@
 // START: NV05 v1
-form(class="module nv05 bg-mist-lightest")
-	h3 Filter case studies
-	.row.bg-mist
-		.col-xs-12.col-sm-6.col-md-12
-			.module-inner
-				fieldset
-					legend Filter by solution
-					ul.list-unstyled
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| All Solutions
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Supply chain
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Operations
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Consulting
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Pharmacy
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Clinical
+form(class="module nv05 bg-mist-lightest js-toggle-region js-filter-panels")
+	h3.js-toggle-trigger Filter case studies
+	.js-toggle-content.hide
+		.row.bg-mist
+			.col-xs-12.col-sm-6.col-md-12
+				.module-inner
+					fieldset
+						legend Filter by solution
+						ul.list-unstyled
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| All Solutions
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Supply chain
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Operations
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Consulting
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Pharmacy
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Clinical
 
-		.col-xs-12.col-sm-6.col-md-12
-			.module-inner
-				fieldset
-					legend Filter by role
-					ul.list-unstyled
-						li.checkbox
-							label
-								input(type="checkbox")
-								| Physician
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Nurse
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Supply chain leader
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Pharmacist
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Clinical leader
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Supply chain management
+			.col-xs-12.col-sm-6.col-md-12
+				.module-inner
+					fieldset
+						legend Filter by role
+						ul.list-unstyled
+							li.checkbox
+								label
+									input(type="checkbox")
+									| Physician
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Nurse
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Supply chain leader
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Pharmacist
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Clinical leader
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Supply chain management
 
-	.row.bg-mist
-		.col-xs-12.bg-mist
-			.module-inner
-				button(class="btn", type="reset") Clear filters
-				button(class="btn", type="submit") Apply filters
+		.row.bg-mist
+			.col-xs-12.bg-mist
+				.module-inner
+					button(class="btn", type="reset") Clear filters
+					button(class="btn", type="submit") Apply filters
 
 

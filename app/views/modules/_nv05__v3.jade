@@ -1,54 +1,55 @@
 // START: NV05 v3
-form(class="module nv05 bg-mist-lightest")
-	h3 Filter webinars &amp; events
-	.row.bg-mist
-		.col-xs-12.col-sm-6.col-md-12
-			.module-inner
-				fieldset
-					legend Filter by solution
-					ul.list-unstyled
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| All Solutions
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Supply chain
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Operations
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Consulting
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Pharmacy
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Clinical
+form(class="module nv05 bg-mist-lightest js-toggle-region")
+	h3.js-toggle-trigger Filter webinars &amp; events
+	.js-toggle-content.hide
+		.row.bg-mist
+			.col-xs-12.col-sm-6.col-md-12
+				.module-inner
+					fieldset
+						legend Filter by solution
+						ul.list-unstyled
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| All Solutions
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Supply chain
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Operations
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Consulting
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Pharmacy
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Clinical
 
-		.col-xs-12.col-sm-6.col-md-12
-			.module-inner
-				fieldset
-					legend Filter by type of event
-					select(class="form-control")
-						option(value="") All events &amp; webinars
+			.col-xs-12.col-sm-6.col-md-12
+				.module-inner
+					fieldset
+						legend Filter by type of event
+						select(class="form-control")
+							option(value="") All events &amp; webinars
 
-				fieldset
-					legend Filter by month and year
-					select(class="form-control")
-						option(value="") Select month
+					fieldset
+						legend Filter by month and year
+						select(class="form-control")
+							option(value="") Select month
 
-					select(class="form-control")
-						option(value="") Select year
+						select(class="form-control")
+							option(value="") Select year
 
-	.row.bg-mist
-		.col-xs-12
-			.module-inner
-				button(class="btn", type="button") Clear filters
-				button(class="btn", type="submit") Apply filters
+		.row.bg-mist
+			.col-xs-12
+				.module-inner
+					button(class="btn", type="button") Clear filters
+					button(class="btn", type="submit") Apply filters
