@@ -67,6 +67,7 @@ var Vizient = (function() {
 		_toggleClearTextControl();
 		_clearText();
 		_toggleRegion();
+		_checkAllCheckboxes();
 
 		// Responsive JavaScript Components
 		$(window).on('breakpoint-change', function(e, breakpoint) {
@@ -129,6 +130,15 @@ var Vizient = (function() {
 			}
 		}
 
+	};
+
+	var _checkAllCheckboxes = function _checkAllCheckboxes() {
+		$('.js-check-all').on('click', function() {
+			var $checkboxGroup = $(this).parents('.js-checkbox-group'),
+				$checkBoxes = $checkboxGroup.find('input:checkbox');
+
+			$checkBoxes.prop('checked', !$checkBoxes.prop('checked'));
+		});
 	};
 
 	var _toggleClearTextControl = function _toggleClearTextControl() {

@@ -64,9 +64,7 @@
 		li {
 			label {
 				font-family: 'Soleto Light';
-			}		
-			&:first-child {
-				label {
+				&.bold {
 					@extend .bold;
 				}
 			}
