@@ -93,9 +93,25 @@
 
 	.btn {
 		width: 100%;
-
+		
 		&:first-child {
 			margin-bottom: 10px;
+		}
+
+		@media (min-width: $screen-sm) {
+			width: auto;
+
+			&:first-child {
+				margin-bottom: 0;
+			}
+		}
+
+		@media (min-width: $screen-md) {
+			width: 100%;
+
+			&:first-child {
+				margin-bottom: 10px;
+			}
 		}
 	}
 }
