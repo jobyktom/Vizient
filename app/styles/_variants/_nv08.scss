@@ -1,10 +1,7 @@
 // NV08
 
 .nv08 {
-	border-top: 8px solid $mist;
-	border-left: 1px solid $mist;
-	border-right: 1px solid $mist;
-	border-bottom: 1px solid $mist;
+	
 
 	.metadata-byline {
 		padding-top: 15px;
@@ -44,5 +41,12 @@
 				}
 			}
 		}
+	}
+
+	.nv08__v1 {
+		border-top: 8px solid $mist;
+		border-left: 1px solid $mist;
+		border-right: 1px solid $mist;
+		border-bottom: 1px solid $mist;
 	}
 }
