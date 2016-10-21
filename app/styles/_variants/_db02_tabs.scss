@@ -83,6 +83,10 @@
 		
 		article {
 			@media (min-width: $screen-md) {
+				border-bottom: 1px dotted $grey;
+			}
+
+			@media (min-width: $screen-md) {
 				display: table;
 
 				&:after,
