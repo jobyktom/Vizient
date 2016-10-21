@@ -120,6 +120,7 @@
 		}
 
 		&:focus, &:invalid {
+			box-shadow: none;
 			outline: none;
 		}
 
