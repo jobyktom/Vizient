@@ -102,7 +102,7 @@ var Vizient = (function() {
 				$toggleRegion = $toggleTrigger.closest('.js-toggle-region'),
 				$toggleContent = $toggleRegion.find('.js-toggle-content');
 
-			$toggleRegion.toggleClass('.js-toggle-visible');
+			$toggleRegion.toggleClass('js-toggle-visible');
 			$toggleContent.toggleClass('hide');
 		});
 	};
@@ -119,12 +119,12 @@ var Vizient = (function() {
 			// Determine behaviour
 			if (breakpoint == 'bp-medium' || breakpoint == 'bp-large') {
 
-				$filterPanels.removeClass('js-toggle-visible')
+				$filterPanels.addClass('js-toggle-visible')
 				$toggleContent.removeClass('hide');
 
 			} else {
 
-				$filterPanels.addClass('js-toggle-visible')
+				$filterPanels.removeClass('js-toggle-visible')
 				$toggleContent.addClass('hide');
 			}
 		}

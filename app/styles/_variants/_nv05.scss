@@ -31,6 +31,14 @@
 		}
 	}
 
+	&.js-toggle-visible {
+		h3 {
+			&:after {
+				transform: rotate(180deg);
+			}
+		}
+	}
+
 	[class*="col-"] {
 		.module-inner{
 			padding: 20px 25px 0;
