@@ -747,6 +747,11 @@
     background-repeat: no-repeat;
 }
 
+.arrow-mist-lightest {
+    background: none, url(../images/icons/svg/arrow-curved-mist-lightest.svg);
+    background-repeat: no-repeat;
+}
+
 .arrow-peach-light {
     background: none, url(../images/icons/svg/arrow-curved-peach-light.svg);
     background-repeat: no-repeat;
@@ -771,11 +776,19 @@
 }
 
 .arrow-white {
+    background: url(../images/icons/arrow-curved-white.png);
     background: none, url(../images/icons/svg/arrow-curved-white.svg);
     background-repeat: no-repeat;
 }
 
+.arrow-green {
+    background: url(../images/icons/arrow-curved-green.png);
+    background: none, url(../images/icons/svg/arrow-curved-green.svg);
+    background-repeat: no-repeat;
+}
+
 .arrow-slate {
+    background: url(../images/icons/arrow-curved-slate.png);
     background: none, url(../images/icons/svg/arrow-curved-slate.svg);
     background-repeat: no-repeat;
 }

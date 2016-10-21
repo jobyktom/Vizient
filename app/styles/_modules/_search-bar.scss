@@ -20,6 +20,16 @@
 		padding: 7px 15px;
 	}
 
+	form:valid:after {
+		background-color: $slate;
+		bottom: 0;
+		content: '';
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
 	.search-bar-close {
 		right: 33px;
 	}
