@@ -2,6 +2,8 @@
 
 .nv09 {
 	&.module {
+		z-index: 1;
+		
 		[class*="col-"] {
 			margin-top: 0;
 		}
