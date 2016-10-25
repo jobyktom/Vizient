@@ -40,7 +40,9 @@
 			*,
 			a:link,
 			.metadata-byline,
-			.metadata-eyebrow {
+			.metadata-eyebrow,
+			.pull-quote__text,
+			.author-block .author-desc span {
 				color: $white;
 			}
 	    }

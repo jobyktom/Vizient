@@ -66,6 +66,9 @@ var Vizient = (function() {
  
 		_toggleClearTextControl();
 		_clearText();
+		_toggleRegion();
+		_checkAllCheckboxes();
+		_contentLoader();
 
 		// Responsive JavaScript Components
 		$(window).on('breakpoint-change', function(e, breakpoint) {
@@ -73,6 +76,8 @@ var Vizient = (function() {
 			_dashboardCarousel(breakpoint);
 
 			_dashboardTabs(breakpoint);
+
+			_filterPanels(breakpoint);
 
 		});
 
@@ -93,6 +98,80 @@ var Vizient = (function() {
  
 	};
 
+	// Load More buttons 
+	var _contentLoader = function _contentLoader() {
+
+		// Check component exists
+		if ( $('.js-content-loader').length ) {
+
+			$('.js-content-loader-trigger').on('click', function(e) {
+				e.preventDefault();
+				
+				// Get components and ensure we use ones
+				// associated with this instance based on id and button href
+				// pairing
+				var $contentLoaderTrigger = $(this),
+					id = $contentLoaderTrigger.attr('href'),
+					$contentRegion = $(id),
+					$hiddenContent = $contentRegion.find('.module:hidden');
+
+				// Fade in new row and update the list of hidden rows
+				$hiddenContent.first().fadeIn();
+				$hiddenContent = $contentRegion.find('.module:hidden');
+
+				// Once no more hidden rows remove button
+				if (!$hiddenContent.length) {
+					$contentLoaderTrigger.hide();
+				}
+			});
+		}
+	};
+
+	// Show / Hide toggle 
+	var _toggleRegion = function _toggleRegion() {
+		$('.js-toggle-trigger').on('click',function() {
+			var $toggleTrigger = $(this),
+				$toggleRegion = $toggleTrigger.closest('.js-toggle-region'),
+				$toggleContent = $toggleRegion.find('.js-toggle-content');
+
+			$toggleRegion.toggleClass('js-toggle-visible');
+			$toggleContent.toggleClass('hide');
+		});
+	};
+
+	// Responsive Filter Panel states
+	var _filterPanels = function _filterPanels(breakpoint) {
+
+		var $filterPanels = $('.js-filter-panels'),
+			$toggleContent = $filterPanels.find('.js-toggle-content');
+
+		// Check component exists
+		if ( $filterPanels.length ) {
+			
+			// Determine behaviour
+			if (breakpoint == 'bp-medium' || breakpoint == 'bp-large') {
+
+				$filterPanels.addClass('js-toggle-visible')
+				$toggleContent.removeClass('hide');
+
+			} else {
+
+				$filterPanels.removeClass('js-toggle-visible')
+				$toggleContent.addClass('hide');
+			}
+		}
+
+	};
+
+	var _checkAllCheckboxes = function _checkAllCheckboxes() {
+		$('.js-check-all').on('click', function() {
+			var $checkboxGroup = $(this).parents('.js-checkbox-group'),
+				$checkBoxes = $checkboxGroup.find('input:checkbox');
+
+			$checkBoxes.prop('checked', !$checkBoxes.prop('checked'));
+		});
+	};
+
 	var _toggleClearTextControl = function _toggleClearTextControl() {
 		$('.js-search-input').on('input',function() {
 			var $searchInput = $(this),
@@ -104,7 +183,7 @@ var Vizient = (function() {
 				$clearText.addClass('hide');
 			}
 		});
-	}
+	};
 
 	var _clearText = function _clearText() {
 		$('.js-clear-text').on('click', function() {
@@ -518,19 +597,6 @@ $(document).ready(function() {
 		}
 
 	});
-
-	//- Hide all rows except first and last for cta
- 
-	$('.cn03__v7 .row').slice(1, -1).hide();
-
-	//- Load More trigger - then hide when clicked
-	$("#cn03__v7__cta").click(function(e) {
-		e.preventDefault();
-		$('.cn03__v7 .row').slice(1, -1).show();
-		$(this).hide();
-	});
-
-
 
 	$(".toggle-ab").click(function(e) {
 		e.preventDefault();

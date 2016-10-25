@@ -16,6 +16,7 @@
 			background: url(../images/icons/icon-chevron-down-white.png);
     		background: none, url(../images/icons/svg/icon-chevron-down-white.svg);
     		background-color: $orange;
+    		background-position: center center;
     		background-repeat: no-repeat;
     		background-size: 20px 11px;
 			border-radius: 100%;
@@ -27,7 +28,14 @@
 			right: 25px;
 			top: 10px;
 			width: 42px;
+		}
+	}
 
+	&.js-toggle-visible {
+		h3 {
+			&:after {
+				transform: rotate(180deg);
+			}
 		}
 	}
 
@@ -56,9 +64,7 @@
 		li {
 			label {
 				font-family: 'Soleto Light';
-			}		
-			&:first-child {
-				label {
+				&.bold {
 					@extend .bold;
 				}
 			}
@@ -68,25 +74,42 @@
 	// Select styles - this may be worth making global
 	select {
 		@extend .bold;
+		appearance: none;
 		background: url(../images/icons/icon-chevron-down.png);
     	background: none, url(../images/icons/svg/icon-chevron-down.svg);
     	background-color: $white;
-    	background-position: center right 10px;
+    	background-position: center right 15px;
     	background-repeat: no-repeat;
-    	background-size: 12px 12px;
-		border-radius: 39px;
-		height: auto;
-		line-height: 1;
+    	background-size: 14px auto;
+		border-radius: 44px;
+		height: 44px;
+		line-height: 44px;
 		font-size: 16px;
 		margin: 10px 0;
-		padding: 7px 10px;
+		padding: 0 15px;
 	}
 
 	.btn {
 		width: 100%;
-
+		
 		&:first-child {
 			margin-bottom: 10px;
+		}
+
+		@media (min-width: $screen-sm) {
+			width: auto;
+
+			&:first-child {
+				margin-bottom: 0;
+			}
+		}
+
+		@media (min-width: $screen-md) {
+			width: 100%;
+
+			&:first-child {
+				margin-bottom: 10px;
+			}
 		}
 	}
 }

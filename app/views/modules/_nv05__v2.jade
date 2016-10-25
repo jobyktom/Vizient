@@ -1,39 +1,40 @@
 // START: NV05 v2
-form(class="module nv05 bg-mist-lightest")
-	h3 Filter search results
-	.row.bg-mist
-		.col-xs-12.col-sm-6.col-md-12
-			.module-inner
-				fieldset
-					legend Filter by category
-					ul.list-unstyled
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| All
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Solutions <span>(28)</span>
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| News <span>(190)</span>
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Events &amp; Webinars <span>(155)</span>
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Case Studies <span>(250)</span>
-						li.checkbox
-							label 
-								input(type="checkbox")
-								| Insight <span>(58)</span>
+form(class="module nv05 bg-mist-lightest js-toggle-region js-filter-panels")
+	h3.js-toggle-trigger Filter search results
+	.js-toggle-content.hide
+		.row.bg-mist
+			.col-xs-12.col-sm-6.col-md-12
+				.module-inner
+					fieldset.js-checkbox-group
+						legend Filter by category
+						ul.list-unstyled
+							li.checkbox
+								label(class="bold js-check-all") 
+									input(type="checkbox")
+									| All
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Solutions <span>(28)</span>
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| News <span>(190)</span>
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Events &amp; Webinars <span>(155)</span>
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Case Studies <span>(250)</span>
+							li.checkbox
+								label 
+									input(type="checkbox")
+									| Insight <span>(58)</span>
 
-	.row.bg-mist
-		.col-xs-12
-			.module-inner
-				button(class="btn", type="reset") Clear filters
-				button(class="btn", type="submit") Apply filters
+		.row.bg-mist
+			.col-xs-12.text-right
+				.module-inner
+					button(class="btn", type="reset") Clear filters
+					button(class="btn hidden-lg", type="submit") Apply filters
