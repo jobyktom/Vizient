@@ -547,8 +547,19 @@ $(document).ready(function() {
 		lessClass: 'btn-reduce',
 		expandEffect: 'fadeIn'
 	});
+	//accordion - start
+	function toggleChevron(e) {
+	    $(e.target)
+	        .prev('.panel-heading')
+	        .find("i.indicator")
+	        .toggleClass('glyphicon-chevron-up glyphicon-chevron-down');
+	}
 
-	//accordion
+	$('#accordion').on('hidden.bs.collapse', toggleChevron);
+	$('#accordion').on('shown.bs.collapse', toggleChevron);
+	//accordion - end 
+
+	//accordion -old start
 	$(".accordion-control").click(function(event) {
 		event.preventDefault();
 		$(this).children('.icon').toggleClass('icon-chevron-up');
