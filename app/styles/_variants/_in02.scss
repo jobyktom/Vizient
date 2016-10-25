@@ -6,120 +6,216 @@
 
 }
 .in02__v1 {
-	.result-row{
-		padding-top:33px;
-		@media only screen and ( min-width: $screen-sm) {
-			margin-top: 33px;
-		}
+	ul {
+		margin: 0;
+		@include clearfix;
 	}
-	.icon-people{
-		background: none, url(../images/icons/svg/people.svg);
-	}
+	li {
+		@include font-size(14px);
+		position: relative;
 
-	.icon-manage{
-		background: none, url(../images/icons/svg/manage.svg);
-	}
-
-	.active {
-		a {
-			position: relative;
-		}
-
-		span.icon.icon-oval-large {
-			background-color: $orange-dark;
-			color: $white;
-		}
-		
-		span.triangle{
-		    background: url(../images/icons/svg/triangle-orange-down.svg);
-		    background-repeat: no-repeat;
-		    width: 25px;
-		    height: 10px;
-		    position: absolute;
-		    display: inline-block;
-		    top: 110px;
-		    left: -160px;
-		    @media only screen and ( min-width: $screen-sm) {
-
-		    }
-	    	@media only screen and ( min-width: $screen-md) {
-		    	top: 110px;
-		    	left: -181px;
-	    	}
-	    	@media only screen and ( min-width: $screen-lg) {
-	    		top: 132px;
-	    		left: -198px;
-		    }
-		    
-		}
-	}
-	.triangle{
-		display: none;
-	}
-	
-	.icon-oval-large{
-		width: 100%;
-		height: 66px;
-		padding:15px 48px 15px 28px;
-		border-radius: 100px;
-		background-color: $white;
-		border: solid 2px $orange-dark;
-		line-height: 1.29;
-		letter-spacing: -0.2px;
-		font-size: $font-size-small;
-		background: none;
-
-		@media only screen and ( min-width: $screen-sm) {
-			border-radius:30px;
-			width: 30%;
-			display: inline-block;
+		@media only screen and (min-width: $screen-sm) {
 			float: left;
-			height: 100px;
-			padding: 23px 20px;
-			margin : 10px;
-		}
-		@media only screen and ( min-width: $screen-md) {
-			padding: 15px 27px 14px 109px;
-			background: none, url(../images/icons/svg/icon-chart.svg);
-			background-repeat: no-repeat;
-			background-size:60px 60px;
-			background-position: 30px center;
-			height: 100px;
-			font-size: 14px;
-		}
-		@media only screen and ( min-width: $screen-lg) {
-			padding: 27px 31px 26px 119px;
-			font-size: 16px;
-			height: 125px
-		}
-	}
-
-	.icon-people{
-		@media only screen and ( min-width: $screen-md) {
-			background: none, url(../images/icons/svg/people.svg);
-			background-repeat: no-repeat;
-			background-size:60px 60px;
-			background-position: 30px center;
-		}
-	}
-	.icon-chart{
-		@media only screen and ( min-width: $screen-md) {
-			background: none, url(../images/icons/svg/icon-chart.svg);	
-			background-repeat: no-repeat;
-			background-size:60px 60px;
-			background-position: 30px center;
+			width: percentage(1/3);
 		}
 
-	}
-	.icon-manage{
-		@media only screen and ( min-width: $screen-md) {
-			background: none, url(../images/icons/svg/manage.svg);
-			background-repeat: no-repeat;
-			background-size:60px 60px;
-			background-position: 30px center;
+		@media only screen and (min-width: $screen-md) {
+			@include font-size(16px);
 		}
 
+		&.active {
+			@media only screen and (min-width: $screen-sm) {
+				.arrow {
+					bottom: -19px;
+					display: block;
+					left: 50%;
+					position: absolute;
+					transform: translateX(-50%);
+				}
+			}
+
+			a {
+				border-color: $orange-dark;
+				background-color: $orange-dark;
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+
+		.arrow {
+			display: none;
+		}
+
+		a {
+			border: 2px solid $orange;
+			border-radius: 30px;
+			display: block;
+			padding: 10px 20px;
+			position: relative;
+
+			@media only screen and (min-width: $screen-sm) {
+				display: table;
+				height: 100px;
+				margin: 0 4px;
+				padding: 0 20px;
+			}
+
+			@media only screen and (min-width: $screen-md) {
+				height: 125px;
+				padding: 0 30px 0 120px;
+			}
+
+			&:hover {
+				border-color: $orange-dark;
+				background-color: $orange-dark;
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+
+		span {
+			display: table-cell;
+			vertical-align: middle;
+
+			&.icon {
+				display: none;
+				height: 60px;
+				left: 30px;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 60px;
+
+				@media only screen and (min-width: $screen-md) {
+					display: block;
+				}
+			}
+		}
+
+		img {
+			left: 50%;
+			margin: 0 auto;
+			max-height: 60px;
+			max-width: 60px;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
 	}
+	// .result-row{
+	// 	padding-top:33px;
+	// 	@media only screen and ( min-width: $screen-sm) {
+	// 		margin-top: 33px;
+	// 	}
+	// }
+	// .icon-people{
+	// 	background: none, url(../images/icons/svg/people.svg);
+	// }
+
+	// .icon-manage{
+	// 	background: none, url(../images/icons/svg/manage.svg);
+	// }
+
+	// .active {
+	// 	a {
+	// 		position: relative;
+	// 	}
+
+	// 	span.icon.icon-oval-large {
+	// 		background-color: $orange-dark;
+	// 		color: $white;
+	// 	}
+		
+	// 	span.triangle{
+	// 	    background: url(../images/icons/svg/triangle-orange-down.svg);
+	// 	    background-repeat: no-repeat;
+	// 	    width: 25px;
+	// 	    height: 10px;
+	// 	    position: absolute;
+	// 	    display: inline-block;
+	// 	    top: 110px;
+	// 	    left: -160px;
+	// 	    @media only screen and ( min-width: $screen-sm) {
+
+	// 	    }
+	//     	@media only screen and ( min-width: $screen-md) {
+	// 	    	top: 110px;
+	// 	    	left: -181px;
+	//     	}
+	//     	@media only screen and ( min-width: $screen-lg) {
+	//     		top: 132px;
+	//     		left: -198px;
+	// 	    }
+		    
+	// 	}
+	// }
+	// .triangle{
+	// 	display: none;
+	// }
+	
+	// .icon-oval-large{
+	// 	width: 100%;
+	// 	height: 66px;
+	// 	padding:15px 48px 15px 28px;
+	// 	border-radius: 100px;
+	// 	background-color: $white;
+	// 	border: solid 2px $orange-dark;
+	// 	line-height: 1.29;
+	// 	letter-spacing: -0.2px;
+	// 	font-size: $font-size-small;
+	// 	background: none;
+
+	// 	@media only screen and ( min-width: $screen-sm) {
+	// 		border-radius:30px;
+	// 		width: 30%;
+	// 		display: inline-block;
+	// 		float: left;
+	// 		height: 100px;
+	// 		padding: 23px 20px;
+	// 		margin : 10px;
+	// 	}
+	// 	@media only screen and ( min-width: $screen-md) {
+	// 		padding: 15px 27px 14px 109px;
+	// 		background: none, url(../images/icons/svg/icon-chart.svg);
+	// 		background-repeat: no-repeat;
+	// 		background-size:60px 60px;
+	// 		background-position: 30px center;
+	// 		height: 100px;
+	// 		font-size: 14px;
+	// 	}
+	// 	@media only screen and ( min-width: $screen-lg) {
+	// 		padding: 27px 31px 26px 119px;
+	// 		font-size: 16px;
+	// 		height: 125px
+	// 	}
+	// }
+
+	// .icon-people{
+	// 	@media only screen and ( min-width: $screen-md) {
+	// 		background: none, url(../images/icons/svg/people.svg);
+	// 		background-repeat: no-repeat;
+	// 		background-size:60px 60px;
+	// 		background-position: 30px center;
+	// 	}
+	// }
+	// .icon-chart{
+	// 	@media only screen and ( min-width: $screen-md) {
+	// 		background: none, url(../images/icons/svg/icon-chart.svg);	
+	// 		background-repeat: no-repeat;
+	// 		background-size:60px 60px;
+	// 		background-position: 30px center;
+	// 	}
+
+	// }
+	// .icon-manage{
+	// 	@media only screen and ( min-width: $screen-md) {
+	// 		background: none, url(../images/icons/svg/manage.svg);
+	// 		background-repeat: no-repeat;
+	// 		background-size:60px 60px;
+	// 		background-position: 30px center;
+	// 	}
+
+	// }
 	
 }
 .result-row{
