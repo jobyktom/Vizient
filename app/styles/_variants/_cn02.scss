@@ -24,23 +24,6 @@
 		min-height: 275px;
 		height: 100%;
 	}
-	
-	// Needs checking and globalising
-  	.arrow-left {
-		@media (max-width: $screen-md - 1)  {
-			top:-17px;
-			left: 25px;
-			transform: rotate(180deg);
-		}
-	}
-
-  	.arrow-right {
-		@media (max-width: $screen-md - 1)  {
-			top:-2px;
-			left: 25px;
-			transform: rotate(0deg);
-		}
-	}
 }
 
 .cn02__v2 {

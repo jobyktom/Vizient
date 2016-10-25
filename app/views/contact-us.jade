@@ -1,0 +1,124 @@
+extends layouts/_default
+
+block content
+	main(class="body-content")
+		// START: CN11 v11
+		section(class="module module-bleed module-stretch cn11 cn11__v10 bg-turquoise-dark banner")
+			.container
+				.row
+					.col-xs-12.col-sm-10.col-md-9.col-lg-7
+						.module-inner
+							h1 Contact Us
+
+						.arrow.arrow-down.arrow-turquoise-dark
+
+		// START CN08 v3 
+		section(class="module module-bleed cn8 cn8__v3")
+			.container.no-border-top
+				.row.row-eq-height-sm
+					.col-xs-12.col-sm-6.eq-height
+						.module-inner
+							p.metadata-eyebrow Contact Vizient Support Centre
+
+					.col-xs-12.col-sm-6.eq-height
+						.module-inner
+							p.metadata-eyebrow MedAssets Customer Support Center
+
+				.row.row-eq-height-sm
+					.col-xs-12.col-sm-6.eq-height.no-border-bottom
+						.module-inner
+							h4 Connect with us
+
+							form(action="", method="")
+								.form-group
+									label(for="contact-form-name", class="grey-dark") Name
+										span(class="required") *
+									input(id="contact-form-name", class="form-control", type="text", placeholder="Name", required)
+								.form-group
+									label(for="contact-form-title", class="grey-dark") Title
+										span(class="required") *
+									input(id="contact-form-title", class="form-control", type="text", placeholder="Title", required)
+								.form-group
+									label(for="contact-form-organisation-name", class="grey-dark") Organisation
+										span(class="required") *
+									input(id="contact-form-organisation-name", class="form-control", type="text", placeholder="Organisation name", required)
+								.form-group
+									label(for="contact-form-phone", class="grey-dark") Phone
+										span(class="required") *
+									input(id="contact-form-phone", class="form-control", type="tel", placeholder="Phone number", required)
+								.form-group
+									label(for="contact-form-email", class="grey-dark") Email
+										span(class="required") *
+									input(id="contact-form-email", class="form-control", type="email", placeholder="Email address", required)
+								.form-group
+									label(for="contact-form-topic", class="grey-dark") Topic
+										span(class="required") *
+									input(id="contact-form-topic", class="form-control", type="text", placeholder="Topic", required)
+								.form-group
+									label(for="contact-form-topic", class="grey-dark") Message
+										span(class="required") *
+									textarea(class="form-control", rows="16", placeholder="Message here")
+								button(class="btn", type="submit") Submit
+
+					.col-xs-12.col-sm-6.eq-height.no-border-bottom
+						.module-inner
+							h4 Corporate headquarters
+
+		section(class="module module-bleed cn06 cn06__v1")
+			.container
+				.row.row-eq-height-md
+					.col-sm-12.col-md-6.eq-height.left-col.bg-mist-lightest
+						.module-inner
+							h3 Report non-compliance
+							p To report non-compliance with the law and Vizient's corporate policies, contact Vizient's Compliance Officer. For anonymous reporting, call our compliance line at (800) 750-4972
+							p For general and human resource-related questions, contact (972) 830-0000
+					.col-sm-12.col-md-6.eq-height.col.right-col.bg-mist-light
+						.module-inner
+							h3 For our affiliated companies, please refer to these contact numbers:
+							ul.list-unstyled
+								li Apexus: (888) 340-2787
+								li aptitude: (866) 842-8811
+								li Provista: (888) 538-4662
+
+							a(href="#", title="", class="orange") Questions about connecting with the Media team? 
+
+		section(class="module module-bleed cn06 cn06__v1")
+			.container
+				.row.row-eq-height-md
+					.col-xs-12.col-md-6.eq-height.left-col.bg-purple
+						.module-inner
+							h3 Media enquiries
+
+							p Vizient serves thousands of health care organizations across the nation with a broad portfolio of solutions, and a robust network of health care experts driving innovation in our industry. Visit our newsroom to stay connected with Vizient through media coverage of our company and key industry topics.
+							
+							a(href="#", title="") vizientsupport@vizientinc.com
+								span.icon.icon-arrow-right-white.ml-10
+
+							br
+							br
+
+							p Please send all media and events questions to our public relations team:
+
+							ul.list-unstyled
+								li Angie Boliver (972) 830-7961 
+								li Donna Ledbetter (972) 830-6321
+
+						.arrow.arrow-right.arrow-purple
+
+					.col-xs-12.col-md-6.eq-height.col.right-col.bg-mist-lightest
+						.module-inner
+							article
+								h3 Media kit downloads
+
+								ul(class="list-unstyled")
+									li
+										a(href="#", title="", class="orange") FAQs
+											span.icon.icon-download.ml-10
+									li
+										a(href="#", title="", class="orange") Logos
+											span.icon.icon-download.ml-10
+									li
+										a(href="#", title="", class="orange") Visit Newsroom
+											span.icon.icon-external.ml-10
+
+		include modules/_in01__v1

@@ -1,40 +1,151 @@
-.arrow-right {
-  transform: rotate(0deg);   
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -25px;
-  z-index: 1;
+// Curved Arrows
+// Used on:
+// [X] - CN02 v1 v2 v3 								(outside element...moved inside now)
+// [X] - CN03 v6 v7 (check others in Zeplin though)	(inside element)
+// [X] - CN06 v1									(inside element - example used on 'contact-us.jade')
+// [X] - CN11 v2 v3 v4 v5 v6 v7 v9 v10 v11			(inside element - down arrows)
+// [X] - CN17 v1 v2 v4								(inside element)
+// [X] - CN21 v1 v2									(inside element - down arrows)
+// [X] - CN22 v2 v3									(outside element)
+//
+// TODO:
+// [X] - Remove component selectors to make this available to all components.
+// [ ] - Check all responsive breakpoints against Zeplin designs
+// [ ] - Can we use wildcard col class selector to determine breakpoint arrows need to transform at contextually?
+// [ ] - Look at sizing and positioning code streamlining
+// [ ] - Check all page templates arrows to ensure no inline HTML ones out of date.
+// [ ] - Check we have SVG and PNG for all of the arrows
+// [ ] - Check IE9 and PNG fallback working
+// [ ] - Before commiting list adjusted JADE templates for codedrop.
 
-  @media only screen and (min-width: $screen-sm) {
-    position: absolute;
-    left: -17px;
-    transform: translateY(-50%) rotate(270deg);
-  }
-}
-
-.arrow-left {
-  display: none;
-  left: -42px;
-  position: absolute;
-  top: 50%;
-  transform: rotate(90deg) translateY(-50%);
-  z-index: 1;
-
-  @media only screen and (min-width: $screen-sm) {
-    display: block;
-  }
-}
-
-
-.arrow-down {
-	 
-	transform: rotate(180deg);	 
+.arrow {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 22px;
 	position: absolute;
-	top: -46px;
-	left: 0px; 
-  z-index: 1;
+	width: 50px;
+	z-index: 1;
 
+	@media (min-width: $screen-md) {
+		height: 32px;
+		width: 75px;
+	}
+	
+	// Points Down
+	// Positioned on bottom left of row at all breakpoints.
+	
+	&.arrow-down { 
+		bottom: -20px;
+		left: 20px;
+	}
+	
+	// Points down.
+	// Positioned on bottom left of row until small breakpoint, then centered on bottom of row.
+
+	&.arrow-down-center {
+		bottom: -20px;
+		left: 20px;
+
+		@media (min-width: $screen-sm) {
+			left: 50%;
+			transform: (translateX(-50%));
+		}
+	}
+
+	// Points left
+	// Positioned on center right of parent block at medium up, otherwise on bottom left
+	// pointing down.
+
+	&.arrow-left {
+		bottom: -20px;
+		left: 20px;
+		
+		@media (min-width: $screen-md) {
+			bottom: 47%;
+			left: -50px;
+			right: auto;
+			transform: rotate(90deg); 
+		}
+	}
+
+	// Points right
+	// Positioned on center left of parent block, otherwise on bottom left
+	// pointing down.
+
+	&.arrow-right {
+		bottom: -20px;
+		left: 20px;
+
+		@media (min-width: $screen-md) {
+			bottom: 47%;
+			left: auto;
+			right: -50px;
+			transform: rotate(270deg); 
+		}
+	}
+	
+	// Add to arrows that need to point upwards in single column layouts
+	// The default is downwards so this overrides that. Usually added to .arrow-left
+	// and .arrow-right
+
+	&.arrow-small-up {
+		@media (max-width: $screen-sm) {
+			bottom: 0;
+			top: -20px;
+			transform: rotate(180deg); 
+		}
+	}
 }
 
- 
+// Arrows graphics
+// Check these don't override background size
+
+.arrow-mist {
+    background-image: url(../images/icons/svg/arrow-curved.svg);
+}
+
+.arrow-curved-white {
+    background-image: url(../images/icons/svg/arrow-curved-white.svg);
+}
+
+.arrow-mist-light {
+    background-image: url(../images/icons/svg/arrow-curved-mist-light.svg);
+}
+
+.arrow-mist-lightest {
+    background-image: url(../images/icons/svg/arrow-curved-mist-lightest.svg);
+}
+
+.arrow-peach-light {
+    background-image: url(../images/icons/svg/arrow-curved-peach-light.svg);
+}
+
+.arrow-purple {
+    background-image: url(../images/icons/arrow-curved-purple.png);
+    background-image: url(../images/icons/svg/arrow-curved-purple.svg);
+}
+
+.arrow-yellow {
+    background-image: url(../images/icons/arrow-curved-yellow.png);
+    background-image: url(../images/icons/svg/arrow-curved-yellow.svg);
+}
+
+.arrow-turquoise-dark {
+    background-image: url(../images/icons/arrow-curved-turquoise-dark.png);
+    background-image: url(../images/icons/svg/arrow-curved-turquoise-dark.svg);
+}
+
+.arrow-white {
+    background-image: url(../images/icons/arrow-curved-white.png);
+    background-image: url(../images/icons/svg/arrow-curved-white.svg);
+}
+
+.arrow-green {
+    background-image: url(../images/icons/arrow-curved-green.png);
+    background-image: url(../images/icons/svg/arrow-curved-green.svg);
+}
+
+.arrow-slate {
+    background-image: url(../images/icons/arrow-curved-slate.png);
+    background-image: url(../images/icons/svg/arrow-curved-slate.svg);
+}
