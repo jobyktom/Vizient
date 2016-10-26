@@ -1,0 +1,281 @@
+extends layouts/_default-logged-in
+
+block content
+	main(class="body-content showSubNav")
+		section(class="module module-bleed module-stretch cn11 cn11__v7 bg-turquoise-dark banner")
+			.container
+				.row
+					.col-xs-12
+						.arrow.arrow-turquoise-dark
+						.module-inner
+							h1 News and Insight
+		form(class="module module-stretch nv09 nv09__smaller bg-turquoise-darkest")
+			.container
+				.row
+					.col-xs-12
+						.search-control.js-search-control
+							label(class="sr-only", for="in-page-search") Search in page
+							input(class="js-search-input", id="in-page-search", type="search", placeholder="Search News and Insight")
+							span(class="icon icon-close-slate js-clear-text hide")
+								span(class="sr-only") Clear text
+							button(class="btn btn-small", type="submit")
+								i(class="icon icon-search-white")
+		// START CN08 v1
+		section(class="module module-bleed cn8 cn8__v1 bg-peach-light carousel-dashboard", id="dashboard-carousel")
+			.container(class="carousel-inner", role="listbox")
+				ol(class="carousel-indicators")
+					li(data-target="#dashboard-carousel", data-slide-to="0", class="active") 1
+					li(data-target="#dashboard-carousel", data-slide-to="0") 2
+				
+				.row.row-eq-height-md.item.active
+					.col-xs-12.col-md-5.eq-height
+						.arrow.arrow-left.arrow-purple-dark
+						.module-inner
+							article
+								h4
+									a(href="#", title="") Novant Health Achieves Benchmarking Value from Vizient PharmaLYNX
+										span.icon.icon-arrow-right.ml-10
+										
+								p Rhonda Utt, Senior Business Associate at Novant Health discusses the pharmacy cost containment value that PharmaLYNX brings her organization.
+
+					.col-xs-12.col-md-5.col-sm-push-1.eq-height.hidden-sm.hidden-xs
+						// INLINE STYLE FOR CMS
+						.bg-image(style="background-image: url('images/gloves.jpg')", alt="Description of image")
+				
+				.row.row-eq-height-md.item
+					.col-xs-12.col-md-5.eq-height
+						.arrow.arrow-left.arrow-purple-dark
+						.module-inner
+							article
+								h4
+									a(href="#", title="") 2 Direct Supply Chain Contracting Gaining System
+										
+								p At Vizient, we strive to help members solve the challenges we know affect the quality of clinical care and operational efficiency, making sure it is never compromised.
+								
+								a(href="#", title="") View all consulting solutions
+									span.icon.icon-arrow-right.ml-10
+
+					.col-xs-12.col-md-6.col-sm-push-1.eq-height.hidden-sm.hidden-xs
+						// INLINE STYLE FOR CMS
+						.bg-image(style="background-image: url('images/gloves.jpg')", alt="Description of image")
+
+		section(class="module module-outer")
+			.container
+				.row.row-eq-height-md
+					.col-md-8
+						.module.module-bleed.module-gutter-sm.cn05
+							.container
+								.row.row-eq-height-sm
+									.col-xs-12.col-sm-6.eq-height.bg-white.bc-orange
+										.module-inner
+											p.metadata-eyebrow Press release 
+											ul.list-unstyled.news-items
+												li
+													.metadata-byline 7 July 2016
+													a
+														.e20 2016 Vizient Clinical Connections Summit to Offer Networking and Education Opportunities
+															span.icon.icon-new-window.ml-10
+												li
+													.metadata-byline 7 July 2016
+													a
+														.e20 Vizient, Inc. Announces Aaron Gerber, M.D. as the Newly Appointed President of Sg2
+															span.icon.icon-new-window.ml-10
+												li
+													.metadata-byline 7 July 2016
+													a
+														.e20 Vizient, Inc. Recognizes Hospitals and Health Systems for Achievements in Supply Chain Savings
+															span.icon.icon-new-window.ml-10
+
+											a(href="#", title="View all press releases", class="arrow-link") View all press releases 
+												span.icon.icon-arrow-right.ml-10
+									.col-xs-12.col-sm-6.eq-height.bg-white
+										.module-inner
+											p.metadata-eyebrow Vizient in the news
+											ul.list-unstyled.news-items
+												li
+													.metadata-byline 7 July 2016 <br> Heathcare readers
+													a
+														.e20 Vizient’s Savings Actualyzer® –Turning Big Data into Bite Sized Sourcing Projects
+															span.icon.icon-new-window.ml-10
+												li
+													.metadata-byline 7 July 2016 <br> Heathcare readers
+													a
+														.e20 Dr. Aaron Gerber to serve as president of Vizient's Sg2
+															span.icon.icon-new-window.ml-10
+												li
+													.metadata-byline 7 July 2016 <br> Heathcare readers
+													a
+														.e20 Hospitals May Not Get Clear Answers From Early CJR Data
+															span.icon.icon-new-window.ml-10
+
+											a(href="#", title="View all press releases", class="arrow-link") View all Vizient in the news 
+												span.icon.icon-arrow-right.ml-10
+								.row.row-eq-height-md
+									.col-xs-12.eq-height.right-col.bg-white
+										.row.row-inner.row-eq-height-md
+											.col-xs-12.col-sm-6
+												.module-inner
+													p.metadata-eyebrow Industry news
+													ul.list-unstyled.news-items
+														li
+															a(href="#", title="Title tagged with Supply chain in the taxonomy")
+																.e20 Title tagged with Supply chain in the taxonomy
+																	span.icon.icon-new-window.ml-10
+															.metadata-byline 7 July 2016 <br> Heathcare readers
+															p With nearly all of the waste leaving a hospital originating from a purchasing decision, supply chain leaders are in a unique position to lead efforts that will reduce the supply chain leaders supply chain leaders &hellip;
+													a(href="#", title="View all press releases", class="arrow-link") View all press releases 
+											.col-xs-12.col-sm-6
+												.module-inner
+													ul.list-unstyled.news-items.pt-50
+														li
+															a(href="#", title="Another relevant title of content goes here")
+																.e20 Another relevant title of content goes here
+																	span.icon.icon-new-window.ml-10
+															.metadata-byline 7 July 2016 <br> Heathcare readers
+														li
+															a(href="#", title="Another relevant title of content goes here")
+																.e20 Another relevant title of content goes here
+																	span.icon.icon-new-window.ml-10
+															.metadata-byline 7 July 2016 <br> Heathcare readers
+					.col-md-4.bg-mist-light.ml-5
+						.module.module-bleed.module-gutter-md
+							.module-inner
+								h4 Media contacts
+								p
+									strong.text-medium Angie Boliver
+									br
+									| 972.830.7961
+									br
+									a.font-large(href="mailto:angie.boliver@vizientinc.com", title="") angie.boliver@vizientinc.com
+								p
+									strong.text-medium Donna Ledbetter
+									br
+									| 972.830.6321
+									br
+									a.font-large(href="mailto:donna.ledbetter@vizientinc.com", title="") donna.ledbetter@vizientinc.com
+								p
+									strong.text-medium Elida Solis
+									br
+									| 972.830.6321
+									br
+									a.font-large(href="mailto:elida.solis@vizientinc.com", title="") elida.solis@vizientinc.com
+								h4.bottom-dot-border.pb-20.pt-20 Media tools
+								ul.list-unstyled
+									li
+										a.font-large(href="#" title="") Newsroom
+											span.icon.icon-new-window.ml-10
+									li
+										a.font-large(href="#" title="") Register for email alerts
+											span.icon.icon-arrow-right.ml-10
+									li
+										a.font-large(href="#" title="") RSS feeds
+											span.icon.icon-arrow-right.ml-10
+									li
+										a.font-large(href="#" title="") Logos
+											span.icon.icon-arrow-right.ml-10
+								h4.bottom-dot-border.pb-20 Affiliated companies
+								ul.list-unstyled
+									li
+										a.font-large(href="#" title="") ProvistaTM
+											span.icon.icon-new-window.ml-10
+									li
+										a.font-large(href="#" title="") aptitudeTM
+											span.icon.icon-new-window.ml-10
+
+		section(class="module module-outer module-gutter-md cn05 bg-mist-lightest")
+			.container
+				.row.row-eq-height-md
+					.col-xs-12.eq-height.right-col.bg-white
+						.row.row-inner
+							.col-xs-12.col-sm-6
+								.module-inner
+									p.metadata-eyebrow Insight
+									div
+										img.avatar-sm(src="images/avatars/byron.png", alt="Byron Jobe")
+										span.metadata-byline By Byron Jobe
+									p.e28
+										a(href="#") Clinical &amp; performance improvement
+											span.icon.icon-arrow-right-white.ml-10
+									p.metadata-byline 7 July 2016
+									p With nearly all of the waste leaving a hospital originating from a purchasing decision, supply chain leaders are in a unique position to lead efforts that will reduce the supply chain leaders supply chain leaders ...
+							.col-xs-12.col-sm-6
+								.module-inner
+									ul.list-unstyled.news-items.pt-55
+										li
+											img.avatar-sm(src="images/avatars/byron.png", alt="Byron Jobe")
+											span.metadata-byline By Byron Jobe
+											a(href="#", title="Another relevant title of content goes here")
+												.e20 Another relevant title of content goes here
+											.metadata-byline 7 July 2016
+										li
+											img.avatar-sm(src="images/avatars/byron.png", alt="Byron Jobe")
+											span.metadata-byline By Byron Jobe
+											a(href="#", title="Another relevant title of content goes here")
+												.e20 Another relevant title of content goes here
+											.metadata-byline 7 July 2016
+
+		// START: CN04 v3
+		section(class="module module-bleed cn04 cn04__v3")
+			.container
+				.row.row-eq-height-md
+					.col-md-6.eq-height.bg-turquoise-dark
+						a.video-play(href="#")
+							img(src="images/cn04.jpg" alt="Description of image here")
+						.row
+							.col-sm-10.col-sm-push-1.col-lg-8.col-lg-push-2
+								p.metadata-eyebrow Videos
+								h4
+									a(href="#") How Physician Preference Items Can Help Reduce Healthcare Costs
+								.meta-details
+									time 5:07 mins
+									a(href="#") Download transcript
+										span.icon.icon-download-white.ml-10
+					.col-md-6.eq-height
+						.row
+							.col-xs-6.col-sm-3.col-md-4.col-md-push-1.col-lg-3
+								a.video-play.video-play-small(href="#")
+									img(src="images/video_thumb_1.jpg" alt="Description of image here")
+							.col-xs-6.col-sm-8.col-md-6.col-lg-5.col-md-push-1
+								h6
+									a(href="#") How Physician Preference Items Can Help Reduce Healthcare Costs
+								.meta-details
+									time 5:07 mins
+									a(href="#") Download transcript
+										span.icon.icon-download.ml-5
+						.row
+							.col-xs-6.col-sm-3.col-md-4.col-md-push-1.col-lg-3
+								a.video-play.video-play-small(href="#")
+									img(src="images/video_thumb_2.jpg" alt="Description of image here")
+							.col-xs-6.col-sm-8.col-md-6.col-lg-5.col-md-push-1
+								h6
+									a(href="#") How Physician Preference Items Can Help Reduce Healthcare Costs
+								.meta-details
+									time 5:07 mins
+									a(href="#") Download transcript
+										span.icon.icon-download.ml-5
+						.row
+							.col-xs-6.col-sm-3.col-md-4.col-md-push-1.col-lg-3
+								a.video-play.video-play-small(href="#")
+									img(src="images/video_thumb_3.jpg" alt="Description of image here")
+							.col-xs-6.col-sm-8.col-md-6.col-lg-5.col-md-push-1
+								h6
+									a(href="#") How Physician Preference Items Can Help Reduce Healthcare Costs
+								.meta-details
+									time 5:07 mins
+									a(href="#") Download transcript
+										span.icon.icon-download.ml-5
+						.row.mb-40
+							.col-xs-6.col-sm-3.col-md-4.col-md-push-1.col-lg-3
+								a.video-play.video-play-small(href="#")
+									img(src="images/video_thumb_4.jpg" alt="Description of image here")
+							.col-xs-6.col-sm-8.col-md-6.col-lg-5.col-md-push-1
+								h6
+									a(href="#") How Physician Preference Items Can Help Reduce Healthcare Costs
+								.meta-details
+									time 5:07 mins
+									a(href="#") Download transcript
+										span.icon.icon-download.ml-5
+
+		// END: CN04 v3
+
+		include modules/_in01__v1

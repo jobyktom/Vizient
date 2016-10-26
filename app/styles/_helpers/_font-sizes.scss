@@ -16,6 +16,10 @@
 
 // Font weight helpers
 
+[class*="text-"] {
+  font-weight: normal;
+}
+
 .text-std {
   color: $grey-dark;
 }
