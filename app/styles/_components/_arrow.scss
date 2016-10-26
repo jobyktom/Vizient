@@ -10,13 +10,11 @@
 //
 // TODO:
 // [X] - Remove component selectors to make this available to all components.
-// [ ] - Check all responsive breakpoints against Zeplin designs
-// [ ] - Can we use wildcard col class selector to determine breakpoint arrows need to transform at contextually?
-// [ ] - Look at sizing and positioning code streamlining
-// [ ] - Check all page templates arrows to ensure no inline HTML ones out of date.
-// [ ] - Check we have SVG and PNG for all of the arrows
-// [ ] - Check IE9 and PNG fallback working
-// [ ] - Before commiting list adjusted JADE templates for codedrop.
+// [X] - Check all page templates arrows to ensure no inline HTML ones out of date.
+// [X] - Check we have SVG and PNG for all of the arrows
+// [X] - Check all responsive breakpoints against Zeplin designs
+// [X] - Check IE9 and PNG fallback working
+// [X] - Before commiting list adjusted JADE templates for codedrop.
 
 .arrow {
 	background-repeat: no-repeat;
@@ -37,6 +35,10 @@
 	&.arrow-down { 
 		bottom: -20px;
 		left: 20px;
+
+		@media (min-width: $screen-md) {
+			bottom: -29px;
+		}
 	}
 	
 	// Points down.
@@ -101,51 +103,56 @@
 // Check these don't override background size
 
 .arrow-mist {
-    background-image: url(../images/icons/svg/arrow-curved.svg);
+	background-image: url(../images/icons/svg/arrow-curved.png);
+    background-image: url(../images/icons/svg/arrow-curved.svg), linear-gradient(transparent, transparent);
 }
 
 .arrow-curved-white {
-    background-image: url(../images/icons/svg/arrow-curved-white.svg);
+	background-image: url(../images/icons/svg/arrow-curved-white.png);
+    background-image: url(../images/icons/svg/arrow-curved-white.svg), linear-gradient(transparent, transparent);
 }
 
 .arrow-mist-light {
-    background-image: url(../images/icons/svg/arrow-curved-mist-light.svg);
+	background-image: url(../images/icons/svg/arrow-curved-mist-light.png);
+    background-image: url(../images/icons/svg/arrow-curved-mist-light.svg), linear-gradient(transparent, transparent);
 }
 
 .arrow-mist-lightest {
-    background-image: url(../images/icons/svg/arrow-curved-mist-lightest.svg);
+	background-image: url(../images/icons/svg/arrow-curved-mist-lightest.png);
+    background-image: url(../images/icons/svg/arrow-curved-mist-lightest.svg), linear-gradient(transparent, transparent);
 }
 
 .arrow-peach-light {
-    background-image: url(../images/icons/svg/arrow-curved-peach-light.svg);
+	background-image: url(../images/icons/svg/arrow-curved-peach-light.png);
+    background-image: url(../images/icons/svg/arrow-curved-peach-light.svg), linear-gradient(transparent, transparent);
 }
 
 .arrow-purple {
     background-image: url(../images/icons/arrow-curved-purple.png);
-    background-image: url(../images/icons/svg/arrow-curved-purple.svg);
+    background-image: url(../images/icons/svg/arrow-curved-purple.svg), linear-gradient(transparent, transparent);
 }
 
 .arrow-yellow {
     background-image: url(../images/icons/arrow-curved-yellow.png);
-    background-image: url(../images/icons/svg/arrow-curved-yellow.svg);
+    background-image: url(../images/icons/svg/arrow-curved-yellow.svg), linear-gradient(transparent, transparent);
 }
 
 .arrow-turquoise-dark {
     background-image: url(../images/icons/arrow-curved-turquoise-dark.png);
-    background-image: url(../images/icons/svg/arrow-curved-turquoise-dark.svg);
+    background-image: url(../images/icons/svg/arrow-curved-turquoise-dark.svg), linear-gradient(transparent, transparent);
 }
 
 .arrow-white {
     background-image: url(../images/icons/arrow-curved-white.png);
-    background-image: url(../images/icons/svg/arrow-curved-white.svg);
+    background-image: url(../images/icons/svg/arrow-curved-white.svg), linear-gradient(transparent, transparent);
 }
 
 .arrow-green {
     background-image: url(../images/icons/arrow-curved-green.png);
-    background-image: url(../images/icons/svg/arrow-curved-green.svg);
+    background-image: url(../images/icons/svg/arrow-curved-green.svg), linear-gradient(transparent, transparent);
 }
 
 .arrow-slate {
     background-image: url(../images/icons/arrow-curved-slate.png);
-    background-image: url(../images/icons/svg/arrow-curved-slate.svg);
+    background-image: url(../images/icons/svg/arrow-curved-slate.svg), linear-gradient(transparent, transparent);
 }
