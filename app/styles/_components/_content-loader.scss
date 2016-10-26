@@ -1,0 +1,14 @@
+// JavaScript Content Loader
+// When JavaScript on, hide all but first two items of content loading regions
+
+.js {
+	.js-content-loader {
+		.module {
+			display: none;
+
+			&:nth-child(-n+2) {
+				display: block;
+			}
+		}
+	}
+}

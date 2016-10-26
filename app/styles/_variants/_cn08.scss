@@ -1,62 +1,63 @@
 // CN08
 
 .cn8 {
-  &.cn8__v1 {
-    [class*="col-"] {
-      &:last-child {
-        padding: 0 !important;
-      }
-    }
+	&.cn8__v1 {
+		[class*="col-"] {
+			&:last-child {
+				padding: 0 !important;
+			}
+		}
 
-    .bg-image {
-      background-size: cover;
-      width: 100%;
-      min-height: 275px;
-      height: 100%;
-    }
-  }
+    	.bg-image {
+      		background-size: cover;
+      		width: 100%;
+      		min-height: 275px;
+      		height: 100%;
+    	}
+  	}
 
-  &.cn8__v2,
-  &.cn8__v3 {
-    .container {
-      border-top: 1px dotted $grey-mid;
-    }
-    [class*="col-"] {
-      border-bottom: 1px dotted $grey-mid;
 
-      @media only screen and (min-width: $screen-sm) {
-        border-right: 1px dotted $grey-mid;
+	&.cn8__v2 {
+		.container {
+			border-bottom: 1px dotted $grey-mid;
+			border-top: 1px dotted $grey-mid;
+			margin-top: -1px; // Hacks border overlap given no suitable targets for pseudo selectors
+		}
+		
+		[class*="col-"] {
+			@media only screen and (min-width: $screen-sm) {
+				border-right: 1px dotted $grey-mid;
 
-        &:last-child {
-          border-right: none;
-        }
-      }
-    }
-  }
+				&:last-child {
+					border-right: none;
+				}
+			}
+		}
+	}
 
-  &.cn8__v4,
-  &.cn8__v5 {
-    @media only screen and (min-width: $screen-md) {
-      article {
-        position: relative;
-      }
+	&.cn8__v4,
+	&.cn8__v5 {
+		@media only screen and (min-width: $screen-md) {
+			article {
+				position: relative;
+			}
 
-      .icon-section {
-        left: 0;
-        position: absolute;
-        top: 0;
-      }
+			.icon-section {
+				left: 0;
+				position: absolute;
+				top: 0;
+			}
 
-      .article-content {
-        margin-left: 130px;
-      }
-    }
-  }
+			.article-content {
+				margin-left: 130px;
+			}
+		}
+	}
 
-  &.cn8__v5 {
-    .icon-section {
-      background-position: center bottom;
-      height: 110px !important;
-    }
-  }
+	&.cn8__v5 {
+		.icon-section {
+			background-position: center bottom;
+			height: 110px !important;
+		}
+	}
 }

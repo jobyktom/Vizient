@@ -87,6 +87,13 @@
     }
 
     &.cn17__v3 {
+
+        .no-border{
+            [class*="col-"] {
+                border: 0px!important;
+            }
+        }
+
         [class*="col-"] {
             border-bottom: 1px dotted  $grey-mid;
             
@@ -100,6 +107,7 @@
                 margin-bottom: 20px;
                 padding-bottom: 15px;
             }
+
 
             .icon-arrow-right {
                 float: right;
