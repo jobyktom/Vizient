@@ -90,7 +90,7 @@
 
 	&.arrow-small-up {
 		@media (max-width: $screen-sm) {
-			bottom: 0;
+			bottom: auto;
 			top: -20px;
 			transform: rotate(180deg); 
 		}

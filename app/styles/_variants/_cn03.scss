@@ -46,6 +46,28 @@
 	[class*="col-"] {
 		margin: 0 !important;
 	}
+	
+	// Override for this specific component arrow
+	// as it's an odd outlier
+	.arrow {
+		&.arrow-small-up {
+			bottom: auto;
+			top: -20px;
+			transform: rotate(180deg);
+			
+			@media (min-width: $screen-sm) {
+				bottom: 47%;
+				left: -35px;
+				right: auto;
+				top: auto;
+				transform: rotate(90deg);
+			}
+
+			@media (min-width: $screen-md) {
+				left: -50px;
+			}
+		}
+	}
 }
 
 .cn03__v2 {

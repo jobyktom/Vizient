@@ -9,6 +9,22 @@
 	}
 
 	&.cn22__v2 {
+		// Override for this specific component arrow
+		// as it's an odd outlier
+		.arrow {
+			&.arrow-right {
+				@media (min-width: $screen-sm) {
+					bottom: 47%;
+					left: auto;
+					right: -35px;
+					transform: rotate(270deg); 
+				}
+
+				@media (min-width: $screen-md) {
+					right: -50px;
+				}
+			}
+		}
 		[class*="col-"] {
 			&:first-child {
 				@media (min-width: $screen-lg) {
