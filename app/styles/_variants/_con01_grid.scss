@@ -1,0 +1,14 @@
+// CON01
+
+.con01_grid {
+	.row {
+		&:first-child {
+			border-bottom: 1px dotted $grey;
+		}
+		[class*="col-"] {
+			&:first-child {
+				border-right: 1px dotted $grey;
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+// CON02
+
+.con02_contact_info {
+	article {
+		margin-top: 30px;
+		position: relative;
+	}
+	
+	.icon-section {
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+
+	.article-content {
+		margin-left: 65px;
+		
+		.tel {
+			@extend .bold;
+			@include font-size(24px);
+			color: $grey-dark;
+		}
+
+		.email {
+			@extend .bold;
+		}
+	}
+}

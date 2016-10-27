@@ -43,3 +43,17 @@
 .align-center {
     text-align: center;
 }
+
+.align-edge {
+	@include clearfix;
+	
+	> * {
+		&:first-child {
+			float: left;
+		}
+
+		&:last-child {
+			float: right;
+		}
+	}
+}
