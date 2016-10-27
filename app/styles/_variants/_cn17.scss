@@ -64,44 +64,8 @@
         }
     }
 
-    &.cn17__v1,
-    &.cn17__v2,
-    &.cn17__v4 {
-        .arrow {
-            background-position: top center;
-            background-size: 100%;
-            bottom: -20px;
-            height: 22px;
-            left: 20px;
-            position: absolute;
-            width: 50px;
-            z-index: 1;
-
-            @media only screen and (min-width: $screen-md) {
-                background-position: left center;
-                bottom: 47%;
-                height: 32px;
-                left: auto;
-                right: -50px;
-                transform: rotate(270deg); 
-                width: 75px;
-            }
-        }   
-    }
-
     &.cn17__v1 {
         position: relative;
-
-        .arrow {
-            bottom: -20px;
-
-            @media only screen and (min-width: $screen-md) {
-                bottom: 47%;
-                left: auto;
-                right: -50px;
-                transform: rotate(270deg); 
-            }
-        }
 
         [class*="col-"] {
             @media only screen and (min-width: $screen-md) {
@@ -113,17 +77,6 @@
     }
 
     &.cn17__v2 {
-        .arrow {
-            transform: rotate(180deg); 
-            top: -20px;
-
-            @media only screen and (min-width: $screen-md) {
-                top: 47%;
-                left: -50px;
-                transform: rotate(90deg); 
-            }
-        }
-
         [class*="col-"] {
             @media only screen and (min-width: $screen-md) {
                 &:last-child {
@@ -134,6 +87,13 @@
     }
 
     &.cn17__v3 {
+
+        .no-border{
+            [class*="col-"] {
+                border: 0px!important;
+            }
+        }
+
         [class*="col-"] {
             border-bottom: 1px dotted  $grey-mid;
             
@@ -148,6 +108,7 @@
                 padding-bottom: 15px;
             }
 
+
             .icon-arrow-right {
                 float: right;
             }
@@ -158,19 +119,6 @@
                     margin-top: 20px;
                     padding-top: 15px;
                 }
-            }
-        }
-    }
-
-    &.cn17__v4 {
-        .arrow {
-            bottom: -20px;
-
-            @media only screen and (min-width: $screen-md) {
-                bottom: 47%;
-                left: auto;
-                right: -50px;
-                transform: rotate(270deg); 
             }
         }
     }

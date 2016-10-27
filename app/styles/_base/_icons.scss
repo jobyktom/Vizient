@@ -16,8 +16,6 @@
   }
 }
 
-
-
 .icon {
     vertical-align: middle;
     display: inline-block;
@@ -67,7 +65,6 @@
     background-size: 40px 34px;
     width: 40px;
     height: 34px;
-
 }
 
 
@@ -743,87 +740,87 @@
     @include image-2x("../images/icons/file-types/Zip@2x.png", 21px, 25px);
 }
 
-
 // arrows
 
-.arrow-mist {
-    background: none, url(../images/icons/svg/arrow-curved.svg);
-    background-repeat: no-repeat;
-}
+// .arrow-mist {
+//     background: none, url(../images/icons/svg/arrow-curved.svg);
+//     background-repeat: no-repeat;
+// }
 
-.arrow-mist-light {
-    background: none, url(../images/icons/svg/arrow-curved-mist-light.svg);
-    background-repeat: no-repeat;
-}
+// .arrow-mist-light {
+//     background: none, url(../images/icons/svg/arrow-curved-mist-light.svg);
+//     background-repeat: no-repeat;
+// }
 
-.arrow-mist-lightest {
-    background: none, url(../images/icons/svg/arrow-curved-mist-lightest.svg);
-    background-repeat: no-repeat;
-}
+// .arrow-mist-lightest {
+//     background: none, url(../images/icons/svg/arrow-curved-mist-lightest.svg);
+//     background-repeat: no-repeat;
+// }
 
-.arrow-peach-light {
-    background: none, url(../images/icons/svg/arrow-curved-peach-light.svg);
-    background-repeat: no-repeat;
-}
+// .arrow-peach-light {
+//     background: none, url(../images/icons/svg/arrow-curved-peach-light.svg);
+//     background-repeat: no-repeat;
+// }
 
-.arrow-purple {
-    background: url(../images/icons/arrow-curved-purple.png);
-    background: none, url(../images/icons/svg/arrow-curved-purple.svg);
-    background-repeat: no-repeat;
-}
+// .arrow-purple {
+//     background: url(../images/icons/arrow-curved-purple.png);
+//     background: none, url(../images/icons/svg/arrow-curved-purple.svg);
+//     background-repeat: no-repeat;
+// }
 
-.arrow-yellow {
-    background: url(../images/icons/arrow-curved-yellow.png);
-    background: none, url(../images/icons/svg/arrow-curved-yellow.svg);
-    background-repeat: no-repeat;
-}
+// .arrow-yellow {
+//     background: url(../images/icons/arrow-curved-yellow.png);
+//     background: none, url(../images/icons/svg/arrow-curved-yellow.svg);
+//     background-repeat: no-repeat;
+// }
 
-.arrow-turquoise-dark {
-    background: url(../images/icons/arrow-curved-turquoise-dark.png);
-    background: none, url(../images/icons/svg/arrow-curved-turquoise-dark.svg);
-    background-repeat: no-repeat;
-}
+// .arrow-turquoise-dark {
+//     background: url(../images/icons/arrow-curved-turquoise-dark.png);
+//     background: none, url(../images/icons/svg/arrow-curved-turquoise-dark.svg);
+//     background-repeat: no-repeat;
+// }
 
-.arrow-turquoise-darkest {
-    background: url(../images/icons/arrow-curved-turquoise-darkest.png);
-    background: none, url(../images/icons/svg/arrow-curved-turquoise-darkest.svg);
-    background-repeat: no-repeat;
-}
+// .arrow-turquoise-darkest {
+//     background: url(../images/icons/arrow-curved-turquoise-darkest.png);
+//     background: none, url(../images/icons/svg/arrow-curved-turquoise-darkest.svg);
+//     background-repeat: no-repeat;
+// }
 
-.arrow-white {
-    background: url(../images/icons/arrow-curved-white.png);
-    background: none, url(../images/icons/svg/arrow-curved-white.svg);
-    background-repeat: no-repeat;
-}
+// .arrow-white {
+//     background: url(../images/icons/arrow-curved-white.png);
+//     background: none, url(../images/icons/svg/arrow-curved-white.svg);
+//     background-repeat: no-repeat;
+// }
 
-.arrow-green {
-    background: url(../images/icons/arrow-curved-green.png);
-    background: none, url(../images/icons/svg/arrow-curved-green.svg);
-    background-repeat: no-repeat;
-}
+// .arrow-green {
+//     background: url(../images/icons/arrow-curved-green.png);
+//     background: none, url(../images/icons/svg/arrow-curved-green.svg);
+//     background-repeat: no-repeat;
+// }
 
-.arrow-slate {
-    background: url(../images/icons/arrow-curved-slate.png);
-    background: none, url(../images/icons/svg/arrow-curved-slate.svg);
-    background-repeat: no-repeat;
-}
+// .arrow-slate {
+//     background: url(../images/icons/arrow-curved-slate.png);
+//     background: none, url(../images/icons/svg/arrow-curved-slate.svg);
+//     background-repeat: no-repeat;
+// }
 
-.arrow-orange-dark {
-    background: url(../images/icons/arrow-curved-orange-dark.png);
-    background: none, url(../images/icons/svg/arrow-curved-orange-dark.svg);
-    background-repeat: no-repeat;
-}
+// .arrow-orange-dark {
+//     background: url(../images/icons/arrow-curved-orange-dark.png);
+//     background: none, url(../images/icons/svg/arrow-curved-orange-dark.svg);
+//     background-repeat: no-repeat;
+// }
 
-.arrow {   
-    // Rich: Preserving my code from merge conflict - uncommented is from Robs branch
-    // background-size: 150px 65px;
-    // width: 150px;
-    // height: 65px;
-    background-size: 50px 20px;
-    height: 20px;
-    width: 50px;
-}
+// .arrow {   
+//     // Rich: Preserving my code from merge conflict - uncommented is from Robs branch
+//     // background-size: 150px 65px;
+//     // width: 150px;
+//     // height: 65px;
+//     background-size: 50px 20px;
+//     height: 20px;
+//     width: 50px;
+// }
 
+// >>>>>>> dev-km
 .icon-delete {
     background: url(../images/icons/icon-delete.png);
     background: none, url(../images/icons/svg/icon-delete.svg);
@@ -899,7 +896,3 @@
 //   width: 103px;
 // }
 
-.arrow-curved-white {
-    background: none, url(../images/icons/svg/arrow-curved-white.svg);
-    background-repeat: no-repeat;
-}

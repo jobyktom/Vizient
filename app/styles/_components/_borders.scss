@@ -84,5 +84,12 @@
 }
 .dotted-border-bottom{
 	border-bottom: 1px dotted $grey;
+}
 
+.no-border-bottom {
+	border-bottom: none !important;
+}
+
+.no-border-top {
+	border-top: none !important;
 }
