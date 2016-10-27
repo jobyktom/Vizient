@@ -13,16 +13,41 @@ block content
 						.arrow.arrow-down.arrow-turquoise-dark
 
 		// START CN08 v3 
-		section(class="module module-bleed cn8 cn8__v3")
+		section(class="module module-bleed con01_grid con02_contact_info")
 			.container.no-border-top
 				.row.row-eq-height-sm
 					.col-xs-12.col-sm-6.eq-height
 						.module-inner
 							p.metadata-eyebrow Contact Vizient Support Centre
 
-					.col-xs-12.col-sm-6.eq-height
+							article
+								img(src="images/icons/icon-phone.png", alt="Description of image", class="icon-section mb15")
+								.article-content
+									h5 By telephone
+									a(href="tel:8008425146", title="", class="tel") (800) 842-5146
+
+							article
+								img(src="images/icons/icon-email.png", alt="Description of image", class="icon-section mb15")
+								.article-content
+									h5 Email us at
+									a(href="mailto:vizientsupport@vizientinc.com", title="", class="email") vizientsupport@vizientinc.com
+
+					.col-xs-12.col-sm-6.col-lg-4.eq-height
 						.module-inner
 							p.metadata-eyebrow MedAssets Customer Support Center
+							
+							article
+								img(src="images/icons/icon-phone.png", alt="Description of image", class="icon-section mb15")
+								.article-content
+									h5 By telephone
+									p Spend and clinical Resource Management Application Support
+									a(href="tel:8008425146", title="", class="tel") (800) 842-5146
+
+							article
+								img(src="images/icons/icon-email.png", alt="Description of image", class="icon-section mb15")
+								.article-content
+									h5 Email us at
+									a(href="mailto:helpdesk@medassets.com", title="", class="email") helpdesk@medassets.com
 
 				.row.row-eq-height-sm
 					.col-xs-12.col-sm-6.eq-height.no-border-bottom
@@ -60,27 +85,66 @@ block content
 									textarea(class="form-control", rows="16", placeholder="Message here")
 								button(class="btn", type="submit") Submit
 
-					.col-xs-12.col-sm-6.eq-height.no-border-bottom
+					.col-xs-12.col-sm-6.col-lg-4.eq-height.no-border-bottom
 						.module-inner
 							h4 Corporate headquarters
+
+							figure(class="mb-20")
+								img(src="images/contact-map-1.png")
+								figcaption(class="bg-mist-lightest p-20")
+									dl
+										dt Address
+										dd(class="mb-20")
+											| 290 E. John Carpenter Freeway<br>
+											| Irving, TX 75062
+
+										dt Office
+										dd(class="mb-20")
+											a(href="tel:+19728300000", title="", class="tel grey-dark") (972) 830-0000
+
+										dt Mailing Address
+										dd
+											| P.O. Box 140909<br>
+											| Irving, TX 75014-0909
+
+							h4 Illinois office
+
+							figure
+								img(src="images/contact-map-1.png")
+								figcaption(class="bg-mist-lightest p-20")
+									dl
+										dt Address
+										dd(class="mb-20")
+											| 155 North Wacker Drive<br>
+											| Chicago, IL 60606
+
+										dt Office
+										dd 
+											a(href="tel:+13127754100", title="", class="tel grey-dark") (312) 775-4100
 
 		section(class="module module-bleed cn06 cn06__v1")
 			.container
 				.row.row-eq-height-md
 					.col-sm-12.col-md-6.eq-height.left-col.bg-mist-lightest
 						.module-inner
-							h3 Report non-compliance
+							h4 Report non-compliance
 							p To report non-compliance with the law and Vizient's corporate policies, contact Vizient's Compliance Officer. For anonymous reporting, call our compliance line at (800) 750-4972
 							p For general and human resource-related questions, contact (972) 830-0000
 					.col-sm-12.col-md-6.eq-height.col.right-col.bg-mist-light
 						.module-inner
-							h3 For our affiliated companies, please refer to these contact numbers:
-							ul.list-unstyled
-								li Apexus: (888) 340-2787
-								li aptitude: (866) 842-8811
-								li Provista: (888) 538-4662
+							h4 For our affiliated companies, please refer to these contact numbers:
+							ul.list-unstyled.list-contacts
+								li.align-edge
+									span.company Apexus:
+									a(href="tel:+18883402787", title="", class="tel bold") (888) 340-2787
+								li.align-edge
+									span.company aptitude:
+									a(href="tel:+18668428811", title="", class="tel bold") (866) 842-8811
+								li.align-edge 
+									span.company Provista:
+									a(href="tel:+18885384662", title="", class="tel bold") (888) 538-4662
 
-							a(href="#", title="", class="orange") Questions about connecting with the Media team? 
+							a(href="#", title="", class="orange bold") Questions about connecting with the Media team? 
 
 		section(class="module module-bleed cn06 cn06__v1")
 			.container
@@ -91,7 +155,7 @@ block content
 
 							p Vizient serves thousands of health care organizations across the nation with a broad portfolio of solutions, and a robust network of health care experts driving innovation in our industry. Visit our newsroom to stay connected with Vizient through media coverage of our company and key industry topics.
 							
-							a(href="#", title="") vizientsupport@vizientinc.com
+							a(href="#", title="", class="bold") vizientsupport@vizientinc.com
 								span.icon.icon-arrow-right-white.ml-10
 
 							br
@@ -99,26 +163,30 @@ block content
 
 							p Please send all media and events questions to our public relations team:
 
-							ul.list-unstyled
-								li Angie Boliver (972) 830-7961 
-								li Donna Ledbetter (972) 830-6321
+							ul.list-unstyled.list-contacts
+								li.align-edge 
+									span.name Angie Boliver 
+									a(href="tel:+19728307961", title="", class="tel bold") (972) 830-7961 
+								li.align-edge 
+									span.name Donna Ledbetter
+									a(href="tel:+19728306321", title="", class="tel bold") (972) 830-6321
 
 						.arrow.arrow-right.arrow-purple
 
 					.col-xs-12.col-md-6.eq-height.col.right-col.bg-mist-lightest
 						.module-inner
 							article
-								h3 Media kit downloads
+								h3.mb-30 Media kit downloads
 
-								ul(class="list-unstyled")
+								ul.list-unstyled.list-contacts
 									li
-										a(href="#", title="", class="orange") FAQs
-											span.icon.icon-download.ml-10
+										a(href="#", title="", class="orange bold") FAQs
+											span.icon.icon-download.ml-10.pull-right
 									li
-										a(href="#", title="", class="orange") Logos
-											span.icon.icon-download.ml-10
+										a(href="#", title="", class="orange bold") Logos
+											span.icon.icon-download.ml-10.pull-right
 									li
-										a(href="#", title="", class="orange") Visit Newsroom
-											span.icon.icon-external.ml-10
+										a(href="#", title="", class="orange bold", rel="external") Visit Newsroom
+											span.icon.icon-new-window.ml-10.pull-right
 
 		include modules/_in01__v1
