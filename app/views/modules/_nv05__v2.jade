@@ -10,31 +10,31 @@ form(class="module nv05 bg-mist-lightest js-toggle-region js-filter-panels")
 						ul.list-unstyled
 							li.checkbox
 								label(class="bold js-check-all") 
-									input(type="checkbox")
+									input(type="checkbox", name="event-categories", value="all")
 									| All
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-categories", value="1")
 									| Solutions <span>(28)</span>
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-categories", value="2")
 									| News <span>(190)</span>
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-categories", value="3")
 									| Events &amp; Webinars <span>(155)</span>
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-categories", value="4")
 									| Case Studies <span>(250)</span>
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-categories", value="5")
 									| Insight <span>(58)</span>
 
 		.row.bg-mist
 			.col-xs-12.text-right
 				.module-inner
-					button(class="btn", type="reset") Clear filters
+					button(class="btn", type="reset", class="js-clear-filters") Clear filters
 					button(class="btn hidden-lg", type="submit") Apply filters
