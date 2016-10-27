@@ -6,96 +6,64 @@
 	.module-inner ul {
 		margin-bottom: 0;
 	}
-}
 
-.cn05__v1 {
+	.row:last-child {
+		margin-top: $grid-gutter-width;
+	}
+
+	.row:first-child {
+		margin-top: 0;
+	}
+
+	@media (max-width: $screen-md) {
+		.row:last-child {
+			margin-bottom: $grid-gutter-width;
+		}
+		
+		.row:first-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.bg-white a,
+	.bg-white a * {
+		color: $orange;
+	}
+
 	[class*="col-"] {
-
-		* {
-			color: $white;
-		}
-
-		&:nth-child(1) {
-			border-top: 8px solid $purple-dark;
-		}
-
-		&:nth-child(2) {
-			border-top: 8px solid $teal;
-		}
-
-		&:nth-child(3) {
-			border-top: 8px solid $turquoise-dark;
-		}
-	}
-}
-
-.cn05__v2 {
-
-	.left-col { 
+		border: 1px solid $mist;
 		border-top: 8px solid $mist;
-		border-left: 1px solid $mist;
-		border-right: 1px solid $mist;
-		border-bottom: 1px solid $mist;
 
-		.metadata-byline {
-			padding-top: 15px;
+		[class*="col-"] {
+			border: none;
 		}
 	}
 
-	.right-col { 
-		border-top: 8px solid $brand;
-		border-left: 1px solid $mist;
-		border-right: 1px solid $mist;
-		border-bottom: 1px solid $mist;
+	.bc-orange {
+		border-color: $mist;
+		border-top: 8px solid $orange;
 	}
 
-	.module-inner {
-		@media (max-width: $screen-sm) {
-			padding-top: 0;
-		}
-	}
- }
-
-.cn05__v3 {
-	.left-col { 
+	.bc-purple, .bg-purple {
+		border-color: $purple;
 		border-top: 8px solid $purple-dark;
-		* {
-			color: $white;
-		}
-		.metadata-byline {
-			padding-top: 15px;
-		}
 	}
 
-	.right-col { 
-		border-top: 8px solid $mist;
-	}
- }
-
-.cn05__v4 {
-	[class*="col-"] {
-		&:nth-child(1) {
-			border-top: 8px solid $purple-dark;
-			* {
-				color: $white;
-			}
-			.metadata-byline {
-				padding-top: 15px;
-			}
-
-		}
-
-		&:nth-child(2) {
-			border-top: 8px solid $mist;
-		}
-
-		&:nth-child(3) {
-			border-top: 8px solid $brand;
-		}
+	.bc-teal, .bg-teal {
+		border-color: $teal;
+		border-top: 8px solid $turquoise-dark;
 	}
 
-	.e20 {
-		margin-bottom: 20px;
+	.bc-turquoise-dark, .bg-turquoise-dark {
+		border-color: $turquoise-dark;
+		border-top: 8px solid $teal;
+	}
+
+	@media (min-width: $screen-md) {
+		.arrow-link {
+			bottom: 40px;
+			position: absolute;
+		}
 	}
 }
 

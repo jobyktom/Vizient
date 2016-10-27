@@ -56,4 +56,44 @@
 			}
 		}
 	}
+
+	&.nv09__smaller {
+		&.module {
+			z-index: 0;
+		}
+
+		.search-control {
+			border: 2px solid $mist;
+			margin: 10px 0 0;
+			max-width: 500px;
+
+			@media (min-width: $screen-sm) {
+				margin: 0;
+			}
+		}
+
+		input[type="search"] {
+			font-family: $soleto-regular;
+			padding: 4px 20px;
+
+			@media (min-width: $screen-sm) {
+				@include font-size(28px);
+			}
+
+			&::placeholder {
+				opacity: .2;
+			}
+		}
+
+		.btn.btn-small {
+			height: 44px;
+			margin-right: 3px;
+			padding: 0;
+			width: 44px;
+
+			i {
+				margin: 0;
+			}
+		}
+	}
 }

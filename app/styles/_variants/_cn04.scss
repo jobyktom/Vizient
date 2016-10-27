@@ -1,0 +1,116 @@
+.cn04 {
+	&.cn04__v1.module.module-bleed .container [class*="col-"],
+	&.cn04__v2.module.module-bleed .container [class*="col-"] {
+		&:first-child {
+			padding: 0;
+		}
+
+		&:last-child {
+			padding: 24px;
+
+			@media (min-width: $screen-md) {
+				padding: 0;
+			}
+		}
+	}
+	&.cn04__v3.module.module-bleed .container [class*="col-"] {
+		padding: 0;
+
+		[class*="col-"] {
+			padding: 24px !important;
+
+			&:last-child {
+				padding-bottom: 0 !important;
+				padding-left: 0 !important;
+
+				@media (min-width: $screen-sm) {
+					padding-left: 10px !important;
+				}
+
+				@media (min-width: $screen-md) {
+					padding-left: 16px !important;
+					padding-right: 0 !important;
+				}
+			}
+
+			&:first-child {
+				padding: 24px !important;
+
+			}
+		}
+	}
+
+	.row-eq-height-md [class*="col-"]:last-child {
+		align-self: center;
+	}
+
+	a {
+		display: inline-block;
+	}
+
+	.video-play {
+		display: block;
+		position: relative;
+
+		&:after {
+			@extend .icon-video-play-white;
+			background-color: rgba($orange, .8);
+			bottom: 0;
+			content: '';
+			height: 80px;
+			position: absolute;
+			right: 0;
+			width: 80px;
+		}
+
+		&.video-play-small:after {
+			background-size: 26px;
+			height: 40px;
+			width: 40px;
+		}
+	}
+
+	.metadata-eyebrow {
+		padding: 10px 0 0;
+	}
+
+	h4 {
+		font-family: $soleto-regular;
+		@include font-size(22px);
+
+		@media (min-width: $screen-sm) {
+			@include font-size(28px);
+		}
+	}
+
+	h6 {
+		font-family: $soleto-regular;
+		@include font-size(18px);
+
+		@media (min-width: $screen-sm) {
+			@include font-size(20px);
+		}
+	}
+
+	.meta-details {
+		@include font-size(14px);
+
+		@media (min-width: $screen-sm) {
+			@include font-size(16px);
+		}
+	}
+
+	time {
+		display: inline-block;
+		font-family: $soleto-thin;
+		margin-right: 15px;
+		padding: 5px 15px 0 0;
+		position: relative;
+
+		&:after {
+			content: '|';
+			position: absolute;
+			right: 0;
+		}
+	}
+}
