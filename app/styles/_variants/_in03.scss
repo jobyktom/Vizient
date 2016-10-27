@@ -4,7 +4,8 @@
 }
 .in03__v1 {
 	
-	.share-icons{
+	&.module ul.share-icons{
+		width: auto;
 		.icon-circle:hover{
 			background-color: $orange-dark;
 		}

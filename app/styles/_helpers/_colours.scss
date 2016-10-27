@@ -15,6 +15,7 @@
 	
 		// Automatic content colors
 		@if 	$colour == white
+			or 	$colour == peach-light
 			or 	$colour == mist 
 			or 	$colour == mist-light 
 			or 	$colour == mist-lightest {
@@ -30,7 +31,6 @@
 
 		} @else if 	$colour == green
 			or 	$colour == yellow
-			or 	$colour == peach-light
 			or 	$colour == sunglow {
 		
 			*,
