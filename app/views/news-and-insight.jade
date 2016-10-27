@@ -9,17 +9,7 @@ block content
 						.arrow.arrow-turquoise-dark
 						.module-inner
 							h1 Newsroom
-		form(class="module module-stretch nv09 nv09__smaller bg-turquoise-darkest")
-			.container
-				.row
-					.col-xs-12
-						.search-control.js-search-control
-							label(class="sr-only", for="in-page-search") Search in page
-							input(class="js-search-input", id="in-page-search", type="search", placeholder="Search News and Insight")
-							span(class="icon icon-close-slate js-clear-text hide")
-								span(class="sr-only") Clear text
-							button(class="btn btn-small", type="submit")
-								i(class="icon icon-search-white")
+		include modules/_nv09__v1
 		// START CN08 v1
 		section(class="module module-bleed cn8 cn8__v1 bg-peach-light carousel-dashboard", id="dashboard-carousel")
 			.container(class="carousel-inner", role="listbox")
@@ -29,10 +19,9 @@ block content
 				
 				.row.row-eq-height-md.item.active
 					.col-xs-12.col-md-5.eq-height
-						.arrow.arrow-left.arrow-purple-dark
 						.module-inner
 							article
-								h4
+								h4.carousel-heading
 									a(href="#", title="") Novant Health Achieves Benchmarking Value from Vizient PharmaLYNX
 										span.icon.icon-arrow-right.ml-10
 										
@@ -47,7 +36,7 @@ block content
 						.arrow.arrow-left.arrow-purple-dark
 						.module-inner
 							article
-								h4
+								h4.carousel-heading
 									a(href="#", title="") 2 Direct Supply Chain Contracting Gaining System
 										
 								p At Vizient, we strive to help members solve the challenges we know affect the quality of clinical care and operational efficiency, making sure it is never compromised.
