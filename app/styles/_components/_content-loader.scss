@@ -5,10 +5,6 @@
 	.js-content-loader {
 		.module {
 			display: none;
-
-			&:nth-child(-n+2) {
-				display: block;
-			}
 		}
 	}
 }

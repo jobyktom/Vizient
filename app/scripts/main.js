@@ -69,6 +69,7 @@ var Vizient = (function() {
 		_toggleRegion();
 		_checkAllCheckboxes();
 		_contentLoader();
+		_clearFilters();
 
 		// Responsive JavaScript Components
 		$(window).on('breakpoint-change', function(e, breakpoint) {
@@ -103,6 +104,12 @@ var Vizient = (function() {
 
 		// Check component exists
 		if ( $('.js-content-loader').length ) {
+
+			// Each content loader check how many items to display
+			$('.js-content-loader').each(function(){
+				var showItems = $(this).data('showItems');
+				$(this).find('.module:lt(' + showItems + ')').show();
+			});
 
 			$('.js-content-loader-trigger').on('click', function(e) {
 				e.preventDefault();
@@ -164,11 +171,24 @@ var Vizient = (function() {
 	};
 
 	var _checkAllCheckboxes = function _checkAllCheckboxes() {
-		$('.js-check-all').on('click', function() {
+		$('.js-check-all').on('click', function(e) {
+			e.preventDefault();
 			var $checkboxGroup = $(this).parents('.js-checkbox-group'),
 				$checkBoxes = $checkboxGroup.find('input:checkbox');
 
 			$checkBoxes.prop('checked', !$checkBoxes.prop('checked'));
+		});
+	};
+
+	var _clearFilters = function _clearFilters() {
+		$('.js-clear-filters').on('click', function(e) {
+			e.preventDefault();
+			var $filterPanels = $(this).parents('.js-filter-panels'),
+				$checkBoxes = $filterPanels.find('.js-checkbox-group input:checkbox'),
+				$selectBoxes = $filterPanels.find('.js-select-box');
+
+			$checkBoxes.prop('checked', false);
+			$selectBoxes.find('option:disabled').prop('selected', true);
 		});
 	};
 

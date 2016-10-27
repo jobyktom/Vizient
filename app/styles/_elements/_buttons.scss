@@ -22,14 +22,14 @@
 		width: auto;
 	}
 	
-	&:hover, &:active, &.active {
+	&:hover, &:active, &.focus {
 	   background-color: $orange-dark; 
 	   color: $white !important;
 	}
 
 	&.inactive {
 		background-color: $mist;
-		&:hover, &:active, &.active {
+		&:hover, &:active, &.focus {
 		   background-color: $mist;
 		   cursor: default;
 		}
@@ -40,9 +40,11 @@
 		border-color: $orange;
 		color: $orange  !important;
 
-		&:hover, &:active, &.active {
+		&:hover, &:active, &.focus {
 			border-color: $orange-dark;
+			box-shadow: none;
 			color: $orange-dark  !important;
+			outline: 0 !important;
 		}
 	}
 
@@ -51,10 +53,11 @@
 		color: $orange !important;
 		border: 2px solid $orange;
 		min-width: 146px;
-		&:hover, &:active, &.active {
+		&:hover, &:active, &.focus {
 		   background-color: $orange-dark;
 		   border: 2px solid $orange-dark;
 		   color: $white !important;
+		   outline: 0 !important;
 		}
 	}
 
@@ -63,10 +66,11 @@
 		color: $white !important;
 		border: 2px solid $white;
 		min-width: 146px;
-		&:hover, &:active, &.active {
+		&:hover, &:active, &.focus {
 		   background-color: $white;
 		   border: 2px solid $white;
 		   color: $orange !important;
+		   outline: 0 !important;
 		}
 		&.inactive {
 			opacity: 0.2;

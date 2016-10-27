@@ -9,3 +9,10 @@ label {
 .form-control {
     padding: 10px;
 }
+
+button {
+	// [TODO]: Replace with alternative style for accessibility
+	&:active, &:focus {
+		outline: 0 !important;
+	}
+}
