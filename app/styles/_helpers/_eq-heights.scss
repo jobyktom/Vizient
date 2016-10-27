@@ -2,56 +2,29 @@
  * Row with equal height columns
  * --------------------------------------------------
  */
+@each $size, $value in $screen-sizes {
+	.row-eq-height-#{$size} {
+		@media (min-width: $value) {
+		  display: flex;
 
-.row-eq-height-xs {
-	// margin-left: 0;
-	// margin-right: 0;
-	
-	@media (min-width: $screen-xs) {
-	  display: -webkit-box;
-	  display: -webkit-flex;
-	  display: -ms-flexbox;
-	  display:         flex;
-	}
-}
+		  .eq-height {
+		  	position: relative;
 
-.row-eq-height-sm {
-	// margin-left: 0;
-	// margin-right: 0;
-	
-	@media (min-width: $screen-sm) {
-	  display: -webkit-box;
-	  display: -webkit-flex;
-	  display: -ms-flexbox;
-	  display:         flex;
+		  	.bg-image {
+				  bottom: 0;
+				  left: 0;
+				  position: absolute;
+				  right: 0;
+				  top: 0;
+		  	}
+		  }
+		}
 	}
 }
 
 .row-eq-height-md {
-	// margin-left: 0;
-	// margin-right: 0;
-	
-	@media (min-width: $screen-md) {
-	  display: -webkit-box;
-	  display: -webkit-flex;
-	  display: -ms-flexbox;
-	  display:         flex;
-	}
-
 	[class*="col-"]:last-child {
 		flex-grow: 2;
-	}
-}
-
-.row-eq-height-lg {
-	// margin-left: 0;
-	// margin-right: 0;
-	
-	@media (min-width: $screen-lg) {
-	  display: -webkit-box;
-	  display: -webkit-flex;
-	  display: -ms-flexbox;
-	  display:         flex;
 	}
 }
 

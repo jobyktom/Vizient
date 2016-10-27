@@ -1,4 +1,10 @@
 .carousel-dashboard {
+	&.bg-peach-light {
+		.carousel-indicators li {
+			color: $brand;
+		}
+	}
+
 	.container {
 		position: relative;
 	}
@@ -63,6 +69,10 @@
 	        .active.right {
 	            left: 0;
 	            transform: translate3d(0, 0, 0);
+	        }
+
+	        .carousel-heading a {
+						font-family: $soleto-regular;
 	        }
 	    }
 
