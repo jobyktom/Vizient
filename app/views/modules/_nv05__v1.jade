@@ -10,27 +10,27 @@ form(class="module nv05 bg-mist-lightest js-toggle-region js-filter-panels")
 						ul.list-unstyled
 							li.checkbox
 								label(class="bold js-check-all") 
-									input(type="checkbox")
+									input(type="checkbox", name="event-solution", value="all")
 									| All Solutions
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-solution", value="1")
 									| Supply chain
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-solution", value="2")
 									| Operations
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-solution", value="3")
 									| Consulting
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-solution", value="4")
 									| Pharmacy
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-solution", value="5")
 									| Clinical
 
 			.col-xs-12.col-sm-6.col-md-12
@@ -40,37 +40,37 @@ form(class="module nv05 bg-mist-lightest js-toggle-region js-filter-panels")
 						ul.list-unstyled
 							li.checkbox
 								label(class="bold js-check-all") 
-									input(type="checkbox")
+									input(type="checkbox", name="event-role", value="all")
 									| All roles
 							li.checkbox
 								label
-									input(type="checkbox")
+									input(type="checkbox", name="event-role", value="1")
 									| Physician
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-role", value="2")
 									| Nurse
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-role", value="3")
 									| Supply chain leader
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-role", value="4")
 									| Pharmacist
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-role", value="5")
 									| Clinical leader
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-role", value="6")
 									| Supply chain management
 
 		.row.bg-mist
 			.col-xs-12.text-right
 				.module-inner
-					button(class="btn", type="reset") Clear filters
+					button(class="btn", type="reset", class="js-clear-filters") Clear filters
 					button(class="btn hidden-lg", type="submit") Apply filters
 
 

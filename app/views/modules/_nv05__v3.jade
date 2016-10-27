@@ -10,46 +10,64 @@ form(class="module nv05 bg-mist-lightest js-toggle-region js-filter-panels")
 						ul.list-unstyled
 							li.checkbox
 								label(class="bold js-check-all")
-									input(type="checkbox")
+									input(type="checkbox", name="event-categories", value="all")
 									| All categories
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-categories", value="1")
 									| Supply chain
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-categories", value="2")
 									| Operations
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-categories", value="3")
 									| Consulting
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-categories", value="4")
 									| Pharmacy
 							li.checkbox
 								label 
-									input(type="checkbox")
+									input(type="checkbox", name="event-categories", value="5")
 									| Clinical
 
 			.col-xs-12.col-sm-6.col-md-12
 				.module-inner
 					fieldset
 						legend Filter by type of event
-						select(class="form-control")
-							option(value="") All events &amp; webinars
+						select(class="form-control js-select-box", name="event-type")
+							option(value="-" disabled selected) All events &amp; webinars
+							option(value="1") Type 1
+							option(value="2") Type 2
 
 					fieldset
 						legend Filter by month and year
-						select(class="form-control")
-							option(value="") Select month
+						select(class="form-control js-select-box", name="event-month")
+							option(value="-" disabled selected) Select month
+							option(value="1") January
+							option(value="2") February
+							option(value="3") March
+							option(value="4") April
+							option(value="5") May
+							option(value="6") June
+							option(value="7") July
+							option(value="8") August
+							option(value="9") September
+							option(value="10") October
+							option(value="11") November
+							option(value="12") December
 
-						select(class="form-control")
-							option(value="") Select year
+						select(class="form-control js-select-box", name="event-year")
+							option(value="-" disabled selected) Select year
+							option(value="2016") 2016
+							option(value="2015") 2015
+							option(value="2014") 2014
+							option(value="2013") 2013
 
 		.row.bg-mist
 			.col-xs-12.text-right
 				.module-inner
-					button(class="btn", type="reset") Clear filters
+					button(class="btn", type="reset", class="js-clear-filters") Clear filters
 					button(class="btn", type="submit") Apply filters
