@@ -60,6 +60,13 @@ $screen-mbls: 480px; // mobile landscape
 $screen-sm: 768px;
 $screen-md: 1024px;
 $screen-lg: 1201px;
+$screen-sizes: (
+	xs: $screen-xs,
+	bmls: $screen-mbls,
+	sm: $screen-sm,
+	md: $screen-md,
+	lg: $screen-lg
+);
 
 // Breakpoints (as integers)
 $int-xs: 320px;
