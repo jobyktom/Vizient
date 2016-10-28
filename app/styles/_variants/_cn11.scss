@@ -32,7 +32,7 @@
         }
 
         @media (min-width: $screen-md) {
-            @include font-size(72px);
+            @include font-size(64px);
             line-height: 1.1;
         }
     }
@@ -129,23 +129,27 @@
 
     .link-back {
         @include font-size(14px);
-        padding-left: 20px;
-        position: relative;
+        padding-left: 2px;
 
         @media (min-width: $screen-sm) {
-            font-size: inherit;
+			padding-left: 4px;
         }
+        // position: relative;
 
-        span {
-            left: 0;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
+        // @media (min-width: $screen-sm) {
+        //     font-size: inherit;
+        // }
 
-            &.icon-arrow-left-darkgrey {
-                transform: translateY(-50%) rotate(180deg);
-            }
-        }
+        // span {
+        //     left: 0;
+        //     position: absolute;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+
+        //     &.icon-arrow-left-darkgrey {
+        //         transform: translateY(-50%) rotate(180deg);
+        //     }
+        // }
     }
     
     // Variants
