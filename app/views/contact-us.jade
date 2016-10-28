@@ -16,7 +16,7 @@ block content
 		section(class="module module-bleed con01_grid con02_contact_info")
 			.container.no-border-top
 				.row.row-eq-height-sm
-					.col-xs-12.col-sm-6.eq-height
+					.col-xs-12.col-sm-6.eq-height.pt-30
 						.module-inner
 							p.metadata-eyebrow Contact Vizient Support Centre
 
@@ -32,7 +32,7 @@ block content
 									h5 Email us at
 									a(href="mailto:vizientsupport@vizientinc.com", title="", class="email") vizientsupport@vizientinc.com
 
-					.col-xs-12.col-sm-6.col-lg-4.eq-height
+					.col-xs-12.col-sm-6.col-lg-4.eq-height.pt-30
 						.module-inner
 							p.metadata-eyebrow MedAssets Customer Support Center
 							
@@ -83,7 +83,11 @@ block content
 									label(for="contact-form-topic", class="grey-dark") Message
 										span(class="required") *
 									textarea(class="form-control", rows="16", placeholder="Message here")
-								button(class="btn", type="submit") Submit
+								.form-group.clearfix
+									.pull-left
+										img(src="images/captcha-placeholder.png", alt="Replace this!")
+									.pull-right
+										button(class="btn mt-15", type="submit") Submit
 
 					.col-xs-12.col-sm-6.col-lg-4.eq-height.no-border-bottom
 						.module-inner
