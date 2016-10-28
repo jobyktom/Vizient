@@ -85,6 +85,12 @@
 .dotted-border-bottom{
 	border-bottom: 1px dotted $grey;
 }
+.dotted-border-right{
+	border-right: 1px dotted $grey;
+}
+.dotted-border-left{
+	border-left: 1px dotted $grey;
+}
 
 .no-border-bottom {
 	border-bottom: none !important;

@@ -3,16 +3,22 @@
 	background-position:top right;
 
 	
-	@media only screen and (min-width : $screen-xs){
-		background-image: url('/images/horizontal-pipes-yellow-mobile.png');
-	}
-	@media only screen and (min-width : $screen-sm){
-		background-image: url('/images/horizontal-pipes-yellow-tablet.png');
-	}
-	@media only screen and (min-width : $screen-md){
-		background-image: url('/images/horizontal-pipes-yellow-desktop.png');
-	}
+	// @media only screen and (min-width : $screen-xs){
+	// 	background-image: url('/images/horizontal-pipes-yellow-mobile.png');
+	// }
+	// @media only screen and (min-width : $screen-sm){
+	// 	background-image: url('/images/horizontal-pipes-yellow-tablet.png');
+	// }
+	// @media only screen and (min-width : $screen-md){
+	// 	background-image: url('/images/horizontal-pipes-yellow-desktop.png');
+	// }
 
+	@media only screen and (min-width : $screen-lg) {
+		&.module.module-outer {
+			padding-bottom: 70px;
+		}
+	}
+	
 	&.module .container {
 		background-color: transparent;
 	}

@@ -49,6 +49,7 @@
 		left: 20px;
 
 		@media (min-width: $screen-sm) {
+			bottom: -29px;
 			left: 50%;
 			transform: (translateX(-50%));
 		}
