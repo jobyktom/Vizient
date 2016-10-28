@@ -1,0 +1,506 @@
+<!DOCTYPE html><!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VHA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico"><link rel="stylesheet" href="styles/main.min.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">  </script>
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+    <div class="browsehappy"><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div>
+    <![endif]-->
+    <div class="outer-wrapper"><!-- Start Desktop Header -->
+      <header id="header-bar" class="hidden-xs hidden-sm">
+        <div class="master-logo"><a href="/"><i class="icon icon-logo"></i></a></div>
+        <div class="master-nav">
+          <!-- Start Top Nav-->
+          <nav class="top-nav">
+            <div class="hat"></div>
+            <ul class="list-unstyled">
+              <li class="header-nav__nav-item"><a href="about-us.html" class="header-nav__nav-link ">About us</a></li>
+              <li class="header-nav__nav-item"><a href="news-and-insight.html" class="header-nav__nav-link ">Newsroom</a></li>
+              <li class="header-nav__nav-item"><a href="blog.html" class="header-nav__nav-link ">Blog</a></li>
+              <li class="header-nav__nav-item"><a href="events.html" class="header-nav__nav-link ">Events</a></li>
+              <li class="header-nav__nav-item"><a href="contact-us.html" class="header-nav__nav-link nav-contact">Contact us</a></li>
+            </ul>
+          </nav>
+          <!-- End Top Nav-->
+          <!-- Start Primary Nav-->
+          <nav class="primary-nav">
+            <ul role="tablist" class="list-unstyled">
+              <li><a href="/" class="menu-item-home">Home</a>
+              </li>
+              <li><a role="tab" data-toggle="tab" href="what-we-do.html" data-href="what-we-do.html" data-target="#mega-nav-1">What we do</a>
+              </li>
+              <li><a role="tab" data-toggle="tab" href="our-solutions.html" data-href="our-solutions.html" data-target="#mega-nav-2">Our solutions</a>
+              </li>
+              <li><a role="tab" data-toggle="tab" href="our-networks.html" data-href="our-networks.html" data-target="#mega-nav-3">Our networks</a>
+              </li>
+              <li><a role="tab" data-toggle="tab" href="become-a-member.html" data-href="become-a-member.html" data-target="#mega-nav-4">Become a member</a>
+              </li>
+              <li><a role="tab" data-toggle="tab" href="become-a-supplier.html" data-href="become-a-supplier.html" data-target="#mega-nav-5">Suppliers</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Primary Nav-->
+          <!-- Start Additional nav - Search, Login-->
+          <nav class="additional-nav">
+            <ul role="tablist" class="list-unstyled">
+              <li> <a role="tab" href="#" class="search"><i class="icon icon-search"></i></a></li>
+              <!-- Either 1 of 2 remaining LI tags below must be present with a logged-in or logged-out class. Remove and apply class "hidden" accordingly to see different states -->
+              <!-- LOGGED OUT MODULE            -->
+              <li class="logged-out"><a role="tab" href="#" class="btn alt"> <i class="icon icon-login">  </i><span>Login</span></a></li>
+              <li class="logged-in hidden"><a role="tab" href="#" id="dashboard-menu"><span class="icon-login-circle"><span class="icon icon-login">  </span></span><span class="username">Chad Logan</span><span class="icon icon-chevron-down-small"></span></a></li>
+            </ul>
+          </nav>
+          <!-- End Additional nav - Search, Login-->
+          <!-- Start Dashboard nav (LOGGED IN ONLY)-->
+          <!-- This is absoolutely positioned -->
+          <!-- Remove "hidden" class to reveal-->
+          <nav class="dashboard-nav">
+            <ul role="tablist" class="list-unstyled">
+              <li><a role="tab" href="#" title="My dashboard">My dashboard</a></li>
+              <li><a role="tab" href="#" title="My account">My account</a></li>
+              <li><a role="tab" href="#" title="Support">Support</a></li>
+              <li><a role="tab" href="#" title="Contact us">Contact us </a></li>
+            </ul>
+          </nav>
+          <!-- End Dashboard nav-->
+        </div>
+      </header>
+      <!-- End Desktop Header Bar--><!-- Start Search bar -->
+      <div class="search-bar">
+        <form class="search-bar-wrap">
+          <div class="arrow arrow-slate"></div>
+          <input type="text" placeholder="Type your search term here…" required data-minLength="0" data-provide="typeahead" class="typeahead-input">
+          <button type="reset" class="search-bar-close"><i class="icon icon-close-slate"></i></button>
+          <button title="Search" class="btn"><span class="icon icon-search-white"></span>Search</button>
+        </form>
+        <div class="autocomplete-results"></div>
+      </div><!-- End Search bar -->
+      
+      
+      <nav class="subnav hidden-xs hidden-sm">
+        <ul id="nav-bar-filter" class="nav-bar-filter">
+          <li><a href="#" class="active">Our solutions</a></li>
+          <li><a href="#">Supply chain</a></li>
+          <li><a href="#">Operations</a></li>
+          <li><a>Operations</a></li>
+          <li><a>Pharmacy</a></li>
+          <li><a>Clinical</a></li>
+          <li><a>Consulting</a></li>
+          <li><a>Lorem ipsum</a></li>
+          <li><a>Consectetur adipiscing dolor</a></li>
+        </ul>
+        <ul id="more-nav">
+          <li><a href="#" class="active">More options</a>
+            <ul class="subfilter"></ul>
+          </li>
+        </ul>
+      </nav><!-- Start Mobile Header -->
+      <header id="mobile-header" class="visible-xs visible-sm">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 logo"><a href="/" title="Vizient - back to home" class="mobile-menu__logo"></a></div><a title="Login" class="mobile-login__outer"><span class="icon icon-login"></span></a><a href="#primary-mobile-nav" title="Menu" class="mobile-menu__outer js-mobile-icon"><span class="mobile-menu__icon"></span></a>
+          </div>
+        </div>
+      </header><!-- Start Mobile Menu -->
+      <div id="mobileMenu" class="visible-xs-block visible-sm-block"><!-- Start Search bar -->
+        <div class="search-bar">
+          <form class="search-bar-wrap">
+            <div class="arrow arrow-slate"></div>
+            <input type="text" placeholder="Type your search term here…" required data-minLength="0" data-provide="typeahead" class="typeahead-input">
+            <button type="reset" class="search-bar-close"><i class="icon icon-close-slate"></i></button>
+            <button title="Search" class="btn"><span class="icon icon-search-white"></span>Search</button>
+          </form>
+          <div class="autocomplete-results"></div>
+        </div><!-- End Search bar -->
+        <nav>
+          <ul id="mobile-nav" class="list-unstyled">
+            <li class="primary"><a href="/" data-href="/">Home</a>
+            </li>
+            <li class="primary"><a href="what-we-do.html" class="has-subnav">What we do</a>
+              <ul class="subnav">
+                <li><a href="what-we-do.html/operational" data-href="what-we-do.html/operational" class=" mobile-nav__sub-nav-link">Operational</a></li>
+                <li><a href="what-we-do.html/supply" data-href="what-we-do.html/supply" class=" mobile-nav__sub-nav-link">Supply</a></li>
+                <li><a href="what-we-do.html/clinical" data-href="what-we-do.html/clinical" class=" mobile-nav__sub-nav-link">Clinical</a></li>
+                <li><a href="what-we-do.html/consultancy" data-href="what-we-do.html/consultancy" class=" mobile-nav__sub-nav-link">Consultancy</a></li>
+                <li><a href="what-we-do.html/tiered-membership-benefits" data-href="what-we-do.html/tiered-membership-benefits" class=" mobile-nav__sub-nav-link">Tiered Membership Benefits</a></li>
+              </ul>
+            </li>
+            <li class="primary"><a href="our-solutions.html" class="has-subnav">Our solutions</a>
+              <ul class="subnav">
+                <li><a href="who-we-are/operational" data-href="who-we-are/operational" class=" mobile-nav__sub-nav-link">Operational</a></li>
+                <li><a href="who-we-are/supply" data-href="who-we-are/supply" class=" mobile-nav__sub-nav-link">Supply</a></li>
+                <li><a href="who-we-are/clinical" data-href="who-we-are/clinical" class=" mobile-nav__sub-nav-link">Clinical</a></li>
+                <li><a href="who-we-are/consultancy" data-href="who-we-are/consultancy" class=" mobile-nav__sub-nav-link">Consultancy</a></li>
+                <li><a href="who-we-are/tiered-membership-benefits" data-href="who-we-are/tiered-membership-benefits" class=" mobile-nav__sub-nav-link">Tiered Membership Benefits</a></li>
+              </ul>
+            </li>
+            <li class="primary"><a href="our-networks.html" class="has-subnav">Our networks</a>
+              <ul class="subnav">
+                <li><a href="become-a-member/operational" data-href="become-a-member/operational" class=" mobile-nav__sub-nav-link">Operational</a></li>
+                <li><a href="become-a-member/supply" data-href="become-a-member/supply" class=" mobile-nav__sub-nav-link">Supply</a></li>
+                <li><a href="become-a-member/clinical" data-href="become-a-member/clinical" class=" mobile-nav__sub-nav-link">Clinical</a></li>
+                <li><a href="become-a-member/consultancy" data-href="become-a-member/consultancy" class=" mobile-nav__sub-nav-link">Consultancy</a></li>
+                <li><a href="become-a-member/tiered-membership-benefits" data-href="become-a-member/tiered-membership-benefits" class=" mobile-nav__sub-nav-link">Tiered Membership Benefits</a></li>
+              </ul>
+            </li>
+            <li class="primary"><a href="become-a-member.html" data-href="become-a-member.html">Become a member</a>
+            </li>
+            <li class="primary"><a href="become-a-supplier.html" class="has-subnav">Suppliers</a>
+              <ul class="subnav">
+                <li><a href="become-a-supplier/operational" data-href="become-a-supplier/operational" class=" mobile-nav__sub-nav-link">Operational</a></li>
+                <li><a href="become-a-supplier/supply" data-href="become-a-supplier/supply" class=" mobile-nav__sub-nav-link">Supply</a></li>
+                <li><a href="become-a-supplier/clinical.html" data-href="become-a-supplier/clinical.html" class=" mobile-nav__sub-nav-link">Clinical</a></li>
+                <li><a href="become-a-supplier/consultancy" data-href="become-a-supplier/consultancy" class=" mobile-nav__sub-nav-link">Consultancy</a></li>
+                <li><a href="become-a-supplier/tiered-membership-benefits" data-href="become-a-supplier/tiered-membership-benefits" class=" mobile-nav__sub-nav-link">Tiered Membership Benefits</a></li>
+              </ul>
+            </li>
+            <li class="secondary first-item"><a href="#item.url" class="has-subnav">About us</a>
+              <ul class="subnav">
+                <li><a href="what-we-do.html/operational">Operational</a></li>
+                <li><a href="what-we-do.html/supply">Supply</a></li>
+                <li><a href="what-we-do.html/clinical">Clinical</a></li>
+                <li><a href="what-we-do.html/consultancy">Consultancy</a></li>
+                <li><a href="what-we-do.html/tiered-membership-benefits">Tiered Membership Benefits</a></li>
+              </ul>
+            </li>
+            <li class="secondary"><a href="#item.url" class="has-subnav">Newsroom</a>
+              <ul class="subnav">
+                <li><a href="what-we-do.html/operational">Operational</a></li>
+                <li><a href="what-we-do.html/supply">Supply</a></li>
+                <li><a href="what-we-do.html/clinical">Clinical</a></li>
+                <li><a href="what-we-do.html/consultancy">Consultancy</a></li>
+                <li><a href="what-we-do.html/tiered-membership-benefits">Tiered Membership Benefits</a></li>
+              </ul>
+            </li>
+            <li class="secondary"><a href="blog.html">Blog</a>
+            </li>
+            <li class="secondary"><a href="#item.url" class="has-subnav">Events</a>
+              <ul class="subnav">
+                <li><a href="what-we-do.html/operational">Operational</a></li>
+                <li><a href="what-we-do.html/supply">Supply</a></li>
+                <li><a href="what-we-do.html/clinical">Clinical</a></li>
+                <li><a href="what-we-do.html/consultancy">Consultancy</a></li>
+                <li><a href="what-we-do.html/tiered-membership-benefits">Tiered Membership Benefits</a></li>
+              </ul>
+            </li>
+            <li class="secondary"><a href="contact-us.html">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- End Mobile Menu --><!-- End Mobile Header -->
+      <main class="body-content">
+        <!-- START: CN11 v2-->
+        <section class="module module-bleed module-stretch cn11 cn11__v2 bg-green banner banner-with-image">
+          <div class="container">
+            <div class="row row-eq-height-sm">
+              <div class="col-xs-12 col-sm-4 col-sm-push-8 eq-height">
+                <div class="module-inner">
+                  <div style="background-image: url('images/icons/icon-suppliers.png')" alt="Description of image" class="bg-image"></div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-8 col-md-7 col-lg-6 col-sm-pull-4 eq-height">
+                <div class="module-inner">
+                  <h1>Suppliers</h1>
+                  <h4>Trusted leaders focused on connecting cost with quality, where efficiency and empathy come together.</h4>
+                </div>
+                <div class="arrow arrow-down arrow-green"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- START: CN02 v1-->
+        <section class="module module-bleed cn02 cn02__v1">
+          <div class="container">
+            <div class="row row-eq-height-md">
+              <div class="col-md-6 eq-height left-col bg-mist-light">
+                <div class="module-inner">
+                  <p class="metadata-eyebrow">Why Vizient?</p>
+                  <h3>Vizient provides health care solutions that make a difference</h3>
+                  <p>Vizient™ combines the strengths of VHA, University HealthSystem Consortium, Novation and MedAssets SCM and Sg2, trusted leaders focused on solving health care's most pressing challenges. We allow you to focus on what you do best: delivering exceptional, cost-effective care.</p><a href="#" title="View all press releases" class="arrow-link">View all press releases <span class="icon icon-arrow-right ml-10"></span></a>
+                </div>
+              </div>
+              <div class="col-md-6 eq-height bg-purple">
+                <div class="module-inner clearfix">
+                  <p class="pull-quote__text">Better care leads to a better quality of life for everyone. With the collaborative power of Vizient’s expertise, solutions and unique insights, together we can achieve something greater.</p>
+                  <div class="author-block">
+                    <div class="author-desc"><span class="text-bold">Curt Nonomaque</span><span>President and CEO, Vizient</span></div>
+                    <div class="avatar"><img src="images/avatars/byron.png" alt="Byron Jobe" class="avatar-md"></div>
+                  </div>
+                </div>
+                <div class="arrow arrow-left arrow-small-up arrow-purple"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END: CN02 v1-->
+        <!-- START CN21 v01-->
+        <section class="module cn21 cn21__v1 bg-mist">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-11 col-md-8 ptb-0">
+                <div class="module-inner">
+                  <h3>Story title goes here</h3>
+                  <p>At Vizient, we strive to help members solve the challenges we know affect the quality of clinical care and operational efficiency, making sure it is never compromised. Our consulting arm provides members with valuable data and insights and advisory services that are unmatched in the industry.</p>
+                </div>
+              </div>
+              <div class="arrow arrow-down-center arrow-mist"></div>
+            </div>
+          </div>
+        </section>
+        <section id="content-region" class="module module-outer module-gutter-md js-content-loader">
+          <div class="container">
+            <h3>Supplier benefits</h3>
+            <section class="module cn28 cn28__v1">
+              <div class="row row-eq-height-md">
+                <div class="col-xs-12 col-md-4 eq-height">
+                  <h1 class="numbers">1<span class="icon icon-dot"></span></h1>
+                  <div class="inner-content">
+                    <h4>Increased efficiency</h4>
+                    <p>In today’s health care environment, the rules are shifting and resources are limited. Health care organizations require a strategic, executable roadmap to meet performance, financial and quality objectives to make sure care is truly patient centered. Lorem ipsum dolor et ami consectetur adipiscing. Lorem ipsum dolor et ami consectetur adipiscing.</p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-4 eq-height">
+                  <h1 class="numbers">2<span class="icon icon-dot"></span></h1>
+                  <div class="inner-content">
+                    <h4>Increased visibility</h4>
+                    <p>As health care shifts from fee-for-service to the fee-for-value model, hospitals must optimize their operations to more closely align costs with clinical outcomes. We offer expert advice and proven solutions, all designed to help members improve clinical quality, operational performance and financial results.</p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-4 eq-height">
+                  <h1 class="numbers">3<span class="icon icon-dot m"></span></h1>
+                  <div class="inner-content">
+                    <h4>Increased credibility</h4>
+                    <p>The health care industry is going though rapid and fundamental change. SG2 is a consulting arm that helps our clients navigate and anticipate major shifts in care delivery, innovation and public policy. They enable senior leaders strive to achieve sustainable growth and maintain market relevance with new strategies to drive clinically appropriate, profitable growth		</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="module cn28 cn28__v1">
+              <div class="row row-eq-height-md">
+                <div class="col-xs-12 col-md-4 eq-height">
+                  <h1 class="numbers">4<span class="icon icon-dot"></span></h1>
+                  <div class="inner-content">
+                    <h4>Increased efficiency</h4>
+                    <p>In today’s health care environment, the rules are shifting and resources are limited. Health care organizations require a strategic, executable roadmap to meet performance, financial and quality objectives to make sure care is truly patient centered. Lorem ipsum dolor et ami consectetur adipiscing. Lorem ipsum dolor et ami consectetur adipiscing.</p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-4 eq-height">
+                  <h1 class="numbers">5<span class="icon icon-dot"></span></h1>
+                  <div class="inner-content">
+                    <h4>Increased visibility</h4>
+                    <p>As health care shifts from fee-for-service to the fee-for-value model, hospitals must optimize their operations to more closely align costs with clinical outcomes. We offer expert advice and proven solutions, all designed to help members improve clinical quality, operational performance and financial results.</p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-4 eq-height">
+                  <h1 class="numbers">6<span class="icon icon-dot m"></span></h1>
+                  <div class="inner-content">
+                    <h4>Increased credibility</h4>
+                    <p>The health care industry is going though rapid and fundamental change. SG2 is a consulting arm that helps our clients navigate and anticipate major shifts in care delivery, innovation and public policy. They enable senior leaders strive to achieve sustainable growth and maintain market relevance with new strategies to drive clinically appropriate, profitable growth</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="module module-outer module-gutter-md">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 align-center"><a href="#content-region" class="btn alt js-content-loader-trigger">View all benefits</a></div>
+            </div>
+          </div>
+        </section>
+        <!-- START CN07 v1 -->
+        <!-- START cn17 v4-->
+        <section class="module module-bleed cn17 cn17__v4">
+          <div class="container">
+            <div class="row row-eq-height-md">
+              <div class="col-xs-12 col-md-6 eq-height bg-mist-light">
+                <div class="module-inner">
+                  <h3>Collaboration networks make a difference</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. </p>
+                </div>
+                <div class="arrow arrow-right arrow-mist-light"></div>
+              </div>
+              <div class="col-xs-12 col-md-6 eq-height">
+                <div class="module-inner">
+                  <article>
+                    <p class="metadata-eyebrow">Relevant networks</p>
+                    <ul class="list-unstyled">
+                      <li><a href="#" title="">Network name goes here<span class="icon icon-arrow-right ml-10"></span></a></li>
+                      <li><a href="#" title="">Network name goes here<span class="icon icon-arrow-right ml-10"></span></a></li>
+                      <li><a href="#" title="">Network name goes here<span class="icon icon-arrow-right ml-10"></span></a></li>
+                      <li><a href="#" title="" class="bold">View all networks<span class="icon icon-arrow-right ml-10"></span></a></li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- START cn17 v4-->
+        <!-- START cn17 v3-->
+        <section class="module module-bleed cn17 cn17__v3 hg">
+          <div class="container">
+            <div class="row row-eq-height-md">
+              <div class="col-xs-12 col-md-6 eq-height">
+                <div class="module-inner">
+                  <article>
+                    <h3>Pharmacy</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. </p>
+                    <p class="metadata-eyebrow">Popular solutions</p>
+                    <ul class="list-unstyled">
+                      <li><a href="#" title="">Clinical Cost Management<span class="icon icon-arrow-right ml-10"></span></a></li>
+                      <li><a href="#" title="">Managing Cost & Utlization<span class="icon icon-arrow-right ml-10"></span></a></li>
+                      <li><a href="#" title="" class="bold">View all supply chain solutions<span class="icon icon-arrow-right ml-10"></span></a></li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 eq-height">
+                <div class="module-inner">
+                  <article>
+                    <h3>Clinical</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. </p>
+                    <p class="metadata-eyebrow">Popular solutions</p>
+                    <ul class="list-unstyled">
+                      <li><a href="#" title="">Drug shortage mitigation strategies<span class="icon icon-arrow-right ml-10"></span></a></li>
+                      <li><a href="#" title="">Accreditation<span class="icon icon-arrow-right ml-10"></span></a></li>
+                      <li><a href="#" title="">Care team optimization<span class="icon icon-arrow-right ml-10"></span></a></li>
+                      <li><a href="#" title="">Clinical cost management<span class="icon icon-arrow-right ml-10"></span></a></li>
+                      <li><a href="#" title="">Improving patient experience<span class="icon icon-arrow-right ml-10"></span></a></li>
+                      <li><a href="#" title="" class="bold">View all supply chain solutions<span class="icon icon-arrow-right ml-10"></span></a></li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END cn17 v4-->
+        <!-- START: CN01 v3-->
+        <!-- CN01 v3: 1 block - 2 equal columns - With Quote-->
+        <section class="module module-bleed module-border cn01 cn01__v3">
+          <div class="container">
+            <div class="row row-eq-height-sm">
+              <div class="col-sm-6 eq-height bg-purple">
+                <!-- START: LOGGED IN USERS ONLY-->
+                <!-- END: LOGGED IN USERS ONLY-->
+                <div class="module-inner">
+                  <p>Case study</p>
+                  <h3><a href="#" class="module-link-arrow">Improving clinical performance at Think Forrest General Hospital<span class="icon icon-arrow-right-white ml-10"></span></a></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mauris nulla, consectetur id aliquet in, porta id velit. Mauris ullamcorper, ex nec bibendum ultrices, est leo lobortis lectus, id condimentum dolor ligula quis mi. Maecenas efficitur maximus ex, a congue felis. Cras pharetra rhoncus iaculis. Donec at sagittis eros. Phasellus gravida ex ante, sed lacinia lacus consectetur id.</p><a href="#" class="module-link">View all clinical case studies<span class="icon icon-arrow-right-white ml-10"></span></a>
+                </div>
+              </div>
+              <div class="col-sm-6 eq-height bg-green">
+                <div class="module-inner clearfix">
+                  <p class="pull-quote__text-turquoise">Better care leads to a better quality of life for everyone. With the collaborative power of Vizient’s expertise, solutions and unique insights, together we can achieve something greater.</p>
+                  <div class="author-block">
+                    <div class="author-desc"><span class="text-bold">Curt Nonomaque</span><span>President and CEO, Vizient</span></div>
+                    <div class="avatar"><img src="images/avatars/byron.png" alt="Byron Jobe" class="avatar-md"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END: CN01 v3-->
+        <!-- START: IN03 v1-->
+        <section class="module-outer module-border in01 in01__v1 mb-30">
+          <div class="container">
+            <div class="row row-eq-height-md dot-border ptb-10">
+              <div class="col-xs-12 col-sm-8 col-md-offset-1 eq-height left-col">
+                <div class="module-inner">
+                  <p class="e20">Connect with Vizient to help you solve healthcare's biggest challenges</p>
+                </div>
+              </div>
+              <div class="col-sm-3 eq-height right-col">
+                <div class="module-inner"><a href="#" title="Connect with us" class="btn">Connect with us</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END: IN01 v1-->
+      </main><!-- Start Footer -->
+      <footer id="main-footer">
+        <div class="row-top">
+          <div class="container">
+            <div class="col-sm-7"><a href="/" title="Vizient" class="logo"><i class="icon icon-logo"></i></a></div>
+            <div class="col-sm-4 col-sm-offset-1 pl40 hidden-xs"><!-- Start Social Icons Component -->
+              <ul class="list-unstyled social-icons">
+                <li class="social-icons__icon"><a href="#"><span class="icon icon-linkedin"></span></a></li>
+                <li class="social-icons__icon"><a href="#"><span class="icon icon-twitter"></span></a></li>
+                <li class="social-icons__icon"><a href="#"><span class="icon icon-youtube"></span></a></li>
+              </ul><!-- End Social Icons Component -->
+            </div>
+          </div>
+        </div>
+        <div class="row-mid">     
+          <div class="container">     
+            <div class="col-sm-5">
+              <nav class="primary">
+                <ul class="list-unstyled">
+                  <li><a href="/" title="Home">Home</a></li>
+                  <li><a href="what-we-do.html" title="What we do">What we do</a></li>
+                  <li><a href="our-solutions.html" title="Our solutions">Our solutions</a></li>
+                  <li><a href="our-networks.html" title="Our networks">Our networks</a></li>
+                  <li><a href="become-a-member.html" title="Become a member">Become a member</a></li>
+                  <li><a href="become-a-supplier.html" title="Suppliers">Suppliers</a></li>
+                  <li><a href="about-us.html" title="About us">About us</a></li>
+                  <li><a href="news-and-insight.html" title="Newsroom">Newsroom</a></li>
+                  <li><a href="blog.html" title="Blog">Blog</a></li>
+                  <li><a href="events.html" title="Events">Events</a></li>
+                  <li><a href="contact-us.html" title="Contact us" class="nav-contact">Contact us</a></li>
+                  <li><a href="#" title="Careers">Careers</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-sm-4 col-sm-offset-3 border pl40">
+              <nav class="secondary">
+                <ul class="list-unstyled">
+                  <li><a href="#" title="Connect with us">Connect with us</a></li>
+                  <li><a href="#" title="Subscription manager">Subscription manager</a></li>
+                  <li><a href="#" title="Privacy policy &amp; legal notice">Privacy policy &amp; legal notice</a></li>
+                  <li><a href="#" title="Cookie policy">Cookie policy</a></li>
+                  <li><a href="#" title="Terms of use">Terms of use</a></li>
+                  <li><a href="#" title="FAQs">FAQs</a></li>
+                  <li><a href="#" title="Site map">Site map</a></li>
+                  <li><a href="#" title="Accessibility" class="toggle-ab">Accessibility</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="row-bot"> 
+          <div class="container">
+            <div class="col-xs-12">
+              <div class="visible-xs"><!-- Start Social Icons Component -->
+                <ul class="list-unstyled social-icons">
+                  <li class="social-icons__icon"><a href="#"><span class="icon icon-linkedin"></span></a></li>
+                  <li class="social-icons__icon"><a href="#"><span class="icon icon-twitter"></span></a></li>
+                  <li class="social-icons__icon"><a href="#"><span class="icon icon-youtube"></span></a></li>
+                </ul><!-- End Social Icons Component -->
+              </div>
+              <div class="footer-copy"> 
+                <p>&copy; 2016 Vizient Inc. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer><!-- End Footer -->
+    </div><script src="scripts/vendor.min.js"></script>
+    <script src="scripts/main.min.js"></script>
+  </body>
+</html>
