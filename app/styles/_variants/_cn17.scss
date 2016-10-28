@@ -96,6 +96,12 @@
             }
         }
 
+        .width-90 {
+        	@media only screen and (min-width: $screen-lg) {
+				width: 90%;
+        	}
+        }
+
         [class*="col-"] {
             border-bottom: 1px dotted  $grey-mid;
             

@@ -1,0 +1,14 @@
+/// Min-Height ///
+
+
+@each $space in $min-heights {
+
+    .mh-#{$space} {
+    	min-height: 0;
+    	
+    	@media (min-width: $screen-sm) {
+        	min-height: #{$space}px !important ;
+    	}
+    }
+
+}
