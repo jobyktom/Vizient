@@ -14,7 +14,9 @@
 		.container {
 			border-bottom: 1px dotted $grey-mid;
 			border-top: 1px dotted $grey-mid;
-			margin-top: -1px; // Hacks border overlap given no suitable targets for pseudo selectors
+			//margin-top: -1px; // Hacks border overlap given no suitable targets for pseudo selectors
+
+			// Kerry: Had to turn the abover off as it made the whole module disappear from view
 		}
 		
 		[class*="col-"] {
