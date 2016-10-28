@@ -79,22 +79,6 @@
             }
         }
 
-        [class*="col-"]:last-child {
-
-            position: relative;
-
-            .module-inner {
-                padding: 0;
-
-                @media (min-width: $screen-sm) {
-                    bottom: 0;
-                    padding: 40px;
-                    position: absolute;
-                }
-            }
-        }
-
-
     	// Content Elements
 
         .module-inner .bg-image {
@@ -115,6 +99,7 @@
             background-repeat: no-repeat;
             background-size: contain;
             height: 140px;
+            position: static;
 
             @media (min-width: $screen-sm) {
                 height: 240px;
