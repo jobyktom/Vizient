@@ -83,6 +83,10 @@
                 }
             }
         }
+
+        // .module-inner {
+        // 	padding: 20px;
+        // }
     }
 
 
@@ -135,7 +139,7 @@
     }
 
     .module-inner {
-        padding: 20px;
+        padding: 20px 0;
         
         @media (min-width: $screen-sm) {
             padding: 40px;
