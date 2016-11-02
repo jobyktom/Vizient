@@ -1,7 +1,7 @@
 .cn01 { 
 	[class*="col-"] {
 		margin: 0 !important;
-		padding:0 !important;
+		//padding:0 !important;
 	}
 	.module-inner p:first-child{
 		@media (max-width: $screen-sm-max) {
