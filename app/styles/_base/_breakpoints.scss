@@ -24,7 +24,7 @@
 @mixin define-breakpoint($name) {
     &:after {
     	content: $name;
-      	display: block;
+      	display: none;
     }
 }
 
