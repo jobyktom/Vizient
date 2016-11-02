@@ -1,19 +1,35 @@
 // CON02
 
 .con02_contact_info {
+	
+	[class*="col-"] {
+		&:first-child {
+			padding-top: 30px !important;
+		}
+	}
+
 	article {
-		margin-top: 30px;
-		position: relative;
+		margin-top: 20px;
+
+		@media (min-width: $screen-sm) {
+			margin-top: 30px;
+			position: relative;
+		}
 	}
 	
 	.icon-section {
-		left: 0;
-		position: absolute;
-		top: 0;
+		margin-bottom: 10px;
+		@media (min-width: $screen-sm) {
+			left: 0;
+			position: absolute;
+			top: 0;
+		}
 	}
 
 	.article-content {
-		margin-left: 65px;
+		@media (min-width: $screen-sm) {
+			margin-left: 65px;
+		}
 		
 		.tel {
 			@extend .bold;
