@@ -171,17 +171,17 @@ var Vizient = (function() {
 	};
 
 	var _checkAllCheckboxes = function _checkAllCheckboxes() {
-		$('.js-check-all').on('click', function(e) {
-			e.preventDefault();
+		$('.js-check-all').on('change', function(e) {
+			
 			var $checkboxGroup = $(this).parents('.js-checkbox-group'),
 				$checkBoxes = $checkboxGroup.find('input:checkbox');
 
-			$checkBoxes.prop('checked', !$checkBoxes.prop('checked'));
+   			$checkBoxes.prop('checked', $checkBoxes.prop('checked'));
 		});
 	};
 
 	var _clearFilters = function _clearFilters() {
-		$('.js-clear-filters').on('click', function(e) {
+		$('.js-clear-filters').on('change', function(e) {
 			e.preventDefault();
 			var $filterPanels = $(this).parents('.js-filter-panels'),
 				$checkBoxes = $filterPanels.find('.js-checkbox-group input:checkbox'),
