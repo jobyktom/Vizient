@@ -9,7 +9,8 @@
 	height: 100%;
 
 	@media only screen and (min-width: $screen-sm) {
-		float: left;
+		// [TODO]: Removed this as its breaking layout and I can't see the purpose
+		//float: left;
 	}
 	
 	&.dot-border-yellow {

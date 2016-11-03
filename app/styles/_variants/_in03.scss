@@ -6,18 +6,22 @@
 	
 	&.module ul.share-icons{
 		width: auto;
+		
 		.icon-circle:hover{
 			background-color: $orange-dark;
+			border: solid 2px $orange-dark;
 		}
 
 		.icon-oval:hover{
 			background-color: $orange-dark;
+			border: solid 2px $orange-dark;
 			color: $white;
 		}
 	} 
 
 	.share-icons .icon-circle:hover{
 		background-color: $orange-dark;
+		border: solid 2px $orange-dark;
 	}
 	
 

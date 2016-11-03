@@ -1,0 +1,56 @@
+extends layouts/_default
+
+block content
+	main(class="body-content")
+		
+		include modules/_cn11__v9_newsletter-lvl-2
+		
+		include modules/_cn09__v1_newsletter-article
+
+		// START CN12 v2
+		section(class="module module-outer module--has-cols cn12 cn12__v2 bg-mist-lightest")
+			.container
+				h3 Related events
+				.row.row-eq-height-lg.bg-orange-dark
+					.col-xs-12.col-md-8.eq-height
+						.module-inner
+							article(class="event")
+								p.metadata-eyebrow Webinars and education
+
+								time(class="calendar-date", datetime="2016-09-30")
+									span(class="date") 30
+									span(class="month") Sep
+								
+								.event-description
+									p.metadata-byline 30 September 2016
+									h3
+										a(href="#", title="Supply Chain Education Series") Supply Chain Education Series - Part 3: Thinking Outside the Emergency Box
+											span.icon.icon-arrow-right-white.ml-10
+								
+									p Lorem ipsum dolor et ami Proin sit amet massa purus. Aliquam venenatis enim eu nunc facilisis convallis. Sed quis urna sit amet nulla tristique euismod. Sed placerat augue magna, et euismod mi volutpat non. Sed quis urna sit amet nulla tristique euismod
+								
+									a(href="#", title="View all webinars and education") View all webinars and education
+										span.icon.icon-arrow-right-white.ml-10
+
+					.col-xs-12.col-md-4.eq-height
+						.module-inner
+							p.metadata-eyebrow Upcoming events
+
+							ul(class="list-events")
+								li
+									p.metadata-byline 28-30 September 2016 • Dallas TX
+
+									a(hef="#", title="2016 Vizient Clinical Connections Summit") 2016 Vizient Clinical Connections Summit
+										span.icon.icon-arrow-right-white.ml-10
+
+								li
+									p.metadata-byline 28-30 September 2016 • Dallas TX
+
+									a(hef="#", title="2016 Vizient Clinical Connections Summit") 2016 Vizient Clinical Connections Summit
+										span.icon.icon-arrow-right-white.ml-10
+
+							a(href="#", title="View all events") View all events
+								span.icon.icon-arrow-right-white.ml-10pu
+		// START CN12 v2
+
+		include modules/_in01__v1

@@ -134,22 +134,6 @@
         @media (min-width: $screen-sm) {
 			padding-left: 4px;
         }
-        // position: relative;
-
-        // @media (min-width: $screen-sm) {
-        //     font-size: inherit;
-        // }
-
-        // span {
-        //     left: 0;
-        //     position: absolute;
-        //     top: 50%;
-        //     transform: translateY(-50%);
-
-        //     &.icon-arrow-left-darkgrey {
-        //         transform: translateY(-50%) rotate(180deg);
-        //     }
-        // }
     }
     
     // Variants
@@ -319,5 +303,11 @@
                 padding-top: 8px;
             }
         }
+    }
+
+    &.cn11__v9 {
+		.date {
+			@include font-size(22px);
+		}
     }
 }
