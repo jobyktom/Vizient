@@ -1,0 +1,1148 @@
+<!DOCTYPE html><!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VHA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico"><link rel="stylesheet" href="styles/main.min.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">  </script>
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+    <div class="browsehappy"><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div>
+    <![endif]-->
+    <div class="outer-wrapper"><!-- Start Desktop Header -->
+      <header id="header-bar" class="hidden-xs hidden-sm">
+        <div class="master-logo"><a href="/"><i class="icon icon-logo"></i></a></div>
+        <div class="master-nav">
+          <!-- Start Top Nav-->
+          <nav class="top-nav">
+            <div class="hat"></div>
+            <ul class="list-unstyled">
+              <li class="header-nav__nav-item"><a href="about-us.html" class="header-nav__nav-link ">About us</a></li>
+              <li class="header-nav__nav-item"><a href="news-and-insight.html" class="header-nav__nav-link ">Newsroom</a></li>
+              <li class="header-nav__nav-item"><a href="blog.html" class="header-nav__nav-link ">Blog</a></li>
+              <li class="header-nav__nav-item"><a href="events.html" class="header-nav__nav-link ">Events</a></li>
+              <li class="header-nav__nav-item"><a href="contact-us.html" class="header-nav__nav-link nav-contact">Contact us</a></li>
+            </ul>
+          </nav>
+          <!-- End Top Nav-->
+          <!-- Start Primary Nav-->
+          <nav class="primary-nav">
+            <ul role="tablist" class="list-unstyled">
+              <li><a href="/" class="menu-item-home">Home</a>
+              </li>
+              <li><a role="tab" data-toggle="tab" href="what-we-do.html" data-href="what-we-do.html" data-target="#mega-nav-1">What we do</a>
+              </li>
+              <li><a role="tab" data-toggle="tab" href="our-solutions.html" data-href="our-solutions.html" data-target="#mega-nav-2">Our solutions</a>
+              </li>
+              <li><a role="tab" data-toggle="tab" href="our-networks.html" data-href="our-networks.html" data-target="#mega-nav-3">Our networks</a>
+              </li>
+              <li><a role="tab" data-toggle="tab" href="become-a-member.html" data-href="become-a-member.html" data-target="#mega-nav-4">Become a member</a>
+              </li>
+              <li><a role="tab" data-toggle="tab" href="become-a-supplier.html" data-href="become-a-supplier.html" data-target="#mega-nav-5">Suppliers</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Primary Nav-->
+          <!-- Start Additional nav - Search, Login-->
+          <nav class="additional-nav">
+            <ul role="tablist" class="list-unstyled">
+              <li> <a role="tab" href="#" class="search"><i class="icon icon-search"></i></a></li>
+              <!-- Either 1 of 2 remaining LI tags below must be present with a logged-in or logged-out class. Remove and apply class "hidden" accordingly to see different states -->
+              <!-- LOGGED OUT MODULE            -->
+              <li class="logged-out"><a role="tab" href="#" class="btn alt"> <i class="icon icon-login">  </i><span>Login</span></a></li>
+              <li class="logged-in hidden"><a role="tab" href="#" id="dashboard-menu"><span class="icon-login-circle"><span class="icon icon-login">  </span></span><span class="username">Chad Logan</span><span class="icon icon-chevron-down-small"></span></a></li>
+            </ul>
+          </nav>
+          <!-- End Additional nav - Search, Login-->
+          <!-- Start Dashboard nav (LOGGED IN ONLY)-->
+          <!-- This is absoolutely positioned -->
+          <!-- Remove "hidden" class to reveal-->
+          <nav class="dashboard-nav">
+            <ul role="tablist" class="list-unstyled">
+              <li><a role="tab" href="#" title="My dashboard">My dashboard</a></li>
+              <li><a role="tab" href="#" title="My account">My account</a></li>
+              <li><a role="tab" href="#" title="Support">Support</a></li>
+              <li><a role="tab" href="#" title="Contact us">Contact us </a></li>
+            </ul>
+          </nav>
+          <!-- End Dashboard nav-->
+        </div>
+      </header>
+      <!-- End Desktop Header Bar--><!-- Start Search bar -->
+      <div class="search-bar">
+        <form class="search-bar-wrap">
+          <div class="arrow arrow-slate"></div>
+          <input type="text" placeholder="Type your search term here…" required data-minLength="0" data-provide="typeahead" class="typeahead-input">
+          <button type="reset" class="search-bar-close"><i class="icon icon-close-slate"></i></button>
+          <button title="Search" class="btn"><span class="icon icon-search-white"></span>Search</button>
+        </form>
+        <div class="autocomplete-results"></div>
+      </div><!-- End Search bar -->
+      
+      
+      <nav class="subnav hidden-xs hidden-sm">
+        <ul id="nav-bar-filter" class="nav-bar-filter">
+          <li><a href="#" class="active">Our solutions</a></li>
+          <li><a href="#">Supply chain</a></li>
+          <li><a href="#">Operations</a></li>
+          <li><a>Operations</a></li>
+          <li><a>Pharmacy</a></li>
+          <li><a>Clinical</a></li>
+          <li><a>Consulting</a></li>
+          <li><a>Lorem ipsum</a></li>
+          <li><a>Consectetur adipiscing dolor</a></li>
+        </ul>
+        <ul id="more-nav">
+          <li><a href="#" class="active">More options</a>
+            <ul class="subfilter"></ul>
+          </li>
+        </ul>
+      </nav><!-- Start Mobile Header -->
+      <header id="mobile-header" class="visible-xs visible-sm">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 logo"><a href="/" title="Vizient - back to home" class="mobile-menu__logo"></a></div><a title="Login" class="mobile-login__outer"><span class="icon icon-login"></span></a><a href="#primary-mobile-nav" title="Menu" class="mobile-menu__outer js-mobile-icon"><span class="mobile-menu__icon"></span></a>
+          </div>
+        </div>
+      </header><!-- Start Mobile Menu -->
+      <div id="mobileMenu" class="visible-xs-block visible-sm-block"><!-- Start Search bar -->
+        <div class="search-bar">
+          <form class="search-bar-wrap">
+            <div class="arrow arrow-slate"></div>
+            <input type="text" placeholder="Type your search term here…" required data-minLength="0" data-provide="typeahead" class="typeahead-input">
+            <button type="reset" class="search-bar-close"><i class="icon icon-close-slate"></i></button>
+            <button title="Search" class="btn"><span class="icon icon-search-white"></span>Search</button>
+          </form>
+          <div class="autocomplete-results"></div>
+        </div><!-- End Search bar -->
+        <nav>
+          <ul id="mobile-nav" class="list-unstyled">
+            <li class="primary"><a href="/" data-href="/">Home</a>
+            </li>
+            <li class="primary"><a href="what-we-do.html" class="has-subnav">What we do</a>
+              <ul class="subnav">
+                <li><a href="what-we-do.html/operational" data-href="what-we-do.html/operational" class=" mobile-nav__sub-nav-link">Operational</a></li>
+                <li><a href="what-we-do.html/supply" data-href="what-we-do.html/supply" class=" mobile-nav__sub-nav-link">Supply</a></li>
+                <li><a href="what-we-do.html/clinical" data-href="what-we-do.html/clinical" class=" mobile-nav__sub-nav-link">Clinical</a></li>
+                <li><a href="what-we-do.html/consultancy" data-href="what-we-do.html/consultancy" class=" mobile-nav__sub-nav-link">Consultancy</a></li>
+                <li><a href="what-we-do.html/tiered-membership-benefits" data-href="what-we-do.html/tiered-membership-benefits" class=" mobile-nav__sub-nav-link">Tiered Membership Benefits</a></li>
+              </ul>
+            </li>
+            <li class="primary"><a href="our-solutions.html" class="has-subnav">Our solutions</a>
+              <ul class="subnav">
+                <li><a href="who-we-are/operational" data-href="who-we-are/operational" class=" mobile-nav__sub-nav-link">Operational</a></li>
+                <li><a href="who-we-are/supply" data-href="who-we-are/supply" class=" mobile-nav__sub-nav-link">Supply</a></li>
+                <li><a href="who-we-are/clinical" data-href="who-we-are/clinical" class=" mobile-nav__sub-nav-link">Clinical</a></li>
+                <li><a href="who-we-are/consultancy" data-href="who-we-are/consultancy" class=" mobile-nav__sub-nav-link">Consultancy</a></li>
+                <li><a href="who-we-are/tiered-membership-benefits" data-href="who-we-are/tiered-membership-benefits" class=" mobile-nav__sub-nav-link">Tiered Membership Benefits</a></li>
+              </ul>
+            </li>
+            <li class="primary"><a href="our-networks.html" class="has-subnav">Our networks</a>
+              <ul class="subnav">
+                <li><a href="become-a-member/operational" data-href="become-a-member/operational" class=" mobile-nav__sub-nav-link">Operational</a></li>
+                <li><a href="become-a-member/supply" data-href="become-a-member/supply" class=" mobile-nav__sub-nav-link">Supply</a></li>
+                <li><a href="become-a-member/clinical" data-href="become-a-member/clinical" class=" mobile-nav__sub-nav-link">Clinical</a></li>
+                <li><a href="become-a-member/consultancy" data-href="become-a-member/consultancy" class=" mobile-nav__sub-nav-link">Consultancy</a></li>
+                <li><a href="become-a-member/tiered-membership-benefits" data-href="become-a-member/tiered-membership-benefits" class=" mobile-nav__sub-nav-link">Tiered Membership Benefits</a></li>
+              </ul>
+            </li>
+            <li class="primary"><a href="become-a-member.html" data-href="become-a-member.html">Become a member</a>
+            </li>
+            <li class="primary"><a href="become-a-supplier.html" class="has-subnav">Suppliers</a>
+              <ul class="subnav">
+                <li><a href="become-a-supplier/operational" data-href="become-a-supplier/operational" class=" mobile-nav__sub-nav-link">Operational</a></li>
+                <li><a href="become-a-supplier/supply" data-href="become-a-supplier/supply" class=" mobile-nav__sub-nav-link">Supply</a></li>
+                <li><a href="become-a-supplier/clinical.html" data-href="become-a-supplier/clinical.html" class=" mobile-nav__sub-nav-link">Clinical</a></li>
+                <li><a href="become-a-supplier/consultancy" data-href="become-a-supplier/consultancy" class=" mobile-nav__sub-nav-link">Consultancy</a></li>
+                <li><a href="become-a-supplier/tiered-membership-benefits" data-href="become-a-supplier/tiered-membership-benefits" class=" mobile-nav__sub-nav-link">Tiered Membership Benefits</a></li>
+              </ul>
+            </li>
+            <li class="secondary first-item"><a href="#item.url" class="has-subnav">About us</a>
+              <ul class="subnav">
+                <li><a href="what-we-do.html/operational">Operational</a></li>
+                <li><a href="what-we-do.html/supply">Supply</a></li>
+                <li><a href="what-we-do.html/clinical">Clinical</a></li>
+                <li><a href="what-we-do.html/consultancy">Consultancy</a></li>
+                <li><a href="what-we-do.html/tiered-membership-benefits">Tiered Membership Benefits</a></li>
+              </ul>
+            </li>
+            <li class="secondary"><a href="#item.url" class="has-subnav">Newsroom</a>
+              <ul class="subnav">
+                <li><a href="what-we-do.html/operational">Operational</a></li>
+                <li><a href="what-we-do.html/supply">Supply</a></li>
+                <li><a href="what-we-do.html/clinical">Clinical</a></li>
+                <li><a href="what-we-do.html/consultancy">Consultancy</a></li>
+                <li><a href="what-we-do.html/tiered-membership-benefits">Tiered Membership Benefits</a></li>
+              </ul>
+            </li>
+            <li class="secondary"><a href="blog.html">Blog</a>
+            </li>
+            <li class="secondary"><a href="#item.url" class="has-subnav">Events</a>
+              <ul class="subnav">
+                <li><a href="what-we-do.html/operational">Operational</a></li>
+                <li><a href="what-we-do.html/supply">Supply</a></li>
+                <li><a href="what-we-do.html/clinical">Clinical</a></li>
+                <li><a href="what-we-do.html/consultancy">Consultancy</a></li>
+                <li><a href="what-we-do.html/tiered-membership-benefits">Tiered Membership Benefits</a></li>
+              </ul>
+            </li>
+            <li class="secondary"><a href="contact-us.html">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- End Mobile Menu --><!-- End Mobile Header -->
+      <main class="body-content"> 
+        <section id="v1" class="module">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <h3>NV05 v1</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module cn09 cn09__v1">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-md-4 col-md-push-8 col-lg-3 col-lg-push-9">
+                <!-- START: NV05 v1-->
+                <form class="module nv05 bg-mist-lightest js-toggle-region js-filter-panels">
+                  <h3 class="js-toggle-trigger">Filter case studies</h3>
+                  <div class="js-toggle-content hide">
+                    <div class="row bg-mist">
+                      <div class="col-xs-12 col-sm-6 col-md-12">
+                        <div class="module-inner">
+                          <fieldset class="js-checkbox-group">
+                            <legend>Filter by solution</legend>
+                            <ul class="list-unstyled">
+                              <li class="checkbox">
+                                <label class="bold js-check-all"> 
+                                  <input type="checkbox" name="event-solution" value="all">All Solutions
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-solution" value="1">Supply chain
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-solution" value="2">Operations
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-solution" value="3">Consulting
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-solution" value="4">Pharmacy
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-solution" value="5">Clinical
+                                </label>
+                              </li>
+                            </ul>
+                          </fieldset>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-12">
+                        <div class="module-inner">
+                          <fieldset class="js-checkbox-group">
+                            <legend>Filter by role</legend>
+                            <ul class="list-unstyled">
+                              <li class="checkbox">
+                                <label class="bold js-check-all"> 
+                                  <input type="checkbox" name="event-role" value="all">All roles
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label>
+                                  <input type="checkbox" name="event-role" value="1">Physician
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-role" value="2">Nurse
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-role" value="3">Supply chain leader
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-role" value="4">Pharmacist
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-role" value="5">Clinical leader
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-role" value="6">Supply chain management
+                                </label>
+                              </li>
+                            </ul>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row bg-mist">
+                      <div class="col-xs-12 text-right">
+                        <div class="module-inner">
+                          <button type="reset" class="btn js-clear-filters">Clear filters</button>
+                          <button type="submit" class="btn hidden-lg">Apply filters</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-xs-12 col-md-8 col-md-pull-4 col-lg-9 col-lg-pull-3">
+                <section id="content-region-1" data-show-items="4" class="module js-content-loader">
+                  <section class="module module-border cn14 cn14__v1">
+                    <div class="container"> 
+                      <div class="row row-eq-height-sm">
+                        <div class="col-sm-8 eq-height">
+                          <div class="module-inner">
+                            <p class="metadata-eyebrow">Case study</p>
+                            <h3 class="e28"><a href="#">Building connections to achieve $5 million savings goal<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                            <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacinia eu. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacini.</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 eq-height">
+                          <div class="module-inner">
+                            <p><span class="extraLightNumbers">47%</span></p>
+                            <p class="italic">In 2014, Vizient SupplyNetworks™ delivered 47% increase in lorem ipsum.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <div class="module-inner bottom-row"><a href="#" class="downloadlinkText">Download PDF (1.4MB) <i class="icon icon-download icon-small"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module module-border cn14 cn14__v1">
+                    <div class="container"> 
+                      <div class="row row-eq-height-sm">
+                        <div class="col-sm-8 eq-height">
+                          <div class="module-inner">
+                            <p class="metadata-eyebrow">Case study</p>
+                            <h3 class="e28"><a href="#">Building connections to achieve $5 million savings goal<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                            <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacinia eu. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacini.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <div class="module-inner bottom-row"><a href="#" class="downloadlinkText">Download PDF (1.4MB) <i class="icon icon-download icon-small"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module module-border cn14 cn14__v1">
+                    <div class="container"> 
+                      <div class="row row-eq-height-sm">
+                        <div class="col-sm-8 eq-height">
+                          <div class="module-inner">
+                            <p class="metadata-eyebrow">Case study</p>
+                            <h3 class="e28"><a href="#">Building connections to achieve $5 million savings goal<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                            <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacinia eu. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacini.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <div class="module-inner bottom-row"><a href="#" class="downloadlinkText">Download PDF (1.4MB) <i class="icon icon-download icon-small"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module module-border cn14 cn14__v1">
+                    <div class="container"> 
+                      <div class="row row-eq-height-sm">
+                        <div class="col-sm-8 eq-height">
+                          <div class="module-inner">
+                            <p class="metadata-eyebrow">Case study</p>
+                            <h3 class="e28"><a href="#">Building connections to achieve $5 million savings goal<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                            <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacinia eu. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacini.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <div class="module-inner bottom-row"><a href="#" class="downloadlinkText">Download PDF (1.4MB) <i class="icon icon-download icon-small"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module module-border cn14 cn14__v1">
+                    <div class="container"> 
+                      <div class="row row-eq-height-sm">
+                        <div class="col-sm-8 eq-height">
+                          <div class="module-inner">
+                            <p class="metadata-eyebrow">Case study</p>
+                            <h3 class="e28"><a href="#">Building connections to achieve $5 million savings goal<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                            <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacinia eu. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacini.</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 eq-height">
+                          <div class="module-inner">
+                            <p><span class="extraLightNumbers">47%</span></p>
+                            <p class="italic">In 2014, Vizient SupplyNetworks™ delivered 47% increase in lorem ipsum.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <div class="module-inner bottom-row"><a href="#" class="downloadlinkText">Download PDF (1.4MB) <i class="icon icon-download icon-small"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module module-border cn14 cn14__v1">
+                    <div class="container"> 
+                      <div class="row row-eq-height-sm">
+                        <div class="col-sm-8 eq-height">
+                          <div class="module-inner">
+                            <p class="metadata-eyebrow">Case study</p>
+                            <h3 class="e28"><a href="#">Building connections to achieve $5 million savings goal<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                            <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacinia eu. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacini.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <div class="module-inner bottom-row"><a href="#" class="downloadlinkText">Download PDF (1.4MB) <i class="icon icon-download icon-small"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module module-border cn14 cn14__v1">
+                    <div class="container"> 
+                      <div class="row row-eq-height-sm">
+                        <div class="col-sm-8 eq-height">
+                          <div class="module-inner">
+                            <p class="metadata-eyebrow">Case study</p>
+                            <h3 class="e28"><a href="#">Building connections to achieve $5 million savings goal<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                            <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacinia eu. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacini.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <div class="module-inner bottom-row"><a href="#" class="downloadlinkText">Download PDF (1.4MB) <i class="icon icon-download icon-small"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module module-border cn14 cn14__v1">
+                    <div class="container"> 
+                      <div class="row row-eq-height-sm">
+                        <div class="col-sm-8 eq-height">
+                          <div class="module-inner">
+                            <p class="metadata-eyebrow">Case study</p>
+                            <h3 class="e28"><a href="#">Building connections to achieve $5 million savings goal<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                            <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacinia eu. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacini.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <div class="module-inner bottom-row"><a href="#" class="downloadlinkText">Download PDF (1.4MB) <i class="icon icon-download icon-small"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module module-border cn14 cn14__v1">
+                    <div class="container"> 
+                      <div class="row row-eq-height-sm">
+                        <div class="col-sm-8 eq-height">
+                          <div class="module-inner">
+                            <p class="metadata-eyebrow">Case study</p>
+                            <h3 class="e28"><a href="#">Building connections to achieve $5 million savings goal<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                            <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacinia eu. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacini.</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 eq-height">
+                          <div class="module-inner">
+                            <p><span class="extraLightNumbers">47%</span></p>
+                            <p class="italic">In 2014, Vizient SupplyNetworks™ delivered 47% increase in lorem ipsum.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <div class="module-inner bottom-row"><a href="#" class="downloadlinkText">Download PDF (1.4MB) <i class="icon icon-download icon-small"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module module-border cn14 cn14__v1">
+                    <div class="container"> 
+                      <div class="row row-eq-height-sm">
+                        <div class="col-sm-8 eq-height">
+                          <div class="module-inner">
+                            <p class="metadata-eyebrow">Case study</p>
+                            <h3 class="e28"><a href="#">Building connections to achieve $5 million savings goal<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                            <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacinia eu. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacini.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <div class="module-inner bottom-row"><a href="#" class="downloadlinkText">Download PDF (1.4MB) <i class="icon icon-download icon-small"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module module-border cn14 cn14__v1">
+                    <div class="container"> 
+                      <div class="row row-eq-height-sm">
+                        <div class="col-sm-8 eq-height">
+                          <div class="module-inner">
+                            <p class="metadata-eyebrow">Case study</p>
+                            <h3 class="e28"><a href="#">Building connections to achieve $5 million savings goal<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                            <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacinia eu. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacini.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <div class="module-inner bottom-row"><a href="#" class="downloadlinkText">Download PDF (1.4MB) <i class="icon icon-download icon-small"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module module-border cn14 cn14__v1">
+                    <div class="container"> 
+                      <div class="row row-eq-height-sm">
+                        <div class="col-sm-8 eq-height">
+                          <div class="module-inner">
+                            <p class="metadata-eyebrow">Case study</p>
+                            <h3 class="e28"><a href="#">Building connections to achieve $5 million savings goal<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                            <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacinia eu. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacini.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <div class="module-inner bottom-row"><a href="#" class="downloadlinkText">Download PDF (1.4MB) <i class="icon icon-download icon-small"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module module-border cn14 cn14__v1">
+                    <div class="container"> 
+                      <div class="row row-eq-height-sm">
+                        <div class="col-sm-8 eq-height">
+                          <div class="module-inner">
+                            <p class="metadata-eyebrow">Case study</p>
+                            <h3 class="e28"><a href="#">Building connections to achieve $5 million savings goal<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                            <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacinia eu. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacini.</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 eq-height">
+                          <div class="module-inner">
+                            <p><span class="extraLightNumbers">47%</span></p>
+                            <p class="italic">In 2014, Vizient SupplyNetworks™ delivered 47% increase in lorem ipsum.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <div class="module-inner bottom-row"><a href="#" class="downloadlinkText">Download PDF (1.4MB) <i class="icon icon-download icon-small"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module module-border cn14 cn14__v1">
+                    <div class="container"> 
+                      <div class="row row-eq-height-sm">
+                        <div class="col-sm-8 eq-height">
+                          <div class="module-inner">
+                            <p class="metadata-eyebrow">Case study</p>
+                            <h3 class="e28"><a href="#">Building connections to achieve $5 million savings goal<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                            <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacinia eu. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacini.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <div class="module-inner bottom-row"><a href="#" class="downloadlinkText">Download PDF (1.4MB) <i class="icon icon-download icon-small"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module module-border cn14 cn14__v1">
+                    <div class="container"> 
+                      <div class="row row-eq-height-sm">
+                        <div class="col-sm-8 eq-height">
+                          <div class="module-inner">
+                            <p class="metadata-eyebrow">Case study</p>
+                            <h3 class="e28"><a href="#">Building connections to achieve $5 million savings goal<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                            <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacinia eu. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacini.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <div class="module-inner bottom-row"><a href="#" class="downloadlinkText">Download PDF (1.4MB) <i class="icon icon-download icon-small"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module module-border cn14 cn14__v1">
+                    <div class="container"> 
+                      <div class="row row-eq-height-sm">
+                        <div class="col-sm-8 eq-height">
+                          <div class="module-inner">
+                            <p class="metadata-eyebrow">Case study</p>
+                            <h3 class="e28"><a href="#">Building connections to achieve $5 million savings goal<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                            <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh est, at accumsan mauris luctus non. Donec lectus ligula, iaculis in erat sit amet, ultricies semper elit. Nulla quis pellentesque neque. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacinia eu. Donec vulputate quis erat tristique finibus. Nam sodales ex nisl, ut iaculis risus lacini.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <div class="module-inner bottom-row"><a href="#" class="downloadlinkText">Download PDF (1.4MB) <i class="icon icon-download icon-small"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </section>
+                <section class="module">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="module-inner"><a href="#content-region-1" class="btn js-content-loader-trigger">Load more</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="v2" class="module">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <h3>NV05 v2</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module cn09 cn09__v1">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-md-4 col-md-push-8 col-lg-3 col-lg-push-9">
+                <!-- START: NV05 v2-->
+                <form class="module nv05 bg-mist-lightest js-toggle-region js-filter-panels">
+                  <h3 class="js-toggle-trigger">Filter search results</h3>
+                  <div class="js-toggle-content hide">
+                    <div class="row bg-mist">
+                      <div class="col-xs-12 col-sm-6 col-md-12">
+                        <div class="module-inner">
+                          <fieldset class="js-checkbox-group">
+                            <legend>Filter by category</legend>
+                            <ul class="list-unstyled">
+                              <li class="checkbox">
+                                <label class="bold js-check-all"> 
+                                  <input type="checkbox" name="event-categories" value="all">All
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-categories" value="1">Solutions <span>(28)</span>
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-categories" value="2">News <span>(190)</span>
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-categories" value="3">Events &amp; Webinars <span>(155)</span>
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-categories" value="4">Case Studies <span>(250)</span>
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-categories" value="5">Insight <span>(58)</span>
+                                </label>
+                              </li>
+                            </ul>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row bg-mist">
+                      <div class="col-xs-12 text-right">
+                        <div class="module-inner">
+                          <button type="reset" class="btn js-clear-filters">Clear filters</button>
+                          <button type="submit" class="btn hidden-lg">Apply filters</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-xs-12 col-md-8 col-md-pull-4 col-lg-9 col-lg-pull-3">
+                <!-- START NV06 v1-->
+                <section class="module nv06 nv06__v1">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xs-12 bottom-dot-border">
+                        <div class="col-xs-11 col-sm-8">
+                          <div class="search-results"><span class="number-results bold">538 </span><span class="results-text">results were found for </span><span class="search-word bold">‘supp’ </span></div>
+                        </div>
+                        <div class="col-xs-8 col-sm-4 sort-section">
+                          <div class="sort-by"><span class="e16 sortBy">Sort by: </span><a href="#"><span class="e16 active rel">Relevence  | </span></a><a href="#"><span class="e16 date">Date</span></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- END CN22 v1-->
+                <section id="content-region-1" data-show-items="4" class="module js-content-loader">
+                  <section class="module cn14 cn14__v6">
+                    <div class="container"> 
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <h6><a href="#"><strong>Suppliers</strong> chain search result title 1<span class="icon icon-arrow-right ml-10"></span></a></h6>
+                          <p class="metadata-byline">Case study</p>
+                          <p>DCH Health System, facing the potential for significant revenue reductions, set a highly ambitious savings goal of $5 million per year. Working with Vizient data and consultants, the DCH team not only surpassed the goal by nearly $1 million, they also built new relationships with both suppliers and physicians that will provide ongoing opportunities for savings.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module cn14 cn14__v6">
+                    <div class="container"> 
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <h6><a href="#"><strong>Suppliers</strong> chain search result title 1<span class="icon icon-arrow-right ml-10"></span></a></h6>
+                          <p class="metadata-byline">Case study</p>
+                          <p>DCH Health System, facing the potential for significant revenue reductions, set a highly ambitious savings goal of $5 million per year. Working with Vizient data and consultants, the DCH team not only surpassed the goal by nearly $1 million, they also built new relationships with both suppliers and physicians that will provide ongoing opportunities for savings.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module cn14 cn14__v6">
+                    <div class="container"> 
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <h6><a href="#"><strong>Suppliers</strong> chain search result title 1<span class="icon icon-arrow-right ml-10"></span></a></h6>
+                          <p class="metadata-byline">Case study</p>
+                          <p>DCH Health System, facing the potential for significant revenue reductions, set a highly ambitious savings goal of $5 million per year. Working with Vizient data and consultants, the DCH team not only surpassed the goal by nearly $1 million, they also built new relationships with both suppliers and physicians that will provide ongoing opportunities for savings.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module cn14 cn14__v6">
+                    <div class="container"> 
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <h6><a href="#"><strong>Suppliers</strong> chain search result title 1<span class="icon icon-arrow-right ml-10"></span></a></h6>
+                          <p class="metadata-byline">Case study</p>
+                          <p>DCH Health System, facing the potential for significant revenue reductions, set a highly ambitious savings goal of $5 million per year. Working with Vizient data and consultants, the DCH team not only surpassed the goal by nearly $1 million, they also built new relationships with both suppliers and physicians that will provide ongoing opportunities for savings.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module cn14 cn14__v6">
+                    <div class="container"> 
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <h6><a href="#"><strong>Suppliers</strong> chain search result title 1<span class="icon icon-arrow-right ml-10"></span></a></h6>
+                          <p class="metadata-byline">Case study</p>
+                          <p>DCH Health System, facing the potential for significant revenue reductions, set a highly ambitious savings goal of $5 million per year. Working with Vizient data and consultants, the DCH team not only surpassed the goal by nearly $1 million, they also built new relationships with both suppliers and physicians that will provide ongoing opportunities for savings.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module cn14 cn14__v6">
+                    <div class="container"> 
+                      <div class="row bottom-dot-border">
+                        <div class="col-xs-12">
+                          <h6><a href="#"><strong>Suppliers</strong> chain search result title 1<span class="icon icon-arrow-right ml-10"></span></a></h6>
+                          <p class="metadata-byline">Case study</p>
+                          <p>DCH Health System, facing the potential for significant revenue reductions, set a highly ambitious savings goal of $5 million per year. Working with Vizient data and consultants, the DCH team not only surpassed the goal by nearly $1 million, they also built new relationships with both suppliers and physicians that will provide ongoing opportunities for savings.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </section>
+                <section class="module">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="module-inner"><a href="#content-region-1" class="btn js-content-loader-trigger">Load more</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="v3" class="module">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <h3>NV05 v3</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module cn09 cn09__v1">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-md-4 col-md-push-8 col-lg-3 col-lg-push-9">
+                <!-- START: NV05 v3-->
+                <form class="module nv05 bg-mist-lightest js-toggle-region js-filter-panels">
+                  <h3 class="js-toggle-trigger">Filter webinars &amp; events</h3>
+                  <div class="js-toggle-content hide">
+                    <div class="row bg-mist">
+                      <div class="col-xs-12 col-sm-6 col-md-12">
+                        <div class="module-inner">
+                          <fieldset class="js-checkbox-group">
+                            <legend>Filter by category</legend>
+                            <ul class="list-unstyled">
+                              <li class="checkbox">
+                                <label class="bold js-check-all">
+                                  <input type="checkbox" name="event-categories" value="all">All categories
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-categories" value="1">Supply chain
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-categories" value="2">Operations
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-categories" value="3">Consulting
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-categories" value="4">Pharmacy
+                                </label>
+                              </li>
+                              <li class="checkbox">
+                                <label> 
+                                  <input type="checkbox" name="event-categories" value="5">Clinical
+                                </label>
+                              </li>
+                            </ul>
+                          </fieldset>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-12">
+                        <div class="module-inner">
+                          <fieldset>
+                            <legend>Filter by type of event</legend>
+                            <select name="event-type" class="form-control js-select-box">
+                              <option value="-" disabled selected>All events &amp; webinars</option>
+                              <option value="1">Type 1</option>
+                              <option value="2">Type 2</option>
+                            </select>
+                          </fieldset>
+                          <fieldset>
+                            <legend>Filter by month and year</legend>
+                            <select name="event-month" class="form-control js-select-box">
+                              <option value="-" disabled selected>Select month</option>
+                              <option value="1">January</option>
+                              <option value="2">February</option>
+                              <option value="3">March</option>
+                              <option value="4">April</option>
+                              <option value="5">May</option>
+                              <option value="6">June</option>
+                              <option value="7">July</option>
+                              <option value="8">August</option>
+                              <option value="9">September</option>
+                              <option value="10">October</option>
+                              <option value="11">November</option>
+                              <option value="12">December</option>
+                            </select>
+                            <select name="event-year" class="form-control js-select-box">
+                              <option value="-" disabled selected>Select year</option>
+                              <option value="2016">2016</option>
+                              <option value="2015">2015</option>
+                              <option value="2014">2014</option>
+                              <option value="2013">2013</option>
+                            </select>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row bg-mist">
+                      <div class="col-xs-12 text-right">
+                        <div class="module-inner">
+                          <button type="reset" class="btn js-clear-filters">Clear filters</button>
+                          <button type="submit" class="btn">Apply filters</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-xs-12 col-md-8 col-md-pull-4 col-lg-9 col-lg-pull-3">
+                <section id="content-region-2" data-show-items="6" class="module js-content-loader">
+                  <section class="module cn14 cn14__v2">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xs-12 col-md-8 bottom-dot-border">
+                          <div class="module-inner">
+                            <article class="event col-lg-9">
+                              <time datetime="2016-09-30" class="calendar-date"><span class="date">30</span><span class="month">Sep</span></time>
+                              <div class="event-description clearfix">
+                                <p class="metadata-eyebrow">Event</p>
+                                <p class="metadata-byline">30 September 2016  •  Dallas TX</p>
+                                <h3 class="e20"><a href="#" title="">2016 Vizient Clinical Connections Summit<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module cn14 cn14__v2">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xs-12 col-md-8 bottom-dot-border">
+                          <div class="module-inner">
+                            <article class="event col-lg-9">
+                              <time datetime="2016-09-30" class="calendar-date"><span class="date">28</span><span class="month">Sep</span></time>
+                              <div class="event-description clearfix">
+                                <p class="metadata-eyebrow">Event</p>
+                                <p class="metadata-byline">28-30 September 2016  •  Dallas TX</p>
+                                <h3 class="e20"><a href="#" title="">2016 Vizient Clinical Connections Summit<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module cn14 cn14__v2">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xs-12 col-md-8 bottom-dot-border">
+                          <div class="module-inner">
+                            <article class="event col-lg-9">
+                              <time datetime="2016-09-30" class="calendar-date"><span class="date">30</span><span class="month">Sep</span></time>
+                              <div class="event-description clearfix">
+                                <p class="metadata-eyebrow">Webinar</p>
+                                <p class="metadata-byline">30 September 2016</p>
+                                <h3 class="e20"><a href="#" title="">Opioid Stewardship Expert Panel - Vizient Opioid Performance Improvement Portfolio Campaign<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module cn14 cn14__v2">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xs-12 col-md-8 bottom-dot-border">
+                          <div class="module-inner">
+                            <article class="event col-lg-9">
+                              <time datetime="2016-09-30" class="calendar-date"><span class="date">28</span><span class="month">Sep</span></time>
+                              <div class="event-description clearfix">
+                                <p class="metadata-eyebrow">Event</p>
+                                <p class="metadata-byline">28 September 2016  •  Dallas TX</p>
+                                <h3 class="e20"><a href="#" title="">2016 Vizient Clinical Connections Summit<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module cn14 cn14__v2">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xs-12 col-md-8 bottom-dot-border">
+                          <div class="module-inner">
+                            <article class="event col-lg-9">
+                              <time datetime="2016-09-30" class="calendar-date"><span class="date">30</span><span class="month">Sep</span></time>
+                              <div class="event-description clearfix">
+                                <p class="metadata-eyebrow">Event</p>
+                                <p class="metadata-byline">30 September 2016  •  Dallas TX</p>
+                                <h3 class="e20"><a href="#" title="">2016 Vizient Clinical Connections Summit<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module cn14 cn14__v2">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xs-12 col-md-8 bottom-dot-border">
+                          <div class="module-inner">
+                            <article class="event col-lg-9">
+                              <time datetime="2016-09-30" class="calendar-date"><span class="date">28</span><span class="month">Sep</span></time>
+                              <div class="event-description clearfix">
+                                <p class="metadata-eyebrow">Event</p>
+                                <p class="metadata-byline">28-30 September 2016  •  Dallas TX</p>
+                                <h3 class="e20"><a href="#" title="">2016 Vizient Clinical Connections Summit<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module cn14 cn14__v2">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xs-12 col-md-8 bottom-dot-border">
+                          <div class="module-inner">
+                            <article class="event col-lg-9">
+                              <time datetime="2016-09-30" class="calendar-date"><span class="date">30</span><span class="month">Sep</span></time>
+                              <div class="event-description clearfix">
+                                <p class="metadata-eyebrow">Webinar</p>
+                                <p class="metadata-byline">30 September 2016</p>
+                                <h3 class="e20"><a href="#" title="">Opioid Stewardship Expert Panel - Vizient Opioid Performance Improvement Portfolio Campaign<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="module cn14 cn14__v2">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xs-12 col-md-8 bottom-dot-border">
+                          <div class="module-inner">
+                            <article class="event col-lg-9">
+                              <time datetime="2016-09-30" class="calendar-date"><span class="date">28</span><span class="month">Sep</span></time>
+                              <div class="event-description clearfix">
+                                <p class="metadata-eyebrow">Event</p>
+                                <p class="metadata-byline">28 September 2016  •  Dallas TX</p>
+                                <h3 class="e20"><a href="#" title="">2016 Vizient Clinical Connections Summit<span class="icon icon-arrow-right ml-10"></span></a></h3>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </section>
+                <section class="module">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="module-inner"><a href="#content-region-2" class="btn js-content-loader-trigger">Load more</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main><!-- Start Footer -->
+      <footer id="main-footer">
+        <div class="row-top">
+          <div class="container">
+            <div class="col-sm-7"><a href="/" title="Vizient" class="logo"><i class="icon icon-logo"></i></a></div>
+            <div class="col-sm-4 col-sm-offset-1 pl40 hidden-xs"><!-- Start Social Icons Component -->
+              <ul class="list-unstyled social-icons">
+                <li class="social-icons__icon"><a href="#"><span class="icon icon-linkedin"></span></a></li>
+                <li class="social-icons__icon"><a href="#"><span class="icon icon-twitter"></span></a></li>
+                <li class="social-icons__icon"><a href="#"><span class="icon icon-youtube"></span></a></li>
+              </ul><!-- End Social Icons Component -->
+            </div>
+          </div>
+        </div>
+        <div class="row-mid">     
+          <div class="container">     
+            <div class="col-sm-5">
+              <nav class="primary">
+                <ul class="list-unstyled">
+                  <li><a href="/" title="Home">Home</a></li>
+                  <li><a href="what-we-do.html" title="What we do">What we do</a></li>
+                  <li><a href="our-solutions.html" title="Our solutions">Our solutions</a></li>
+                  <li><a href="our-networks.html" title="Our networks">Our networks</a></li>
+                  <li><a href="become-a-member.html" title="Become a member">Become a member</a></li>
+                  <li><a href="become-a-supplier.html" title="Suppliers">Suppliers</a></li>
+                  <li><a href="about-us.html" title="About us">About us</a></li>
+                  <li><a href="news-and-insight.html" title="Newsroom">Newsroom</a></li>
+                  <li><a href="blog.html" title="Blog">Blog</a></li>
+                  <li><a href="events.html" title="Events">Events</a></li>
+                  <li><a href="contact-us.html" title="Contact us" class="nav-contact">Contact us</a></li>
+                  <li><a href="#" title="Careers">Careers</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-sm-4 col-sm-offset-3 border pl40">
+              <nav class="secondary">
+                <ul class="list-unstyled">
+                  <li><a href="#" title="Connect with us">Connect with us</a></li>
+                  <li><a href="#" title="Subscription manager">Subscription manager</a></li>
+                  <li><a href="#" title="Privacy policy &amp; legal notice">Privacy policy &amp; legal notice</a></li>
+                  <li><a href="#" title="Cookie policy">Cookie policy</a></li>
+                  <li><a href="#" title="Terms of use">Terms of use</a></li>
+                  <li><a href="#" title="FAQs">FAQs</a></li>
+                  <li><a href="#" title="Site map">Site map</a></li>
+                  <li><a href="#" title="Accessibility" class="toggle-ab">Accessibility</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="row-bot"> 
+          <div class="container">
+            <div class="col-xs-12">
+              <div class="visible-xs"><!-- Start Social Icons Component -->
+                <ul class="list-unstyled social-icons">
+                  <li class="social-icons__icon"><a href="#"><span class="icon icon-linkedin"></span></a></li>
+                  <li class="social-icons__icon"><a href="#"><span class="icon icon-twitter"></span></a></li>
+                  <li class="social-icons__icon"><a href="#"><span class="icon icon-youtube"></span></a></li>
+                </ul><!-- End Social Icons Component -->
+              </div>
+              <div class="footer-copy"> 
+                <p>&copy; 2016 Vizient Inc. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer><!-- End Footer -->
+    </div><script src="scripts/vendor.min.js"></script><script src="scripts/main.min.js"></script>
+  </body>
+</html>
