@@ -111,13 +111,18 @@
         }
 
         &.cn11__v3 .bg-image {
-            @media (min-width: $screen-sm) {
-                background-position: left center;
-                background-size: cover;
-                height: 350px;
-            }
+        	display: none;
+
+            // @media (min-width: $screen-sm) {
+            //     background-position: left center;
+            //     background-size: cover;
+            //     height: 350px;
+            // }
 
             @media (min-width: $screen-md) {
+            	background-position: left center;
+            	background-size: cover;
+            	display: block;
                 height: 430px;
             }
 
