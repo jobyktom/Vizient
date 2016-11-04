@@ -36,7 +36,9 @@
         .bg-image {
             background-position: bottom right;
             background-repeat: no-repeat;
-            background-size: 65% auto;
+            // Switched this to contain to make better use of space
+            background-size: contain;
+            //background-size: 65% auto;
             float: right;
             height: 150px;
             margin-bottom: -40px;
@@ -46,7 +48,8 @@
             width: 100%;
 
             @media only screen and (min-width: $screen-sm) {
-                background-size: contain;
+            	// See comment for global properties above
+                //background-size: contain;
                 height: 200px;
                 margin-right: -40px;
             }

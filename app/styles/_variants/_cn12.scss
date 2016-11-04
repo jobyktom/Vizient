@@ -1,128 +1,153 @@
 .cn12 {
-  .row {
-    [class*="col-"] {
-      border-bottom: 1px dotted $white;
+	.row {
+		[class*="col-"] {
+		  	border-bottom: 1px dotted $white;
 
-      @media (min-width: $screen-sm) {
-        border-bottom: none;
-        border-left: 1px dotted $white;
-        margin: 0 !important;
-      }
+		  	@media (min-width: $screen-sm) {
+		    	border-bottom: none;
+		    	border-left: 1px dotted $white;
+		    	margin: 0 !important;
+		  	}
 
-      @media (min-width: $screen-lg) {
-        border-right: none;
-      }
+		  	@media (min-width: $screen-lg) {
+		    	border-right: none;
+		  	}
 
-      &:first-child {
-        border-left: none;
-      }
+		  	&:first-child {
+		    	border-left: none;
+		  	}
 
-      &:last-child {
-        border-bottom: none;
-      }
-    }
+		  	&:last-child {
+		    	border-bottom: none;
+		  	}
+		}
 
-    .module-inner {
-      @extend .clearfix;
-      height: 100%;
-    }
+		.module-inner {
+		  	@extend .clearfix;
+		  	height: 100%;
+		}
 
-    .metadata-eyebrow {
-      margin-bottom: 40px;
-      padding: 0;
-    }
-  }
+		.metadata-eyebrow {
+		  	margin-bottom: 40px;
+		  	padding: 0;
+		}
+	}
 
-  .calendar-date {
-    display: inline-block;
-    margin-bottom: 20px
-  }
+	.calendar-date {
+		display: inline-block;
+		margin-bottom: 20px
+	}
 
-  .list-events {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  	.list-events {
+    	list-style: none;
+    	margin: 0;
+    	padding: 0;
 
-    .calendar-date {
-      left: 0;
-      margin: 4px 0 0;
-      position: absolute;
-      top: 0;
-    }
+    	.calendar-date {
+      		left: 0;
+      		margin: 4px 0 0;
+      		position: absolute;
+      		top: 0;
+    	}
 
-    li {
-      margin-bottom: 30px;
-      min-height: 47px;
-      position: relative;
-    }
+    	li {
+      		margin-bottom: 30px;
+      		min-height: 47px;
+      		position: relative;
+    	}
 
-    a {
-      @include font-size(18px);
-      display: block;
-    }
+    	a {
+      		@include font-size(18px);
+      		display: block;
+    	}
 
-    &.has-calendar-dates {
-      a {
-        margin-left: 56px;
+    	&.has-calendar-dates {
+      		a {
+        		margin-left: 56px;
 
-        @media (min-width: $screen-md) {
-          margin-left: 66px;
-        }
-      }
-    }
-  }
+        		@media (min-width: $screen-md) {
+          			margin-left: 66px;
+        		}
+      		}
+    	}
+  	}
 
-  &.cn12__v2 {
-    [class*="col-"] {
-      border-bottom: 1px dotted $white;
+  	&.cn12__v2 {
+    	[class*="col-"] {
+      		border-bottom: 1px dotted $white;
 
-      @media (min-width: $screen-md) {
-        border-bottom: none;
-        border-left: 1px dotted $white;
-        margin: 0 !important;
-      }
+			@media (min-width: $screen-md) {
+				border-bottom: none;
+				border-left: 1px dotted $white;
+				margin: 0 !important;
+			}
 
-      @media (min-width: $screen-lg) {
-        border-right: none;
-      }
+			@media (min-width: $screen-lg) {
+				border-right: none;
+			}
 
-      &:first-child {
-        border-left: none;
-      }
+			&:first-child {
+				border-left: none;
+			}
 
-      &:last-child {
-        border-bottom: none;
-      }
-    }
-  }
+			&:last-child {
+				border-bottom: none;
+			}
+    	}
+  	}
 
-  &.cn12__v2,
-  &.cn12__v3 {  
-    .event {
-      @media (min-width: $screen-sm) {
-        position: relative;
+  	&.cn12__v2,
+  	&.cn12__v3 {  
+    	.event {
+      		@media (min-width: $screen-sm) {
+        		position: relative;
 
-        .calendar-date {
-          left: 0;
-          position: absolute;
-          top: 58px;
-        }
+				.calendar-date {
+					left: 0;
+					position: absolute;
+					top: 58px;
+				}
 
-        .event-description {
-          margin-left: 66px;
-        }
-      }
-    }
-  }
+				.event-description {
+					margin-left: 66px;
+				}
+      		}
+    	}
+  	}
 
-  &.cn12__v3,
-  &.cn12__v4 {
-    [class*="col-"] {
-      border-left: none !important;
-    }
+	&.cn12__v3,
+	&.cn12__v4 {
+		[class*="col-"] {
+			border-left: none !important;
+		}
 
-    .event {
-      margin-top: 0;
-    }
-  }
+		.event {
+			margin-top: 0;
+		}
+	}
+
+  	&.cn12__newsletter {
+  		.newsletter {
+  			@media (min-width: $screen-sm) {
+        		position: relative;
+
+        		.newsletter-image {
+					left: 0;
+					position: absolute;
+        		}
+
+        		.newsletter-description {
+          			margin-left: 206px;
+
+          			.metadata-eyebrow {
+          				margin-bottom: 10px;
+          			}
+
+          			.metadata-byline {
+          				margin-bottom: 30px;
+          			}
+        		}
+  			}
+  		}
+	}
 }

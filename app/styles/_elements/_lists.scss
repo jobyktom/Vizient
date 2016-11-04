@@ -70,3 +70,19 @@ ul {
 		display: block;
 	}
 }
+
+.list-newsletters {
+	margin-bottom: 0 !important;
+
+	li {
+		margin-bottom: 25px;
+
+		.metadata-byline {
+			margin-bottom: 10px !important;
+		}
+
+	    .metadata-eyebrow {
+	      	margin-bottom: 10px !important;
+	    }			
+	}
+}

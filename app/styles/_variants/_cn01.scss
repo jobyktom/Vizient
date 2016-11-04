@@ -2,7 +2,15 @@
 	[class*="col-"] {
 		margin: 0 !important;
 		//padding:0 !important;
+		position: relative;
+
+		.rectangle {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
 	}
+
 	.module-inner p:first-child{
 		@media (max-width: $screen-sm-max) {
 			margin-top: 25px;

@@ -131,8 +131,9 @@
     width: 12px;
     height: 12px;
 }
+
 .icon-arrow-right-darkgrey {
-    // background: url(../images/icons/icon-arrow-right-white.png);
+    background: url(../images/icons/icon-arrow-right-darkgrey.png);
     background: none, url(../images/icons/svg/icon-arrow-right-darkgrey.svg);
     background-repeat: no-repeat;
     background-size: 12px;
@@ -625,57 +626,6 @@
     }
 }
 
-
-// white icons
-
-// footer {
-//     .icon-linkedin {
-//         width: 24px;
-//         height: 23px;
-//         background-size: 24px 23px;
-//         background: url(../images/icons/social/li.png) no-repeat;
-//         background-size: cover;
-//         @include image-2x("../images/icons/social/li@2x.png", 24px, 23px);
-//     }
-
-//     .icon-facebook {
-//         width: 11px;
-//         height: 24px;
-//         background-size: 12px 24px;
-//         background: url(../images/icons/social/fb.png) no-repeat;
-//         background-size: cover;
-//         @include image-2x("../images/icons/social/fb@2x.png", 12px, 24px);
-//     }
-
-//     .icon-twitter {
-//         width: 25px;
-//         height: 20px;
-//         background-size: 25px 20px;
-//         background: url(../images/icons/social/tw.png) no-repeat;
-//         background-size: cover;
-//         @include image-2x("../images/icons/social/tw@2x.png", 25px, 20px);
-//     }
-
-//     .icon-pinterest {
-//         width: 25px;
-//         height: 24px;
-//         background-size: 24px 24px;
-//         background: url(../images/icons/social/pi.png) no-repeat;
-//         background-size: cover;
-//         @include image-2x("../images/icons/social/pi@2x.png", 24px, 24px);
-//     }
-
-//     .icon-youtube {
-//         width: 29px;
-//         height: 20px;
-//         background-size: 29px 20px;
-//         background: url(../images/icons/social/yt.png) no-repeat;
-//         background-size: cover;
-//         @include image-2x("../images/icons/social/yt@2x.png", 29px, 20px);
-//     }
-// }
-
-
 // ICONS - FILE TYPES
 
 .icon-filetype {
@@ -740,87 +690,6 @@
     @include image-2x("../images/icons/file-types/Zip@2x.png", 21px, 25px);
 }
 
-// arrows
-
-// .arrow-mist {
-//     background: none, url(../images/icons/svg/arrow-curved.svg);
-//     background-repeat: no-repeat;
-// }
-
-// .arrow-mist-light {
-//     background: none, url(../images/icons/svg/arrow-curved-mist-light.svg);
-//     background-repeat: no-repeat;
-// }
-
-// .arrow-mist-lightest {
-//     background: none, url(../images/icons/svg/arrow-curved-mist-lightest.svg);
-//     background-repeat: no-repeat;
-// }
-
-// .arrow-peach-light {
-//     background: none, url(../images/icons/svg/arrow-curved-peach-light.svg);
-//     background-repeat: no-repeat;
-// }
-
-// .arrow-purple {
-//     background: url(../images/icons/arrow-curved-purple.png);
-//     background: none, url(../images/icons/svg/arrow-curved-purple.svg);
-//     background-repeat: no-repeat;
-// }
-
-// .arrow-yellow {
-//     background: url(../images/icons/arrow-curved-yellow.png);
-//     background: none, url(../images/icons/svg/arrow-curved-yellow.svg);
-//     background-repeat: no-repeat;
-// }
-
-// .arrow-turquoise-dark {
-//     background: url(../images/icons/arrow-curved-turquoise-dark.png);
-//     background: none, url(../images/icons/svg/arrow-curved-turquoise-dark.svg);
-//     background-repeat: no-repeat;
-// }
-
-// .arrow-turquoise-darkest {
-//     background: url(../images/icons/arrow-curved-turquoise-darkest.png);
-//     background: none, url(../images/icons/svg/arrow-curved-turquoise-darkest.svg);
-//     background-repeat: no-repeat;
-// }
-
-// .arrow-white {
-//     background: url(../images/icons/arrow-curved-white.png);
-//     background: none, url(../images/icons/svg/arrow-curved-white.svg);
-//     background-repeat: no-repeat;
-// }
-
-// .arrow-green {
-//     background: url(../images/icons/arrow-curved-green.png);
-//     background: none, url(../images/icons/svg/arrow-curved-green.svg);
-//     background-repeat: no-repeat;
-// }
-
-// .arrow-slate {
-//     background: url(../images/icons/arrow-curved-slate.png);
-//     background: none, url(../images/icons/svg/arrow-curved-slate.svg);
-//     background-repeat: no-repeat;
-// }
-
-// .arrow-orange-dark {
-//     background: url(../images/icons/arrow-curved-orange-dark.png);
-//     background: none, url(../images/icons/svg/arrow-curved-orange-dark.svg);
-//     background-repeat: no-repeat;
-// }
-
-// .arrow {   
-//     // Rich: Preserving my code from merge conflict - uncommented is from Robs branch
-//     // background-size: 150px 65px;
-//     // width: 150px;
-//     // height: 65px;
-//     background-size: 50px 20px;
-//     height: 20px;
-//     width: 50px;
-// }
-
-// >>>>>>> dev-km
 .icon-delete {
     background: url(../images/icons/icon-delete.png);
     background: none, url(../images/icons/svg/icon-delete.svg);
@@ -830,69 +699,4 @@
     height: 21px;
 }
 
-// Icons: Sections
-
-// .icon-arrows {
-//   background: url(../images/icons/icon-arrows.png);
-//   background: none, url(../images/icons/svg/icon-arrows.svg);
-//   background-repeat: no-repeat;
-//   height: 95px;
-//   width: 106px;  
-// }
-
-// .icon-chart {
-//   background: url(../images/icons/icon-chart.png);
-//   background: none, url(../images/icons/svg/icon-chart.svg);
-//   background-repeat: no-repeat;
-//   height: 88px;
-//   width: 103px;
-// }
-
-// .icon-eye {
-//   background: url(../images/icons/icon-eye.png);
-//   background: none, url(../images/icons/svg/icon-eye.svg);
-//   background-repeat: no-repeat;
-//   height: 66px;
-//   width: 107px; 
-// }
-
-// .icon-magnifying-glass {
-//   background: url(../images/icons/icon-magnifying-glass.png);
-//   background: none, url(../images/icons/svg/icon-magnifying-glass.svg);
-//   background-repeat: no-repeat;
-//   height: 104px;
-//   width: 102px;
-// }
-
-// .icon-medical-cross {
-//   background: url(../images/icons/icon-medical-cross.png);
-//   background: none, url(../images/icons/svg/icon-medical-cross.svg);
-//   background-repeat: no-repeat;
-//   height: 104px;
-//   width: 104px; 
-// }
-
-// .icon-network {
-//   background: url(../images/icons/icon-medical-network.png);
-//   background: none, url(../images/icons/svg/icon-network.svg);
-//   background-repeat: no-repeat;
-//   height: 100px;
-//   width: 115px; 
-// }
-
-// .icon-physician {
-//   background: url(../images/icons/icon-physician.png);
-//   background: none, url(../images/icons/svg/icon-physician.svg);
-//   background-repeat: no-repeat;
-//   height: 100px;
-//   width: 79px;
-// }
-
-// .icon-plaster {
-//   background: url(../images/icons/icon-plaster.png);
-//   background: none, url(../images/icons/svg/icon-plaster.svg);
-//   background-repeat: no-repeat;
-//   height: 104px;
-//   width: 103px;
-// }
 

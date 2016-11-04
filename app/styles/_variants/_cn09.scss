@@ -12,7 +12,15 @@
 				background-position:center center;
 			}
 			.img-caption{
+				height: auto;
 				margin-bottom: 30px;
+				padding: 15px;
+
+				p {
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
 			}
 			.dot-border-bottom{
 				border-bottom:1px dotted $grey;
@@ -44,10 +52,7 @@
 				width: auto;
 				margin-top: 30px;
 				margin-bottom: 30px;
-				@media (min-width: $screen-sm) {
-					width: 75%; 
-				}
-				 p {
+				p {
 				 	margin-top: 0;
 				 	margin-bottom: 5px;
 				 }
