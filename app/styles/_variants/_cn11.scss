@@ -188,7 +188,7 @@
                     }
 
                     @media (min-width: $screen-lg) {
-                        padding-left: percentage(1 / $grid-columns);
+                        //padding-left: percentage(1 / $grid-columns);
                     }
                 }
             }
