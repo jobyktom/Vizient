@@ -1,0 +1,33 @@
+// Lead for an article page
+
+.article-lead {
+	border-bottom: 1px dotted $grey;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+
+	&:last-of-type {
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+
+	@media (min-width: $screen-sm) {
+		position: relative;
+
+		.article-lead-image {
+			left: 0;
+			position: absolute;
+		}
+
+		.article-lead-description {
+			margin-left: 206px;
+
+			.metadata-eyebrow {
+				margin-bottom: 10px;
+			}
+
+			.metadata-byline {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
