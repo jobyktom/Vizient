@@ -1,0 +1,52 @@
+// Video Player
+
+.video-player {
+	cursor: pointer;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	width: 100%;
+
+	img {
+		display: block;
+		transition: .4s all;
+		width: 100%;
+
+		&:hover {
+			filter: brightness(75%);
+		}
+	}
+
+	iframe {
+		height: 100%;
+		left: 0;
+		position: absolute;
+    	top: 0;	
+    	width: 100%;
+	}
+
+	.btn-play {
+		@extend .icon-video-play-white;
+		background-color: rgba($orange, .8);
+		bottom: 0;
+		cursor: pointer;
+		height: 80px;
+		position: absolute;
+		right: 0;
+		width: 80px;
+	}
+
+	&.video-play-small:after {
+		@extend .icon-video-play-white;
+		background-color: rgba($orange, .8);
+		background-size: 26px;
+		bottom: 1px;
+		content:'';
+		height: 40px;
+		position: absolute;
+		right: 0;
+		width: 40px;
+	}
+}
