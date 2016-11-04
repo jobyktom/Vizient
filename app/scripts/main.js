@@ -59,7 +59,7 @@ var Vizient = (function() {
 		_setupSectionSubNav();
 		_setupCarousels();
 		_setupSearchBar();
-    
+	
 		//_adIE8Class();
 		
 		//_equalHeights();
@@ -70,6 +70,9 @@ var Vizient = (function() {
 		_checkAllCheckboxes();
 		_contentLoader();
 		_clearFilters();
+
+		// Video Player
+		_loadVideoPlayer();
 
 		// Responsive JavaScript Components
 		$(window).on('breakpoint-change', function(e, breakpoint) {
@@ -98,6 +101,66 @@ var Vizient = (function() {
 		}, 100);
  
 	};
+
+	var _loadVideoPlayer = function _loadVideoPlayer() {
+		var div, n,
+                v = document.getElementsByClassName('youtube');
+            for (n = 0; n < v.length; n++) {
+                div = document.createElement('div');
+                div.setAttribute('data-id', v[n].dataset.id);
+                div.innerHTML = _videoHTML(v[n].dataset.id);
+                div.onclick = _videoiFrame;
+                v[n].appendChild(div);
+            }
+	};
+
+	var _videoHTML = function _videoHTML(id) {
+		var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+            play = '<div class="btn-play"></div>';
+        return thumb.replace("ID", id) + play;
+	};
+
+	var _videoiFrame = function _videoiFrame() {
+		var iframe = document.createElement("iframe");
+        var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+        iframe.setAttribute('src', embed.replace('ID', this.dataset.id));
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allowfullscreen", "1");
+        this.parentNode.replaceChild(iframe, this);
+	};
+
+	// var _loadVideoPlayer = function _loadVideoPlayer() {
+	// 	if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
+	// 		var tag = document.createElement('script');
+	// 		tag.src = "https://www.youtube.com/iframe_api";
+			
+	// 		var firstScriptTag = document.getElementsByTagName('script')[0];
+	// 		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	// 		window.onYouTubePlayerAPIReady = function() {
+	// 			_onPlayerReady();
+	// 		};
+	// 	}
+	// }
+
+	// var _onPlayerReady = function _onPlayerReady() {
+	// 	console.log('ready');
+
+	// 	player = new YT.Player('video', {
+	// 		events: {
+
+	// 		}
+	// 	});
+	// };
+
+	// var _onYouTubePlayerAPIReady = function _onYouTubePlayerAPIReady() {
+	// 	player = new YT.Player('video', {
+	// 		events: {
+	// 			// call this function when player is ready to use
+	// 			'onReady': _onPlayerReady(player)
+	// 		}
+	// 	});
+	// };
 
 	// Load More buttons 
 	var _contentLoader = function _contentLoader() {
@@ -176,7 +239,7 @@ var Vizient = (function() {
 			var $checkboxGroup = $(this).parents('.js-checkbox-group'),
 				$checkBoxes = $checkboxGroup.find('input:checkbox');
 
-   			$checkBoxes.prop('checked', $checkBoxes.prop('checked'));
+			$checkBoxes.prop('checked', $checkBoxes.prop('checked'));
 		});
 	};
 
@@ -233,8 +296,8 @@ var Vizient = (function() {
 			} else {
 
 				$dashboardCarousel.carousel('pause').carousel(0);
-  			
-  				$dashboardCarousel.off('bs.carousel.data-api'); 
+			
+				$dashboardCarousel.off('bs.carousel.data-api'); 
 	
 			}
 
@@ -258,8 +321,8 @@ var Vizient = (function() {
 
 				$dashboardTabs.find('.tab a').on('click', function(){
 					$('html, body').animate({
-        				scrollTop: $('.tab-content').offset().top - headerHeight
-    				}, 800);
+						scrollTop: $('.tab-content').offset().top - headerHeight
+					}, 800);
 				});
 
 			} else {
@@ -548,7 +611,7 @@ var Vizient = (function() {
 
 		$('.typeahead-input').typeahead({
 				source: ['Suppliers', 'Suppliers search number one', 'Suppliers search number two', 'Suppliers search number three']
-    });
+	});
 	};
 
 	 
@@ -635,10 +698,10 @@ $(document).ready(function() {
 	});
 	//accordion - start
 	function toggleChevron(e) {
-	    $(e.target)
-	        .prev('.panel-heading')
-	        .find("i.indicator")
-	        .toggleClass('glyphicon-chevron-up glyphicon-chevron-down');
+		$(e.target)
+			.prev('.panel-heading')
+			.find("i.indicator")
+			.toggleClass('glyphicon-chevron-up glyphicon-chevron-down');
 	}
 
 	$('#accordion').on('hidden.bs.collapse', toggleChevron);

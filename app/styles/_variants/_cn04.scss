@@ -48,28 +48,6 @@
 		display: inline-block;
 	}
 
-	.video-play {
-		display: block;
-		position: relative;
-
-		&:after {
-			@extend .icon-video-play-white;
-			background-color: rgba($orange, .8);
-			bottom: 0;
-			content: '';
-			height: 80px;
-			position: absolute;
-			right: 0;
-			width: 80px;
-		}
-
-		&.video-play-small:after {
-			background-size: 26px;
-			height: 40px;
-			width: 40px;
-		}
-	}
-
 	.metadata-eyebrow {
 		padding: 10px 0 0;
 	}
